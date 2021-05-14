@@ -18,6 +18,7 @@ Thought of map structure for C++:
     - Data structures
     - state machines (конечные автоматы)
     - software patterns
+    - competitive programming
     - software design/software architecture (вообще умение декомпозировать и создавать рабоспособные и поддерживаемые системы)
     - Как рабоатет компилятор
     - многопоточность
@@ -45,3 +46,5 @@ Thought of map structure for C++:
 - https://miro.com/
     - нет интеграции с гитхаб, только конечный рисунок с ссылками
     - MVP подход
+- https://github.com/tlbootcamp/vuepress-plugin-generate-tree
+    - самопал от карты тимлида
