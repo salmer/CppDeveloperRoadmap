@@ -19,3 +19,8 @@
 - [C++ Russia](https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA)
 - [Meeting cpp](https://www.youtube.com/user/MeetingCPP)
 - [Cpp Con](https://www.youtube.com/user/CppCon)
+
+## English alternatives of Cpp roadmap
+
+- https://www.cjdb.com.au/sg20-and-videos.html
+- Cpp con (back to basics): https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e
