@@ -26,6 +26,7 @@ Thought of map structure for C++:
     - code quality
     - можно глянуть твиттер https://twitter.com/mokevnin. Он неплохо набрасывает идеи.
     - Можно ещё подумать о том, какие сторонние знания нужны. Потому что C++ существует не в вакууме, а используется для решения задач в рахных сферах. То есть, чтобы работать в них, нужно знать не только  С++, но и что-то сверх, что потом будет описываться с помощью C++
+    - Ещё идей тут https://www.youtube.com/watch?v=SzJ46YA_RaA&ab_channel=DoS-DomainofScience
     - etc.
 - soft-skills
     - team work
