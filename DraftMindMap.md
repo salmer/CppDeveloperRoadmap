@@ -46,9 +46,7 @@ Thought of map structure for C++:
     - markdown based
 - https://miro.com/
     - можно встроить в markdown.
+    - github не поддерживает iframe. Отключено на уровне github политик, потому невозможно получить отоброжение
     - MVP подход
 - https://github.com/tlbootcamp/vuepress-plugin-generate-tree
     - самопал от карты тимлида
-
-
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lFH_iBs=/?moveToViewport=-819,-384,1548,755" frameBorder="0" scrolling="no" allowFullScreen></iframe>
