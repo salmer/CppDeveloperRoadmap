@@ -45,7 +45,10 @@ Thought of map structure for C++:
     - скорее всего можно интегрировать в гитхаб для автогенерации при изменениях
     - markdown based
 - https://miro.com/
-    - нет интеграции с гитхаб, только конечный рисунок с ссылками
+    - можно встроить в markdown.
     - MVP подход
 - https://github.com/tlbootcamp/vuepress-plugin-generate-tree
     - самопал от карты тимлида
+
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lFH_iBs=/?moveToViewport=-819,-384,1548,755" frameBorder="0" scrolling="no" allowFullScreen></iframe>
