@@ -22,3 +22,5 @@
 [Senior C++](Grades/Senior.md)
 
 [Draft mind map](DraftMindMap.md)
+
+[Draft areas of application](DraftAreasOfApplication.md)
