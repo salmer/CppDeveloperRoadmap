@@ -24,3 +24,5 @@
 [Draft mind map](DraftMindMap.md)
 
 [Draft areas of application](DraftAreasOfApplication.md)
+
+[А нужен ли вам C++?](SelfIdentification.md)
