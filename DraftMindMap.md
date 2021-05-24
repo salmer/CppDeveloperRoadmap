@@ -12,10 +12,13 @@ Thought of map structure for C++:
     - Frameworks
     - IDE
     - databases
-    - testing
+    - testing (тестирование)
+      - TDD
+      - BDD
     - git
     - Alghoritms
     - Data structures
+    - CI\CD
     - state machines (конечные автоматы)
     - software patterns
     - competitive programming
@@ -24,9 +27,10 @@ Thought of map structure for C++:
     - многопоточность
     - межпроцессорное взаимодействие
     - code quality
-    - можно глянуть твиттер https://twitter.com/mokevnin. Он неплохо набрасывает идеи.
+    - ООП
+    - паттерны
+    - Булева алгебра
     - Можно ещё подумать о том, какие сторонние знания нужны. Потому что C++ существует не в вакууме, а используется для решения задач в рахных сферах. То есть, чтобы работать в них, нужно знать не только  С++, но и что-то сверх, что потом будет описываться с помощью C++
-    - Ещё идей тут https://www.youtube.com/watch?v=SzJ46YA_RaA&ab_channel=DoS-DomainofScience
     - глянуть на цикл жизни кода (написание, билд, рантайм)
     - etc.
 - soft-skills

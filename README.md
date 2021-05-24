@@ -26,3 +26,8 @@
 [Draft areas of application](DraftAreasOfApplication.md)
 
 [А нужен ли вам C++?](SelfIdentification.md)
+
+[Книги](Books.md)
+
+[Другие интересные репозитории](ThirdPartyRepositories.md
+)
