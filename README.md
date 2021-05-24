@@ -13,6 +13,10 @@
 
 Идея данной дорожной карты возникла после десятков интервью с кандидатами, желающими посвятить себя разработке продуктов на языке C++. Их уровень знаний был крайне низок, по разным причинам. Большинство объединяло одно: непонимание, каким образом изучать C++, какие источники использовать. Проведя анализ текущего состояния, я пришел к выводу, что сейчас представлено крайне мало контента для новичков, кто только начинает свой путь в изучении C++.
 
+[А нужен ли вам C++?](SelfIdentification.md)
+
+[Draft areas of application](DraftAreasOfApplication.md)
+
 [Pre-Junior C++](Grades/PreJunior.md)
 
 [Junior C++](Grades/Junior.md)
@@ -23,11 +27,6 @@
 
 [Draft mind map](DraftMindMap.md)
 
-[Draft areas of application](DraftAreasOfApplication.md)
-
-[А нужен ли вам C++?](SelfIdentification.md)
-
 [Книги](Books.md)
 
-[Другие интересные репозитории](ThirdPartyRepositories.md
-)
+[Другие интересные репозитории](ThirdPartyRepositories.md)
