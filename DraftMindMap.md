@@ -13,20 +13,20 @@ https://miro.com/app/board/o9J_lFH_iBs=/
     - [ ] Language features
       - [ ] Комитет стандартизации
       - [ ] core guidelinses
-    - [ ] Libraries
-      - [ ] boost
-    - [ ] Frameworks
+    - [x] Libraries
+      - [x] boost
+    - [x] Frameworks
     - [x] IDE
     - [ ] databases
-    - [ ] testing (тестирование)
-      - [ ] TDD
-      - [ ] BDD
-      - [ ] gtest
-    - [ ] git
+    - [x] testing (тестирование)
+      - [x] TDD
+      - [x] BDD
+      - [x] gtest
+    - [x] git
     - [ ] Alghoritms
     - [ ] Data structures
-    - [ ] CI\CD
-    - [ ] state machines (конечные автоматы)
+    - [x] CI\CD
+    - [x] state machines (конечные автоматы)
     - [ ] software patterns (паттерны)
     - [ ] competitive programming
     - [ ] software design/software architecture (вообще умение декомпозировать и создавать рабоспособные и поддерживаемые системы)
@@ -37,8 +37,8 @@ https://miro.com/app/board/o9J_lFH_iBs=/
     - [ ] ООП
     - [ ] Булева алгебра
     - [ ] глянуть на цикл жизни кода (написание, билд, рантайм)
-    - [ ] drivers
-    - [ ] etc.
+    - [x] drivers
+    - [x] etc.
 - [ ] soft-skills
     - [ ] team work
     - [ ] communication
@@ -49,7 +49,7 @@ https://miro.com/app/board/o9J_lFH_iBs=/
         - [ ] reading
         - [ ] writing
         - [ ] speaking
-    - [ ] etc.
+    - [x] etc.
 
 ## Candidates for map drawings:
 - https://github.com/gera2ld/markmap
