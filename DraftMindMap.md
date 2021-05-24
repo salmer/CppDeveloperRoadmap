@@ -2,48 +2,54 @@
 
 Thought of map structure for C++:
 
-- hardskills
-    - OS
-        - RTOS, OS of general purpose
-        - Windows, Linux, *NIX, ANdroid, iOS
-    - Network (TCP, OSI)
-    - Language features
-    - Libraries
-    - Frameworks
-    - IDE
-    - databases
-    - testing (тестирование)
-      - TDD
-      - BDD
-    - git
-    - Alghoritms
-    - Data structures
-    - CI\CD
-    - state machines (конечные автоматы)
-    - software patterns
-    - competitive programming
-    - software design/software architecture (вообще умение декомпозировать и создавать рабоспособные и поддерживаемые системы)
-    - Как рабоатет компилятор
-    - многопоточность
-    - межпроцессорное взаимодействие
-    - code quality
-    - ООП
-    - паттерны
-    - Булева алгебра
-    - Можно ещё подумать о том, какие сторонние знания нужны. Потому что C++ существует не в вакууме, а используется для решения задач в рахных сферах. То есть, чтобы работать в них, нужно знать не только  С++, но и что-то сверх, что потом будет описываться с помощью C++
-    - глянуть на цикл жизни кода (написание, билд, рантайм)
-    - etc.
-- soft-skills
-    - team work
-    - communication
-    - time managment
-    - prioritazing
-    - learning skills
-    - english
-        - reading
-        - writing
-        - speaking
-    - etc.
+https://miro.com/app/board/o9J_lFH_iBs=/
+
+- [ ] hardskills
+- [ ] Можно ещё подумать о том, какие сторонние знания нужны. Потому что C++ существует не в вакууме, а используется для решения задач в рахных сферах. То есть, чтобы работать в них, нужно знать не только  С++, но и что-то сверх, что потом будет описываться с помощью C++
+    - [x] OS
+        - [x] RTOS, OS of general purpose
+        - [x] Windows, Linux, *NIX, Android, iOS
+    - [x] Network (TCP, OSI)
+    - [ ] Language features
+      - [ ] Комитет стандартизации
+      - [ ] core guidelinses
+    - [ ] Libraries
+      - [ ] boost
+    - [ ] Frameworks
+    - [x] IDE
+    - [ ] databases
+    - [ ] testing (тестирование)
+      - [ ] TDD
+      - [ ] BDD
+      - [ ] gtest
+    - [ ] git
+    - [ ] Alghoritms
+    - [ ] Data structures
+    - [ ] CI\CD
+    - [ ] state machines (конечные автоматы)
+    - [ ] software patterns (паттерны)
+    - [ ] competitive programming
+    - [ ] software design/software architecture (вообще умение декомпозировать и создавать рабоспособные и поддерживаемые системы)
+    - [x] Как рабоатет компилятор
+    - [x] многопоточность
+    - [x] межпроцессорное взаимодействие
+    - [ ] code quality
+    - [ ] ООП
+    - [ ] Булева алгебра
+    - [ ] глянуть на цикл жизни кода (написание, билд, рантайм)
+    - [ ] drivers
+    - [ ] etc.
+- [ ] soft-skills
+    - [ ] team work
+    - [ ] communication
+    - [ ] time managment
+    - [ ] prioritazing
+    - [ ] learning skills
+    - [ ] english
+        - [ ] reading
+        - [ ] writing
+        - [ ] speaking
+    - [ ] etc.
 
 ## Candidates for map drawings:
 - https://github.com/gera2ld/markmap
