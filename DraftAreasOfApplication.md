@@ -7,3 +7,4 @@
 - https://www.softwaretestinghelp.com/cpp-applications/
 - https://hackr.io/blog/features-uses-applications-of-c-plus-plus-language
 - Полухин об областях применения https://www.youtube.com/watch?v=LZflL44SVVY&ab_channel=C%2B%2BUserGroup
+- competitive programming
