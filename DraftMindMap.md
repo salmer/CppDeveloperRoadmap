@@ -4,6 +4,9 @@ Thought of map structure for C++:
 
 https://miro.com/app/board/o9J_lFH_iBs=/
 
+- [ ] добавить больше инфы про необходимые знания в С++
+- [ ] Накидать идей из интернетов про софт скиллы
+
 ## Candidates for map drawings:
 - https://github.com/gera2ld/markmap
     - скорее всего можно интегрировать в гитхаб для автогенерации при изменениях
