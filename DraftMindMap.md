@@ -15,6 +15,8 @@ https://miro.com/app/board/o9J_lFH_iBs=/
 - [ ] Базы данных + теория по БД
 - [ ] Борьба со сложностью софта 
 - [ ] Накидать идей из интернетов про софт скиллы
+- [ ] Software practices
+  - [ ] Code review (умение чужой код читать)
 
 ## Candidates for map drawings:
 - https://github.com/gera2ld/markmap
