@@ -5,6 +5,15 @@ Thought of map structure for C++:
 https://miro.com/app/board/o9J_lFH_iBs=/
 
 - [ ] добавить больше инфы про необходимые знания в С++
+- [ ] шифрование
+- [ ] сериализация: xml, json
+- [ ] OS API: WinAPI, POSIX, etc.
+- [ ] профайлеры
+- [ ] работа с графиков: DirectX и OpenGl
+- [ ] подумать про веточки Core Language
+- [ ] Прородители микросервисов: COM/ATL, CORBA???
+- [ ] Базы данных + теория по БД
+- [ ] Борьба со сложностью софта 
 - [ ] Накидать идей из интернетов про софт скиллы
 
 ## Candidates for map drawings:
