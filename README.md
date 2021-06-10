@@ -15,17 +15,11 @@
 
 [А нужен ли вам C++?](SelfIdentification.md)
 
-[Draft areas of application](DraftAreasOfApplication.md)
+[Области применения](AreasOfApplication.md)
 
-[Pre-Junior C++](Grades/PreJunior.md)
+[Грейды](Grades/Overview.md)
 
-[Junior C++](Grades/Junior.md)
-
-[Middle C++](Grades/Middle.md)
-
-[Senior C++](Grades/Senior.md)
-
-[Draft mind map](DraftMindMap.md)
+[Mind map](MindMap.md)
 
 [Книги](Books.md)
 
