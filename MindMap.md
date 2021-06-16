@@ -4,6 +4,9 @@ Thought of map structure for C++:
 
 - Know the tools (OS shortcuts, IDE shortcuts and features, debugger, something else?)
 - Blind typing
+- User pipeline:
+Высокоуровневые заметки -> диграмма ->  низкоуровневые заметки
+
 
 https://miro.com/app/board/o9J_lFH_iBs=/
 
