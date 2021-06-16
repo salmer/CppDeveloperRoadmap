@@ -6,7 +6,7 @@ Thought of map structure for C++:
 - Blind typing
 - User pipeline:
 Высокоуровневые заметки -> диграмма ->  низкоуровневые заметки
-
+- Distributed systems
 
 https://miro.com/app/board/o9J_lFH_iBs=/
 
