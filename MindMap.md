@@ -7,6 +7,7 @@ Thought of map structure for C++:
 - User pipeline:
 Высокоуровневые заметки -> диграмма ->  низкоуровневые заметки
 - Distributed systems
+- https://habr.com/ru/company/itelma/blog/546372/
 
 https://miro.com/app/board/o9J_lFH_iBs=/
 
