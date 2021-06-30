@@ -2,15 +2,8 @@
 
 Thought of map structure for C++:
 
-- Know the tools (OS shortcuts, IDE shortcuts and features, debugger, something else?)
-- Blind typing
-- User pipeline:
-Высокоуровневые заметки -> диграмма ->  низкоуровневые заметки
-- Distributed systems
-- https://habr.com/ru/company/itelma/blog/546372/
 - Mark some stuff as obsolete, active, coming
 - Create a TODO list on main page mentioning things to improve
-- CI\CD - что ещё добавить-то? Удалить
 
 ### Useful links
 
@@ -19,6 +12,8 @@ Thought of map structure for C++:
 [https://metanit.com/cpp/tutorial/](https://metanit.com/cpp/tutorial/)
 
 [https://hsto.org/webt/5e/ef/94/5eef94804cec2516619369.png](https://hsto.org/webt/5e/ef/94/5eef94804cec2516619369.png)
+
+[https://habr.com/ru/company/itelma/blog/546372/](https://habr.com/ru/company/itelma/blog/546372/) - положить в полезные ссылки в будущем???
 
 
 https://miro.com/app/board/o9J_lFH_iBs=/
