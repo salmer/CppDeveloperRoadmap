@@ -8,4 +8,5 @@
 - [C++ Language: Features, Uses, Applications & Advantages](https://hackr.io/blog/features-uses-applications-of-c-plus-plus-language)
 - [Полухин об областях применения](https://www.youtube.com/watch?v=LZflL44SVVY&ab_channel=C%2B%2BUserGroup)
 - competitive programming
+- Инструменты для программирования сопроцессоров (cuda, OpenCL/SYCL), MPI.
 
