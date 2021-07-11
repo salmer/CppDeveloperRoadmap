@@ -2,7 +2,6 @@
 
 Thought of map structure for C++:
 
-- Mark some stuff as obsolete, active, coming
 - Create a TODO list on main page mentioning things to improve
 
 ### Useful links
