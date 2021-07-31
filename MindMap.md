@@ -3,6 +3,7 @@
 Thought of map structure for C++:
 
 - Create a TODO list on main page mentioning things to improve
+- Сказать, что мы попытались составить карту так, чтобы разработчик мог читать её сверху вниз (то есть изучать инфу нужно сверху вниз)
 
 ### Useful links
 
