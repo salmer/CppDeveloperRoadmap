@@ -11,10 +11,10 @@
 
 # Статьи
 
-1. [Зачем и почему появилась данная роадмапа.](Rationale.md)
+1. [Зачем и почему появилась данная роадмапа](Rationale.md)
 1. [А нужен ли вам C++?](SelfIdentification.md)
 1. [C++ - это просто!](FunCpp.md)
-1. [Области применения языка.](AreasOfApplication.md)
-1. [Грейды разработчиков.](Grades/Overview.md)
-1. [Книги по С++.](Books.md)
-1. [Другие полезные репозитории.](ThirdPartyRepositories.md)
+1. [Области применения языка](AreasOfApplication.md)
+1. [Грейды разработчиков](Grades/Overview.md)
+1. [Книги по С++](Books.md)
+1. [Другие полезные репозитории](ThirdPartyRepositories.md)
