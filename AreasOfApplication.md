@@ -7,6 +7,6 @@
 - [Top 12 Real-World Applications And Uses Of C++](https://www.softwaretestinghelp.com/cpp-applications/)
 - [C++ Language: Features, Uses, Applications & Advantages](https://hackr.io/blog/features-uses-applications-of-c-plus-plus-language)
 - [Полухин об областях применения](https://www.youtube.com/watch?v=LZflL44SVVY&ab_channel=C%2B%2BUserGroup)
-- competitive programming
+- Competitive programming
 - Инструменты для программирования сопроцессоров (cuda, OpenCL/SYCL), MPI.
 
