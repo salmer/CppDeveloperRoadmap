@@ -19,6 +19,5 @@ https://miro.com/app/board/o9J_lFH_iBs=/
 1. [C++ - это просто!](FunCpp.md)
 1. [Области применения языка.](AreasOfApplication.md)
 1. [Грейды разработчиков.](Grades/Overview.md)
-1. [Mind map.](MindMap.md)
 1. [Книги по С++.](Books.md)
 1. [Другие полезные репозитории.](ThirdPartyRepositories.md)
