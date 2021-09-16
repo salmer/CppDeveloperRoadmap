@@ -15,11 +15,11 @@
 
 # Описание
 
-[Pre-Junior C++](Grades/PreJunior.md)
+[Pre-Junior C++](PreJunior.md)
 
-[Junior C++](Grades/Junior.md)
+[Junior C++](Junior.md)
 
-[Middle C++](Grades/Middle.md)
+[Middle C++](Middle.md)
 
-[Senior C++](Grades/Senior.md)
+[Senior C++](Senior.md)
 
