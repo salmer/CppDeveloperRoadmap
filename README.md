@@ -35,11 +35,11 @@
 Можете спокойно использовать и передавать эту роадмапу, но, пожалуйста, указывайте ссылку на оригинал :)
 
 Авторы:
-[Евгений Мельников](https://github.com/salmer)
+[Евгений Мельников](https://github.com/salmer),
 [Дмитрий Дмитриев](https://github.com/DmitrievDmitriyA)
 
 Рецензенты:
-[Сергей Тюленев](https://github.com/marleeeeeey)
-[Константин Комаров](https://github.com/MolinRE)
-[Дмитрий Савин](https://github.com/SD57)
+[Сергей Тюленев](https://github.com/marleeeeeey),
+[Константин Комаров](https://github.com/MolinRE),
+[Дмитрий Савин](https://github.com/SD57),
 [Сергей Скляр](https://github.com/SergeiSkliar)
