@@ -75,6 +75,8 @@
 
 - [Курт Гантерог - Оптимизация программ на C++](https://www.ozon.ru/product/optimizatsiya-programm-na-c-proverennye-metody-povysheniya-proizvoditelnosti-140145932/?sh=OlHzzZHG)
 
+- Н. И. Поликарпова, А. А. Шалыто - Автоматное программирование
+
 ## Senior
 
 - Преисполняться в познании индустрии
