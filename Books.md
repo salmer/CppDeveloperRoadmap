@@ -29,6 +29,10 @@
         - [Лекции C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fItmofHO4KuGjfGtbQtEj-x)
         - [Алгоритмы и структуры данных C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fL_5Xvnufpwj2uYZnZBBnsr)
 
+- [Ulrich Drepper - What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+    
+    Хорошая обзорная статься, дающая представление о том, как устроена память компьютера и зачем она так усроена. Даёт как высокоуровнее представление, так и набрасывает низкоуровневых деталей, если есть желание в них углубляться.
+
 ## Junior
 
 - [Роберт Мартин - Чистый код. Создание, анализ и рефакторинг](https://www.ozon.ru/product/chistyy-kod-sozdanie-analiz-i-refaktoring-chistyy-kod-sozdanie-analiz-i-refaktoring-142429922/?sh=awbarJsR)
