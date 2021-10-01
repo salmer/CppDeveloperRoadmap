@@ -15,7 +15,7 @@
 1. [Области применения языка](AreasOfApplication.md)
 1. [Грейды разработчиков](Grades/Overview.md)
 1. [Книги и прочие материалы по С++](Books.md)
-1. [Ресурсы по C++: каналы конференций и т.д.)](CommunitySources.md)
+1. [Ресурсы по C++: каналы конференций и т.д.](CommunitySources.md)
 1. [Другие полезные репозитории и ссылки](ThirdPartyRepositories.md)
 
 # Дорожная карта
