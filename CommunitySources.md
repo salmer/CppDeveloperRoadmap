@@ -1,11 +1,12 @@
 # Community sources
 
-## C++: документация
+## C++ общее
 
 - [CppReference](https://en.cppreference.com)
 - [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [Рабочая группа C++ - представители комитета по стандартизации языка в России](https://stdcpp.ru/)
+- [Новости от комитета стандартизации С++ (ENG)](https://isocpp.org/)
 
 ## Популярные конференции по С++
 
