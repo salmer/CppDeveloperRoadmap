@@ -6,7 +6,7 @@
 
 * **Microsoft Visual Studio IDE**
 
-    Сайт: https://visualstudio.microsoft.com/
+    Сайт: https://visualstudio.microsoft.com
 
     Стоимость: Community Edition - бесплатно
 
@@ -24,7 +24,7 @@
 
 * **Eclipse IDE**
 
-    Сайт: https://www.eclipse.org/downloads/packages/
+    Сайт: https://www.eclipse.org/downloads/packages
 
     Стоимость: бесплатно
     
@@ -33,7 +33,7 @@
 
 * **JetBrains Clion IDE**
 
-    Сайт: https://www.jetbrains.com/clion/
+    Сайт: https://www.jetbrains.com/clion
 
     Стоимость: бесплатная для учебных заведений, в ином случае - платная
 
@@ -44,7 +44,7 @@
 
 * **JetBrains ReSharper C++**
 
-    Сайт: https://www.jetbrains.com/resharper-cpp/
+    Сайт: https://www.jetbrains.com/resharper-cpp
 
     Стоимость: бесплатная для учебных заведений, в ином случае - платная
 
@@ -52,14 +52,14 @@
 
 * **Visual Assist**
 
-    Сайт: https://www.wholetomato.com/
+    Сайт: https://www.wholetomato.com
 
     Расширение для MS Visual Studio. Добавляет различные дополнительные возможности для работы с исходным кодом: дополнительная подсветка кода и подсказки по нему, дополнительная информация во время отладки или при написании кода, продвинутый поиск, навигация по проектам и т.д. Является конкурентом JetBrains ReSharper.
 
 
 * **Incredibuild**
 
-    Сайт: https://www.incredibuild.com/
+    Сайт: https://www.incredibuild.com
 
     Стоимость: платно, актуальная цена указана на сайте
 
@@ -70,13 +70,13 @@
 
 * **Cmake**
 
-    Сайт: https://cmake.org/
+    Сайт: https://cmake.org
 
     Кроссплатформенная система автоматизации сборки приложения из исходного кода. Генерирует необходимые артефакты для последующей сборки приложения на целевой платформе. На текущий момент считается "стандартным" инструментом для сборки различных библиотек при поставке в качестве исходного кода.
 
 * **Conan**
 
-    Сайт: https://conan.io/
+    Сайт: https://conan.io
 
     Стоимость: бесплатно
 
@@ -85,7 +85,7 @@
 
 * **Ninja**
 
-    Сайт: https://ninja-build.org/manual.html
+    Сайт: https://ninja-build.org
 
     Стоимость: бесплатно
 
@@ -96,7 +96,7 @@
 
 * **PVS Studio**
 
-    Сайт: https://pvs-studio.com/
+    Сайт: https://pvs-studio.com
 
     Стоимость: триал на 30 дней, далее платно
 
@@ -105,7 +105,7 @@
 
 * **Cpp Check**
 
-    Сайт: https://cppcheck.sourceforge.io/
+    Сайт: https://cppcheck.sourceforge.io
 
     Стоимость: бесплатно
 
