@@ -25,4 +25,11 @@
 ## Альтернативные источники для изучения С++
 
 - [Прародитель идеи по дорожной карте](https://www.cjdb.com.au/sg20-and-videos.html)
+- [Коллекция различных ресурсов по C++](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+
+## Другие интересные репозитории
+
+- [Путеводитель C++ программиста по неопределенному поведению](https://github.com/Nekrolm/ubbook)
+- [Коллекция библиотек и фреймворков для C++](https://github.com/fffaraz/awesome-cpp)
+
