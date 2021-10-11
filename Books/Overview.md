@@ -2,7 +2,7 @@
 
 В данных статьях собраны книги, которые помогут вам сориентироваться, и задать свой вектор обучения. Все книги поделены на несколько разделов, которые касаются различных навыков. Рекомендуем вам обзорно посмотреть каждый раздел, согласно желаемому грейду, и подобрать набор литературы под свои нужды.
 
-- [PreJunior](Books/PreJunior.md)
-- [Junior](Books/Junior.md)
-- [Middle](Books/Middle.md)
-- [Senior](Books/Senior.md)
+- [PreJunior](PreJunior.md)
+- [Junior](Junior.md)
+- [Middle](Middle.md)
+- [Senior](Senior.md)
