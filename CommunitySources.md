@@ -13,14 +13,14 @@
 - [C++ Russia](https://cppconf.ru/)
 - [Cpp Con](https://cppcon.org/)
 - [Meeting C++](https://meetingcpp.com/)
-- [Cpp Now](https://cppnow.org/)
+- [C++ Now](https://cppnow.org/)
 
 ## Каналы конференций по C++ на YouTube
 
-- [C++ Now](https://www.youtube.com/user/BoostCon)
 - [C++ Russia](https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA)
-- [Meeting cpp](https://www.youtube.com/user/MeetingCPP)
 - [Cpp Con](https://www.youtube.com/user/CppCon)
+- [Meeting C++](https://www.youtube.com/user/MeetingCPP)
+- [C++ Now](https://www.youtube.com/user/BoostCon)
 
 ## Альтернативные источники для изучения С++
 
