@@ -9,15 +9,15 @@
 
 # Статьи
 
-1. [Почему появилась дорожная карта](Russian/Rationale.md)
-1. [А нужен ли вам C++?](Russian/SelfIdentification.md)
-1. [C++ - это просто!](Russian/FunCpp.md)
-1. [Области применения языка](Russian/AreasOfApplication.md)
-1. [Легенды и мифы про C++](Russian/Mythbusters.md)
-1. [Грейды разработчиков](Russian/Grades/Overview.md)
-1. [Книги и прочие материалы по С++](Russian/Books/Overview.md)
-1. [Инструментарий для С++](Russian/Tooling.md)
-1. [Ресурсы по C++: документация, каналы конференций и т.д.](Russian/CommunitySources.md)
+1. [Почему появилась дорожная карта](Rationale.md)
+1. [А нужен ли вам C++?](SelfIdentification.md)
+1. [C++ - это просто!](FunCpp.md)
+1. [Области применения языка](AreasOfApplication.md)
+1. [Легенды и мифы про C++](Mythbusters.md)
+1. [Грейды разработчиков](Grades/Overview.md)
+1. [Книги и прочие материалы по С++](Books/Overview.md)
+1. [Инструментарий для С++](Tooling.md)
+1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
 # Дорожная карта
 
