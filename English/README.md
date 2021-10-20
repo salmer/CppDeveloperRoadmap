@@ -1,13 +1,13 @@
 # C++ Roadmap
 
-С++ всё ещё является одним из [самых популярных](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies) языков разработки. Есть немало желающих начать его изучать и стать C++ разработчиками. Перед такими людьми встают вопросы: "С чего мне начать? Что и в каком порядке мне изучать? Какие книги стоить почитать?"
+C ++ is still one of the [most popular development languages](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies). There is quite a number of people that want to start learning it and become a C++ developer. They face with the questions: "Where should I start? What and in what order should I study? What books should I read?"
 
-Мы попытались ответить на эти вопросы в представленной дорожной карте. Карта акцентируется на общих компетенциях и навыках, которые встречаются в большинстве проектов. Она призвана помочь тем, кто только начинает свое обучение или имеет небольшой опыт. Изучив набор перечисленных материалов, вы сможете составить более продуктивный план обучения, не отвлекаясь на побочную информацию. Это поможет вам освоить C++ на том уровне, который встречается во многих коммерческих проектах. 
+We tried to answer these questions in the presented roadmap. The map focuses on general competencies and skills that could be found in most projects. It is designed to help those who are just starting their education or have little experience. You can create a more productive learning plan without being distracted by side information if you study the set of listed materials. It will help you to master C++ at the level that is used in many commercial projects.
 
-Прежде чем начать изучать карту рекомендуем прочитать статьи, перечисленные ниже.
+Before you start exploring the map, we recommend to read the articles listed below.
 
 
-# Статьи
+# Articles
 
 1. [Почему появилась дорожная карта](Rationale.md)
 1. [А нужен ли вам C++?](SelfIdentification.md)
@@ -19,12 +19,12 @@
 1. [Инструментарий для С++](Tooling.md)
 1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
-# Дорожная карта
+# Road map
 
-**Ссылка**: [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
+**The link**: [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
 
 
-# Лицензия 
+# License 
 Карта распространяется по лицензии **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). Если вкратце:
 
 - Вы можете делиться, адаптировать и копировать весь представленный материал, но с указанием ссылки на оригинал 
@@ -40,7 +40,7 @@
 - Предложения/правки **по дорожной карте в Miro** - создавайте и присылайте новый запрос в [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (в Miro нет возможности вести историю изменений, потому доступ к изменениям в карте ограничен. Все правки мы вносим сами после ознакомления с предложениями). 
 
 
-# Контакты
+# Contacts
 
 Авторы:
 - [Евгений Мельников](https://github.com/salmer),
