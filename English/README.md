@@ -21,7 +21,7 @@
 
 # Дорожная карта
 
-**Ссылка**: [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lFH_iBs=/)
+**Ссылка**: [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
 
 
 # Лицензия 
