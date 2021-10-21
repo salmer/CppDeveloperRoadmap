@@ -15,6 +15,7 @@
 1. [Области применения языка](Russian/AreasOfApplication.md)
 1. [Легенды и мифы про C++](Russian/Mythbusters.md)
 1. [Грейды разработчиков](Russian/Grades/Overview.md)
+1. [Как учиться](Russian/HowToStudy.md)
 1. [Книги и прочие материалы по С++](Russian/Books/Overview.md)
 1. [Инструментарий для С++](Russian/Tooling.md)
 1. [Ресурсы по C++: документация, каналы конференций и т.д.](Russian/CommunitySources.md)
