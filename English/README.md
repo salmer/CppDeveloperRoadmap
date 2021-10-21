@@ -15,6 +15,7 @@ Before you start exploring the map, we recommend to read the articles listed bel
 1. [Области применения языка](AreasOfApplication.md)
 1. [Легенды и мифы про C++](Mythbusters.md)
 1. [Грейды разработчиков](Grades/Overview.md)
+1. [Как учиться](HowToStudy.md)
 1. [Книги и прочие материалы по С++](Books/Overview.md)
 1. [Инструментарий для С++](Tooling.md)
 1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
