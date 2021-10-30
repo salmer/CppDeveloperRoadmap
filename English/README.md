@@ -4,7 +4,7 @@ C++ is still one of the [most popular development languages](https://insights.st
 
 We tried to answer these questions in the presented roadmap. The map focuses on general competencies and skills that could be found in most projects. It is designed to help those who are just starting their education or have little experience. You can create a more productive learning plan without being distracted by side information if you study the set of listed materials. It will help you to master C++ at the level that is used in many commercial projects.
 
-Before you start exploring the map, it's recommend to read the articles listed below.
+Before you start exploring the map, it's recommended to read the articles listed below.
 
 
 # Articles
@@ -27,30 +27,30 @@ Before you start exploring the map, it's recommend to read the articles listed b
 
 
 # License and conditions
-The roadmap is published under a license **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). In a nutshell:
+The roadmap is published under the license **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). In a nutshell:
 
-- You can share, adopt or copy any chunk of presented materials only in case you share a link to original sources
-- It's **PROHIBITED** to use any chunk of materials with any commercial reason.
+- You can share, adopt or copy any chunk of the presented materials only in case you share a link to the original sources
+- It's **PROHIBITED** to use any chunk of the materials with any commercial reason.
 
 
 # Feedback and communication
 
-In case of any remarks, proposals or ideas don't hesitate to contact with us. We're really appreciate your support :)
+In case of any remarks, proposals or ideas don't hesitate to contact us. We really appreciate your support :)
 
 Please use one of the following paths via Github:
 - In case of any proposal or modification in the **repository** content - create a new PR in [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls)
-- In case of any proposal or modification in the **repository** content - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework doesn't support a history tracker and access to the roadmap is limited. We add all changes manually after it's review and acceptance)
+- In case of any proposal or modification in the **repository** content - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework doesn't support a history tracker and the access to the roadmap is limited. We add all changes manually after their review and acceptance)
 
 
 # Contacts
 
 Creators:
 - [Evgenii Melnikov](https://github.com/salmer),
-- [Dmitriy Dmitriev](https://github.com/DmitrievDmitriyA)
+- [Dmitriy Dmitriev](https://github.com/DmitrievDmitriyA),
+- [Dmitriy Savin](https://github.com/SD57)
 
 Reviewers:
 - [Sergey Tyulenev](https://github.com/marleeeeeey),
 - [Konstantin Komarov](https://github.com/MolinRE),
-- [Dmitriy Savin](https://github.com/SD57),
 - [Sergey Skliar](https://github.com/SergeiSkliar)
 - Community :)
