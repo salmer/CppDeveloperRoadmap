@@ -5,7 +5,6 @@
 - [CppReference](https://en.cppreference.com)
 - [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-- [C++ working group - representatives of the language standardization committee in Russia](https://stdcpp.ru/)
 - [News from the C++ Standardization Committee](https://isocpp.org/)
 
 ## Popular C++ conferences 
@@ -30,6 +29,5 @@
 
 ## Other interesting repositories
 
-- [C++ Programmer's Guide to Undefined Behavior ](https://github.com/Nekrolm/ubbook)
 - [Collection of libraries and frameworks for C++ ](https://github.com/fffaraz/awesome-cpp)
 
