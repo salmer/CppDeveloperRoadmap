@@ -1,35 +1,35 @@
 # Community sources
 
-## C++ общее
+## C++ General
 
 - [CppReference](https://en.cppreference.com)
 - [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-- [Рабочая группа C++ - представители комитета по стандартизации языка в России](https://stdcpp.ru/)
-- [Новости от комитета стандартизации С++ (ENG)](https://isocpp.org/)
+- [C++ working group - representatives of the language standardization committee in Russia](https://stdcpp.ru/)
+- [News from the C++ Standardization Committee](https://isocpp.org/)
 
-## Популярные конференции по С++
+## Popular C++ conferences 
 
 - [C++ Russia](https://cppconf.ru/)
 - [Cpp Con](https://cppcon.org/)
 - [Meeting C++](https://meetingcpp.com/)
 - [C++ Now](https://cppnow.org/)
 
-## Каналы конференций по C++ на YouTube
+## C++ Conference YouTube Channels
 
 - [C++ Russia](https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA)
 - [Cpp Con](https://www.youtube.com/user/CppCon)
 - [Meeting C++](https://www.youtube.com/user/MeetingCPP)
 - [C++ Now](https://www.youtube.com/user/BoostCon)
 
-## Альтернативные источники для изучения С++
+## Alternative sources for learning C++
 
-- [Прародитель идеи по дорожной карте](https://www.cjdb.com.au/sg20-and-videos.html)
-- [Коллекция различных ресурсов по C++](https://awesomecpp.com)
+- [The ancestor of the roadmap idea](https://www.cjdb.com.au/sg20-and-videos.html)
+- [Collection of various C++ resources](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 
-## Другие интересные репозитории
+## Other interesting repositories
 
-- [Путеводитель C++ программиста по неопределенному поведению](https://github.com/Nekrolm/ubbook)
-- [Коллекция библиотек и фреймворков для C++](https://github.com/fffaraz/awesome-cpp)
+- [C++ Programmer's Guide to Undefined Behavior ](https://github.com/Nekrolm/ubbook)
+- [Collection of libraries and frameworks for C++ ](https://github.com/fffaraz/awesome-cpp)
 
