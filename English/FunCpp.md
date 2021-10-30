@@ -1,19 +1,17 @@
-# C++ — это просто!
+# C++ — It's Simple!
 
-Современный C++ гораздо проще, чем принято считать. За годы трансформаций язык успел сильно преобразиться и обрасти возможностями, которые позволяют писать безопасный и эффективный код. Если использовать примитивы из последних стандартов, то больше не нужно беспокоиться о возможных утечках памяти. Также компилятор стал гораздо умнее. Он способен выполнять огромное число оптимизаций над вашим кодам, выдавая максимальную производительность. Если потребуется, то все по-прежнему возможно сделать код оптимальнее при помощи самостоятельных манипуляций и ухищрений.
+Modern C++ is much simpler that it is thought to be. The language changed a lot during all the years of transformation, and gained the capabilities that allow writing safe and effective code. No need to think about memory leaks if one uses the primitives of the latest standards. The compiler has also become much smarter. It can apply a tremendous amount of optimizations of your code, delivering the maximum performance. It is still possible to optimize the code by manual tweaks and tricks.
 
-У языка всё же есть и недостатки. Главным из них является отсутствие стандартного пакетного менеджера. Есть куча разных продуктов, которые пытаются занять эту нишу, но пока ни один из них так и не смог этого сделать. 
+The language has shourcomings nonetheless. The main is the absense of a standard package manager. There is bunch of products that aspire to fill this niche, but to no avail yet.
 
-С++ также стал жертвой собственной парадигмы: "разработчик не платит за то, что ему не требуется". Практика же показывает, что в коммерческих проектах разработчики не слишком аккуратно обходятся с зависимостями, потому породилась обратная ситуация: разработчик платит каждый раз, когда ему нужно втащить новую зависимость. Это провоцирует всякие "интересные" побочные эффекты во время сборки проекта. Но и этот вопрос постепенно решается. 
+ALso, C++ succumbed to its own paradigm: "The developer does not pay for what they do not need". In practice the developers of commersial software aren't too picky about the dependencies, which leads to the reverse situation: the developer pays each time they need a dependency. It leads to "interesting" side effects during the project build. Anyway, this problem is being gradually solved, too.
 
-Чтобы приступить к изучению языка потребуется набор базовых школьных знаний:
-- Арифметика;
-- Булева алгебра;
-- Составление блок-схем;
-- Представление чисел в различных системах счисления.
+To get started with C++ one needs a basic set of school knowledge:
+- Arithmetics
+- Boolean algebra
+- Drawing flowcharts
+- Number representation in different numeral systems.
 
-Несмотря на весь бэкграунд и информационный шлейф, который тянется за C++, мы считаем, что его современная версия стала в разы проще, чем это было в прошлом. 
+Despite all the background behind C++ we believe that its modern version is much simpler that it used to be.
 
-Потому не бойтесь изучать его!
-
-Удачи!
+Don't be afraid to learn it and good luck!
