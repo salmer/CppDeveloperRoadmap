@@ -1,43 +1,40 @@
 # Pre-Junior
 
-## Мотивация и опыт
+## Motivation and experience
 
-- [Фаулер Чед - Программист-фанатик](https://www.ozon.ru/product/programmist-fanatik-32218784/?asb=ccybIdrVOtKbfO3XYxD6qZu%252BqA4iy4P%252BHkGUikETAiA%253D&asb2=cy4OBlq-08U5_VqkoPsv0ezJyaKuhUMmccxNvr2bH8A&keywords=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82+%D1%84%D0%B0%D0%BD%D0%B0%D1%82%D0%B8%D0%BA&sh=etF_rKzq)
+- [Chad Fowler - Passionate Programmer](https://www.amazon.com/Passionate-Programmer-Remarkable-Development-Pragmatic-ebook/dp/B00AYQNR5U)
 
-    Эту книгу можно считать признанной классикой в мире разработки, в которой Чед Фаулер пытается поделиться своим видением: как стать высококлассным, востребованным специалистом и оставаться на гребне волны.
+    This book can be called a classic in the motivation genre for beginners. Chad Fowler tries to share his experience: how to become a professional programmer and ride the IT industry wave.
+
 
 ## Computer Science
 
-- [Фило Владстон Феррейра - Теоретический минимум по Computer Science](https://www.ozon.ru/product/teoreticheskiy-minimum-po-computer-science-vse-chto-nuzhno-programmistu-i-razrabotchiku-144946027/?sh=1zjF0Mqn)
+- [Wladston Ferreira Filho - Computer Science Distilled: Learn the Art of Solving Computational Problems](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316020)
 
-    Обзорная книга, которая рассказывает о различных направлениях Computer Science: математический аппарат, обзор алгоритмом, базы данных, устройство компьютера и т.д. Она может стать хорошей отправной точкой, чтобы подыскать интересующие направления и расставить приоритеты для себя.  
+    The overviewing book about the different Computer Science basics: math, algorithms, databases, hardware basics of computers, etc. It can be a good starting point to find interesting areas for yourself and dedicated prioritized areas of interest. 
+    
+- [Charles Petzold - Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319)
 
-- [Чарльз Петцольд - Код. Тайный язык информатики](https://www.ozon.ru/context/detail/id/125884/)
+    Before starting studying C++ it's recommended to pick this book first. In simple words, it describes how a computer is constructed. It avoids complex technical or theoretical aspects. This book contains foundations that won't become obsolete in the far future. It will also help you to better understand the foundation ideas of C++ later. This book is a good complement to the previous one as it dives deeper into the device of computers.
 
-    Прежде чем начать изучение языка, рекомендуем почитать данную книгу. Она расскажет простым языком о том как устроен компьютер, как он работает на физическом уровне. Здесь отсутствуют какие-либо сложные технические или академические детали. Книга содержит в себе основы основ, которые вряд ли в скором времени потеряют свою актуальность. Это поможет вам лучше понять фундаментальные идеи языка C++ позднее. Является отличным дополнением к предыдущей книге, т.к. глубже раскрывает устройство компьютера.
+- [Aditya Bhargava  - Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
 
-- [Адитья Бхаргава - Грокаем алгоритмы. Иллюстрированное пособие для программистов и любопытствующих](https://www.ozon.ru/product/grokaem-algoritmy-illyustrirovannoe-posobie-dlya-programmistov-i-lyubopytstvuyushchih-139296295/?sh=MERnHW_O)
+    The book contains a brilliant introduction to the world of Computers Science algorithms and data structures for beginners. It also contains a list of tasks that will help you to implement your first algorithms.
 
-    Отличное вводное пособие в мир алгоритмов. Написано легким языком, который поймет большинство новичков. Также есть немного практических задач, чтобы попробовать написать свои первые алгоритмы.
 
 ## C++
 
-- [Липпман Стенли - Язык программирования C++. Базовый курс](https://www.ozon.ru/product/yazyk-programmirovaniya-c-bazovyy-kurs-147417585/?sh=QOX3qGug)
+- [Stephen Prata - C++ Primer Plus](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 
-    Отличное дополнение к книге Стивена Праты. К ней хорошо обращаться параллельно с предыдущей. Рекомендуем вам сами найти баланс между двумя книгами, т.к. информация подается по-разному, и шанс понять ту или иную тему у вас повысится. 
+    The book is an excellent start for people who stand at the beggining of the studying path in C++ World. It doesn't require any extra knowldege to start your path. This book also contains a list of excercies which help to get experience and understaing of C++ basics.
 
-- [Стивен Прата - Язык программирования C++. Лекции и упражнения (шестое издание)](https://www.ozon.ru/product/yazyk-programmirovaniya-c-lektsii-i-uprazhneniya-147417584/?utm_source=google&utm_medium=cpc&utm_campaign=RF_Product_Shopping_Books_super&gclid=CjwKCAjw7diEBhB-EiwAskVi11zEQ2QeqLjT8AEBCYC5IWzgpdgLIErY3c7eLfgnPSFic9M8Eh2pPRoCSHIQAvD_BwE)
+- [Stanley Lippman - C++ Primer](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)
 
-    Наиболее актуальная для новичков, с которой стоит начать свой путь изучения C++. Не требует наличия каких-то специфичных знаний, а также имеет набор упражнений к каждой главе. Они помогут вам отработать и понять фундаментальные возможности языка.
+    The book is a good complement to the previous one. It's good to use this book in parallel with Prata's book. We recommend you to find a balance between these books as information is given differently. It increases the chances to better understand different topics and language aspects.
 
-- В дополнение к учебнику можно порекомендовать следующие видео от лекторов МФТИ:
-    - Илья Мещерин: [Курс лекций по C++](https://www.youtube.com/playlist?list=PL4_hYwCyhAvY2dY_tnTv3-TJThzcloCvM)
-    - Тимофей Хирьянов:
-        - [Лекции C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fItmofHO4KuGjfGtbQtEj-x)
-        - [Алгоритмы и структуры данных на C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fL_5Xvnufpwj2uYZnZBBnsr)
 
-## Технические навыки
+## Hard skills
 
 - [MSDN](https://docs.microsoft.com/ru-ru/cpp/build/vscpp-step-0-installation?view=msvc-160)
 
-    Если вы начинаете изучать язык самостоятельно, то рекомендуем вести разработку первых программ или выполнять упражнения в IDE: Microsoft Visual Studio (Community Edition). На сегодняшний день, это маскимально дружелюбная IDE к новичкам, как в установке, так и в использовании (и при этом абсолютно бесплатно!). Это позволит максимально сконцентрироваться на изучении языка, а не на борьбе с рабочим окружением. На сайте вы найдете небольшой учебник, который расскажет: как установить Visual Studio, создать первый консольный проект и написать первое приложение: 
+    If you are at the starting point of your studying path, it's recommended to start practicing and do exercises in the IDE: Microsoft Visual Studio (Community Edition). Nowadays, it's one of the friendliest IDEs among others to beginners, either in installation or usage (and it's absolutely for free!). It will help you to concentrate on language and not to struggle with a development environment. On the MSDN you will find a nice guidebook that describes the following aspects: how to install the Visual Studio, create the first console project, and implement the first application.
