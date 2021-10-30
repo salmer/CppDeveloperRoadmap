@@ -1,6 +1,6 @@
-# Книги и материалы
+# Books and sources
 
-В данных статьях собраны книги, которые помогут вам сориентироваться, и задать свой вектор обучения. Все книги поделены на несколько разделов, которые касаются различных навыков. Рекомендуем вам обзорно посмотреть каждый раздел, согласно желаемому грейду, и подобрать набор литературы под свои нужды.
+These articles will help you find your way of studying. All books are divided according to suitable grades. It's recommended to check suitable books corresponding to your current grade and choose the best ones.
 
 - [PreJunior](PreJunior.md)
 - [Junior](Junior.md)
