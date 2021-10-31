@@ -1,41 +1,41 @@
-# Легенды и мифы про C++
+# Myths and Legends of C++
 
-## Язык C++ умер, на нем невозможно что-либо писать
+## C++ is dead, it's impossible to write anything with it
 
-Живее всех живых. 
+C++'s not dead.
 
-На сегодняшний день находится в топах различных рейтингов языков программирования и даже набирает очки популярности, например: индекс [Tiobe](https://www.tiobe.com/tiobe-index/). Дурную славу "мертвого языка" он сыскал в нулевые годы, когда язык временно впал в анабиоз, а комитет стандартизации растворился во тьме. Но начиная со стандарта C++11, язык пережил ренессанс. Сегодня он активно продолжает пополняться и обновляться новым функционалом каждые три года. Многие проблемы, о которых заявляют свидетели "мертвого" C++ уже решены, но в силу того, что такие специалисты перестали вести разработку на C++, либо по верхам изучили его в ВУЗе/на курсах (наслушались баек от свидетелей "смерти"), то они продолжают порождать и сеять различные "мифы и легенды" о том, насколько C++ ужасен и страшен.
+C++ made its way to the top of a wide range of rating of programming languages, and it is even scoring more points, for example in the [Tiobe](https://www.tiobe.com/tiobe-index/) index. C++ got its notorious "dead language" badge during the noughties, while it was dormant and the languge standardisation committee fell off the radar. But the language is experiencing a renaissance since the C++11 standard. It is arduously getting new features and functionality, every three years. Many problems claimed by the "dead C++ witnesses" have been solved, but since such specialists have stopped developing using C++ - or got a smattering of C++ during courses (from those "witnesses") - they continue repeating and reiterating the myths and legends of the horrors of C++. 
 
-## "Настоящие программисты" начинают изучать C++ сразу под Linux/Vim/gcc
+## Reals programmers learn C++ using Linux/Vim/gcc
 
-Если вышеперечисленная связка инструментов выглядит для вас малознакомой, то на данной стадии рекомендуем вам сконцентрироваться только на изучении основ языка C++. Мы также рекомендуем начать писать свои первые приложения в Microsoft Visual Studio IDE (подробнее см. [PreJunior Books](Books/PreJunior.md)).
+If you are unfamiliar with the aforementioned combo, we recommend you concentrate on learing the basics of C++ alone. We also suggest you start developing your first applications using Microsoft Visual Studio IDE (see [PreJunior Books](Books/PreJunior.md) for the details).
 
-Пойти по наиболее трудному пути выглядит пафосно, но есть высокая доля вероятности, что тот объем информации, который необходимо изучить для сборки "Hello World" в связке Linux + Vim + gcc , будет слишком большим. Это чревато быстрой демотивацией и разочарованием в программировании. Старайтесь идти по пути: от простого к сложному. В спортзале новички не пытаются поднять самую тяжелую штангу на первом занятии, т.к. знают, чем это может быть чревато. Это же правило работает и при обучении. Когда более-менее освоитесь с языком, то можете попробовать поиграться с написанием кода в любом дистрибутиве Linux. Но это уже совершенно другая история...
+Choosing the hard way looks cool, but there is a high chance that the volume of the information needed to build the "Hello World" using Linux + Vim + gcc woukd be overwhelming. It is frauhgt with an early frustration and disaffection with programming. Try to follow the path from simple to complicated. Novices don't try to lift the heaviest weights during the first workout because they know what it might lead to. The same rule applies to education. You can try developing under Linux once you are comfortable with the language. But it's a different story altogether...
 
-## Прежде чем учить C++ необходимо хорошо изучить C/Assembler/etc.
+## You'd better master C/Assembler/etc before learning C++
 
-Нет, нет и ещё раз нет! 
+No, no, and no again! 
 
-Такое утверждение до сих пор живо из-за двух распространенных ситуаций: так учили в ВУЗе (Assembler -> C -> C++), либо от "старой гвардии" плюсовиков, т.к. они в своей практике проходили похожий путь. Современный C++ не требует подобного рода мучений. Этот язык автономен и может быть изучен без какого-либо бекграунда. Намного вероятнее, что при изучении в режиме "Си -> С++" у вас возникнет путаница в голове, а также устойчивое желание писать на C++ в стиле "Си с классами".
+This statement continues to live due to two widespread scenarios: it's how they used to teach in the university, and the members of the "Old Guard" went through a similar path. Modern C++ doesn't require such torture. This language is self-sufficient and can be learned with no background whatsoever. It's more likely that learning the "C -> C++" way you get a mess in your head and a firm desire to write C++ the "C with classes" way.
 
-## Изучайте C++ по книге Страуструпа
+## Learn C++ using the book by Stroustrup
 
-Крайне вредный тезис, который пришел от "старогвардейцев", либо от тех, кто родился с клавиатурой в руках. 
+A highly damaging thesis taking origin from the "Old Guard" or someone born with a keyboard in hand.
 
-Скорее всего этот совет произносят те, кто уже имел большой опыт разработки на других языках (C, Fortran, Delphi, и т.д.) и переходил с них на C++. Книга Страуструпа написана больше как справочник, потому и работать с ней требуется соответсвенно, но для этого уже надо хоть немного разбираться в языке. Лучше загляните в раздел [Книги](Books.md), там вы найдете книги для любого уровня владения языком.  
+Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference, threfore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books.md) section, you'll find books for any level of language proficiency.
 
-## Изучайте C++ только по стандарту
+## Learn C++ using the Standard only
 
-Тоже крайне снобисткий тезис. 
+Another snobbish statement.
 
-Во-первых, современный стандарт C++ уже превысил размер в 2000 страниц. Во-вторых, доступ к актуальной версии стандарта платный. И, в-третьих, стандарт написан не самым "дружелюбным" способом. Тем кто изучил язык по его стандарту можно пожать руку, но мы не рекомендуем так издеваться над собой. Опять же, лучше загляните в раздел [Книги](Books.md), там вы найдете книги для любого уровня владения языком. 
+First, the modern C++ standard exceeds 2000 pages. Secondly, the access to the up-to-date version requires payment. Thirdly, the standard isn't composed in a friendly way. Those who learned the language using its standard can be pat on the back, but we do not recommend abusing oneself this way. Once again, better look at the [Books](Books.md) section, you'll find books for any level of language proficiency.
 
-## Undefined Behavior преследует разработчика повсюду
+## Undefined Behavior haunts the developer everywhere
 
-Скорее нет, чем да.
+More likely no than yes.
 
-Современный C++, а также инструментарий, возникший вокруг языка, позволяют избежать львиную долю проблем, связанных с неопределенным поведением. Здесь мы можем дать довольно простой совет: если сомневаетесь, что делает та или иная конструкция, то почитайте о ней на [CppReference](https://en.cppreference.com), [StackOverflow](https://stackoverflow.com/) или иных профильных порталах. Если после прочтения конструкция остается непонятной, то попробуйте переписать блок кода альтернативным и более простым способом, чтобы избежать неопредленного поведения. В простоте кроется великая сила!
+Modern C++ and the tooling emerged around the language allow to avoid the lion's share of the problems related to the undefined behavior. We can give a rather simple piece of advice: when hesitant what a particular construct does, read about it on [CppReference](https://en.cppreference.com), [StackOverflow](https://stackoverflow.com/) or other dedicated resources. If still in doubt after the reading, try rewriting the code in a simpler manner to avoid the undefined behavior. In simplicity there lies a great power.
 
-## Нужно вручную управлять памятью, в языке нет сборщика мусора
+## One needs to manage mamory manually, there is no garbage collection in the language
 
-Это байка также идет от "старогвардейцев", которые перестали писать на языке до появления стандарта C++11, либо от тех, кто поверхностно его изучал в ВУЗе без погружения в последние стандарты. Современный C++ имеет в составе своей библиотеки набор примитивов, который отвечает за  автоматическое выделение и освобождение памяти. Контроль за выделением памяти отошел на второй план. Во многих компаниях и командах вы также встретите правило: "не используйте сырых указателей". Опять же, не пренебрегайте современным инструментарием и санитайзерами. Они способны детектировать потенциальную утечку памяти ещё на этапе исходного кода.
+This is another urban legent from the Old Guard that had stopped writing C++ before C++11 or those who seperficially learned it in university disregarding the latest standards. Modern C++ contatains a set of primitives in its standard library responsible for the automatic memory allocation and deallocation. The memory management fell by the wauside. Many teams and companies even have the rule: "No raw pointers". Once again, do not neglect the modern tools and sanitizers. They can detect possible memory leaks at the source code lovel.
