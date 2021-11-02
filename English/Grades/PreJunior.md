@@ -1,45 +1,43 @@
 # Pre-Junior C++
 
-## Кто это?
+## Who is it?
 
-Это человек, который освоил синтаксис языка и способен написать несложную программу без использования сторонних библиотек. Программа способна выполнять различные действия, например:
-- выполняет арифметические вычисления
-- взаимодействует с файлами: чтение и запись
-- ожидает ввод данных с клавиатуры
-- выводит результаты работы и иные данные данные в консольное окно
-- и т.д.
+It is someone who is familiar the syntax of the language and can write a simple program without third-party libraries. The program performs simple procedures such as:
+- arithmetic operations
+- file manipulation: either reading or writing
+- wait for the keyboard input
+- display the result or other data in the console
+- etc.
 
+## What coding abilities are expected?
 
-## Что ожидается по умению написания кода?
+- Create and build a small working C++ project using one of the IDEs: Visual Studio, Qt Creator, etc.
+- Use a debbuger via the IDE
+- Understand the compilation and linking process of a C++ program
+- Write an application making use of arithmetic and logical operations, conditionals and loops
+- Write an application using the standard input/output streams
+- Manipulate pointers and references
+- Know the types of memory used in an application
+- Understand basic OOP in the frame of C++: inheritance, polymorphism, encapsulation 
 
-- Способность создать и собрать небольшой рабочий проект на C++ при помощи одной из IDE: Visual Studio, Qt Creator и т.д.
-- Умение пользоваться отладчиком при помощи IDE
-- Понимание процесса компиляции и сборки программы на C++
-- Способность написать приложение, содержащее арифметические или логические операции и алгоритмы, условия и циклы
-- Умение написать приложение по работе со стандартным потоком ввода/вывода;
-- Умение работать с указателями и ссылками
-- Знание из какого вида памяти состоит приложение
-- Базовое понимание ООП в рамках C++: наследование, полиморфизм, инкапсуляция
+## What general skills are expected?
 
+- Desire to learn and acquire new knowledge
+- Desire to solve encountered problems
+- Ability to compose a query to find the solution to a problem using a search engine or the corresponding literature
 
-## Что ожидается по общим навыкам?
+## Tips and recommendations
 
-- Желание учиться и впитывать новые знания
-- Желание разбираться в возникающих проблемах
-- Умение составить запрос на русском языке, чтобы найти ответ на проблему в поисковике или соответствующей литературе
+### Studying
 
-## Рекомендации и советы
+- There is no silver bullet to help you learn C++ in one day/week/month. Get ready for the lengthy unsupervised learning of all kind of material before you are able to pass the interview to get your first job offer.
+- If you feel that you don't understatnd some topic, look for alternative sources.
+- Practicw and only practice will let you harness C++! You'll forget most of what you read or hear without regular coding.
+- Don't try to write perfect code. Your main goal is to write a big amount of code that WORKS, i.e. does exactly what is required. You need to learn to communicate with the computer. It's similar to studying foreign languages. First you talk sloppily, but then you refine your skills, you get a better feel of the grammar, you expand your vocabulary, and so on.
+- Don't jump at a huge problem at once - like creating your own game. In the beginning you are likelely to lack the knowledge and experience to cope with the task alone. This approach frustrates quickly and leads to the disappointment in oneself and one's abilities, forcing to abandon the education. Better progress from simple to mplicated, gradually inventing more and more difficult problems for yourself.
+- On't focus on Leetcode and Codewars or similar resources at first. The purpose of these portals is to refine the skill of the usage of classic algorithms and data structures. These playgrounds are designed to abstract away the details of the programming languages. At the start this won't benefit you considerably, it's better to focus on the language itself and its capabilities.
 
-### Про обучение
-- Не существует "серебряной пули", которая поможет вам выучить C++ за день/неделю/месяц. Будьте готовы к продолжительной самостоятельной работе по изучению материала из различных источников, прежде чем вы сможете пройти собеседование, и получить свой первый оффер.
-- Если чувствуете, что не понимаете какую-то тему, поищите альтернативные источники. 
-- Практика и только практика даст вам возможность освоить C++! Без регулярного написания кода, большая часть того, что вы прочитаете или услышите - забудется.
-- Не пытайтесь писать идеальный код. Ваша основная задача - написание много РАБОЧЕГО кода, который делает ровно то, что от вас требуется. Вы должны научиться "общаться" с компьютером. Это сродни изучению иностранных языков. Сначала вы говорите много и небрежно, но со временем ваш навык оттачивается, начинаете лучше чувствовать грамматику, увеличиваете свой словарный запас и т.д.
-- Не хватайтесь сразу за большую задачу, например: "написать свою игру". Скорее всего вам не хватит знаний и опыта на первых порах, чтобы осилить задачу в одиночку. Такого рода путь быстро демотивирует, что в итоге может привести к разочарованию в себе и своих спосбностях. В итоге вы забросите свое обучение. Идите по пути "от простого к сложному", постепенно придумывая себе все более сложные задачки.
-- На первых порах не стоит концентрироваться на таких ресурсах, как Leetcode или CodeWars. Цель этих порталов - отработать навыки применения классических алгоритмов и структур данных. Эти площадки спроектированы таким образом, чтобы максимально огородить вас от нюансов языков программирования. На первых порах это не принесет вам особой пользы, лучше сконцентрируйтесь на самом языке и его возможностях.
+### Engilsh language
 
-
-
-### Про английский язык
-- Большинство проблем проще искать на английском языке, но если текущий уровень владения не очень высокий - не мучайте себя. Так вы можете быстро потерять мотивацию и разочароваться. Большая часть проблем в начале пути, с которыми вы столкнетесь, спокойно можно отыскать и на русском языке.
-- Если чувствуете, что ваш английский слабоват, то лучше начните его изучение с более простых и приятных вещей: сериалы, видеоигры, художественные книги, новостные сайты или статьи на интересующие темы. За несколько месяцев можно значительно улучшить навыки восприятия информации на английском языке.
+- It's easier to looks for the solutions in Engilsh, but don't torture yourself if your current language proficiency isn't that high. You might get demotivated too soon. Most of the problems you are likely to encounter at first are searchable in your native language.
+- If you  feel that your English is insufficient, start studying it with more pleasant means: series, video games, fiction, news outlets or articles interesting to you. Several mongths are enough to refine your skills of comprehension in English.
