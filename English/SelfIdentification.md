@@ -1,18 +1,17 @@
-# А нужен ли вам C++?
+# Are you sure that you need C++?
 
-Первое, о чем действительно стоит подумать: для чего требуется изучать C++?
+The first thing about which you should really think is: Why do you need to learn C++?
 
-Язык имеет конкретные ниши применения. Прежде чем начать изучать его, попробуйте поискать и погрузиться в сферы применения. Найдите ту, которая заинтересует вас. Внимательно присмотреть к нишам, о которых вы имеете общее представление. Возможно ваши ожидания окажутся иными, по сравнению с реальным положением вещей. Вот некоторый набор примеров, почему это стоит сделать "на берегу":
+The language has specific areas of application. Try to search and dive into them before you start exploring C++. Find the one that interests you, take a close look and it might be that the real situation will be different from your expectations. Here are some examples why it is worth to do it beforehand:
 
-- Некоторые сферы разработки выглядят иначе, в отличие от их романтизированного образа. В качестве примера возьмем разработку игр. Данное направление имеет много темных сторон: кранчи (переработки в режиме "живем в офисе следующие полгода"), отсутствие внятного менеджмента, работа в стол и т.д. 
+- Some development areas look different from their romanticized image. Game development is a good example. Alongside with known advantages it has many dark sides: crunches, lack of intelligible management, work for the drawer, etc.
 
-- В специфичных сферах может быть популярен иной инструментарий. К примеру, в машинном обучении наиболее распространен язык Python и специализированные библиотеки к нему.
+- It might be that in the area that you are interested in a different language might be popular. For example, in machine learning, the most common language is Python and specialized libraries for it.
 
+# I already know C/C#/Java/Python and so on. Can I already start to work using C++?
 
-# Я уже знаю C/C#/Java/Python и т.д. Могу ли я сразу начать работать на C++?
+Yes and no. :) 
 
-И да, и нет. :) 
+Computer science basics will help you for sure. For example, understanding procedural programming, OOP or other concepts and general knowledge. But you shouldn't rely on them completely. The most common case that newbies often find themselves in is that they try to write in C++ in the paradigms of other languages. For example, C developers tend to write C++ programs in procedural style, or they tend to think that C++ is "C with classes".
 
-Вам помогут фундаментальные знания, такие как: понимание процедурной/ООП/иных парадигм или других знаний общего характера. Но полностью на них полагаться не стоит. Наиболее распространенный случай в котором часто оказываются новички: попытка писать на C++ в парадигмах другого языка. Пример подобной ловушки у разработчиков на Си: писать на C++ в процедурном стиле или "Си с классами". 
-
-C++ очень богат на идеи и подходы написания кода. Потому рекомендуется начать языка изучение с чистой головой. Подойдите к изучению языка основательно и разберитесь в его идеях. Это поможет вам эффективно использовать язык в рабочих задачах. Знание других языков поможет сравнивать их друг с другом и обнаруживать сильные/слабые стороны.
+C ++ is rich in ideas and coding approaches. Therefore, it is recommended to start learning the language with a clean head. Understand its ideas. This will help you to use the language effectively in your work tasks. Knowledge of other languages will help you compare them with each other and identify strengths and weaknesses.
