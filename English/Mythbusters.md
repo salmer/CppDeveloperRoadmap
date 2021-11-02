@@ -6,7 +6,7 @@ C++'s not dead.
 
 C++ made its way to the top of a wide range of ratings of programming languages, and it is scoring, moreover, popularity points, for example in the [Tiobe](https://www.tiobe.com/tiobe-index/) index. C++ got its notorious "dead language" badge during the noughties, while it was dormant and the language standardization committee fell off the radar. But the language is experiencing a renaissance since the C++11 standard. It is arduously getting new features and functionality, every three years. Many problems claimed by the "dead C++ witnesses" have been solved, but since such specialists have stopped developing using C++ - or got a smattering of C++ during courses (from those very "witnesses") - they continue repeating and reiterating the myths and legends of the horrors of C++. 
 
-## Reals programmers learn C++ using Linux/Vim/gcc
+## Real programmers learn C++ using Linux/Vim/gcc
 
 If you are unfamiliar with the aforementioned combo, we recommend you concentrate on learning the basics of C++ alone. We also suggest you start developing your first applications using Microsoft Visual Studio IDE (see [PreJunior Books](Books/PreJunior.md) for the details).
 
@@ -38,4 +38,4 @@ Modern C++ and the tooling emerged around the language allow to avoid the lion's
 
 ## One needs to manage memory manually, there is no garbage collection in the language
 
-This is another urban legend from the Old Guard that had stopped writing C++ before C++11 or those who superficially learned it in university disregarding the latest standards. Modern C++ contains a set of primitives in its standard library which are responsible for the automatic memory allocation and deallocation. The manual memory management fell by the wayside. Many teams and companies even have the rule: "No raw pointers". Once again, do not neglect the modern tools and sanitizers: they can detect possible memory leaks at the source code level.
+This is another urban legend from the "Old Guard" that had stopped writing C++ before C++11 or those who superficially learned it in university disregarding the latest standards. Modern C++ contains a set of primitives in its standard library which are responsible for the automatic memory allocation and deallocation. The manual memory management fell by the wayside. Many teams and companies even have the rule: "No raw pointers". Once again, do not neglect the modern tools and sanitizers: they can detect possible memory leaks at the source code level.
