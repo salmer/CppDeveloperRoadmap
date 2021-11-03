@@ -1,26 +1,26 @@
-# Как учиться?
+# How to study?
 
-Главное, что можно посоветовать — это усвоить, что только вы отвечаете за своё развитие. Конечно вы найдете вокруг немало энтузиастов, которые с радостью помогут вам советом, но никто не придумает за вас конкретные задачи или программу обучения. Лучший друг в этом деле - вы, Google и учебники.
+The main thing that can be advised is that you should understand that only you are responsible for your development. Of course, you will find many enthusiasts around who will be happy to help you with advice, but no one will produce specific tasks or training programs for you. The best friend in this business is you, Google search, and the tutorials.
 
-## Как учить новые стандарты C++ 11/14/17/20?
+## How to study new C++ 11/14/17/20 standards?
 
-Новичкам можно посоветовать сильно не акцентироваться на стандартах в начале своего пути. Берите книги из списка [для начинающих](Grades/PreJunior.md) и изучайте фундаментальные основы. Современные книги для новичков содержат в себе немного информации о возможностях стандартов C++11 и новее. На первых порах не стоит акцентировать свое внимание на новых стандартах языка. 
+Beginners can be advised not to focus too much on standards at the beginning of their journey. Pick up books from the [Beginner's List](Grades/PreJunior.md) and learn the fundamentals. Modern books for beginners contain little information about the capabilities of the C++ 11 and newer standards. At first, you should not focus on the new language standards.
 
-Возникает закономерный вопрос: "Почему так!?" Дело в том, что современные стандарты сконцентрированы на трёх основных вещах:
+A natural question arises: "Why is it like that?" It is like that because modern standards are focused on three main things:
 
-- исправление проблем
-- синтаксический сахар
-- новый функционал
+- fixing issues
+- syntactic sugar
+- new functionality
 
-Если с исправлением проблем и с синтаксическим сахаром всё более-менее очевидно (в первом случае вводятся новые конструкции, которые исправляют проблемы старых стандартов, а во втором - появляются новые абстракции, упрощающие написание повторяющегося кода и т.д.), то с новым функционалом всё немного сложнее. 
+If with fixing problems and with syntactic sugar everything is obvious (in the first case, new constructions are introduced that correct the problems of old standards, and in the second, new abstractions appear that simplify writing repetitive code and so on), then with new functionality it's a bit more complicated.
 
-C++ развивается ровно так же, как и все остальные языки: берётся какая-то популярная идея из информатики (computer science) или удачная фича из других языков, и внедряется в язык. Изучать такие конструкции и использовать их при необходимости важно, но на первых парах необходимо изучить основы, которые были заложены более старыми стандартами (С++11/С++14). Они и описаны в большинстве современных книг для начинающих. 
+C++ develops in the same way as all other languages: it takes some popular idea from computer science or a successful feature from other languages and introduces it into the language. It is important to study such constructs and use them, if necessary, but in the beginning it is necessary to study the foundations that were created by the older standards (C++11/C++14). They are described in most modern books for beginners.
 
-## Рекомендации по обучению
+## Training recommendations
 
-- Учитесь в своем ритме, а также в любом возрасте! Не ведитесь на истории: "Я программирую с пеленок", "паяльником владею с яслей", "вывожу из запоя/снимаю порчу при помощи ассемблера". Большинство подобных историй — это [систематическая ошибка выжившего](https://ru.wikipedia.org/wiki/Систематическая_ошибка_выжившего) или попытка потешить свое самолюбие за ваш счет. У вас достаточно способностей, чтобы научиться программированию, в том числе с нуля, в том числе и на C++!
-- Большинство проблем, с которыми вы столкнетесь, скорее всего уже решены до вас. Если вы не можете найти ответ в интернете, попробуйте переформулировать запрос иным образом. Рано или поздно вы придете к правильному ответу. Если после этого ответа так и нет, то попробуйте решить задачу более простым путем.
-- Помните, что вы должны изучать язык, а не бороться с рабочим окружением на первых порах. Борьба с окружением может вас привести к полному разочарованию и потере мотивации.
-- Помните, что многие опытные разработчики тоже встречают проблемы и застревают в "очевидных" местах. Просто возьмите паузу, позанимайтесь чем-нибудь другим, а через какое-то время возвращайтесь к задаче.
-- Найдите единомышленников, которые тоже начинают свой путь обучения. Так вам будет интереснее погружаться в изучение языка вместе, а также делиться знаниями и опытом друг с другом. Это также поможет выработать навык командной работы. Времена "вольных художников" подошли к концу. Практически везде вам придется работать в команде.
-- Попробуйте найти себе опытного ментора. Под его руководством вы сможете избежать различные типовые ловушки и потерю времени на них.
+- Learn at your own pace and at any age! Do not get fooled by stories: "I'm a programmer from the cradle". Most of these stories are [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias) or an attempt to flatter their vanity at your expense. You have enough ability to learn programming from scratch including C++!
+- Most of the problems you run into are likely already solved. If you cannot find the answer on the Internet, try reformulating your request in a different way. Eventually, you will come to the right answer. If the answer still didn't come, then try to solve the problem in a simpler way.
+- Remember, you should be learning the language at first and not struggling with the work environment instead. Fighting with the environment can lead to complete frustration and loss of motivation.
+- Remember that many experienced developers run into problems too and can get stuck in "obvious" places. Just take a break, do something else, and then return to the task after a break.
+- Find like-minded people who are also starting their learning path. So, it will be more interesting for you to immerse yourself in learning the language together as well as share knowledge and experience with each other. It will also help to develop teamwork skills. The days of "free artists" have ended. Almost everywhere you will have to work as a team.
+- Try to find yourself an experienced mentor. Under his guidance, you will be able to avoid various typical traps and wasted time on them.
