@@ -4,7 +4,7 @@ The main thing that can be advised is that you should understand that only you a
 
 ## How to study new C++ 11/14/17/20 standards?
 
-Beginners can be advised not to focus too much on standards at the beginning of their journey. Pick up books from the [Beginner's List](Grades/PreJunior.md) and learn the fundamentals. Modern books for beginners contain little information about the capabilities of the C++ 11 and newer standards. At first, you should not focus on the new language standards.
+Beginners can be advised not to focus too much on standards at the beginning of their journey. Pick up books from the [Beginner's List](Books/PreJunior.md) and learn the fundamentals. Modern books for beginners contain little information about the capabilities of the C++ 11 and newer standards. At first, you should not focus on the new language standards.
 
 A natural question arises: "Why is it like that?" It is like that because modern standards are focused on three main things:
 
