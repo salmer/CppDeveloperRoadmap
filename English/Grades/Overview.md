@@ -1,27 +1,22 @@
-# Уровень разработчиков
+# Developers grading
 
-> Уровень разработчика (eng.: *grade*) - это попытка классифицировать разработчиков по навыкам, компетенциям и практическому опыту. По нему возможно сопоставить потенциальную сложность задач с требуемым набором компетенций и навыков для их успешного решения.
+> Grading - it's an approach to classify developers by their set of skills and experience. By means of grading it's possible to understand how to differentiate tasks difficulty with an expected set of skills to deal with it. 
 
-В индустрии разработки существует более-менее устоявшаяся классификация разработчиков. Выделим эти уровни:
+Nowadays, you can meet the following common grading approach. It is possible to mark the following levels:
 - Junior;
 - Middle;
 - Senior.
 
-Многие компании имеют персональное видение по набору обязанностей и компетенций, предъявлемые к разработчкам разного уровня. Легко встретить ситуацию: работая в одной компании, вы можете быть Senior разработчиком, а в другой - еле-еле дотягиваете до Middle. Тем не менее можно охарактеризовать общие ожидания для любого уровня во многих компаниях. В дальнейшем будет использоваться упрощенная классификация, описанная выше.
- 
-**Пример:** Ознакомиться с принятыми классификациями в различных компаниях можно здесь: https://www.levels.fyi/
-![](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
+Each company has its own vision of developers grading and a set of skills/responsibilities declared for different levels. It's really simple to meet the following case: you will be promoted as a senior in a first company, but if you go to another one you will be assessed as a middle. Despite all, it's possible to introduce common expectations for each level. We will use a simplified approach declared before to describe each grade.
+
+**Example:** You can check this website to get knowledge about leveling systems in different companies: https://www.levels.fyi/
+![](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Russian/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
 
 
 ## Описание
 
-В нижеперечисленных статьях мы попытались дать осредненное описание для каждого уровня разработчика:
-
+You can readthese articles to get understanding about each level, and its common expectations:
 - [Pre-Junior C++](PreJunior.md)
-
 - [Junior C++](Junior.md)
-
 - [Middle C++](Middle.md)
-
 - [Senior C++](Senior.md)
-
