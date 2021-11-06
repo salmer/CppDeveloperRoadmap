@@ -1,41 +1,40 @@
 # Junior
 
-## Мотивация и опыт
+## Motivation and experience
 
-- [Роберт Мартин - Идеальный программист](https://www.ozon.ru/product/idealnyy-programmist-kak-stat-professionalom-razrabotki-po-martin-robert-k-211433126/?asb=z4%252BBD7UDRGAKgK5PMnilay5QBkwvjGXgnMhfF1fAOWM%253D&asb2=Gvhxd5LT0NA_AobRO1muUz0icHnQ6j-JL2zxEOH1wzQ&keywords=%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82&sh=6BDpuJeM)
+- [Robert Martin - The clean coder](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073)
 
-    Дядюшка Боб вывел набор советов и рекомендаций, которые помогут вам выжить в индустрии. Эта книга не только про технические навыки, но и про психологические аспекты работы, и как справляться с ними.
+    Uncle Bob shares his recommendations on how to "survive" and be successful in the IT industry. This book isn't just about technical skills. It also presents psychological challenges and struggles with them.
 
-- [Роберт Мартин - Чистый код. Создание, анализ и рефакторинг](https://www.ozon.ru/product/chistyy-kod-sozdanie-analiz-i-refaktoring-chistyy-kod-sozdanie-analiz-i-refaktoring-142429922/?sh=awbarJsR)
+- [Robert Martin - Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
-    Сегодня вокруг этой книги витает все больше и больше критики. Тем не менее мы считаем, что она принесет новичкам больше пользы, нежели чем вреда, в краткосрочной перспективе. Эта книга даст набор рабочих рекомендаций, которые помогут писать более структурированный, читаемый и поддерживаемый код. Как и с любым другим знанием, его не нужно слепо превращать в карго-культ. Используйте знания с умом. Подберите для себя те техники и приемы из книги, которые считаете разумными.
+    Nowadays, you might find a lot of criticism about this book. Despite all, we still guess this book can be quite helpful for newbies rather than harmful in short-term distance. This book contains a collection of working tricks which will help you to write well-structured, readable and maintainable code. As with any other knowledge, don't try to place on the "throne" and transform it to cargo-cult. Use this knowledge wisely. Try to collect a set of tricks from the book which are suitable for you and helpful for improving of your code-style.
 
-- [Стив Макконнелл - Совершенный код. Мастер-класс](https://www.ozon.ru/product/sovershennyy-kod-master-klass-138437220/?sh=dxL38m9c)
+- [Steve McConnell - Code Complete: A Practical Handbook of Software Construction](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
 
-    Не смотря на почтенный возраст книги, её можно считать библией разработчика. Она системно описывает устройство индустрии, а также дает массу советов: каким образом расти и развиваться, чтобы стать эффективным специалистом.    
+    Despite the book ages, it might be called a developer's "bible". It systemizes all knowledge of how the IT industry looks like. This book also proposes tonnes of useful advice: how to grow and become a 1-st class professional.
+
 
 ## Computer Science
 
-- [Томас Кормен - Алгоритмы. Вводный курс](https://www.ozon.ru/product/algoritmy-vvodnyy-kurs-24903185/?sh=oABFs2sD)
+- [Thomas H. Cormen - Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 
-    Хорошее продолжение после "Грокаем алгоритмы". Книга знакомит с базовыми распространенными алгоритмами сортировок, работы со списками и т.д., но на более глубоком уровне. Все ещё написана довольно простым языком, потому она может помочь подготовиться к глубокому погружению в алгоритмы.
+    This book is a perfect continuation after "Grokking algorithms". This book introduces common algorithms of sorting, working with lists, etc., but it's already presented on another level. It is written in a friendly way. It will be helpful to prepare yourself for deep diving in algorithms area.
+
 
 ## C++
 
-- [Скотт Мейерс - Эффективное использование C++. 55 верных советов улучшить структуру и код ваших программ](https://www.ozon.ru/product/effektivnoe-ispolzovanie-c-55-vernyh-sovetov-uluchshit-strukturu-i-kod-vashih-programm-2610625/?sh=VdYASWTH)
+- [Scott Meyers  - Effective C++: 55 Specific Ways to Improve Your Programs and Designs](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876)
 
-    Отличный сборник практических рекомендаций по использованию различных языковых средств C++. Данная книга написана во времена стандарта C++03, но ценность информации по-прежнему остается актуальной. Все рекомендации, техники и советы, описанные в книге, масштабируются и активно переиспользуются в новых стандартах языка.
+    This book is a perfect cookbook of C++ foundations. This book is about C++03 features, but it's still valuable and relevant information. All recommendations described in this book are perfectly suitable for the newest standards.
 
-- [Александреску Андрей, Саттер Герб - Стандарты программирования на С++](https://www.ozon.ru/product/standarty-programmirovaniya-na-s-2381848/?sh=SUs05K52)
+- [Herb Sutter, Andrei Alexandrescu - C++ Coding Standards: 101 Rules, Guidelines, and Best Practices](https://www.amazon.com/Coding-Standards-Rules-Guidelines-Practices/dp/0321113586)
 
-    Небольшая книга, которая описывает общепринятые практики и правила написания кода в коммерческих проектах. Данная книга - это агрегация правил из многих компаний. Данная работа стала прообразом сайта: [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). Тем не менее рекомендуем прочитать данную книгу, т.к. она довольно короткая и даст вам общее представление, какие правила написания кода распространены во многих проектах.
+    This tiny book describes common best practices of code writing around commercial projects. It's an aggregation of experience collected from different companies. This book was also a foundation for the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). You can immediately visit C++ Core Guidelines, but it's still recommended starting with this book first. It will help you to get a first impression of code guidelines spread around projects in s systematic approach. When it's done, you can visit the C++ Core Guidelines website and get the latest approved approaches.
 
-## Технические навыки    
 
-- [Фримен Эрик, Робсон Элизабет - Head First. Паттерны проектирования](https://www.ozon.ru/product/head-first-patterny-proektirovaniya-obnovlennoe-yubileynoe-izdanie-144233005/?sh=VWSHgt2E)
+## Hard skills   
 
-    Отличная книга для начала изучения паттернов проектирования. В качестве неплохой альтернативы можем также предложить сайт [refactoring.guru](https://refactoring.guru/design-patterns), но в данной книге также имеется масса практических заданий, которые помогут вам лучше усвоить идеи паттернов и в каких случаях их применять.
+- [Eric Freeman, Elisabeth Robson - Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)
 
-- [Андрей Созыкин - Компьютерные сети. Базовый курс](https://www.youtube.com/playlist?list=PLtPJ9lKvJ4oiNMvYbOzCmWy6cRzYAh9B1)
-
-    Прекрасный курс видеолекций по компьютерным сетям. За основу взяты книги Таненбаума и других классиков по теме. В большинстве проектов этих знаний будет достаточно, чтобы не совершать очевидных ошибок при работе с сетями. Для более глубокого погружения в тему вы можете ознакомиться с книгами Таненбаума или других авторов, или же посмотреть другие курсы на канале Андрея.
+    This book is a perfect start to studying design patterns. As another alternative, you can also visit [refactoring.guru](https://refactoring.guru/design-patterns), but in case of using this book, you will be able to have a lot of practice on-the-fly which help you to better understand ideas of common design patterns.
