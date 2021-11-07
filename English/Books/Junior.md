@@ -12,14 +12,14 @@
 
 - [Steve McConnell - Code Complete: A Practical Handbook of Software Construction](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
 
-    Despite the book ages, it might be called a developer's "bible". It systemizes all knowledge of how the IT industry looks like. This book also proposes tonnes of useful advice: how to grow and become a 1-st class professional.
+    Despite the book ages, it might be called a developer's "bible". It systemizes all knowledge of how the IT industry looks like. This book also proposes tons of useful advice: how to grow and become a 1-st class professional.
 
 
 ## Computer Science
 
 - [Thomas H. Cormen - Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 
-    This book is a perfect continuation after "Grokking algorithms". This book introduces common algorithms of sorting, working with lists, etc., but it's already presented on another level. It is written in a friendly way. It will be helpful to prepare yourself for deep diving in algorithms area.
+    This book is a perfect continuation after "Grokking algorithms". This book introduces common algorithms of sorting, working with lists, etc., but gives more details. It is written in a friendly way. It will be helpful to prepare yourself for deep diving in algorithms area.
 
 
 ## C++
@@ -30,7 +30,7 @@
 
 - [Herb Sutter, Andrei Alexandrescu - C++ Coding Standards: 101 Rules, Guidelines, and Best Practices](https://www.amazon.com/Coding-Standards-Rules-Guidelines-Practices/dp/0321113586)
 
-    This tiny book describes common best practices of code writing around commercial projects. It's an aggregation of experience collected from different companies. This book was also a foundation for the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). You can immediately visit C++ Core Guidelines, but it's still recommended starting with this book first. It will help you to get a first impression of code guidelines spread around projects in s systematic approach. When it's done, you can visit the C++ Core Guidelines website and get the latest approved approaches.
+    This tiny book describes common best practices of code writing around commercial projects. It's an aggregation of experience collected from different companies. This book was also a foundation for the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). You can immediately visit C++ Core Guidelines, but it's still recommended starting with this book first. It will help you to get a first impression of code guidelines spread around projects. When it's done, you can visit the C++ Core Guidelines website and get the latest approved approaches.
 
 
 ## Hard skills   
