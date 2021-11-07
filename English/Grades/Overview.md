@@ -15,7 +15,7 @@ Each company has its own vision of developers grading and a set of skills/respon
 
 ## Описание
 
-You can readthese articles to get understanding about each level, and its common expectations:
+You can read these articles to get understanding about each level, and its common expectations:
 - [Pre-Junior C++](PreJunior.md)
 - [Junior C++](Junior.md)
 - [Middle C++](Middle.md)
