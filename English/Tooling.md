@@ -1,169 +1,167 @@
-# Инструментарий для работы с языком
+# Language toolkit
 
-Начинающие разработчики имеют малый кругозор по доступному инструментарию, который облегчает работу с кодом, а также повышает эффективность и оберегает от многих ошибок. Все эти инструменты не серебряная пуля от многих бед языка, но они значительно сглаживают имеющиеся углы. Ниже представлен список распространенных и популярных инструментов, признанных разработчиками по всему миру. Данный список - лишь малая часть доступного инструментария. Со временем вы начнете лучше ориентироваться в них и найдете для себя что-то новое.
+Newborn developers have a limited understanding of the tools available, which make it easier to work with code, as well as increase efficiency and protect against many mistakes. All these tools are not a silver bullet for difficulties that language has for you, but they significantly smooth out the corners. Below is a list of common and popular tools recognized by developers around the world. This list is only a small part of the available tools. Over time, you will begin to better navigate them and find something new for yourself.
 
-## Текстовые редакторы
+## Text editors
 
 * **Visual Studio Code**
 
-    Сайт: https://code.visualstudio.com/
+    Site: https://code.visualstudio.com/
 
-    Стоимость: Community Edition - бесплатно
+    Price: free
 
-    Мощный и эффективный редактор текстовых файлов и исходного кода. Имеет богатую библиотеку расширений, которая позволит настроить его под себя. Также возможно настроить его под работу с исходным кодом: компиляция, запуск и отладка. Обладает мощным поисковым движком, по файлам и папкам, что повышает эффективность поиска, чтения и работы с большими проектами.
+    Powerful and efficient editor for text files and source code. Has a rich library of extensions that will allow you to customize it for yourself. It is also possible to customize it to work with source code: compile, run and debug. It has a powerful search engine for files and folders, which increases the efficiency of searching, reading and working with large projects.
 
 
 * **Notepad++**
 
-    Сайт: https://notepad-plus-plus.org/
+    Site: https://notepad-plus-plus.org/
 
-    Стоимость: Community Edition - бесплатно
+    Price: free
 
-    Легковесный редактор текстовых файлов и исходного кода. Поддерживает синтаксис и подсветку распространенных языков программирования. По сравнению с Visual Studio Code его удобно использовать для быстрого открытия и просмотра файлов. За счет своей легковесности комфортно работать с большим количеством текстовых файлов.
+    Lightweight editor for text files and source code. Supports syntax and highlighting of common programming languages. Compared to Visual Studio Code, it is convenient to use for quickly opening and viewing files. Due to its lightness, it is comfortable to work with a large number of text files. 
 
 
 ## IDE (Integrated Development Environment)
 
 * **Microsoft Visual Studio IDE**
 
-    Сайт: https://visualstudio.microsoft.com
+    Site: https://visualstudio.microsoft.com
 
-    Стоимость: Community Edition - бесплатно
+    Price: Community Edition is free
 
-    Интегрированная среда разработки от компании Microsoft. Предоставляет весь необходимый набор инструментов (редактор кода, компилятор, отладчик, профилировщик и т.д.) из коробки. Поддерживает разработку на различных языках программирования, а также кроссплатформенную разработку. Отличное начало для новичков, т.к. современный интерфейс студии максимально дружелюбен, и практически не требует какой-либо "доработки напильником" из коробки.
+    Integrated development environment from Microsoft. Provides all the necessary set of tools (code editor, compiler, debugger, profiler, etc.) out of the box. Supports development in various programming languages as well as cross-platform development. A great start for newbies as the modern interface of the studio is as friendly as possible, and practically does not require any adjustment out of the box.
 
 
 * **Qt Creator IDE**
 
-    Сайт: https://www.qt.io/product/development-tools
+    Site: https://www.qt.io/product/development-tools
     
-    Стоимость: бесплатно в open source проектах (более подробно: [Qt Open Source](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5))
+    Price: free for open source projects (more details: [Qt Open Source](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5))
 
-    Изначально Qt Creator позиционировался как IDE для разработки графических интерфейсов приложений, разрабатываемых на языке C++. Но со временем фреймворк оброс огромными возможностями. В итоге фреймворк перерос в полноценную экосистему для разработки кроссплатформенных приложений. Он предоставляет большую библиотеку примитивов для различных потребностей: работа с сетью, графический интерфейс, работа с базами данных, работа с популярными форматами: изображения, текстовые файлы и т.д. Современный Qt Creator выступает в роли конкурента для Visual Studio, но в основном он снискал славу в среде разработчиков, которые разрабатывают приложения под различные дистрибутивы Linux. 
+    Initially, Qt Creator was positioned as an IDE for developing graphical interfaces for applications in C++. But over the time, the framework has acquired tremendous opportunities. As a result, the framework has grown into a full-fledged ecosystem for developing cross-platform applications. It provides a large library of primitives for various needs: networking, graphical interface, database work, work with popular formats: images, text files, etc. Modern Qt Creator acts as a competitor for Visual Studio, but mostly it has gained developers who develop applications for various Linux distributions. 
 
 
 * **Eclipse IDE**
 
-    Сайт: https://www.eclipse.org/downloads/packages
+    Site: https://www.eclipse.org/downloads/packages
 
-    Стоимость: бесплатно
+    Price: free
     
-    Довольно мощная мультиплатформенная среда разработки, но при этом тяжеловесная. Ключевая особенность Eclipse - модульность. Философия Eclipse состоит в том, что любой разработчик может доработать среду разработки под себя посредством подключения дополнительных расширений. Взята за основу некоторыми разработчиками компиляторов под специализированные ОС или микроконтроллеры (например: ОС реального времени QNX). 
+    Quite a powerful multi-platform development environment, but at the same time heavyweight. A key feature of Eclipse is modularity. The philosophy of Eclipse is that any developer can modify the development environment for himself by connecting additional extensions. Taken as a basis by some compiler developers for specialized OS or microcontrollers (for example: QNX real-time OS).
 
 
 * **JetBrains Clion IDE**
 
-    Сайт: https://www.jetbrains.com/clion
+    Site: https://www.jetbrains.com/clion
 
-    Стоимость: бесплатная для учебных заведений, в ином случае - платная
+    Price: free for students and teachers
 
-    Мощная мультиплатформенная IDE от российской компании JetBrains. Как и другие IDE, она содержит полный набор инструментов для комфортной разработки программного обеспечения. Удобен для кроссплатформенной разработки как на Cи, так и на C++. 
+    Powerful multiplatform IDE from Russian company JetBrains. Like other IDEs, it contains a complete set of tools for comfortable software development. Convenient for cross-platform development in both C and C++.
 
-
-## Расширения
+## Extensions
 
 * **JetBrains ReSharper C++**
 
-    Сайт: https://www.jetbrains.com/resharper-cpp
+    Site: https://www.jetbrains.com/resharper-cpp
 
-    Стоимость: бесплатная для учебных заведений, в ином случае - платная
+    Price: free for students and teachers
 
-    Расширение для MS Visual Studio. Добавляет дополнительные возможности для работы с исходным кодом: расширенная подсветка кода и подсказки по нему, построение диаграмм зависимостей между проектами, рекомендации по типовым ошибкам в коде и по его улучшению, расширенная информация во время отладки, продвинутый поиск, навигация по проектам и т.д. Является конкурентом Visual Assist.
+    Extension for MS Visual Studio. Adds additional features for working with source code: extended highlighting of the code and hints on it, building dependency diagrams between projects, recommendations on common errors in the code and how to improve it, extended information during debugging, advanced search, project navigation, etc. It is a competitor to Visual Assist.
 
 * **Visual Assist**
 
-    Сайт: https://www.wholetomato.com
+    Site: https://www.wholetomato.com
 
-    Расширение для MS Visual Studio. Добавляет дополнительные возможности для работы с исходным кодом: расширенная подсветка кода и подсказки по нему, расширенная информация во время отладки или при написании кода, продвинутый поиск, навигация по проектам и т.д. Является конкурентом JetBrains ReSharper.
+    Extension for MS Visual Studio. Adds additional features for working with source code: extended code highlighting and hints on it, extended information during debugging or when writing code, advanced search, project navigation, etc. It is a competitor to JetBrains ReSharper.
 
 
 * **Incredibuild**
 
-    Сайт: https://www.incredibuild.com
+    Site: https://www.incredibuild.com
 
-    Стоимость: платно, актуальная цена указана на сайте
+    Price: have to contact incredibuild team to find the price
 
-    Приложение/расширение для распределенной сборки проектов. Объединяет все рабочие станции разработчиков в единую сеть, за счет чего сборка исходного кода может производиться одновременно на десятках машин. Это позволяет ускорить скорость сборки больших проектов в несколько раз.
+    Application/extension for distributed compilation of projects. It unites all dev workstations into a single network which provides a possibility to use dozens of machines to assemble and compile the source code. This allows you to speed up the build of large projects.
 
-
-## Пакетные менеджеры и системы сборки
+## Package managers and build systems
 
 * **Cmake**
 
-    Сайт: https://cmake.org
+    Site: https://cmake.org
 
-    Кроссплатформенная система автоматизации сборки приложения из исходного кода. Генерирует необходимые артефакты для последующей сборки приложения на целевой платформе. На текущий момент считается "стандартным" инструментом для сборки различных библиотек, в случае поставки в качестве исходного кода.
+    A cross-platform automation system for building an application from source code. Generates the necessary artifacts for the subsequent assembly of the application on the target platform. It is currently considered the "standard" tool for building various libraries when supplied as source.
 
 * **Conan**
 
-    Сайт: https://conan.io
+    Site: https://conan.io
 
-    Стоимость: бесплатно
+    Price: free
 
-    Пакетный менеджер, а также менеджер зависимостей для организации C++ библиотек и фреймворков. Поддерживает работу с различными платформами: Windows, Linux, etc. Поддерживает интеграцию с CMake, Visual Studio и т.д.
+    A package manager as well as a dependency manager for organizing C++ libraries and frameworks. Supports work with various platforms: Windows, Linux, etc. Supports integration with CMake, Visual Studio, etc.
 
 
 * **Ninja**
 
-    Сайт: https://ninja-build.org
+    Site: https://ninja-build.org
 
-    Стоимость: бесплатно
+    Price: free
 
-    Менеджер сборки проектов для приложений, написанных на Си и C++. Основное преимуществ о котором заявляет данный менеджер: быстрая сборка проектов. Поддерживает кроссплатформенную разработку, поддерживает все популярные компиляторы.
+    Project build manager for C and C++ applications. The main advantages that this manager claims: quick project assembly. Supports cross-platform development, supports all popular compilers.
 
 
-## Анализаторы кода
+## Code analyzers
 
 * **PVS Studio**
 
-    Сайт: https://pvs-studio.com
+    Site: https://pvs-studio.com
 
-    Стоимость: триал на 30 дней, далее платно
+    Price: 30 days trial
 
-    Кроссплатформенный (Windows, Linux, MacOS) статический анализатор кода от российской компании PVS-Studio. Основная задача анализатора - провести анализ исходников на предмет различных ошибок, которые не обнаруживаются компиляторами или на этапе ревью кода. Благодаря ему можно минимизировать ошибки, связанные с синтаксическими конструкциями языка и их подводными камнями.   
+    Cross-platform (Windows, Linux, MacOS) static code analyzer from the Russian company PVS-Studio. The main task of the analyzer is to analyze the source code for various errors that are not detected by compilers or at the stage of code review. It helps to minimize number of errors associated with the syntactic structures of the language and their pitfalls.
 
 
 * **Cpp Check**
 
-    Сайт: https://cppcheck.sourceforge.io
+    Site: https://cppcheck.sourceforge.io
 
-    Стоимость: бесплатно
+    Price: free
 
-    Бесплатный анализатор кода. Поможет отловить распространенные ошибки при помощи анализа исходного кода, которые могут быть упущены компилятором или в процессе ревью кода. Кроссплатформенный, поддерживает популярные дистрибутивы Linux, работает под Windows.
+    Free code analyzer. It will help you catch common errors by analyzing the source code, which may be missed by the compiler or during the code review process. Cross-platform, supports popular Linux distributions and Windows.
 
 
 * **Valgrind**
 
-    Сайт: https://www.valgrind.org
+    Site: https://www.valgrind.org
 
-    Стоимость: бесплатно
+    Price: free
 
-    Набор инструментов, который поможет исследовать разнообразные проблемы во время работы приложения: утечка памяти, профилирование тормозов и т.д. Заточен для работы с различными дистрибутивами Linux.
+    A set of tools that can help you investigate a variety of problems while the application is running: memory leaks, brake profiling, etc. It suits various Linux distributions.
 
-## Git клиенты
+## Git clients
 
 * **SmartGit**
 
-    Сайт: https://www.syntevo.com/smartgit/
+    Site: https://www.syntevo.com/smartgit/
 
-    Стоимость: бесплатная для личных или open source проектов, в ином случае - платная
+    Price: free for open source projects
 
-    Полноценный кроссплатформенный комбайн для работы с git репозиториями. Из коробки предоставляет следующие возможности: прием/отправка изменений в репозитории, просмотр истории изменений, текстовый редактор для разрешения конфликтов и т.д. Поддерживает интеграцию со всеми популярными репозиториями: GitHub, BitBucket, GitLab и т.д.
+    A complete cross-platform tool for working with git repositories. Out of the box, it provides the following features: receiving/sending changes to the repository, viewing the history of changes, a text editor for resolving conflicts, etc. Supports integration with all popular repositories: GitHub, BitBucket, GitLab, etc.
 
 * **Atlassian SourceTree**
 
-    Сайт: https://www.sourcetreeapp.com/
+    Site: https://www.sourcetreeapp.com/
 
-    Стоимость: бесплатно
+    Price: free
 
-    Отличная бесплатная альтернатива для работы с git через графический интерфейс. Не уступает по функционалу SmartGit за исключением отсутствия собственного редактора разрешения конфликтов. Но это легко исправляется интеграцией Visual Code или любого другого редактора, который умеет сравнивать файлы между собой. Во всем остальном полностью дублирует функциональность SmartGit: кроссплатформенный, поддерживает интеграцию с публичными репозиториями: GitHub, BitBucket, GitLab и т.д.
+    A great free alternative for working with git using GUI. Has the same functionality as SmartGit. The only exception is absence of its own editor for conflict resolution. But this can be easily fixed by integrating Visual Code or any other editor that can compare files with each other. In all other respects, it completely duplicates the functionality of SmartGit: cross-platform, supports integration with public repositories: GitHub, BitBucket, GitLab, etc.
 
 
 * **Git Kraken**
 
-    Сайт: https://www.gitkraken.com/
+    Site: https://www.gitkraken.com/
 
-    Стоимость: бесплатная для личных или open source проектов, в ином случае - платная
+    Price: free for open source projects
 
-    Кроссплатформенный и высокоэффективный клиент для Windows, Linux, MacOS. Поддерживает интеграцию с GitHub, Bitbucket и Gitlab, а также весь необходимый функционал для повседневной работы: изучение истории изменений, прием/отправка изменений, переключение между ветками, встроенный редактор разрешения конфликтов и т.д.
+    Cross-platform and highly efficient client for Windows, Linux, MacOS. Supports integration with GitHub, Bitbucket and Gitlab, as well as all the necessary functionality for everyday work: studying the history of changes, receiving/submitting changes, switching between branches, built-in conflict resolution editor, etc.
 
