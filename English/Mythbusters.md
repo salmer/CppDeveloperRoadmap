@@ -22,13 +22,13 @@ This statement continues to live due to two widespread scenarios: it's how they 
 
 A highly damaging thesis taking origin from the "Old Guard" or someone born with a keyboard in hand.
 
-Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference, therefore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books.md) section, you'll find books for any level of language proficiency.
+Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference, therefore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
 
 ## Learn C++ using the Standard only
 
 Another snobbish statement.
 
-First, the modern C++ standard exceeds 2000 pages. Secondly, the access to the up-to-date version requires payment. Thirdly, the standard isn't composed in a friendly way. Those who learned the language using its standard can be pat on the back, but we do not recommend abusing oneself this way. Once again, better look at the [Books](Books.md) section, you'll find books for any level of language proficiency.
+First, the modern C++ standard exceeds 2000 pages. Secondly, the access to the up-to-date version requires payment. Thirdly, the standard isn't composed in a friendly way. Those who learned the language using its standard can be pat on the back, but we do not recommend abusing oneself this way. Once again, better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
 
 ## Undefined Behavior haunts the developer everywhere
 
