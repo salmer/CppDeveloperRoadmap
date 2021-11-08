@@ -1,29 +1,29 @@
 # Junior C++
 
-## Кто это?
+## Who is it?
 
-Это разработчик, который имеет теоретические знания по разработке ПО, а также небольшой практический опыт в рамках личных/учебных проектов. Помимо этого может иметь теоретическое представление о том, как работает индустрия и рабочие процессы. Человек способен выполнять несложные задачи на реальном проекте под руководством опытных коллег, обычно миддлов или синьоров.
+It is a developer who has theoretical knowledge of software development and little practical experience in personal/educational projects. In addition, may have a theoretical understanding of how the industry works. Junior can perform simple tasks within a real project under the guidance of experienced colleagues.
 
-## Что ожидается по умению написания кода?
+## What coding abilities are expected?
 
-- Умение читать документацию библиотек, фреймворков и т.д.
-- Умение собирать и подключать сторонние библиотеки к проекту
-- Читать чужой код и разбираться в нем
-- Искать и фиксить баги при момощи отладчика или по логам приложения
-- Писать тесты к коду
-- Базовые знания и опыт работы с Git
+- Ability to read documentation of libraries, frameworks, etc.
+- Ability to collect and connect third-party libraries to the project
+- Ability to read code from a different developer and understand it
+- Search and fix bugs using the debugger or using logs
+- Write tests to the code
+- Basic knowledge and experience with Git
 
-## Что ожидается по общим навыкам?
+## What general skills are expected?
 
-- Быстрое обучение
-- Умение самостоятельно искать информацию в интернете, книгах и т.д.
-- Умение своевременно задавать вопросы коллегам
-- Способность работать в команде
+- Fast learning
+- Ability to independently search for information on the Internet, books, etc.
+- Ability to ask colleagues questions in a timely manner
+- Ability to work in a team 
 
-## Рекомендации и советы
+## Tips and recommendations
 
-- Постарайтесь найти парочку энтузиастов на проекте и присоединитесь к ним. Они могут стать вашим истончником знаний и опыта.
-- Задавайте вопросы старшим коллегам. Нет глупых вопросов, есть глупые ответы.
-- Не закапывайтесь в задачу слишком долго. Если после нескольких вариантов нет сдвига, тут же обращайтесь к коллегам за помощью. Они рассчитывают, что задача будет вами решена в разумные сроки. Ваша основная цель - решать проблемы, а не создавать их для команды.
-- При возникновении сложностей старайтесь попробовать найти парочку возможных решений самостоятельно, а затем подходите к своему наставнику. Ваш наставник подкорректирует ваши варианты решеения или дополнит их.
-- Многие джуны попадают в распространненную ловушку: чем больше строк кода написано, тем они круче как разработчики. Не попадайтесь в неё! Помните, что чем больше кода написано, тем выше вероятность ошибки. В идеале код должен быть написан так, чтобы при возвращении к нему через полгода, вы быстро могли вспомнить что он делает. Хороший разработчик не тот, кто пишет много кода. Хороший разработчк ведет себя как самурай: наносит один точный и смертельный удар, а не бессмысленно машет мечом, чтобы попасть по врагу.
+- Try to find a couple of enthusiasts at your company and join them. They can be your source of knowledge and experience.
+- Ask questions to senior colleagues. There are no stupid questions, there are stupid answers.
+- Don't bury yourself in the task for too long. If after several attempts there is no progress, immediately contact your colleagues for help. They expect that the task will be completed by you within a reasonable period. Your main goal is to solve problems, not create them for the team.
+- When difficulties arise, try to find a couple of possible solutions yourself, and then approach your mentor. Your mentor will adjust or complement your solution.
+- Juniors tend to fall into a common trap: the more lines of code are written, the cooler they are as developers. Don't get caught! Remember, the more code you write, the higher the chance of error. Ideally, the code should be written so that when you return to it six months later, you can quickly recall what it does. A good developer is not someone who writes a lot of code. A good developer behaves like a samurai: he delivers one precise and deadly blow, rather than pointlessly swinging his sword to hit the enemy.
