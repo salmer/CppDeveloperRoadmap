@@ -1,22 +1,22 @@
 # Senior C++
 
-## Кто это?
+## Who is it?
 
-Это разработчик, который понимает не только технический, но и бизнес контекст и способен создать дизайн и решение для компонента/приложения/системы с их учётом. Помимо этого, помогает другим членам команды развиваться и следит за техническими тенденциями мира разработки. 
+It is a developer who understands not only the technical, but also the business context and is able to create a design and solution for a component/application/system taking them into account. In addition, he helps other team members to grow and follows the technical trends of the development world.
 
-## Что ожидается по умению написания кода?
+## What coding abilities are expected?
 
-- Способен переводить задачи с языка бизнеса на язык разработки и декомпозировать задачи
-- Способен вести диалог с бизнесом и объяснять технические детали и сложности людям вне команды
-- Способен не только принять решение о дизайне, но и создать архитектуру компонента/приложения
-- Понимание и использование архитектурных принципов
+- Able to translate tasks from business language to development language and decompose tasks
+- Able to conduct a dialogue with the business and explain technical details and difficulties to people outside the team
+- Able to not only make a design decision, but also create a component/application architecture
+- Understands and uses architectural principles
 
-## Что ожидается по общим навыкам?
+## What general skills are expected?
 
-- Высокий навык коммуникации
-- Способен при необходимости самостоятельно собрать требования
-- Помогает развивать членов команды
+- High communication skill
+- Able to independently collect requirements, if necessary
+- Helps develop team members
 
-## Рекомендации и советы
+## Tips and recommendations
 
-В зависимости от специфики компании и от ваших желаний путь дальнейшего развития лежит либо в освоении новых технологий и технических навыков, требующихся в выбранной вами области знаний (например, специальные разделы математики, физика и т.д. - путь технического эксперта), либо в область управления и взаимодействия с людьми (техлид, тимлид, ПМ и т.д.). Choose wisely. 🙂
+Depending on the specifics of the company and on your desires, the path of further development lies either in the learning of recent technologies and technical skills required in your chosen field of knowledge (for example, special sections of mathematics, physics, etc. - the path of a technical expert), or in the field of management and interaction with people (tech lead, team lead, PM, etc.). Choose wisely. 🙂
