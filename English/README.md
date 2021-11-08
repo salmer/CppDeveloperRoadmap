@@ -9,15 +9,15 @@ Before you start exploring the map, it's recommended to read the articles listed
 
 # Articles
 
-1. [The roots of a roadmap creation](Rationale.md)
-1. [Do you really need C++?](SelfIdentification.md)
-1. [C++ - it's not a rocket science!](FunCpp.md)
-1. [The areas of C++ application](AreasOfApplication.md)
-1. [The mythbusters for C++](Mythbusters.md)
-1. [Developer grades description](Grades/Overview.md)
-1. [How to study](HowToStudy.md)
+1. [Why and what for the roadmap has been created?](Rationale.md)
+1. [Are you sure that you need C++?](SelfIdentification.md)
+1. [C++ - It's Not Rocket Science](FunCpp.md)
+1. [Application areas of C++](AreasOfApplication.md)
+1. [Myths and Legends of C++](Mythbusters.md)
+1. [Developers grading](Grades/Overview.md)
+1. [How to study?](HowToStudy.md)
 1. [Books and other resources about C++](Books/Overview.md)
-1. [The tooling collection for С++](Tooling.md)
+1. [Language toolkit](Tooling.md)
 1. [More resources about C++: documentation, community links, etc.](CommunitySources.md)
 
 
