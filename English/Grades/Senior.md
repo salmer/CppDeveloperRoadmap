@@ -2,7 +2,7 @@
 
 ## Who is it?
 
-It is a developer who understands not only the technical, but also the business context and is able to create a design and solution for a component/application/system taking them into account. In addition, he helps other team members to grow and follows the technical trends of the development world.
+It is a developer who understands not only the technical, but also the business context and is able to create a design and solution for a component/application/system taking them into account. In addition, Senior helps other team members to grow and follows the technical trends of the development world.
 
 ## What coding abilities are expected?
 
