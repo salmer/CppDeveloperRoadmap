@@ -7,6 +7,7 @@
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [Рабочая группа C++ - представители комитета по стандартизации языка в России](https://stdcpp.ru/)
 - [Новости от комитета стандартизации С++ (ENG)](https://isocpp.org/)
+- [C++ Online Compiler Explorer](https://gcc.godbolt.org)
 
 ## Популярные конференции по С++
 

@@ -6,6 +6,7 @@
 - [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [News from the C++ Standardization Committee](https://isocpp.org/)
+- [C++ Online Compiler Explorer](https://gcc.godbolt.org)
 
 ## Popular C++ conferences 
 
