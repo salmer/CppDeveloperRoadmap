@@ -38,3 +38,9 @@
 - [Eric Freeman, Elisabeth Robson - Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)
 
     This book is a perfect start to studying design patterns. As another alternative, you can also visit [refactoring.guru](https://refactoring.guru/design-patterns), but in case of using this book, you will be able to have a lot of practice on-the-fly which help you to better understand ideas of common design patterns.
+
+- [Sanjay Madhav, Josh Glazer - Multiplayer Game Programming: Architecting Networked Games](https://www.amazon.com/Multiplayer-Game-Programming-Architecting-Networked/dp/0134034309)
+
+    This book is an excellent introduction to networking theory. It will explain network foundations through video games examples. They will help you to write your first application working via a network. Besides a theory, you will gain experience in how to work with it in C++. All examples are written in C++11/14.
+
+    Данная книга станет отличным практическим пособием по работе с сетями на примере разработки многопользовательских игр. К концу книги вы получите достаточно сведений, чтобы написать собственное сетевое приложение. Помимо того, что вы освоите базовую теорию по компьютерным сетям, вы также овладете навыками работы с ней на языке C++. Все примеры в книге написаны именно на нем, с использованием стандарта C++11/14.
