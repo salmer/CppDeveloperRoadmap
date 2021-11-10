@@ -1,6 +1,6 @@
-# C++ Roadmap
+# C++ Developer Roadmap
 
-## Additional languages: [Русский](../README.md)
+## Additional languages: [Русский](Russian/README.md)
 
 C++ is still one of the [most popular development languages](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies). There are quite a number of people that want to start learning it and become a C++ developer. They face with the questions: "Where should I start? What and in what order should I study? What books should I read?"
 
@@ -11,16 +11,16 @@ Before you start exploring the map, it's recommended to read the articles listed
 
 # Articles
 
-1. [Why and what for the roadmap has been created?](Rationale.md)
-1. [Are you sure that you need C++?](SelfIdentification.md)
-1. [C++ - It's Not Rocket Science](FunCpp.md)
-1. [Application areas of C++](AreasOfApplication.md)
-1. [Myths and Legends of C++](Mythbusters.md)
-1. [Developers grading](Grades/Overview.md)
-1. [How to study?](HowToStudy.md)
-1. [Books and other resources about C++](Books/Overview.md)
-1. [Language toolkit](Tooling.md)
-1. [More resources about C++: documentation, community links, etc.](CommunitySources.md)
+1. [Why and what for the roadmap has been created?](English/Rationale.md)
+1. [Are you sure that you need C++?](English/SelfIdentification.md)
+1. [C++ - It's Not Rocket Science](English/FunCpp.md)
+1. [Application areas of C++](English/AreasOfApplication.md)
+1. [Myths and Legends of C++](English/Mythbusters.md)
+1. [Developers grading](English/Grades/Overview.md)
+1. [How to study?](English/HowToStudy.md)
+1. [Books and other resources about C++](English/Books/Overview.md)
+1. [Language toolkit](English/Tooling.md)
+1. [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
 
 # Road map
