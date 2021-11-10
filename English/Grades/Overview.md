@@ -13,7 +13,7 @@ Each company has its own vision of developers grading and a set of skills/respon
 ![](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Russian/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
 
 
-## Описание
+## Level Descriptions
 
 You can read these articles to get understanding about each level, and its common expectations:
 - [Pre-Junior C++](PreJunior.md)
