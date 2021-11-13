@@ -38,7 +38,7 @@
 
 - [Robert Martin - Clean Architecture: A Craftsman's Guide to Software Structure and Design](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
  
-    One more work by Uncle Bob. For this time, this book will explain to you to think about the architecture of an application/component first before starting rushing with code writing. It shows where to pay attention upon analyzing a solution design. This book is a good start for people, who are interested in architecture tasks in software design and don't know where to begin. The knowledge from this book is common for a lot of engineers and will be useful to prevent widespread mistakes in software design.
+    One more work by Uncle Bob. For this time, this book will explain how to think about the architecture of an application/component first before starting rushing into coding. It shows where to pay attention upon analyzing a solution design. This book is a good start for people who are interested in architecture tasks in software design and don't know where to begin. The knowledge from this book is common for a lot of engineers and will be useful to prevent widespread mistakes in software design.
 
 - [Ulrich Drepper - What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 
