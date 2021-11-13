@@ -32,6 +32,10 @@
 
     The book is a good complement to the previous one. It's good to use this book in parallel with Prata's book. We recommend you find a balance between these books, as information is given differently: mixing information from both books will help you to better understand different topics and language aspects.
 
+- [Andrew Koenig - Accelerated C++: Practical Programming by Example](https://www.amazon.com/Accelerated-C-Practical-Programming-Example/dp/020170353X)
+
+    This book is an excellent one for beginners. Each chapter of the book widely describes a different foundation aspect of the language. When it's done, it offers you a set of exercises to train yourself. The book explains the most fundamental topics that can be reusable in the future to study new language mechanisms. It's recommended to pick up this book after Prata's, Lippman's books or in parallel with them.
+
 
 ## Hard skills
 
