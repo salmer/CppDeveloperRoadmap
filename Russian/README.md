@@ -19,6 +19,7 @@
 1. [Грейды разработчиков](Grades/Overview.md)
 1. [Как учиться](HowToStudy.md)
 1. [Книги и прочие материалы по С++](Books/Overview.md)
+1. [Идеи для пет-проектов](Russian/PetProjects.md)
 1. [Инструментарий для С++](Tooling.md)
 1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
