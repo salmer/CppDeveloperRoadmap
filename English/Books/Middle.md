@@ -17,6 +17,10 @@
 
     The collection of books describes a lot of tasks related to designing or writing code in C++. They propose a collection of effective solutions. A lot of them are approved and declared as classic idioms. You will regularly find these idioms around projects.
 
+- [David Vandevoorde - C++ Templates: The Complete Guide](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121)
+
+    The newest and relevant book about C++ metaprogramming (templates). This giant work describes relevant technics of templates foundations that were added in the newest standards, including C++17. If you need to write generic and parameterized code, this book will become a "bible" to you. You will get knowledge either about the basics of templates or tones of nuances related to different technics.
+
 - [Kurt Guntheroth - Optimized C++: Proven Techniques for Heightened Performance](https://www.amazon.com/Optimized-Proven-Techniques-Heightened-Performance/dp/1491922060)
 
     This book is a guidebook for the performance improvement of C++ applications. Some advice in this book is based on different idioms and tricks described in books of Herb Sutter or Scott Meyers. It's recommended to read this book after reading the books above.
