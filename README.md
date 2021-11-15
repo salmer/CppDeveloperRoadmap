@@ -19,7 +19,7 @@ Before you start exploring the map, it's recommended to read the articles listed
 1. [Developers grading](English/Grades/Overview.md)
 1. [How to study?](English/HowToStudy.md)
 1. [Books and other resources about C++](English/Books/Overview.md)
-1. [Pet-project ideas](Engish/PetProjects.md)
+1. [Pet-project ideas](English/PetProjects.md)
 1. [Language toolkit](English/Tooling.md)
 1. [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
