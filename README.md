@@ -24,7 +24,7 @@ Before you start exploring the map, it's recommended to read the articles listed
 1. [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
 
-# Road map
+# Roadmap
 
 **The link**: [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
 
