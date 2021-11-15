@@ -16,6 +16,15 @@ If with fixing problems and with syntactic sugar everything is obvious (in the f
 
 C++ develops in the same way as all other languages: it takes some popular idea from computer science or a successful feature from other languages and introduces it into the language. It is important to study such constructs and use them, if necessary, but in the beginning it is necessary to study the foundations that were created by the older standards (C++11/C++14). They are described in most modern books for beginners.
 
+
+## Where to get an overview of the latest C++ standards features?
+
+- Presentations among [C++ conferences](CommunitySources.md)
+- On the main page of the [CppReference](https://en.cppreference.com/w/cpp) you will find links to pages with overview lists of the newest features
+- You can read the following book by [Bjarne Stroustrup - A Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832). Regularly check the book republication as it's updated when a new C++ standard is released
+- Professional forums/chats/discussions/etc.
+- Overview videos on YouTube by community
+
 ## Training recommendations
 
 - Learn at your own pace and at any age! Do not get fooled by stories: "I'm a programmer from the cradle". Most of these stories are [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias) or an attempt to flatter their vanity at your expense. You have enough ability to learn programming from scratch including C++!
