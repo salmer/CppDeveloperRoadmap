@@ -23,6 +23,7 @@ C++ develops in the same way as all other languages: it takes some popular idea 
 - On the main page of the [CppReference](https://en.cppreference.com/w/cpp) you will find links to pages with overview lists of the newest features
 - You can read the following book by [Bjarne Stroustrup - A Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832). Regularly check the book republication as it's updated when a new C++ standard is released
 - Professional forums/chats/discussions/etc.
+- Overview videos on YouTube by community
 
 ## Training recommendations
 
