@@ -28,6 +28,10 @@
 
     This book is a perfect cookbook of C++ foundations. This book is about C++03 features, but it's still valuable and relevant information. All recommendations described in this book are perfectly suitable for the newest standards.
 
+- [Jason Turner - C++ Best Practices: 45ish Simple Rules with Specific Action Items for Better C++](https://www.amazon.com/Best-Practices-Simple-Specific-Action/dp/B08SJSZKJ5)
+
+    A collection of tips for developers with little experience writing C++ code. It contains recommendations on the most common errors. All explanations are presented briefly and concisely. The most of these recommendations contain links to additional sources. This book doesn't provide a fundamental analysis of each advice, therefore it is recommended to deal with each recommendation in more detail in the future in order to understand true reasons behind them.
+
 - [Herb Sutter, Andrei Alexandrescu - C++ Coding Standards: 101 Rules, Guidelines, and Best Practices](https://www.amazon.com/Coding-Standards-Rules-Guidelines-Practices/dp/0321113586)
 
     This tiny book describes common best practices of code writing around commercial projects. It's an aggregation of experience collected from different companies. This book was also a foundation for the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). You can immediately visit C++ Core Guidelines, but it's still recommended starting with this book first. It will help you to get a first impression of code guidelines spread around projects. When it's done, you can visit the C++ Core Guidelines website and get the latest approved approaches.
