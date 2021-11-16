@@ -30,7 +30,7 @@
 
 - [Jason Turner - C++ Best Practices: 45ish Simple Rules with Specific Action Items for Better C++](https://www.amazon.com/Best-Practices-Simple-Specific-Action/dp/B08SJSZKJ5)
 
-    A collection of tips for developers with little experience writing C++ code. It contains recommendations on the most common errors. All explanations are presented briefly and concisely. The most of these recommendations contain links to additional sources. This book doesn't provide a fundamental analysis of each advice, therefore it is recommended to deal with each recommendation in more detail in the future in order to understand true reasons.
+    A collection of tips for developers with little experience writing C++ code. It contains recommendations on the most common errors. All explanations are presented briefly and concisely. The most of these recommendations contain links to additional sources. This book doesn't provide a fundamental analysis of each advice, therefore it is recommended to deal with each recommendation in more detail in the future in order to understand true reasons behind them.
 
 - [Herb Sutter, Andrei Alexandrescu - C++ Coding Standards: 101 Rules, Guidelines, and Best Practices](https://www.amazon.com/Coding-Standards-Rules-Guidelines-Practices/dp/0321113586)
 
