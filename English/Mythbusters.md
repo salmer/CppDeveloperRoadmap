@@ -39,3 +39,8 @@ Modern C++ and the tooling emerged around the language allow to avoid the lion's
 ## One needs to manage memory manually, there is no garbage collection in the language
 
 This is another urban legend from the "Old Guard" that had stopped writing C++ before C++11 or those who superficially learned it in university disregarding the latest standards. Modern C++ contains a set of primitives in its standard library which are responsible for the automatic memory allocation and deallocation. The manual memory management fell by the wayside. Many teams and companies even have the rule: "No raw pointers". Once again, do not neglect the modern tools and sanitizers: they can detect possible memory leaks at the source code level.
+
+
+## C++ is legacy area only
+
+Partially it's true, but it's good to note that it's applicable for other languages. Even with a modern stack, developers can produce legacy code. The code quality mainly depends on the technical culture of a team and its pioneers, not a language. The majority amount of legacy code is produced under the human factor: developer's grade and skill set, work ethic, wrong estimations, etc. Nowadays, you can meet a lot of projects working 24/7 for years and written in C++. Such kinds of systems are often the business foundation of revenue. In this case, it's really dangerous to perform any huge changes in short time. The developers do any changes with high attention to any regression. But don't be sad that it's nothing to do here. In fact, these projects can give you a challenge that can bring you widespread experience in different areas: reading of code, reverse-engineering, testing, designing of SW architecture, automation, grabbing of requirements, etc.
