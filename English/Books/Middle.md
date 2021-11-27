@@ -43,3 +43,14 @@
 - [Ulrich Drepper - What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 
     This article is a good overview: how PC memory works and why it works in the described way. It shows not only high-level representation, but low-level aspects are also described (if you have an intention to dive in this area).
+
+
+## Operating systems
+
+- [Andrew S. Tanenbaum - Modern Operating Systems](https://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/013359162X)
+
+    The best book about operating systems. This is a fundamental book about its construction: file system, network, memory management, task scheduler, multithreading, etc. Each chapter contains large explanations for different OS aspects. It tries to explain deep details in simple words, but without diving in specific OS distributive.
+
+- [Mark Russinovich - Windows Internals, Part 1](https://www.amazon.com/Windows-Internals-Part-architecture-management/dp/0735684189), [Mark Russinovich - Windows Internals, Part 2](https://www.amazon.com/Windows-Internals-Part-2-7th/dp/0135462401)
+
+    This book discusses the same issues as the previous book, but focuses exclusively on Microsoft Windows OS. It dwells in detail on every aspect of the OS with a projection on Windows, and also talks about various nuances and aspects that may not be officially declared by the developers. A useful book for those who develop low-level applications that require intensive interaction with OS system libraries.
