@@ -47,7 +47,7 @@
 
 ## Operating systems
 
-- [Andrew S. Tanenbaum - Modern Operating Systems](https://www.ozon.ru/product/sovremennye-operatsionnye-sistemy-tanenbaum-endryu-bos-herbert-211432884)
+- [Andrew S. Tanenbaum - Modern Operating Systems](https://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/013359162X)
 
     The best book about operating systems. This is a fundamental book about its construction: file system, network, memory management, task scheduler, multithreading, etc. Each chapter contains large explanations for different OS aspects. It tries to explain deep details in simple words, but without diving in specific OS distributive.
 
