@@ -44,6 +44,10 @@
 
     This article is a good overview: how PC memory works and why it works in the described way. It shows not only high-level representation, but low-level aspects are also described (if you have an intention to dive in this area).
 
+- [Samary Baranov - Finite State Machines and Algorithmic State Machines: Fast and Simple Design of Complex Finite State Machines](https://www.amazon.com/Finite-State-Machines-Algorithmic-Complex-ebook/dp/B078RYYBCJ)
+
+    The short practical guide on how to approach writing programs using finite machines theory. It will be difficult to find a simpler and more elegant description of the theory of finite machines and its practical application.
+
 
 ## Operating systems
 
