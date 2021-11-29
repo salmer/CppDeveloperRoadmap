@@ -58,3 +58,14 @@
 - [Mark Russinovich - Windows Internals, Part 1](https://www.amazon.com/Windows-Internals-Part-architecture-management/dp/0735684189), [Mark Russinovich - Windows Internals, Part 2](https://www.amazon.com/Windows-Internals-Part-2-7th/dp/0135462401)
 
     This book discusses the same issues as the previous book, but focuses exclusively on Microsoft Windows OS. It dwells in detail on every aspect of the OS with a projection on Windows, and also talks about various nuances and aspects that may not be officially declared by the developers. A useful book for those who develop low-level applications that require intensive interaction with OS system libraries.
+
+
+## Computer networks 
+
+- [Andrew S. Tanenbaum - Computer Networks](https://www.amazon.com/Computer-Networks-5th-Andrew-Tanenbaum/dp/0132126958)
+
+    A classic book on the theoretical foundations of computer networks. It contains a detailed description, starting from the physical layer and ending with data transfer protocols. It will be extremely useful for those developers who are closely involved in projects that interact with networks.
+
+- [Victor Olifer - Computer Networks: Principles, Technologies and Protocols for Network Design](https://www.amazon.com/Computer-Networks-Principles-Technologies-Protocols-ebook/dp/B001GQ35P4)
+
+    Another great book on the basics of computer networks. At some points, the presentation of information can seem a little more complicated, compared to Tanenbaum's work. Therefore, we recommend choosing the book whose narrative is more suitable for you.
