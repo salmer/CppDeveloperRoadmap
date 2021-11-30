@@ -59,6 +59,10 @@
 
     This book discusses the same issues as the previous book, but focuses exclusively on Microsoft Windows OS. It dwells in detail on every aspect of the OS with a projection on Windows, and also talks about various nuances and aspects that may not be officially declared by the developers. A useful book for those who develop low-level applications that require intensive interaction with OS system libraries.
 
+- [Christopher Negus - Linux Bible](https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1119578884)
+
+    This book can be a continuation after Tanenbaum's work. It goes into detail on every aspect of the Linux OS. All examples are analyzed for popular distributions: Red Hat, Ubuntu and Fedora. Suitable for developers who use this OS in their daily activities.
+
 
 ## Computer networks 
 
