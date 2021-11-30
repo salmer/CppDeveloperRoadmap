@@ -18,7 +18,7 @@
 
     The book is a novel that tells about the work of a manager and how project management takes place. It is extremely useful because it conveys in an artistic manner the colossal experience of managerial everyday life. It is extremely useful because it most fully reveals the issues that the manager faces on a daily basis.
 
-- [Daniel Kahneman - Thinking, Fast and Slow](https://www.ozon.ru/product/dumay-medlenno-reshay-bystro-kaneman-daniel-240690039)
+- [Daniel Kahneman - Thinking, Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
 
     The classic book about the logical errors of human thinking. It is useful because it will help to take a more rational approach to making various decisions, taking into account cognitive distortions in human thinking. This is an extremely necessary skill for specialists who are in the area of making key decisions. The book may seem rather boring, in which case you can try to look for alternative works that tell about cognitive distortions.
 
