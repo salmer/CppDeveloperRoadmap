@@ -4599,10 +4599,10 @@ libraries in C#.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
     <node id="n180">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="108.71985789763676" width="175.03515625" x="-957.5175781249999" y="-5124.359928948818"/>
+          <y:Geometry height="108.71985789763676" width="706.5008788044216" x="-1239.8446249294211" y="-5124.359928948818"/>
           <y:Fill color="#FFE5B9" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.03515625" x="5.0" xml:space="preserve" y="21.73248754256838">About:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.03515625" x="270.73286127721076" xml:space="preserve" y="21.73248754256838">About:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -4610,7 +4610,7 @@ libraries in C#.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
     <node id="n181">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="328.97674710121646" width="1343.24609375" x="-1228.6184619174383" y="-4964.2873847061"/>
+          <y:Geometry height="328.97674710121646" width="1343.24609375" x="-1239.8446249294211" y="-4964.2873847061"/>
           <y:Fill color="#FFF5EB" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="239.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1333.24609375" x="5.0" xml:space="preserve" y="44.87899855060823">C ++ is still one of the most popular development languages. There is quite a number of people that want to start learning it 
@@ -4628,10 +4628,10 @@ materials. It will help you to master C++ at the level that is used in many comm
     <node id="n182">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="108.71985789763676" width="297.3251953125" x="-1032.090967302469" y="-4043.5559735707857"/>
+          <y:Geometry height="108.71985789763676" width="717.7270418164045" x="-1239.8446249294211" y="-4043.5559735707857"/>
           <y:Fill color="#FFE5B9" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="287.3251953125" x="5.0" xml:space="preserve" y="21.73248754256838">How to use:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="287.3251953125" x="215.2009232519522" xml:space="preserve" y="21.73248754256838">How to use:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -4656,10 +4656,10 @@ Requests and submit a new one
     <node id="n184">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="108.71985789763676" width="261.314453125" x="-250.6572265625" y="-4043.5559735707857"/>
+          <y:Geometry height="108.71985789763676" width="706.96484375" x="-473.482421875" y="-4043.5559735707857"/>
           <y:Fill color="#FFE5B9" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="251.314453125" x="5.0" xml:space="preserve" y="21.73248754256838">Feedback:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="251.314453125" x="227.8251953125" xml:space="preserve" y="21.73248754256838">Feedback:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -4789,10 +4789,10 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <node id="n194">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="108.71985789763676" width="291.8076171875" x="-1015.9038085937499" y="-4583.957951259802"/>
+          <y:Geometry height="108.71985789763676" width="706.5008788044216" x="-1239.8446249294211" y="-4562.6052649147205"/>
           <y:Fill color="#FFE5B9" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="281.8076171875" x="5.0" xml:space="preserve" y="21.73248754256838">Repository:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="50" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="281.8076171875" x="212.34663080846076" xml:space="preserve" y="21.73248754256838">Repository:<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -4801,7 +4801,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
       <data key="d4" xml:space="preserve"><![CDATA[https://github.com/salmer/CppDeveloperRoadmap]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="69.24611195858552" width="546.265625" x="-1143.1328125" y="-4423.885407017084"/>
+          <y:Geometry height="69.24611195858552" width="546.265625" x="-1154.113916521219" y="-4423.885407017084"/>
           <y:Fill color="#FFF5EB" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="536.265625" x="5.0" xml:space="preserve" y="17.921884104292985">https://github.com/salmer/CppDeveloperRoadmap<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
