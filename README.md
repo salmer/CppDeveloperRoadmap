@@ -27,7 +27,7 @@ Before you start exploring the map, it's recommended to read the articles listed
 # Roadmap
 
 * [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
-* [GraphML - C++ Developer Roadmap](English/Graph/roadmap.html)
+* [GraphML - C++ Developer Roadmap](English/Graph/roadmap.svg)
 
 # License and conditions
 The roadmap is published under the license **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). In a nutshell:
