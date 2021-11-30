@@ -1,5 +1,10 @@
 # Senior
 
+## C++
+
+- There are no concrete advice about books for seniors. At this grade, you should already know the foundations of C++ well enough. There is only one challenge for you: to monitor the latest standards and new features for C++ or tools for C++ ecosystem.
+
+
 ## Team management
 
 - [J. Hank Rainwater - Herding Cats: A Primer for Programmers Who Lead Programmers ](https://www.amazon.com/Herding-Cats-Primer-Programmers-Lead/dp/1590590171)
@@ -8,7 +13,7 @@
 
 - [Michael Lopp - Managing Humans: Biting and Humorous Tales of a Software Engineering Manager](https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575)
 
-    This book explains about how to be a leader, what difficulties such a person faces. It will help you learn to think like a manager, to understand what problems are bothering your manager. This will allow you to build a more effective interaction between you, the manager and the development team.
+    This book explains about how to be a leader, what difficulties such a person faces. It will help you learn to think like a manager, to understand what problems bother your manager. This will allow you to build a more effective interaction between you, the manager and the development team.
 
 - [Frederick Brooks - Mythical Man-Month, The: Essays on Software Engineering](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
 
