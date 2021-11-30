@@ -23,6 +23,7 @@
 1. [Инструментарий для С++](Tooling.md)
 1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
+
 # Дорожная карта
 
 * [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lFH_iBs=/)
