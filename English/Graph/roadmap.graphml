@@ -2282,10 +2282,10 @@ example: Visual Code, Atom, Sublime Text, etc.<y:LabelModel><y:SmartNodeLabelMod
         <node id="n82::n5">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="279.693359375" x="2234.4339679025306" y="-345.0"/>
+              <y:Geometry height="30.0" width="331.0039020045465" x="2234.4339679025306" y="-345.0"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="269.693359375" x="5.0" xml:space="preserve" y="0.7490234375">Platform dependent compilers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="314.166015625" x="8.418943189773017" xml:space="preserve" y="0.7490234375">Manufacturer-dependent compilers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -2296,7 +2296,7 @@ example: Visual Code, Atom, Sublime Text, etc.<y:LabelModel><y:SmartNodeLabelMod
               <y:Geometry height="112.24459483931048" width="505.85546875" x="1620.1043509407623" y="-391.8787405073125"/>
               <y:Fill color="#FFD5E4" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="495.85546875" x="5.0" xml:space="preserve" y="17.36936773215524">Each platform-dependent compiler has its nuances. It's 
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="477.642578125" x="14.1064453125" xml:space="preserve" y="17.36936773215524">Each compiler has its nuances. It's 
 good to know about them to prevent getting any trap: 
 Clang++/LLVM, Intel C++, MSVS C++, GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
@@ -6142,7 +6142,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <edge id="n82::e2" source="n82::n0" target="n82::n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="22.3608383176785" sy="4.617116587288535" tx="-47.09744641372095" ty="0.0">
+          <y:Path sx="22.3608383176785" sy="4.617116587288535" tx="-55.737606971533616" ty="0.0">
             <y:Point x="2154.389426046388" y="-450.0"/>
             <y:Point x="2154.389426046388" y="-330.0"/>
           </y:Path>
