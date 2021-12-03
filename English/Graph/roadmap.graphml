@@ -1237,7 +1237,7 @@ also useful to better interact with colleagues.<y:LabelModel><y:SmartNodeLabelMo
         <node id="n77::n28">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="96.50734227892644" width="426.451171875" x="2311.5115919709383" y="-5072.75939779022"/>
+              <y:Geometry height="96.50734227892644" width="426.451171875" x="2332.526997598838" y="-5157.293942939696"/>
               <y:Fill color="#FFD5E4" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="416.451171875" x="5.0" xml:space="preserve" y="21.751718014463222">The overloading of regular set of operators for 
@@ -1249,11 +1249,23 @@ regular or custom types (structures/classes).<y:LabelModel><y:SmartNodeLabelMode
         <node id="n77::n29">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="83.87574357843005" width="448.62890625" x="2425.8692250270574" y="-4857.27514136865"/>
+              <y:Geometry height="83.87574357843005" width="448.62890625" x="2425.8692250270574" y="-4886.63514136865"/>
               <y:Fill color="#FFD5E4" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="438.62890625" x="5.0" xml:space="preserve" y="15.435918664215023">To prevent memory leakage problems it is better 
 to use smart pointers rather than raw pointers.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n77::n30">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="96.50734227892644" width="541.1072216179668" x="2290.0376945026956" y="-5024.924904045853"/>
+              <y:Fill color="#FFD5E4" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="519.791015625" x="10.658102996483649" xml:space="preserve" y="21.751718014463222">Do not ignore warnings from compiler and static analyzer. 
+They are your friends, not enemies<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -2285,7 +2297,7 @@ example: Visual Code, Atom, Sublime Text, etc.<y:LabelModel><y:SmartNodeLabelMod
               <y:Geometry height="30.0" width="331.0039020045465" x="2234.4339679025306" y="-345.0"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="314.166015625" x="8.418943189773017" xml:space="preserve" y="0.7490234375">Manufacturer-dependent compilers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="296.34375" x="17.330076002273017" xml:space="preserve" y="0.7490234375">Features of a particular compiler <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -8691,7 +8703,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <edge id="n77::e21" source="n77::n28" target="n77::n7">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-213.2255859375" sy="-17.265967967837096" tx="51.46289062500006" ty="0.0"/>
+          <y:Path sx="-213.22365413154694" sy="33.45672764689698" tx="51.46289062500006" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -8701,7 +8713,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <edge id="n77::e22" source="n77::n29" target="n77::n14">
       <data key="d10">
         <y:BezierEdge>
-          <y:Path sx="-224.3144531249998" sy="7.295918349626052" tx="58.13769531250008" ty="-3.417358962535218"/>
+          <y:Path sx="-224.30054206714476" sy="23.9653623335289" tx="58.13769531250008" ty="-3.417358962535218"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:BezierEdge>
@@ -8719,9 +8731,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <edge id="n77::e23" source="n77::n29" target="n77::n23">
       <data key="d10">
         <y:BezierEdge>
-          <y:Path sx="0.0" sy="41.93787178921501" tx="54.807617187499694" ty="9.094947017729282E-13">
-            <y:Point x="2550.243009186983" y="-4680.0"/>
-          </y:Path>
+          <y:Path sx="-126.90771511789171" sy="41.944734541780235" tx="54.807617187499694" ty="9.094947017729282E-13"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:BezierEdge>
@@ -9063,9 +9073,7 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
     <edge id="n77::e26" source="n77::n29" target="n77::n22">
       <data key="d10">
         <y:BezierEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="2454.4154663159634" y="-4765.490499023418"/>
-          </y:Path>
+          <y:Path sx="-145.1035111727856" sy="8.517502754206362" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:BezierEdge>
@@ -9615,6 +9623,18 @@ at the beginning.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
           <y:Arrows source="none" target="none"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n77::e27" source="n77::n30" target="n77::n10">
+      <data key="d10">
+        <y:ArcEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="2320.42041015625" y="-4943.3408203125"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:Arc height="4.43208082288038E-5" ratio="3.6557369753609237E-7" type="fixedRatio"/>
+        </y:ArcEdge>
       </data>
     </edge>
   </graph>
