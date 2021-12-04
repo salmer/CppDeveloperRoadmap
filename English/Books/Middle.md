@@ -21,10 +21,16 @@
 
     The newest and relevant book about C++ metaprogramming (templates). This giant work describes relevant technics of templates foundations that were added in the newest standards, including C++17. If you need to write generic and parameterized code, this book will become a "bible" to you. You will get knowledge either about the basics of templates or tones of nuances related to different technics.
 
+
+## Optimization for C++ applications
+
 - [Kurt Guntheroth - Optimized C++: Proven Techniques for Heightened Performance](https://www.amazon.com/Optimized-Proven-Techniques-Heightened-Performance/dp/1491922060)
 
     This book is a guidebook for the performance improvement of C++ applications. Some advice in this book is based on different idioms and tricks described in books of Herb Sutter or Scott Meyers. It's recommended to read this book after reading the books above.
 
+- [Agner Fog - Optimizing software in C++](https://agner.org/optimize/optimizing_cpp.pdf) or [Optimization manuals](https://agner.org/optimize) 
+
+    Practical-oriented guides that provide comprehensive information about the potential optimization possibilities of applications developed in C++, or related to interaction with the CPU, memory, etc.
 
 ## Hard skills
 
