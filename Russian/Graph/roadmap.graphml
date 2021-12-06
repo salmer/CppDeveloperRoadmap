@@ -500,7 +500,7 @@
           <y:Geometry height="30.640000000000043" width="158.12109375" x="-12.632617187500045" y="275.0999999999999"/>
           <y:Fill color="#96BB7C" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.12109375" x="5.0" xml:space="preserve" y="1.06902343750005">Приоритезация<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.169921875" x="4.9755859375" xml:space="preserve" y="1.06902343750005">Приоритизация<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -2203,14 +2203,14 @@ Qt Creator, JetBrains Clion, XCode и т.д.<y:LabelModel><y:SmartNodeLabelModel
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="328.80798487371817" width="1994.5630997463745" x="1431.7701614252019" y="-593.4421305417202"/>
+              <y:Geometry height="308.58290894772256" width="1995.617787246375" x="1431.7701614252019" y="-593.4421305417202"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1994.5630997463745" x="0.0" xml:space="preserve" y="0.0">3 этап</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1995.617787246375" x="0.0" xml:space="preserve" y="0.0">3 этап</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="31" bottomF="30.507547139499366" left="204" leftF="203.85238359357413" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="10" bottomF="10.282471213503754" left="204" leftF="203.85238359357413" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -2308,14 +2308,14 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n82::n7">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="129.9239728904687" width="541.412109375" x="2869.9211517965764" y="-440.0656656979701"/>
+              <y:Geometry height="129.9239728904687" width="542.466796875" x="2869.921151796577" y="-440.0656656979701"/>
               <y:Fill color="#FFD5E4" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="126.509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="531.412109375" x="5.0" xml:space="preserve" y="1.707103632734345">Есть несколько этапов работы компилятора, которые 
-хорошо бы знать. Это помогает ошибки решать 
-проблемы сборки на разных этапах. Достаточно базово 
-понимать, что происходит. Детали работы нужны 
-разработчикам компиляторов<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="126.509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="524.234375" x="9.1162109375" xml:space="preserve" y="1.707103632734345">Есть несколько этапов работы компилятора, о которых 
+следует знать. Это помогает решать проблемы 
+при сборке приложения. Достаточно иметь базовое 
+понимание, чтобы решать большую часть проблем. 
+Детали работы важны разработчикам компиляторов.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -2328,14 +2328,14 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="1526.3360109035787" width="530.9871532938723" x="1658.6542026684047" y="-241.70049970578276"/>
+              <y:Geometry height="1565.5122672839077" width="1163.1397834371924" x="1658.6542026684047" y="-241.70049970578276"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="530.9871532938723" x="0.0" xml:space="preserve" y="0.0">5 этап</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1163.1397834371924" x="0.0" xml:space="preserve" y="0.0">5 этап</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="5" rightF="5.004882812499545" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="10" rightF="9.628197942233783" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -2453,10 +2453,11 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n9">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="123.921875" x="1706.700201813964" y="564.2995002942173"/>
+              <y:Geometry height="72.47459175122697" width="123.921875" x="1706.700201813964" y="597.272326308244"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.921875" x="5.0" xml:space="preserve" y="0.7490234375">Библиотеки<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.494140625" x="-0.572265625" xml:space="preserve" y="9.73534275061354">Популярные
+библиотеки<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="-0.4952506767380416" labelRatioY="0.0" nodeRatioX="-0.5" nodeRatioY="7.771561172376096E-16" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -2464,7 +2465,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n10">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="62.92578125" x="1925.5290512747774" y="324.29950029421735"/>
+              <y:Geometry height="30.0" width="62.92578125" x="1925.5290512747774" y="378.5096221838575"/>
               <y:Fill color="#FAD586" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.92578125" x="5.0" xml:space="preserve" y="0.7490234375">boost<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2475,7 +2476,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n11">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="78.4921875" x="1925.5290512747774" y="387.34551204653104"/>
+              <y:Geometry height="30.0" width="78.4921875" x="1925.5290512747774" y="441.5556339361712"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.4921875" x="5.0" xml:space="preserve" y="0.7490234375">opencv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2486,7 +2487,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n12">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="57.369140625" x="1925.5290512747774" y="447.34551204653104"/>
+              <y:Geometry height="30.0" width="57.369140625" x="1925.5290512747774" y="501.5556339361712"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.369140625" x="5.0" xml:space="preserve" y="0.7490234375">poco<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2497,7 +2498,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n13">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="244.107421875" x="1925.5290512747774" y="264.29950029421735"/>
+              <y:Geometry height="30.0" width="244.107421875" x="1925.5290512747774" y="318.5096221838575"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="234.107421875" x="5.0" xml:space="preserve" y="0.7490234375">Подключение библиотек<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2508,7 +2509,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n14">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="87.388671875" x="1925.5290512747774" y="507.34551204653104"/>
+              <y:Geometry height="30.0" width="87.388671875" x="1925.5290512747774" y="561.5556339361713"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.388671875" x="5.0" xml:space="preserve" y="0.7490234374999432">protobuf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2519,7 +2520,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n15">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="67.349609375" x="1925.5290512747774" y="567.345512046531"/>
+              <y:Geometry height="30.0" width="67.349609375" x="1925.5290512747774" y="621.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.349609375" x="5.0" xml:space="preserve" y="0.7490234375">gRPC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2530,7 +2531,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n16">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="41.7734375" x="1925.5290512747774" y="627.345512046531"/>
+              <y:Geometry height="30.0" width="41.7734375" x="1925.5290512747774" y="681.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="31.7734375" x="5.0" xml:space="preserve" y="0.7490234375">fmt<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2541,7 +2542,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n17">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="81.822265625" x="1925.5290512747774" y="687.345512046531"/>
+              <y:Geometry height="30.0" width="81.822265625" x="1925.5290512747774" y="741.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.822265625" x="5.0" xml:space="preserve" y="0.7490234375">pybindll<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2552,7 +2553,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n18">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="72.935546875" x="1925.5290512747774" y="747.345512046531"/>
+              <y:Geometry height="30.0" width="72.935546875" x="1925.5290512747774" y="801.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.935546875" x="5.0" xml:space="preserve" y="0.7490234375">spdlog<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2563,7 +2564,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n19">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="107.3984375" x="1925.5290512747774" y="807.345512046531"/>
+              <y:Geometry height="30.0" width="107.3984375" x="1925.5290512747774" y="861.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.3984375" x="5.0" xml:space="preserve" y="0.7490234375">ranges_v3<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2574,7 +2575,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n20">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="105.15234375" x="1922.9616619608128" y="867.345512046531"/>
+              <y:Geometry height="30.0" width="105.15234375" x="1922.9616619608128" y="921.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="95.15234375" x="5.0" xml:space="preserve" y="0.7490234375">tensorflow<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2585,7 +2586,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n21">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="72.935546875" x="1922.9616619608128" y="927.345512046531"/>
+              <y:Geometry height="30.0" width="72.935546875" x="1922.9616619608128" y="981.5556339361711"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.935546875" x="5.0" xml:space="preserve" y="0.7490234375">opencl<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2596,7 +2597,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n22">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="129.166015625" x="1704.078131501464" y="1104.2995002942175"/>
+              <y:Geometry height="30.0" width="129.166015625" x="1704.078131501464" y="1143.4757566745466"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.166015625" x="5.0" xml:space="preserve" y="0.7490234375">Фреймворки<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2607,7 +2608,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n23">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="121.822265625" x="1922.9616619608128" y="996.5894994454825"/>
+              <y:Geometry height="30.0" width="121.822265625" x="1922.9616619608128" y="1035.7657558258115"/>
               <y:Fill color="#FAD586" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.822265625" x="5.0" xml:space="preserve" y="0.7490234375">gtest/gmock<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2618,7 +2619,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n24">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="35.11328125" x="1922.9616619608128" y="1059.635511197796"/>
+              <y:Geometry height="30.0" width="35.11328125" x="1922.9616619608128" y="1098.811767578125"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="25.11328125" x="5.0" xml:space="preserve" y="0.7490234375">Qt<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2629,7 +2630,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n25">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="72.92578125" x="1922.9616619608128" y="1119.635511197796"/>
+              <y:Geometry height="30.0" width="72.92578125" x="1922.9616619608128" y="1158.811767578125"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.92578125" x="5.0" xml:space="preserve" y="0.7490234375">catch2<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2640,7 +2641,7 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n26">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="140.74804687500023" x="1922.9616619608128" y="1179.635511197796"/>
+              <y:Geometry height="30.0" width="140.74804687500023" x="1922.9616619608128" y="1218.811767578125"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.748046875" x="5.0" xml:space="preserve" y="0.7490234375">google profiler<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2651,10 +2652,45 @@ GCC, MinGW<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
         <node id="n83::n27">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="118.501953125" x="1920.7490234375" y="1239.635511197796"/>
+              <y:Geometry height="30.0" width="118.501953125" x="1920.7490234375" y="1278.811767578125"/>
               <y:Fill color="#CCEEFF" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.501953125" x="5.0" xml:space="preserve" y="0.7490234375">pytorch c++<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n83::n28">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="179.31536217732923" x="1922.9616619608128" y="251.50433720002758"/>
+              <y:Fill color="#CCEEFF" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="159.595703125" x="9.859829526164503" xml:space="preserve" y="0.7490234375">Лицензирование<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n83::n29">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="72.47459175122697" width="166.56074579261667" x="1706.700201813964" y="230.2670413244141"/>
+              <y:Fill color="#96BB7C" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="159.72265625" x="-0.7585745267899711" xml:space="preserve" y="9.73534275061354">Взаимодействие
+ с библиотеками<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="-0.4952506767380416" labelRatioY="0.0" nodeRatioX="-0.5" nodeRatioY="7.771561172376096E-16" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n83::n30">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="101.85331596091225" width="574.2007012079262" x="2222.965086955437" y="215.57767921957145"/>
+              <y:Fill color="#FFD5E4" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="562.046875" x="6.076913103963307" xml:space="preserve" y="24.424704855456127">Внимательно читайте условия лицензионного соглашения. 
+Ваш проект должен их соблюдать. <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -4233,7 +4269,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="48.453125" x="2063.99307315563" y="7905.0"/>
-          <y:Fill color="#CCEEFF" transparent="false"/>
+          <y:Fill color="#96BB7C" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.453125" x="5.0" xml:space="preserve" y="0.7490234375">OSI<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
@@ -6186,286 +6222,6 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n83::e0" source="n83::n0" target="n83::n1">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="-38.674804687499844" ty="0.0">
-            <y:Point x="1920.0" y="-126.27802310971896"/>
-            <y:Point x="1920.0" y="-189.32403486203276"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e1" source="n83::n0" target="n83::n2">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="83.6015625" sy="0.0" tx="-44.23632812499982" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e2" source="n83::n0" target="n83::n3">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="-28.12792968749989" ty="0.0">
-            <y:Point x="1920.0" y="-126.27802310971896"/>
-            <y:Point x="1920.0" y="-66.27802310971896"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e3" source="n83::n4" target="n83::n5">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="55.284729627990274" sy="-2.3824823021181913" tx="-33.123046875000135" ty="0.0">
-            <y:Point x="1920.0" y="84.28633629013088"/>
-            <y:Point x="1920.0" y="146.66881859224907"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e4" source="n83::n4" target="n83::n6">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-34.114918341026346" sy="-2.3824823021181913" tx="-33.123046875000135" ty="0.0">
-            <y:Point x="1920.0" y="84.28633629013088"/>
-            <y:Point x="1920.0" y="203.33763718449813"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e5" source="n83::n4" target="n83::n7">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="94.0616386898727" sy="-2.3824823021181913" tx="-36.46777343750015" ty="0.0">
-            <y:Point x="1920.0" y="84.28633629013088"/>
-            <y:Point x="1920.0" y="23.72197689028104"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e6" source="n83::n9" target="n83::n10">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-25.064077342521216" sy="0.0" tx="-31.462890624999872" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="339.29950029421735"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e7" source="n83::n9" target="n83::n11">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-6.7065829064151945" sy="0.0" tx="-39.246093749999844" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="402.34551204653104"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e8" source="n83::n9" target="n83::n12">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="28.560380341094998" sy="0.0" tx="-28.684570312499886" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="462.34551204653104"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e77" source="n83" target="n83::n14">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-34.14777931534081" sy="0.8780063005244756" tx="-43.69433593749982" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e9" source="n83::n9" target="n83::n15">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="59.78856251050151" sy="0.0" tx="-33.6389211994012" ty="2.7401496504473926">
-            <y:Point x="1890.3724841367948" y="579.2995002942173"/>
-            <y:Point x="1890.3724841367948" y="585.0856616969784"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e10" source="n83::n9" target="n83::n16">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="50.91121092169123" sy="0.0" tx="-20.886718749999915" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="642.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e11" source="n83::n9" target="n83::n17">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="31.731147357695377" sy="0.0" tx="-40.91113281249984" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="702.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e12" source="n83::n9" target="n83::n18">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="13.519992558369248" sy="0.0" tx="-36.46777343749985" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="762.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e13" source="n83::n9" target="n83::n19">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="21.041422092355166" sy="0.0" tx="-53.69921875000016" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="822.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e14" source="n83::n9" target="n83::n20">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-11.222280560515603" sy="0.0" tx="-52.576171875" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="882.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e15" source="n83::n9" target="n83::n21">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-18.59327658812393" sy="0.0" tx="-36.46777343750015" ty="0.0">
-            <y:Point x="1890.0" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="942.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e16" source="n83::n22" target="n83::n23">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="15.335421815885429" sy="-9.299500294217523" tx="-60.91113281249987" ty="0.0">
-            <y:Point x="1890.0" y="1110.0"/>
-            <y:Point x="1890.0" y="1011.5894994454825"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e17" source="n83::n22" target="n83::n24">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="35.88928824305107" sy="-9.299500294217523" tx="-17.556640624999908" ty="0.0">
-            <y:Point x="1890.0" y="1110.0"/>
-            <y:Point x="1890.0" y="1074.635511197796"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e18" source="n83::n22" target="n83::n25">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="46.474438619119084" sy="-9.299500294217523" tx="-36.42894821053096" ty="-1.826536495114624">
-            <y:Point x="1890.0" y="1110.0"/>
-            <y:Point x="1890.0" y="1132.8089747026813"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e19" source="n83::n22" target="n83::n26">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="37.80311462181954" sy="-9.299500294217523" tx="-70.37402343750011" ty="0.0">
-            <y:Point x="1890.0" y="1110.0"/>
-            <y:Point x="1890.0" y="1194.635511197796"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e20" source="n83::n22" target="n83::n27">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="19.382842536045665" sy="-9.299500294217523" tx="-59.25097656249985" ty="0.0">
-            <y:Point x="1890.0" y="1110.0"/>
-            <y:Point x="1890.0" y="1254.635511197796"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
     <edge id="n84::e0" source="n84::n0" target="n84::n1">
       <data key="d10">
         <y:PolyLineEdge>
@@ -7238,7 +6994,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e78" source="n86" target="n97::n0">
+    <edge id="e77" source="n86" target="n97::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="13.983208536116333" sy="4.058837890625" tx="-159.568359375" ty="0.0">
@@ -7261,7 +7017,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e79" source="n97::n4" target="n86">
+    <edge id="e78" source="n97::n4" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-20.259273885216977" sy="4.058837890625" tx="45.57825946096353" ty="4.058837890625">
@@ -7274,7 +7030,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e80" source="n97::n6" target="n86">
+    <edge id="e79" source="n97::n6" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-8.6942439711467" sy="4.058837890625" tx="53.90588099640471" ty="4.058837890625">
@@ -7287,7 +7043,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e81" source="n87" target="n88">
+    <edge id="e80" source="n87" target="n88">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="62.85138730442112" sy="0.0" tx="-89.2753906249997" ty="0.0">
@@ -7300,7 +7056,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e82" source="n87" target="n89">
+    <edge id="e81" source="n87" target="n89">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="57.03731041586062" sy="0.0" tx="-102.61035156249984" ty="0.0">
@@ -7313,7 +7069,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e83" source="n87" target="n90">
+    <edge id="e82" source="n87" target="n90">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="40.93678980138619" sy="0.0" tx="-43.137695312500114" ty="0.0">
@@ -7326,7 +7082,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e84" source="n87" target="n91">
+    <edge id="e83" source="n87" target="n91">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="107.11230468749984" sy="0.0" tx="-63.67968749999975" ty="0.0">
@@ -7339,7 +7095,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e85" source="n87" target="n92">
+    <edge id="e84" source="n87" target="n92">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="107.11230468750017" sy="0.0" tx="-123.14257812499984" ty="0.0"/>
@@ -7349,7 +7105,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e86" source="n87" target="n93">
+    <edge id="e85" source="n87" target="n93">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="82.52543384304184" sy="0.0" tx="-63.1376953125" ty="0.0">
@@ -7362,7 +7118,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e87" source="n87" target="n94">
+    <edge id="e86" source="n87" target="n94">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="40.9324222556487" sy="0.0" tx="-43.1279296875" ty="0.0">
@@ -7375,7 +7131,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e88" source="n87" target="n95">
+    <edge id="e87" source="n87" target="n95">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="34.810870147019905" sy="0.0" tx="-33.66992187499989" ty="0.0">
@@ -7388,7 +7144,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e89" source="n87" target="n96">
+    <edge id="e88" source="n87" target="n96">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="48.787016513750835" sy="0.0" tx="-134.83691406250017" ty="0.0">
@@ -7401,7 +7157,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e90" source="n87" target="n86">
+    <edge id="e89" source="n87" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-107.11230468749984" sy="0.0" tx="66.59682106355402" ty="4.058837890625">
@@ -7414,7 +7170,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e91" source="n98" target="n99">
+    <edge id="e90" source="n98" target="n99">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="18.872927955474978" sy="4.058837890625" tx="-18.37747575304355" ty="4.058837890625">
@@ -7427,7 +7183,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e92" source="n98" target="n100">
+    <edge id="e91" source="n98" target="n100">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="62.59763089522263" sy="4.058837890625" tx="-19.693772271237506" ty="4.058837890625">
@@ -7440,7 +7196,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e93" source="n98" target="n101">
+    <edge id="e92" source="n98" target="n101">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="83.50004263668262" sy="4.058837890625" tx="-31.782928353377837" ty="4.058837890625"/>
@@ -7450,7 +7206,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e94" source="n98" target="n102">
+    <edge id="e93" source="n98" target="n102">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="58.64312056575724" sy="4.058837890625" tx="-33.68457031249989" ty="0.0">
@@ -7463,7 +7219,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e95" source="n98" target="n103">
+    <edge id="e94" source="n98" target="n103">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="60.3599782869203" sy="4.058837890625" tx="-47.07285737694449" ty="4.058837890625">
@@ -7476,7 +7232,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e96" source="n98" target="n86">
+    <edge id="e95" source="n98" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-124.49511718750016" sy="0.0" tx="38.51134389158987" ty="4.058837890625">
@@ -7489,7 +7245,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e97" source="n104" target="n105">
+    <edge id="e96" source="n104" target="n105">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="4.711157408032087" sy="4.058837890625" tx="-80.72983703233795" ty="4.058837890625">
@@ -7502,7 +7258,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e98" source="n104" target="n106">
+    <edge id="e97" source="n104" target="n106">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="42.285778363336135" sy="4.058837890625" tx="-98.28044966483237" ty="4.058837890625"/>
@@ -7512,7 +7268,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e99" source="n104" target="n107">
+    <edge id="e98" source="n104" target="n107">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="2.967316463930646" sy="4.058837890625" tx="-86.25671608166118" ty="4.058837890625">
@@ -7525,7 +7281,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e100" source="n104" target="n86">
+    <edge id="e99" source="n104" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-68.64550781250014" sy="0.0" tx="-32.77814419634702" ty="4.058837890625">
@@ -7538,7 +7294,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e101" source="n108" target="n109">
+    <edge id="e100" source="n108" target="n109">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="9.891890042024258" sy="-0.18267460973311245" tx="-97.58593750000001" ty="0.0">
@@ -7551,7 +7307,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e102" source="n108" target="n110">
+    <edge id="e101" source="n108" target="n110">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="41.8291015625" sy="0.0" tx="-17.025986684030293" ty="-0.18267460973311245">
@@ -7564,7 +7320,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e103" source="n108" target="n111">
+    <edge id="e102" source="n108" target="n111">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="24.92041010083526" sy="-0.18267460973311245" tx="-106.60449218750016" ty="0.0">
@@ -7577,7 +7333,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e104" source="n112" target="n113">
+    <edge id="e103" source="n112" target="n113">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="29.529254513264704" sy="-0.18267460973311245" tx="-100.134765625" ty="0.0">
@@ -7590,7 +7346,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e105" source="n112" target="n114">
+    <edge id="e104" source="n112" target="n114">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="97.84960937500016" sy="0.0" tx="-122.53222656249984" ty="0.0"/>
@@ -7600,7 +7356,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e106" source="n112" target="n115">
+    <edge id="e105" source="n112" target="n115">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="35.02704361369455" sy="-0.18267460973311245" tx="-130.90625000000017" ty="0.0">
@@ -7613,7 +7369,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e107" source="n109" target="n116">
+    <edge id="e106" source="n109" target="n116">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-21.243841238773935" ty="-0.18267460973311245">
@@ -7626,7 +7382,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e108" source="n109" target="n118">
+    <edge id="e107" source="n109" target="n118">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="97.58593750000033" sy="0.0" tx="-17.19564017723056" ty="-0.18267460973311245">
@@ -7639,7 +7395,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e109" source="n109" target="n117">
+    <edge id="e108" source="n109" target="n117">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="90.33283617981282" sy="-0.18267460973311245" tx="-23.656047493804746" ty="-0.18267460973311245">
@@ -7652,7 +7408,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e110" source="n109" target="n119">
+    <edge id="e109" source="n109" target="n119">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="23.388924274224692" sy="-0.18267460973311245" tx="-81.93828543258198" ty="-0.18267460973311245">
@@ -7665,7 +7421,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e111" source="n108" target="n120">
+    <edge id="e110" source="n108" target="n120">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="31.013845134427072" sy="-0.18267460973311245" tx="-103.33789062499984" ty="0.0">
@@ -7678,7 +7434,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e112" source="n121" target="n112">
+    <edge id="e111" source="n121" target="n112">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="110.24459988629154" sy="-0.18267460973311245" tx="-97.84960937499983" ty="0.0">
@@ -7691,7 +7447,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e113" source="n121" target="n108">
+    <edge id="e112" source="n121" target="n108">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="44.80996387689911" sy="-0.18267460973311245" tx="-41.8291015625" ty="0.0">
@@ -7704,7 +7460,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e114" source="n122" target="n123">
+    <edge id="e113" source="n122" target="n123">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-44.07519531249977" ty="0.0">
@@ -7717,7 +7473,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e115" source="n123" target="n124">
+    <edge id="e114" source="n123" target="n124">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-51.467773437500185" ty="0.0">
@@ -7730,7 +7486,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e116" source="n123" target="n125">
+    <edge id="e115" source="n123" target="n125">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="26.472968406507952" ty="-0.18267460973311245">
@@ -7743,7 +7499,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e117" source="n123" target="n126">
+    <edge id="e116" source="n123" target="n126">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="20.031917542614497" sy="-0.18267460973311245" tx="-5.875192442536151" ty="-0.18267460973311245">
@@ -7756,7 +7512,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e118" source="n123" target="n127">
+    <edge id="e117" source="n123" target="n127">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="9.283928655555572" sy="-0.18267460973311245" tx="-52.024414062500135" ty="0.0">
@@ -7769,7 +7525,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e119" source="n128" target="n122">
+    <edge id="e118" source="n128" target="n122">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="39.85156250000013" sy="0.0" tx="-87.82519531250016" ty="0.0"/>
@@ -7779,7 +7535,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e120" source="n129" target="n132">
+    <edge id="e119" source="n129" target="n132">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-181.17480468749983" ty="0.0">
@@ -7792,7 +7548,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e121" source="n129" target="n131">
+    <edge id="e120" source="n129" target="n131">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="66.65820312500014" sy="0.0" tx="-58.757812500000114" ty="0.0"/>
@@ -7802,7 +7558,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e122" source="n129" target="n130">
+    <edge id="e121" source="n129" target="n130">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-54.74414062500013" ty="0.0">
@@ -7815,7 +7571,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e123" source="n122" target="n129">
+    <edge id="e122" source="n122" target="n129">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="43.530795146934445" sy="-0.18267460973311245" tx="-66.65820312500014" ty="0.0">
@@ -7828,7 +7584,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e124" source="n128" target="n121">
+    <edge id="e123" source="n128" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="120.11523437499984" ty="0.0">
@@ -7841,7 +7597,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e125" source="n133" target="n135">
+    <edge id="e124" source="n133" target="n135">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="47.76786072720245" sy="-0.18267460973311245" tx="15.10873624465481" ty="-0.18267460973311245">
@@ -7854,7 +7610,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e126" source="n133" target="n134">
+    <edge id="e125" source="n133" target="n134">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="51.1004527513272" sy="-0.18267460973311245" tx="0.0" ty="0.0">
@@ -7867,7 +7623,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e127" source="n122" target="n133">
+    <edge id="e126" source="n122" target="n133">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-15.416703473728509" sy="-0.18267460973311245" tx="-99.44140625000014" ty="0.0">
@@ -7880,7 +7636,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e128" source="n137" target="n140">
+    <edge id="e127" source="n137" target="n140">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="109.38475151040292" sy="-0.18267460973311245" tx="-74.78808593750014" ty="0.0">
@@ -7893,7 +7649,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e129" source="n137" target="n139">
+    <edge id="e128" source="n137" target="n139">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="161.33593750000017" sy="0.0" tx="-32.01464843749989" ty="0.0"/>
@@ -7903,7 +7659,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e130" source="n137" target="n138">
+    <edge id="e129" source="n137" target="n138">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="18.98877831017227" sy="-0.18267460973311245" tx="-78.13769531250018" ty="0.0">
@@ -7916,7 +7672,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e131" source="n136" target="n137">
+    <edge id="e130" source="n136" target="n137">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="53.78710937500017" sy="0.0" tx="-161.3359374999998" ty="0.0"/>
@@ -7926,7 +7682,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e132" source="n140" target="n141">
+    <edge id="e131" source="n140" target="n141">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="46.82083965736324" sy="-0.18267460973311245" tx="-6.29329203211518" ty="-0.18267460973311245">
@@ -7939,7 +7695,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e133" source="n140" target="n142">
+    <edge id="e132" source="n140" target="n142">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="36.750988977780075" sy="-0.18267460973311245" tx="8.276986536097011" ty="-0.18267460973311245">
@@ -7952,7 +7708,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e134" source="n136" target="n121">
+    <edge id="e133" source="n136" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-53.78710937499983" sy="0.0" tx="0.0" ty="0.0">
@@ -7965,7 +7721,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e135" source="n145" target="n143">
+    <edge id="e134" source="n145" target="n143">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="28.782603708445443" ty="1.2611818208060868">
@@ -7978,7 +7734,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e136" source="n144" target="n143">
+    <edge id="e135" source="n144" target="n143">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-15.071221897864843" sy="-0.18267460973311245" tx="32.89132851535819" ty="1.2611818208060868">
@@ -7991,7 +7747,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e137" source="n144" target="n146">
+    <edge id="e136" source="n144" target="n146">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="14.0709427417482" sy="-0.18267460973311245" tx="0.0" ty="0.0">
@@ -8004,7 +7760,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e138" source="n144" target="n147">
+    <edge id="e137" source="n144" target="n147">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="20.179588791207184" sy="-0.18267460973311245" tx="-33.1083984375" ty="0.0">
@@ -8017,7 +7773,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e139" source="n146" target="n148">
+    <edge id="e138" source="n146" target="n148">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="22.950162569324014" sy="-0.18267460973311245" tx="0.0" ty="0.0">
@@ -8030,7 +7786,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e140" source="n146" target="n149">
+    <edge id="e139" source="n146" target="n149">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="22.603215545023183" sy="-0.18267460973311245" tx="-9.981618645806257" ty="-0.18267460973311245">
@@ -8043,7 +7799,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e141" source="n143" target="n121">
+    <edge id="e140" source="n143" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-68.67968749999984" sy="0.0" tx="0.0" ty="0.0">
@@ -8056,7 +7812,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e142" source="n150" target="n121">
+    <edge id="e141" source="n150" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-94.37792968750016" sy="0.0" tx="-2.959622191701877" ty="-0.18267460973311245">
@@ -8069,7 +7825,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e143" source="n151" target="n121">
+    <edge id="e142" source="n151" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-71.31640624999984" sy="0.0" tx="4.836845077502407" ty="-0.18267460973311245">
@@ -8082,7 +7838,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e144" source="n162" target="n163">
+    <edge id="e143" source="n162" target="n163">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="87.57258645939781" sy="-0.18267460973220295" tx="-27.865374794096493" ty="-0.18267460973220295">
@@ -8095,7 +7851,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e145" source="n162" target="n164">
+    <edge id="e144" source="n162" target="n164">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="66.97067571888897" sy="-0.18267460973220295" tx="-11.373057283107359" ty="-0.18267460973220295">
@@ -8108,7 +7864,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e146" source="n160" target="n161">
+    <edge id="e145" source="n160" target="n161">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="71.12109375000016" sy="0.0" tx="-68.6455078125" ty="0.0"/>
@@ -8118,7 +7874,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e147" source="n155" target="n157">
+    <edge id="e146" source="n155" target="n157">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-41.453125" ty="0.0">
@@ -8131,7 +7887,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e148" source="n155" target="n159">
+    <edge id="e147" source="n155" target="n159">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="88.7431640625" sy="0.0" tx="-58.1474609375" ty="0.0"/>
@@ -8141,7 +7897,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e149" source="n155" target="n158">
+    <edge id="e148" source="n155" target="n158">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-97.37109375" ty="0.0">
@@ -8154,7 +7910,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e150" source="n152" target="n156">
+    <edge id="e149" source="n152" target="n156">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="43.318485771752016" sy="-0.18267460973220295" tx="-5.973427792264839" ty="-0.18267460973220295">
@@ -8167,7 +7923,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e151" source="n152" target="n155">
+    <edge id="e150" source="n152" target="n155">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="14.23826722849989" sy="0.0" tx="-88.7431640625" ty="0.0">
@@ -8180,7 +7936,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e152" source="n152" target="n154">
+    <edge id="e151" source="n152" target="n154">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="29.38412870672653" sy="-0.18267460973220295" tx="-15.815889000798778" ty="-0.18267460973220295">
@@ -8193,7 +7949,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e153" source="n152" target="n153">
+    <edge id="e152" source="n152" target="n153">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-52.576171875" ty="0.0">
@@ -8206,7 +7962,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e154" source="n152" target="n121">
+    <edge id="e153" source="n152" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-78.2548828125" sy="0.0" tx="0.0" ty="0.0">
@@ -8219,7 +7975,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e155" source="n160" target="n121">
+    <edge id="e154" source="n160" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-71.12109374999984" sy="0.0" tx="0.0" ty="0.0">
@@ -8232,7 +7988,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e156" source="n162" target="n121">
+    <edge id="e155" source="n162" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-145.41308593750017" sy="0.0" tx="7.621297673646464" ty="-0.18267460973311245">
@@ -8245,7 +8001,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e157" source="n165" target="n121">
+    <edge id="e156" source="n165" target="n121">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-133.30371093749983" sy="0.0" tx="5.95062611596003" ty="-0.18267460973311245">
@@ -8258,7 +8014,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e158" source="n165" target="n166">
+    <edge id="e157" source="n165" target="n166">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-54.104492187499886" ty="0.0">
@@ -8271,7 +8027,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e159" source="n165" target="n167">
+    <edge id="e158" source="n165" target="n167">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="103.02980879977713" sy="-0.18267460973220295" tx="0.0" ty="0.0"/>
@@ -8281,7 +8037,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e160" source="n167" target="n170">
+    <edge id="e159" source="n167" target="n170">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="28.66593649266239" sy="2.5" tx="16.407330185962728" ty="-0.18267460973220295">
@@ -8294,7 +8050,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e161" source="n167" target="n171">
+    <edge id="e160" source="n167" target="n171">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="35.65234375" sy="2.5" tx="-13.374608593011617" ty="-0.18267460973220295">
@@ -8307,7 +8063,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e162" source="n165" target="n169">
+    <edge id="e161" source="n165" target="n169">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-66.50700408798345" sy="-0.18267460973220295" tx="-40.31054687499999" ty="0.0">
@@ -8320,7 +8076,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e163" source="n165" target="n168">
+    <edge id="e162" source="n165" target="n168">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="103.02980879977713" sy="-0.18267460973220295" tx="-192.0146484375" ty="0.0">
@@ -8333,7 +8089,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e164" source="n168" target="n172">
+    <edge id="e163" source="n168" target="n172">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="146.6284104506745" sy="-0.18267460973220295" tx="-39.78320312499975" ty="0.0">
@@ -8346,7 +8102,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e165" source="n168" target="n174">
+    <edge id="e164" source="n168" target="n174">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="137.38225409567318" sy="-0.18267460973220295" tx="21.18201452630292" ty="-0.18267460973220295">
@@ -8359,7 +8115,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e166" source="n168" target="n173">
+    <edge id="e165" source="n168" target="n173">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="151.98144834041216" sy="-0.18267460973220295" tx="7.11436187645722" ty="-0.18267460973220295">
@@ -8372,7 +8128,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e167" source="n168" target="n175">
+    <edge id="e166" source="n168" target="n175">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="33.24133514986646" sy="-0.18267460973220295" tx="-35.33496093749977" ty="0.0">
@@ -8385,7 +8141,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e168" source="n121" target="n2">
+    <edge id="e167" source="n121" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-120.11523437500014" sy="0.0" tx="53.093260789772636" ty="0.0">
@@ -8398,7 +8154,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e169" source="n176" target="n85::n6">
+    <edge id="e168" source="n176" target="n85::n6">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-105.251953125" ty="0.0">
@@ -8411,7 +8167,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e170" source="n176" target="n85::n0">
+    <edge id="e169" source="n176" target="n85::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="53.25731345544153" sy="0.0" tx="-129.587890625" ty="0.0">
@@ -8424,7 +8180,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e171" source="n176" target="n84::n0">
+    <edge id="e170" source="n176" target="n84::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="38.423242202378816" sy="0.0" tx="0.0" ty="0.0">
@@ -8437,7 +8193,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e172" source="n176" target="n86">
+    <edge id="e171" source="n176" target="n86">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="48.213354651976694" sy="0.0" tx="-55.50037896768562" ty="4.058837890625">
@@ -8450,12 +8206,12 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e173" source="n177" target="n83::n22">
+    <edge id="e172" source="n177" target="n83::n22">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-64.5830078125" ty="0.0">
             <y:Point x="1560.0" y="60.0"/>
-            <y:Point x="1560.0" y="1119.2995002942175"/>
+            <y:Point x="1560.0" y="1158.4757566745466"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -8463,12 +8219,12 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e174" source="n177" target="n83::n9">
+    <edge id="e173" source="n177" target="n83::n9">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-61.96093750000001" ty="0.0">
             <y:Point x="1560.0" y="60.0"/>
-            <y:Point x="1560.0" y="579.2995002942173"/>
+            <y:Point x="1560.0" y="633.5096221838575"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -8476,7 +8232,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e175" source="n177" target="n83::n4">
+    <edge id="e174" source="n177" target="n83::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-109.67089843750001" ty="0.0">
@@ -8489,7 +8245,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e176" source="n177" target="n83::n0">
+    <edge id="e175" source="n177" target="n83::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-52.768780479275804" ty="6.2780231097189585">
@@ -8502,7 +8258,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e177" source="n177" target="n82::n0">
+    <edge id="e176" source="n177" target="n82::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-32.42226083849111" ty="4.617116587288535">
@@ -8515,7 +8271,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e178" source="n177" target="n81::n0">
+    <edge id="e177" source="n177" target="n81::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.59890896033826" sy="0.0" tx="-79.31564214716765" ty="-4.7999999999999545">
@@ -8528,7 +8284,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e179" source="n2" target="n177">
+    <edge id="e178" source="n2" target="n177">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="53.093260789772636" sy="0.0" tx="-117.7470703125" ty="0.0">
@@ -8541,7 +8297,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e180" source="n178" target="n79::n1">
+    <edge id="e179" source="n178" target="n79::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-87.41503906250006" ty="-4.547473508864641E-13">
@@ -8554,7 +8310,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e181" source="n178" target="n79::n11">
+    <edge id="e180" source="n178" target="n79::n11">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-124.80273437500007" ty="0.0">
@@ -8567,7 +8323,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e182" source="n178" target="n80::n0">
+    <edge id="e181" source="n178" target="n80::n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-51.560546875" ty="0.0">
@@ -8580,7 +8336,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e183" source="n178" target="n80::n20">
+    <edge id="e182" source="n178" target="n80::n20">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-45.232421875" ty="0.0">
@@ -8593,7 +8349,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e184" source="n178" target="n80::n14">
+    <edge id="e183" source="n178" target="n80::n14">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-58.611328125" ty="0.0">
@@ -8606,7 +8362,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e185" source="n78::n1" target="n178">
+    <edge id="e184" source="n78::n1" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-95.04687499999993" sy="-4.547473508864641E-13" tx="85.3349609375" ty="0.0">
@@ -8619,7 +8375,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e186" source="n78::n0" target="n178">
+    <edge id="e185" source="n78::n0" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-100.16894531250009" sy="0.0" tx="85.3349609375" ty="0.0">
@@ -8632,7 +8388,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e187" source="n77::n13" target="n178">
+    <edge id="e186" source="n77::n13" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-133.90238901398422" sy="-1.6587485671907416" tx="85.3349609375" ty="0.0">
@@ -8645,7 +8401,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e188" source="n77::n12" target="n178">
+    <edge id="e187" source="n77::n12" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-99.12402343750009" sy="0.0" tx="85.3349609375" ty="0.0">
@@ -8658,7 +8414,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e189" source="n77::n8" target="n178">
+    <edge id="e188" source="n77::n8" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-68.70410156249993" sy="0.0" tx="85.3349609375" ty="0.0">
@@ -8671,7 +8427,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e190" source="n178" target="n77::n5">
+    <edge id="e189" source="n178" target="n77::n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="85.3349609375" sy="0.0" tx="-46.39941406250006" ty="0.0">
@@ -8684,7 +8440,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e191" source="n77::n0" target="n178">
+    <edge id="e190" source="n77::n0" target="n178">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-94.67089843750007" sy="0.0" tx="85.3349609375" ty="0.0">
@@ -8697,7 +8453,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e192" source="n178" target="n2">
+    <edge id="e191" source="n178" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-85.3349609375" sy="0.0" tx="53.118164062500064" ty="0.0">
@@ -8729,7 +8485,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:BezierEdge>
       </data>
     </edge>
-    <edge id="e193" source="n77" target="n77::n22">
+    <edge id="e192" source="n77" target="n77::n22">
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="8.160049534096204" sy="25.62335469179925" tx="54.26074218750018" ty="0.0">
@@ -8819,7 +8575,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <edge id="n82::e4" source="n82::n7" target="n82::n4">
       <data key="d10">
         <y:BezierEdge>
-          <y:Path sx="-270.70605468749966" sy="-38.739443021682796" tx="136.99511718749986" ty="0.0"/>
+          <y:Path sx="-271.2333984374996" sy="-38.739443021682796" tx="136.99511718749986" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:BezierEdge>
@@ -8876,7 +8632,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:BezierEdge>
       </data>
     </edge>
-    <edge id="e194" source="n31" target="n37">
+    <edge id="e193" source="n31" target="n37">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-124.1337890625" sy="0.0" tx="59.39746093749999" ty="0.0">
@@ -9071,7 +8827,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:BezierEdge>
       </data>
     </edge>
-    <edge id="e195" source="n176" target="n2">
+    <edge id="e194" source="n176" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-76.20410156249984" sy="0.0" tx="53.093260789772636" ty="0.0">
@@ -9284,7 +9040,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:BezierEdge>
       </data>
     </edge>
-    <edge id="e196" source="n79" target="n79::n15">
+    <edge id="e195" source="n79" target="n79::n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-491.688093841291" sy="327.69565169182715" tx="-63.46972656250008" ty="0.0"/>
@@ -9294,7 +9050,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e197" source="n79" target="n79::n12">
+    <edge id="e196" source="n79" target="n79::n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-731.5800136141927" sy="205.20481315192228" tx="-102.17578125000009" ty="-4.547473508864641E-13"/>
@@ -9483,7 +9239,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e198" source="n80" target="n80::n16">
+    <edge id="e197" source="n80" target="n80::n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-13.82867797249703" sy="342.15045983577875" tx="-37.0244140625" ty="0.0"/>
@@ -9590,45 +9346,6 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         </y:BezierEdge>
       </data>
     </edge>
-    <edge id="n83::e21" source="n83::n4" target="n83::n8">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="6.2257236395191455" sy="-2.3824823021181913" tx="-8.438593374907068" ty="-6.229914494981841">
-            <y:Point x="1920.0" y="84.28633629013088"/>
-            <y:Point x="1920.0" y="77.4920623952992"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e22" source="n83::n9" target="n83::n14">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1890.3724841367948" y="579.2995002942173"/>
-            <y:Point x="1890.0" y="522.345512046531"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n83::e23" source="n83::n13" target="n83::n9">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1890.3724841367948" y="279.29950029421735"/>
-            <y:Point x="1890.3724841367948" y="579.2995002942173"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
     <edge id="n85::e58" source="n85::n60" target="n85::n26">
       <data key="d10">
         <y:PolyLineEdge>
@@ -9649,6 +9366,361 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:Arc height="9.70580005645752" ratio="0.21413981914520264" type="fixedRatio"/>
         </y:ArcEdge>
+      </data>
+    </edge>
+    <edge id="n83::e0" source="n83::n0" target="n83::n1">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-38.674804687499844" ty="0.0">
+            <y:Point x="1920.0" y="-126.27802310971896"/>
+            <y:Point x="1920.0" y="-189.32403486203276"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e1" source="n83::n0" target="n83::n2">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="83.6015625" sy="0.0" tx="-44.23632812499982" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e2" source="n83::n0" target="n83::n3">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-28.12792968749989" ty="0.0">
+            <y:Point x="1920.0" y="-126.27802310971896"/>
+            <y:Point x="1920.0" y="-66.27802310971896"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e3" source="n83::n4" target="n83::n5">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="55.284729627990274" sy="-2.3824823021181913" tx="-33.123046875000135" ty="0.0">
+            <y:Point x="1920.0" y="84.28633629013088"/>
+            <y:Point x="1920.0" y="146.66881859224907"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e4" source="n83::n4" target="n83::n6">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-34.114918341026346" sy="-2.3824823021181913" tx="-33.123046875000135" ty="0.0">
+            <y:Point x="1920.0" y="84.28633629013088"/>
+            <y:Point x="1920.0" y="203.33763718449813"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e5" source="n83::n4" target="n83::n7">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="94.0616386898727" sy="-2.3824823021181913" tx="-36.46777343750015" ty="0.0">
+            <y:Point x="1920.0" y="84.28633629013088"/>
+            <y:Point x="1920.0" y="23.72197689028104"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e6" source="n83::n4" target="n83::n8">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="6.2257236395191455" sy="-2.3824823021181913" tx="-8.438593374907068" ty="-6.229914494981841">
+            <y:Point x="1920.0" y="84.28633629013088"/>
+            <y:Point x="1920.0" y="77.4920623952992"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e7" source="n83::n9" target="n83::n10">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-25.064077342521216" sy="0.0" tx="-31.462890624999872" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="393.5096221838575"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e8" source="n83::n9" target="n83::n11">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-6.7065829064151945" sy="0.0" tx="-39.246093749999844" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="456.5556339361712"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e9" source="n83::n9" target="n83::n12">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="28.560380341094998" sy="0.0" tx="-28.684570312499886" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="516.5556339361713"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e10" source="n83::n9" target="n83::n15">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="59.78856251050151" sy="0.0" tx="-33.6389211994012" ty="2.7401496504473926">
+            <y:Point x="1890.3724841367948" y="633.5096221838575"/>
+            <y:Point x="1890.3724841367948" y="639.2957835866185"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e11" source="n83::n9" target="n83::n16">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="50.91121092169123" sy="0.0" tx="-20.886718749999915" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="696.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e12" source="n83::n9" target="n83::n17">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="31.731147357695377" sy="0.0" tx="-40.91113281249984" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="756.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e13" source="n83::n9" target="n83::n18">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="13.519992558369248" sy="0.0" tx="-36.46777343749985" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="816.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e14" source="n83::n9" target="n83::n19">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="21.041422092355166" sy="0.0" tx="-53.69921875000016" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="876.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e15" source="n83::n9" target="n83::n20">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-11.222280560515603" sy="0.0" tx="-52.576171875" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="936.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e16" source="n83::n9" target="n83::n21">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-18.59327658812393" sy="0.0" tx="-36.46777343750015" ty="0.0">
+            <y:Point x="1890.0" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="996.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e17" source="n83::n9" target="n83::n14">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1890.3724841367948" y="633.5096221838575"/>
+            <y:Point x="1890.0" y="576.5556339361711"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e18" source="n83::n13" target="n83::n9">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1890.3724841367948" y="333.5096221838575"/>
+            <y:Point x="1890.3724841367948" y="633.5096221838575"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e19" source="n83::n22" target="n83::n23">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="15.335421815885429" sy="-9.299500294217523" tx="-60.91113281249987" ty="0.0">
+            <y:Point x="1890.0" y="1149.176256380329"/>
+            <y:Point x="1890.0" y="1050.7657558258115"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e20" source="n83::n22" target="n83::n24">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="35.88928824305107" sy="-9.299500294217523" tx="-17.556640624999908" ty="0.0">
+            <y:Point x="1890.0" y="1149.176256380329"/>
+            <y:Point x="1890.0" y="1113.811767578125"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e21" source="n83::n22" target="n83::n25">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="46.474438619119084" sy="-9.299500294217523" tx="-36.42894821053096" ty="-1.826536495114624">
+            <y:Point x="1890.0" y="1149.176256380329"/>
+            <y:Point x="1890.0" y="1171.9852310830104"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e22" source="n83::n22" target="n83::n26">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="37.80311462181954" sy="-9.299500294217523" tx="-70.37402343750011" ty="0.0">
+            <y:Point x="1890.0" y="1149.176256380329"/>
+            <y:Point x="1890.0" y="1233.811767578125"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e23" source="n83::n22" target="n83::n27">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="19.382842536045665" sy="-9.299500294217523" tx="-59.25097656249985" ty="0.0">
+            <y:Point x="1890.0" y="1149.176256380329"/>
+            <y:Point x="1890.0" y="1293.811767578125"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e198" source="n83" target="n83::n14">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-63.911176557950824" sy="0.8951316952785269" tx="-43.69433593749982" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e24" source="n83::n28" target="n83::n29">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e199" source="n83::n29" target="n177">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="117.7470703125" ty="0.0">
+            <y:Point x="1559.5073438857494" y="266.5043372000276"/>
+            <y:Point x="1559.5073438857494" y="60.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n83::e25" source="n83::n30" target="n83::n28">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
       </data>
     </edge>
   </graph>
