@@ -5,6 +5,7 @@
 - [CppReference](https://en.cppreference.com)
 - [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- [Microsoft GSL C++ (Guidelines Support Library)](https://github.com/microsoft/GSL)
 - [News from the C++ Standardization Committee](https://isocpp.org/)
 - [C++ Online Compiler Explorer](https://gcc.godbolt.org)
 
