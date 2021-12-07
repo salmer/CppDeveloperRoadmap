@@ -1464,14 +1464,14 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="1073.0164648437503" width="1443.933712925289" x="1765.8724181650095" y="-3406.355157101404"/>
+              <y:Geometry height="1073.0164648437503" width="1466.6362079348655" x="1743.169923155433" y="-3406.355157101404"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1443.933712925289" x="0.0" xml:space="preserve" y="0.0">3 step</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1466.6362079348655" x="0.0" xml:space="preserve" y="0.0">3 step</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="23" leftF="22.702495009576523" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -1611,10 +1611,10 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n11">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="155.181640625" x="1782.906251280433" y="-2528.9786922576536"/>
+              <y:Geometry height="30.640000000000043" width="232.84703525756822" x="1782.906251280433" y="-2528.9786922576536"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="145.181640625" x="5.0" xml:space="preserve" y="1.0690234375001637">Standard library<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="204.654296875" x="14.096369191284111" xml:space="preserve" y="1.0690234375001637">Standard library + STL<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -1622,7 +1622,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n12">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="90.689453125" x="2035.3740579051182" y="-2678.978692257654"/>
+              <y:Geometry height="30.640000000000043" width="90.689453125" x="2175.5972795095363" y="-2678.978692257654"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.689453125" x="5.0" xml:space="preserve" y="1.0690234375001637">iostream<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -1633,7 +1633,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n13">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="108.47265625" x="2035.3740579051187" y="-2438.978692257654"/>
+              <y:Geometry height="30.640000000000043" width="108.47265625" x="2175.5972795095367" y="-2438.978692257654"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.47265625" x="5.0" xml:space="preserve" y="1.0690234375001637">Algorithms<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -1644,7 +1644,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n14">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="87.359375" x="2035.3740579051184" y="-2498.978692257654"/>
+              <y:Geometry height="30.640000000000043" width="87.359375" x="2175.5972795095367" y="-2498.978692257654"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.359375" x="4.999999999999773" xml:space="preserve" y="1.0690234375001637">Iterators<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -1655,7 +1655,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n15">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="110.71875" x="2035.3740579051187" y="-2558.9786922576536"/>
+              <y:Geometry height="30.640000000000043" width="110.71875" x="2175.5972795095367" y="-2558.9786922576536"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="100.71875" x="5.0" xml:space="preserve" y="1.0690234375001637">Containers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -1666,7 +1666,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n16">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.640000000000043" width="99.5859375" x="2035.3740579051187" y="-2618.978692257654"/>
+              <y:Geometry height="30.640000000000043" width="99.5859375" x="2175.5972795095367" y="-2618.978692257654"/>
               <y:Fill color="#96BB7C" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.5859375" x="5.0" xml:space="preserve" y="1.0690234375001637">Date/time<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -1677,7 +1677,7 @@ runtime issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
         <node id="n79::n17">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="139.625" x="2035.3740579051187" y="-2378.3386922576537"/>
+              <y:Geometry height="30.0" width="139.625" x="2175.5972795095367" y="-2378.3386922576537"/>
               <y:Fill color="#FAD586" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.625" x="5.0" xml:space="preserve" y="0.7490234375">Multithreading<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -3494,6 +3494,17 @@ libraries in C#.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="519.791015625" x="21.99942814726728" xml:space="preserve" y="6.751718014463222">Do not ignore warnings from compiler and static analyzer. 
 They are your friends, not enemies<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n85::n62">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="152.96484375" x="2618.62452510221" y="3588.564697265625"/>
+              <y:Fill color="#CCEEFF" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.69921875" x="11.1328125" xml:space="preserve" y="0.7490234375">Microsoft GSL<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -8302,7 +8313,7 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
     <edge id="e180" source="n178" target="n79::n11">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="83.17187499999999" sy="0.0" tx="-77.59082031250006" ty="0.0">
+          <y:Path sx="83.17187499999999" sy="0.0" tx="-116.42351762878421" ty="0.0">
             <y:Point x="1590.0" y="-3420.0"/>
             <y:Point x="1590.0" y="-2513.6586922576535"/>
           </y:Path>
@@ -8967,9 +8978,9 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
     <edge id="n79::e10" source="n79::n11" target="n79::n16">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="71.27026458836153" sy="0.4834959675281425" tx="-49.79296875000006" ty="-4.547473508864641E-13">
-            <y:Point x="1980.0" y="-2513.1751962901253"/>
-            <y:Point x="1980.0" y="-2603.6586922576544"/>
+          <y:Path sx="106.93964662691506" sy="0.4834959675281425" tx="-49.79296875000006" ty="-4.547473508864641E-13">
+            <y:Point x="2120.223221604418" y="-2513.1751962901253"/>
+            <y:Point x="2120.223221604418" y="-2603.6586922576544"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -8981,8 +8992,8 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1980.0" y="-2513.534198351871"/>
-            <y:Point x="1980.0" y="-2543.4777232386036"/>
+            <y:Point x="2120.223221604418" y="-2513.534198351871"/>
+            <y:Point x="2120.223221604418" y="-2543.4777232386036"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -8994,8 +9005,8 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1980.0" y="-2513.534198351871"/>
-            <y:Point x="1980.0" y="-2483.308339791872"/>
+            <y:Point x="2120.223221604418" y="-2513.534198351871"/>
+            <y:Point x="2120.223221604418" y="-2483.308339791872"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -9007,8 +9018,8 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1980.0" y="-2513.6586922576535"/>
-            <y:Point x="1980.0" y="-2663.658692257654"/>
+            <y:Point x="2120.223221604418" y="-2513.6586922576535"/>
+            <y:Point x="2120.223221604418" y="-2663.658692257654"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -9049,8 +9060,8 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1980.0" y="-2513.6586922576535"/>
-            <y:Point x="1980.0" y="-2423.658692257654"/>
+            <y:Point x="2120.223221604418" y="-2513.6586922576535"/>
+            <y:Point x="2120.223221604418" y="-2423.658692257654"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -9062,8 +9073,8 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1980.0" y="-2513.6586922576535"/>
-            <y:Point x="1980.0" y="-2363.3386922576537"/>
+            <y:Point x="2120.223221604418" y="-2513.6586922576535"/>
+            <y:Point x="2120.223221604418" y="-2363.3386922576537"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -9585,7 +9596,6 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="n83::e18" source="n83::n13" target="n83::n13">
-      <data key="d9"/>
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -9598,7 +9608,6 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="n83::e19" source="n83::n13" target="n83::n13">
-      <data key="d9"/>
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -9611,7 +9620,6 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="n83::e20" source="n83::n13" target="n83::n28">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -9728,6 +9736,17 @@ Your project must comply with them.<y:LabelModel><y:SmartNodeLabelModel distance
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.864884367834472" sy="0.8780063005244756" tx="-43.69433593749983" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n85::e60" source="n85::n62" target="n85::n40">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
           <y:BendStyle smoothed="false"/>
