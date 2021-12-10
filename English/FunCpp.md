@@ -15,3 +15,7 @@ To get started with C++ one needs a basic set of school knowledge:
 Despite all the history behind C++ we believe that its modern version is much simpler that it used to be.
 
 Don't be afraid to learn it and good luck!
+
+---
+
+[**To main page**](../README.md)

@@ -46,3 +46,7 @@
 - [Sanjay Madhav, Josh Glazer - Multiplayer Game Programming: Architecting Networked Games](https://www.amazon.com/Multiplayer-Game-Programming-Architecting-Networked/dp/0134034309)
 
     This book is an excellent introduction to networking theory. It will explain network foundations through video games examples. They will help you to write your first application working via a network. Besides a theory, you will gain experience in how to work with it in C++. All examples are written in C++11/14.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

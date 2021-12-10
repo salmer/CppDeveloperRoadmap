@@ -34,3 +34,7 @@ C++ develops in the same way as all other languages: it takes some popular idea 
 - Remember that many experienced developers run into problems too and can get stuck in "obvious" places. Just take a break, do something else, and then return to the task after a break.
 - Find like-minded people who are also starting their learning path. So, it will be more interesting for you to immerse yourself in learning the language together as well as share knowledge and experience with each other. It will also help to develop teamwork skills. The days of "free artists" have ended. Almost everywhere you will have to work as a team.
 - Try to find yourself an experienced mentor. Under his guidance, you will be able to avoid various typical traps and wasted time on them.
+
+---
+
+[**To main page**](../README.md)

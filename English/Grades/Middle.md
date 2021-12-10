@@ -45,3 +45,7 @@ In general, the middle developer solves technical tasks. In comparison with a Ju
 
 - The main trap of many middle developers: they're "fanboys" of technologies, frameworks, design patterns, or methodologies. Try to be more pragmatic while solving tasks on your project. Don't try to intake all the newest ideas only to play with them or get "yet another skill" to your CV. The Middle role is a "pandora box" of overengineering or "diving" around frameworks.
 - If you really think a library/framework is needed for a project - discuss it with a Senior or Lead engineer first. Propose them to create a "proof of concept" where you will be able to check all hypotheses in action before intake a new dependency. Please, don't try to do it in secret from your team! It's fun for you, but it's a "disaster" for your team in the future. It increases maintenance costs and might bring unforeseen consequences.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

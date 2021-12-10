@@ -34,3 +34,6 @@
 - [A cheatsheet of modern C++ language and library features](https://github.com/AnthonyCalandra/modern-cpp-features)
 - [Collection of libraries and frameworks for C++ ](https://github.com/fffaraz/awesome-cpp)
 
+---
+
+[**To main page**](../README.md)

@@ -20,3 +20,7 @@ It is a developer who understands not only the technical, but also the business 
 ## Tips and recommendations
 
 Depending on the specifics of the company and on your desires, the path of further development lies either in the learning of recent technologies and technical skills required in your chosen field of knowledge (for example, special sections of mathematics, physics, etc. - the path of a technical expert), or in the field of management and interaction with people (tech lead, team lead, PM, etc.). Choose wisely. 🙂
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

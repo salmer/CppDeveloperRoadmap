@@ -15,3 +15,7 @@ Yes and no. :)
 Computer science basics will help you for sure. For example, understanding procedural programming, OOP or other concepts and general knowledge. But you shouldn't rely on them completely. The most common case that newbies often find themselves in is that they try to write in C++ in the paradigms of other languages. For example, C developers tend to write C++ programs in procedural style, or they tend to think that C++ is "C with classes".
 
 C++ is rich in ideas and coding approaches. Therefore, it is recommended to start learning the language with a clean head. Understand its ideas. This will help you to use the language effectively in your work tasks. Knowledge of other languages will help you compare them with each other and identify strengths and weaknesses.
+
+---
+
+[**To main page**](../README.md)

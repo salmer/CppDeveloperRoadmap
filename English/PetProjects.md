@@ -67,3 +67,7 @@ The following examples are more suitable for students who are passing or recentl
 * Linear algebra library: matrices, vectors, calculations, etc.
 * Modeling of various processes: physics, theoretical mechanics, etc.
 * Application of numerical methods: integration, differentiation, approximation, interpolation, etc.
+
+---
+
+[**To main page**](../README.md)

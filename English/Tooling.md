@@ -165,3 +165,6 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     Cross-platform and highly efficient client for Windows, Linux, MacOS. Supports integration with GitHub, Bitbucket and Gitlab, as well as all the necessary functionality for everyday work: studying the history of changes, receiving/submitting changes, switching between branches, built-in conflict resolution editor, etc.
 
+---
+
+[**To main page**](../README.md)

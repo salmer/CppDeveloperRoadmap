@@ -7,3 +7,6 @@
 - [C++ Applications](https://www.stroustrup.com/applications.html)
 - [What is C++ used for?](https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for/)
 
+---
+
+[**To main page**](../README.md)
