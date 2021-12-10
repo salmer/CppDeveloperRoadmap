@@ -36,3 +36,7 @@
 - [Путеводитель C++ программиста по неопределенному поведению](https://github.com/Nekrolm/ubbook)
 - [Коллекция библиотек и фреймворков для C++](https://github.com/fffaraz/awesome-cpp)
 
+---
+
+[**На главную страницу**](README.md)
+

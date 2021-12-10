@@ -8,3 +8,6 @@
 - [Олимпиадное программирование](https://academy.yandex.ru/posts/sport-dlya-razrabotchikov-kak-ustroeno-olimpiadnoe-programmirovanie)
 - [What Can You Do With C++?](https://www.ko2.co.uk/what-can-you-do-with-c-plus-plus/)
 
+---
+
+[**На главную страницу**](README.md)
