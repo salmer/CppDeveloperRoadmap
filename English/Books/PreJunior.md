@@ -42,3 +42,7 @@
 - [MSDN](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160)
 
     If you are at the starting point of your studying path, it's recommended to start practicing and doing exercises in the IDE: Microsoft Visual Studio (Community Edition). Nowadays, it's one of the friendliest IDEs among others to beginners, either in installation or usage (and it's absolutely for free!). It will help you to concentrate on language and not to struggle with the development environment. On MSDN you will find a nice guidebook that describes the following aspects: how to install the Visual Studio, create the first console project, and implement the first application.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

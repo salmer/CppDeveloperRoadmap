@@ -79,3 +79,7 @@
 - [Victor Olifer - Computer Networks: Principles, Technologies and Protocols for Network Design](https://www.amazon.com/Computer-Networks-Principles-Technologies-Protocols-ebook/dp/B001GQ35P4)
 
     Another great book on the basics of computer networks. At some points, the presentation of information can seem a little more complicated, compared to Tanenbaum's work. Therefore, we recommend choosing the book whose narrative is more suitable for you.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

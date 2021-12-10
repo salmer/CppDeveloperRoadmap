@@ -27,3 +27,6 @@ It is a developer who has theoretical knowledge of software development and litt
 - Don't bury yourself in the task for too long. If after several attempts there is no progress, immediately contact your colleagues for help. They expect that the task will be completed by you within a reasonable period. Your main goal is to solve problems, not create them for the team.
 - When difficulties arise, try to find a couple of possible solutions yourself, and then approach your mentor. Your mentor will adjust or complement your solution.
 - Juniors tend to fall into a common trap: the more lines of code are written, the cooler they are as developers. Don't get caught! Remember, the more code you write, the higher the chance of an error. Ideally, the code should be written so that when you return to it six months later, you can quickly recall what it does. A good developer is not someone who writes a lot of code. A good developer behaves like a samurai: he delivers one precise and deadly blow, rather than pointlessly swinging his sword to hit the enemy.
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

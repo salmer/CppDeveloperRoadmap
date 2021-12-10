@@ -41,3 +41,7 @@ It is someone who is familiar the syntax of the language and can write a simple 
 
 - It's easier to look for the solutions in English, but don't torture yourself if your current language proficiency isn't high enough. You might get demotivated too soon. Most of the problems you are likely to encounter in the beginning are searchable in your native language.
 - If you feel that your English is insufficient, start studying it through the use of simpler and more pleasant means: series, video games, fiction, news outlets or articles you're interested in. Several months are enough to refine your skill of English comprehension.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

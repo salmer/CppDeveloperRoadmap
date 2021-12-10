@@ -49,3 +49,7 @@
 - [Chris Richardson - Microservices Patterns](https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543)
 
     The book focuses on the modern architectural approach of system design - microservices. This work will explain how to make a consistent transformation of an application from a "monolithic" state into a set of microservices. It contains a set of patterns, as well as tips for refactoring existing code in order to perform this procedure most effectively.
+
+---
+
+[**Go back**](Overview.md) | [**To main page**](../../README.md)

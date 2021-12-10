@@ -9,3 +9,7 @@ The entry barrier into C++ development is still higher compared to other languag
 This roadmap tries to fill the gap that has been formed. The idea of creation arose after a large number of interviews with inexperienced candidates for the position of a C++ developer. They showed common patterns: gaps in basic knowledge, lack of understanding on how to learn the language and where to get the knowledge from.
 
 Also, the map can be useful for those who have already been practicing using C++ for some time in personal and work projects. It can help you to understand what knowledge you are lacking to deepen the level of language proficiency, as well as become a highly qualified specialist.
+
+---
+
+[**To main page**](../README.md)

@@ -43,3 +43,7 @@ This is another urban legend from the "Old Guard" that had stopped writing C++ b
 ## C++ is legacy area only
 
 Partially it's true, but it's good to note that it's applicable for other languages. Even with a modern stack, developers can produce code that will become legacy very fast. The code quality mainly depends on the technical culture of a team and its pioneers, not a language. The majority amount of legacy code is produced under the human factor: developer's grade and skill set, work ethic, wrong estimations, etc. Nowadays, you can meet a lot of projects working 24/7 for years and written in C++. Such kinds of systems are often the business foundation of revenue. In this case, it's really dangerous to perform any huge changes in short time. The developers make any changes with high attention to any regression. But don't think that legacy projects can not help you to improve yourself. In fact, these projects can give you a challenge that can bring you widespread experience in different areas: code reading, reverse-engineering, testing, designing of SW architecture, automation, requirements gathering, etc.
+
+---
+
+[**To main page**](../README.md)
