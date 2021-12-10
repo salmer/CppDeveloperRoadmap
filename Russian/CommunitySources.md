@@ -32,6 +32,7 @@
 
 ## Другие интересные репозитории
 
+- [Краткий обзор библиотечных функций C++11 и выше (ENG)](https://github.com/AnthonyCalandra/modern-cpp-features)
 - [Путеводитель C++ программиста по неопределенному поведению](https://github.com/Nekrolm/ubbook)
 - [Коллекция библиотек и фреймворков для C++](https://github.com/fffaraz/awesome-cpp)
 
