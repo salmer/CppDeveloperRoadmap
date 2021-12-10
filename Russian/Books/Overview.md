@@ -6,3 +6,7 @@
 - [Junior](Junior.md)
 - [Middle](Middle.md)
 - [Senior](Senior.md)
+
+---
+
+[**На главную страницу**](../README.md)
