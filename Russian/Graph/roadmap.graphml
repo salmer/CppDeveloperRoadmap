@@ -2163,7 +2163,7 @@ Qt Creator, JetBrains Clion, XCode и т.д.<y:LabelModel><y:SmartNodeLabelModel
               <y:Geometry height="75.36590090211348" width="575.0546875" x="2880.7031617152024" y="-795.9523707063897"/>
               <y:Fill color="#FFD5E4" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="565.0546875" x="5.0" xml:space="preserve" y="-1.0699792364432597">Навык работы с отладчиком в через командную строку - 
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="565.0546875" x="5.0" xml:space="preserve" y="-1.0699792364432597">Навык работы с отладчиком через командную строку - 
 узконаправленный навык. В регулярной работе достаточно 
 уметь работать с отладчиком в рамках IDE.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
@@ -9737,7 +9737,6 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
       </data>
     </edge>
     <edge id="n85::e60" source="n85::n62" target="n85::n40">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
