@@ -22,7 +22,7 @@ This statement continues to live due to two widespread scenarios: it's how they 
 
 A highly damaging thesis taking origin from the "Old Guard" or someone born with a keyboard in hand.
 
-Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference, therefore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
+Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference ([The C++ Programming Language](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840)), therefore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
 
 ## Learn C++ using the Standard only
 
