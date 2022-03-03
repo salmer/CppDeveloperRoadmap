@@ -28,6 +28,7 @@
 - [The ancestor of the roadmap idea](https://www.cjdb.com.au/sg20-and-videos.html)
 - [Collection of various C++ resources](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+- [C++ course for language basics](https://www.learncpp.com/)
 
 ## Other interesting repositories
 
