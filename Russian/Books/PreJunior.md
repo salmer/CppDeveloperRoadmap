@@ -36,6 +36,7 @@
 
 - В дополнение к учебнику можно порекомендовать следующие видео от лекторов МФТИ:
     - Илья Мещерин: [Курс лекций по C++](https://www.youtube.com/playlist?list=PL4_hYwCyhAvY2dY_tnTv3-TJThzcloCvM)
+    - Константин ВладимировЖ [Лекции по современному C++ и обобщённому программированию в магистратуре МФТИ](https://www.youtube.com/channel/UCvmBEbr9NZt7UEh9doI7n_A/featured)
     - Тимофей Хирьянов:
         - [Лекции C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fItmofHO4KuGjfGtbQtEj-x)
         - [Алгоритмы и структуры данных на C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fL_5Xvnufpwj2uYZnZBBnsr)
