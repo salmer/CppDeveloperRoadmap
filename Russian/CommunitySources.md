@@ -29,6 +29,7 @@
 - [Прародитель идеи по дорожной карте](https://www.cjdb.com.au/sg20-and-videos.html)
 - [Коллекция различных ресурсов по C++](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+- [C++ курс для изучения основ языка](https://www.learncpp.com/)
 
 ## Другие интересные репозитории
 
