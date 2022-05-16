@@ -8,6 +8,20 @@ We tried to answer these questions in the presented roadmap. The map focuses on 
 
 Before you start exploring the map, it's recommended to read the articles listed below.
 
+# C++ Resources (Free/Paid)
+
+# --> Free 
+1. [ MIT OCW - Introduction to C++ ](https://ocw.mit.edu/courses/6-096-introduction-to-c-january-iap-2011/)
+1. [ MIT OCW - Effective Programming in C and C++ ](https://ocw.mit.edu/courses/6-s096-effective-programming-in-c-and-c-january-iap-2014/)
+1. [ Stanford CS 106L : Slides and Course Material  ](http://web.stanford.edu/class/cs106l/)
+1. [ IIT Bombay via EDx : Object Oriented Programming   ](https://www.edx.org/course/object-oriented-programming)
+1. [ IBM via EDx : Data Structure and Algorithms using   ](https://www.edx.org/course/data-structures-algorithms-using-c)
+
+# --> Paid 
+1. [ University of Illinois via Coursera : Object Oriented Data Structures  ](https://www.coursera.org/learn/cs-fundamentals-1)
+1. [ C++ Mentors using a professional service  ](https://mentorcruise.com/filter/cpp/)
+
+
 
 # Articles
 
