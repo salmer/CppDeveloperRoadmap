@@ -11,7 +11,7 @@
 
 ## Popular C++ conferences 
 
-- [C++ Russia](https://cppconf.ru/)
+- [C++ Russia](https://cppconf.ru/en)
 - [Cpp Con](https://cppcon.org/)
 - [Meeting C++](https://meetingcpp.com/)
 - [C++ Now](https://cppnow.org/)
@@ -25,7 +25,7 @@
 
 ## Alternative sources for learning C++
 
-- [The ancestor of the roadmap idea](https://www.cjdb.com.au/sg20-and-videos.html)
+- [Learn C++](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
 - [Collection of various C++ resources](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 - [C++ course for language basics](https://www.learncpp.com/)
