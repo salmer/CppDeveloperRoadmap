@@ -26,7 +26,7 @@
 
 ## Альтернативные источники для изучения С++
 
-- [Прародитель идеи по дорожной карте](https://www.cjdb.com.au/sg20-and-videos.html)
+- [Learn C++](https://www.learncpp.com/) - Бесплатный учебник по изучению C++, постоянно дополняется.
 - [Коллекция различных ресурсов по C++](https://awesomecpp.com)
 - [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 - [C++ курс для изучения основ языка](https://www.learncpp.com/)

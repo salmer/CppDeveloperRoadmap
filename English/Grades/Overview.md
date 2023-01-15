@@ -9,7 +9,7 @@ Nowadays, you can meet the following common grading approach. It is possible to 
 
 Each company has its own vision of developers grading and a set of skills/responsibilities declared for different levels. It's really simple to meet the following case: you will be promoted as a senior in a first company, but if you go to another one you will be assessed as a middle. Despite all, it's possible to introduce common expectations for each level. We will use a simplified approach declared before to describe each grade.
 
-**Example:** You can check this website to get knowledge about leveling systems in different companies: https://www.levels.fyi/
+**Example:** You can check this website to get knowledge about leveling systems in different companies: [levels.fyi](https://www.levels.fyi/)
 ![](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Russian/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
 
 
