@@ -25,15 +25,15 @@
 
 ## Alternative sources for learning C++
 
-- [Learn C++](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
-- [Collection of various C++ resources](https://awesomecpp.com)
-- [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
-- [C++ course for language basics](https://www.learncpp.com/)
+- [Hackingcpp.com](https://hackingcpp.com/index.html) - The all-in-one web portal with diffenent collections of materials related to C++: books, cheat sheets, recordings from conferences, etc.
+- [Awesomecpp.com](https://awesomecpp.com) - The collection of different sources about the C++. 
+- [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+- [Learncpp.com](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
 
 ## Other interesting repositories
 
 - [A cheatsheet of modern C++ language and library features](https://github.com/AnthonyCalandra/modern-cpp-features)
-- [Collection of libraries and frameworks for C++ ](https://github.com/fffaraz/awesome-cpp)
+- [Collection of libraries and frameworks for C++](https://github.com/fffaraz/awesome-cpp)
 
 ---
 
