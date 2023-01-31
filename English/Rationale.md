@@ -1,4 +1,4 @@
-# Why and what for the roadmap has been created?
+# :flashlight: Why and what for the roadmap has been created?
 
 C++ is actively used in many commercial projects. Throughout its history the language has undergone big changes. It made C++ much more convenient for day-to-day use. But a lot of speculation, myths and fears still hover around the language to scare off a large number of people who want to learn it. Our goal is to help beginners dispel the myths about the complexity of C++ and to help them to find their way to learn the language.
 

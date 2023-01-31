@@ -1,8 +1,8 @@
-# Language toolkit
+# :triangular_ruler: Language toolkit
 
 Newborn developers have a limited understanding of the tools available, which make it easier to work with code, as well as increase efficiency and protect against many mistakes. All these tools are not a silver bullet for difficulties that language has for you, but they significantly smooth out the corners. Below is a list of common and popular tools recognized by developers around the world. This list is only a small part of the available tools. Over time, you will begin to better navigate them and find something new for yourself.
 
-## Text editors
+## :page_facing_up: Text editors
 
 * **Visual Studio Code**
 
@@ -22,7 +22,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Lightweight editor for text files and source code. Supports syntax and highlighting of common programming languages. Compared to Visual Studio Code, it is convenient to use for quickly opening and viewing files. Due to its lightness, it is comfortable to work with a large number of text files. 
 
 
-## IDE (Integrated Development Environment)
+## :open_file_folder: IDE (Integrated Development Environment)
 
 * **Microsoft Visual Studio IDE**
 
@@ -59,7 +59,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     Powerful multiplatform IDE from Russian company JetBrains. Like other IDEs, it contains a complete set of tools for comfortable software development. Convenient for cross-platform development in both C and C++.
 
-## Extensions
+## :flashlight: Extensions
 
 * **JetBrains ReSharper C++**
 
@@ -84,7 +84,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     Application/extension for distributed compilation of projects. It unites all dev workstations into a single network which provides a possibility to use dozens of machines to assemble and compile the source code. This allows you to speed up the build of large projects.
 
-## Package managers and build systems
+## :electric_plug: Package managers and build systems
 
 * **Cmake**
 
@@ -110,7 +110,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Project build manager for C and C++ applications. The main advantages that this manager claims: quick project assembly. Supports cross-platform development, supports all popular compilers.
 
 
-## Code analyzers
+## :mag: Code analyzers
 
 * **PVS Studio**
 
@@ -138,7 +138,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     A set of tools that can help you investigate a variety of problems while the application is running: memory leaks, brake profiling, etc. It suits various Linux distributions.
 
-## Git clients
+## :floppy_disk: Git clients
 
 * **SmartGit**
 

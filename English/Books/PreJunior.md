@@ -1,13 +1,13 @@
-# Pre-Junior
+# :alien: Pre-Junior
 
-## Motivation and experience
+## :innocent: Motivation and experience
 
 - [Chad Fowler - Passionate Programmer](https://www.amazon.com/Passionate-Programmer-Remarkable-Development-Pragmatic-ebook/dp/B00AYQNR5U)
 
     This book can be called a classic in the motivation genre for beginners. Chad Fowler tries to share his experience: how to become a professional programmer and ride the IT industry wave.
 
 
-## Computer Science
+## :bar_chart: Computer Science
 
 - [Wladston Ferreira Filho - Computer Science Distilled: Learn the Art of Solving Computational Problems](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316020)
 
@@ -22,7 +22,7 @@
     The book contains a brilliant introduction to the world of Computers Science algorithms and data structures for beginners. It also contains a list of tasks that will help you to implement your first algorithms.
 
 
-## C++
+## :pencil: C++
 
 - [Stephen Prata - C++ Primer Plus](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 
@@ -37,7 +37,7 @@
     This book is an excellent one for beginners. Each chapter of the book widely describes a different foundation aspect of the language. When it's done, it offers you a set of exercises to train yourself. The book explains the most fundamental topics that can be reused in the future to study new language mechanisms. It's recommended to pick up this book after Prata's, Lippman's books or in parallel with them.
 
 
-## Hard skills
+## :electric_plug: Hard skills
 
 - [MSDN](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160)
 

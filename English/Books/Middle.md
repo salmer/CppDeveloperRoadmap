@@ -1,6 +1,6 @@
-# Middle
+# :sunglasses: Middle
 
-## C++
+## :pencil: C++
 
 - [Scott Meyers - Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)
 
@@ -22,7 +22,7 @@
     The newest and relevant book about C++ metaprogramming (templates). This giant work describes relevant technics of templates foundations that were added in the newest standards, including C++17. If you need to write generic and parameterized code, this book will become a "bible" to you. You will get knowledge either about the basics of templates or tones of nuances related to different technics.
 
 
-## Optimization for C++ applications
+## :bicyclist: Optimization for C++ applications
 
 - [Kurt Guntheroth - Optimized C++: Proven Techniques for Heightened Performance](https://www.amazon.com/Optimized-Proven-Techniques-Heightened-Performance/dp/1491922060)
 
@@ -32,7 +32,7 @@
 
     Practical-oriented guides that provide comprehensive information about the potential optimization possibilities of applications developed in C++, or related to interaction with the CPU, memory, etc.
 
-## Hard skills
+## :electric_plug: Hard skills
 
 - [Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides or "Gang of Four" - Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
 
@@ -51,7 +51,7 @@
     The short practical guide on how to approach writing programs using finite machines theory. It will be difficult to find a simpler and more elegant description of the theory of finite machines and its practical application.
 
 
-## Operating systems
+## :zap: Operating systems
 
 - [Andrew S. Tanenbaum - Modern Operating Systems](https://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/013359162X)
 
@@ -70,7 +70,7 @@
     This article is a good overview: how PC memory works and why it works in the described way. It shows not only high-level representation, but low-level aspects are also described (if you have an intention to dive in this area).
 
 
-## Computer networks 
+## :globe_with_meridians: Computer networks
 
 - [Andrew S. Tanenbaum - Computer Networks](https://www.amazon.com/Computer-Networks-5th-Andrew-Tanenbaum/dp/0132126958)
 

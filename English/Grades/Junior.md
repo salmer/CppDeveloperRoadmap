@@ -1,10 +1,10 @@
-# Junior C++
+# :yum: Junior C++
 
-## Who is it?
+## :question: Who is it?
 
 It is a developer who has theoretical knowledge of software development and little practical experience in personal/educational projects. In addition, may have a theoretical understanding of how the industry works. Junior can perform simple tasks within a real project under the guidance of experienced colleagues.
 
-## What coding abilities are expected?
+## :computer: What coding abilities are expected?
 
 - Ability to read documentation of libraries, frameworks, etc.
 - Ability to collect and connect third-party libraries to the project
@@ -13,14 +13,14 @@ It is a developer who has theoretical knowledge of software development and litt
 - Write tests to the code
 - Basic knowledge and experience with Git
 
-## What general skills are expected?
+## :bust_in_silhouette: What general skills are expected?
 
 - Fast learning
 - Ability to independently search for information on the Internet, books, etc.
 - Ability to ask colleagues questions in a timely manner
 - Ability to work in a team 
 
-## Tips and recommendations
+## :eyes: Tips and recommendations
 
 - Try to find a couple of enthusiasts at your company and join them. They can be your source of knowledge and experience.
 - Ask questions to senior colleagues. There are no stupid questions, there are stupid answers.

@@ -1,6 +1,6 @@
-# Junior
+# :yum: Junior
 
-## Мотивация и опыт
+## :innocent: Мотивация и опыт
 
 - [Роберт Мартин - Идеальный программист](https://www.ozon.ru/product/idealnyy-programmist-kak-stat-professionalom-razrabotki-po-martin-robert-k-211433126/?asb=z4%252BBD7UDRGAKgK5PMnilay5QBkwvjGXgnMhfF1fAOWM%253D&asb2=Gvhxd5LT0NA_AobRO1muUz0icHnQ6j-JL2zxEOH1wzQ&keywords=%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82&sh=6BDpuJeM)
 
@@ -14,13 +14,13 @@
 
     Не смотря на почтенный возраст книги, её можно считать библией разработчика. Она системно описывает устройство индустрии, а также дает массу советов: каким образом расти и развиваться, чтобы стать эффективным специалистом.
 
-## Computer Science
+## :bar_chart: Computer Science
 
 - [Томас Кормен - Алгоритмы. Вводный курс](https://www.ozon.ru/product/algoritmy-vvodnyy-kurs-24903185/?sh=oABFs2sD)
 
     Хорошее продолжение после книги "Грокаем алгоритмы". Книга знакомит с базовыми распространенными алгоритмами сортировок, работа со списками и т.д., но на более глубоком уровне. Все ещё написана довольно простым языком, потому она может помочь подготовиться к глубокому погружению в алгоритмы.
 
-## C++
+## :pencil: C++
 
 - [Скотт Мейерс - Эффективное использование C++. 55 верных советов улучшить структуру и код ваших программ](https://www.ozon.ru/product/effektivnoe-ispolzovanie-c-55-vernyh-sovetov-uluchshit-strukturu-i-kod-vashih-programm-2610625/?sh=VdYASWTH)
 
@@ -34,7 +34,7 @@
 
     Небольшая книга, которая описывает общепринятые практики и правила написания кода в коммерческих проектах. Данная книга - это агрегация правил из различных компаний. Данная работа стала прообразом сайта: [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). Тем не менее рекомендуем прочитать данную книгу, т.к. даст вам общее представление, какие правила написания кода распространены во многих проектах.
 
-## Технические навыки
+## :electric_plug: Технические навыки
 
 - [Фримен Эрик, Робсон Элизабет - Head First. Паттерны проектирования](https://www.ozon.ru/product/head-first-patterny-proektirovaniya-obnovlennoe-yubileynoe-izdanie-144233005/?sh=VWSHgt2E)
 

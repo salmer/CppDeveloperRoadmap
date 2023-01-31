@@ -1,8 +1,8 @@
-# How to study?
+# :mortar_board: How to study?
 
 The main thing that can be advised is that you should understand that only you are responsible for your development. Of course, you will find many enthusiasts around who will be happy to help you with advice, but no one will produce specific tasks or training programs for you. The best friend in this business is you, Google search, and the tutorials.
 
-## How to study new C++ 11/14/17/20 standards?
+## :question: How to study new C++ 11/14/17/20 standards?
 
 Beginners can be advised not to focus too much on standards at the beginning of their journey. Pick up books from the [Beginner's List](Books/PreJunior.md) and learn the fundamentals. Modern books for beginners contain little information about the capabilities of the C++ 11 and newer standards. At first, you should not focus on the new language standards.
 
@@ -17,7 +17,7 @@ If with fixing problems and with syntactic sugar everything is obvious (in the f
 C++ develops in the same way as all other languages: it takes some popular idea from computer science or a successful feature from other languages and introduces it into the language. It is important to study such constructs and use them, if necessary, but in the beginning it is necessary to study the foundations that were created by the older standards (C++11/C++14). They are described in most modern books for beginners.
 
 
-## Where to get an overview of the latest C++ standards features?
+## :question: Where to get an overview of the latest C++ standards features?
 
 - Presentations among [C++ conferences](CommunitySources.md)
 - On the main page of the [CppReference](https://en.cppreference.com/w/cpp) you will find links to pages with overview lists of the newest features
@@ -26,7 +26,7 @@ C++ develops in the same way as all other languages: it takes some popular idea 
 - Overview videos on YouTube by community
 - [A cheatsheet of modern C++ language and library features](https://github.com/AnthonyCalandra/modern-cpp-features)
 
-## Training recommendations
+## :eyes: Training recommendations
 
 - Learn at your own pace and at any age! Do not get fooled by stories: "I'm a programmer from the cradle". Most of these stories are [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias) or an attempt to flatter their vanity at your expense. You have enough ability to learn programming from scratch including C++!
 - Most of the problems you run into are likely already solved. If you cannot find the answer on the Internet, try reformulating your request in a different way. Eventually, you will come to the right answer. If the answer still didn't come, then try to solve the problem in a simpler way.

@@ -1,12 +1,12 @@
-# Pre-Junior
+# :alien: Pre-Junior
 
-## Мотивация и опыт
+## :innocent: Мотивация и опыт
 
 - [Фаулер Чед - Программист-фанатик](https://www.ozon.ru/product/programmist-fanatik-32218784)
 
     Эту книгу можно считать признанной классикой в мире разработки, в которой Чед Фаулер пытается поделиться своим видением: как стать высококлассным, востребованным специалистом, и оставаться на гребне волны.
 
-## Computer Science
+## :bar_chart: Computer Science
 
 - [Фило Владстон Феррейра - Теоретический минимум по Computer Science](https://www.ozon.ru/product/teoreticheskiy-minimum-po-computer-science-vse-chto-nuzhno-programmistu-i-razrabotchiku-144946027)
 
@@ -20,7 +20,7 @@
 
     Отличное вводное пособие в мир алгоритмов. Написано легким языком, который поймет большинство новичков. Также есть немного практических задач, чтобы попробовать написать свои первые алгоритмы.
 
-## C++
+## :pencil: C++
 
 - [Стивен Прата - Язык программирования C++. Лекции и упражнения (шестое издание)](https://www.ozon.ru/product/yazyk-programmirovaniya-c-lektsii-i-uprazhneniya-147417584)
 
@@ -41,7 +41,7 @@
         - [Лекции C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fItmofHO4KuGjfGtbQtEj-x)
         - [Алгоритмы и структуры данных на C++](https://www.youtube.com/playlist?list=PLRDzFCPr95fL_5Xvnufpwj2uYZnZBBnsr)
 
-## Технические навыки
+## :electric_plug: Технические навыки
 
 - [MSDN](https://docs.microsoft.com/ru-ru/cpp/build/vscpp-step-0-installation?view=msvc-160)
 
