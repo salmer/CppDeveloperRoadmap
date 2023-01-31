@@ -1,4 +1,4 @@
-# Pre-Junior
+# :alien: Pre-Junior
 
 ## :innocent: Мотивация и опыт
 
@@ -6,7 +6,7 @@
 
     Эту книгу можно считать признанной классикой в мире разработки, в которой Чед Фаулер пытается поделиться своим видением: как стать высококлассным, востребованным специалистом, и оставаться на гребне волны.
 
-## :bar_chart:  Computer Science
+## :bar_chart: Computer Science
 
 - [Фило Владстон Феррейра - Теоретический минимум по Computer Science](https://www.ozon.ru/product/teoreticheskiy-minimum-po-computer-science-vse-chto-nuzhno-programmistu-i-razrabotchiku-144946027)
 

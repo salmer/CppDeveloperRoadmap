@@ -1,11 +1,11 @@
-# Senior
+# :smiling_imp: Senior
 
-## C++
+## :pencil: C++
 
 - There are no concrete advice about books for seniors. At this grade, you should already know the foundations of C++ well enough. There is only one challenge for you: to monitor the latest standards and new features for C++ or tools for C++ ecosystem.
 
 
-## Team management
+## :muscle: Team management
 
 - [J. Hank Rainwater - Herding Cats: A Primer for Programmers Who Lead Programmers ](https://www.amazon.com/Herding-Cats-Primer-Programmers-Lead/dp/1590590171)
 
@@ -28,7 +28,7 @@
     The classic book about the logical errors of human thinking. It is useful because it will help to take a more rational approach to making various decisions, taking into account cognitive distortions in human thinking. This is an extremely necessary skill for specialists who are in the area of making key decisions. The book may seem rather boring, in which case you can try to look for alternative works that tell about cognitive distortions.
 
 
-## Requirements and software architecture
+## :clipboard: Requirements and software architecture
 
 - [Karl Wiegers - Software Requirements](https://www.amazon.com/Software-Requirements-Developer-Best-Practices/dp/0735679665)
 

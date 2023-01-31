@@ -16,10 +16,10 @@ Each company has its own vision of developers grading and a set of skills/respon
 ## Level Descriptions
 
 You can read these articles to get understanding about each level, and its common expectations:
-- [Pre-Junior C++](PreJunior.md)
-- [Junior C++](Junior.md)
-- [Middle C++](Middle.md)
-- [Senior C++](Senior.md)
+- :alien: [Pre-Junior C++](PreJunior.md)
+- :yum: [Junior C++](Junior.md)
+- :sunglasses: [Middle C++](Middle.md)
+- :smiling_imp: [Senior C++](Senior.md)
 
 ---
 

@@ -13,7 +13,7 @@
 
 1. :flashlight: [Почему появилась дорожная карта](Rationale.md)
 1. :mag: [А нужен ли вам C++?](SelfIdentification.md)
-1. :space_invader: [C++ - это просто!](FunCpp.md)
+1. :space_invader: [C++ - это просто](FunCpp.md)
 1. :clipboard: [Области применения языка](AreasOfApplication.md)
 1. :ghost: [Легенды и мифы про C++](Mythbusters.md)
 1. :chart_with_upwards_trend: [Грейды разработчиков](Grades/Overview.md)

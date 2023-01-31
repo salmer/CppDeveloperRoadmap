@@ -1,6 +1,6 @@
 # :gem: Community sources
 
-## C++ General
+## :bookmark_tabs: C++ General
 
 - [CppReference](https://en.cppreference.com)
 - [CPlusPlus](https://www.cplusplus.com/reference)
@@ -9,28 +9,28 @@
 - [News from the C++ Standardization Committee](https://isocpp.org/)
 - [C++ Online Compiler Explorer](https://gcc.godbolt.org)
 
-## Popular C++ conferences 
+## :satellite: Popular C++ conferences
 
 - [C++ Russia](https://cppconf.ru/en)
 - [Cpp Con](https://cppcon.org/)
 - [Meeting C++](https://meetingcpp.com/)
 - [C++ Now](https://cppnow.org/)
 
-## C++ Conference YouTube Channels
+## :tv: C++ Conference YouTube Channels
 
 - [C++ Russia](https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA)
 - [Cpp Con](https://www.youtube.com/user/CppCon)
 - [Meeting C++](https://www.youtube.com/user/MeetingCPP)
 - [C++ Now](https://www.youtube.com/user/BoostCon)
 
-## Alternative sources for learning C++
+## :exclamation: Alternative sources for learning C++
 
 - [Hackingcpp.com](https://hackingcpp.com/index.html) - The all-in-one web portal with diffenent collections of materials related to C++: books, cheat sheets, recordings from conferences, etc.
 - [Awesomecpp.com](https://awesomecpp.com) - The collection of different sources about the C++. 
 - [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 - [Learncpp.com](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
 
-## Other interesting repositories
+## :star: Other interesting repositories
 
 - [A cheatsheet of modern C++ language and library features](https://github.com/AnthonyCalandra/modern-cpp-features)
 - [Collection of libraries and frameworks for C++ ](https://github.com/fffaraz/awesome-cpp)

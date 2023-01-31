@@ -1,6 +1,6 @@
-# Junior
+# :yum: Junior
 
-## Motivation and experience
+## :innocent: Motivation and experience
 
 - [Robert Martin - The clean coder](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073)
 
@@ -15,14 +15,14 @@
     Despite the book ages, it might be called a developer's "bible". It systemizes all knowledge of how the IT industry looks like. This book also proposes tons of useful advice: how to grow and become a 1-st class professional.
 
 
-## Computer Science
+## :bar_chart: Computer Science
 
 - [Thomas H. Cormen - Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 
     This book is a perfect continuation after "Grokking algorithms". This book introduces common algorithms of sorting, working with lists, etc., but gives more details. It is written in a friendly way. It will be helpful to prepare yourself for deep diving in algorithms area.
 
 
-## C++
+## :pencil: C++
 
 - [Scott Meyers  - Effective C++: 55 Specific Ways to Improve Your Programs and Designs](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876)
 
@@ -37,7 +37,7 @@
     This tiny book describes common best practices of code writing around commercial projects. It's an aggregation of experience collected from different companies. This book was also a foundation for the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). You can immediately visit C++ Core Guidelines, but it's still recommended starting with this book first. It will help you to get a first impression of code guidelines spread around projects. When it's done, you can visit the C++ Core Guidelines website and get the latest approved approaches.
 
 
-## Hard skills   
+## :electric_plug: Hard skills
 
 - [Eric Freeman, Elisabeth Robson - Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)
 

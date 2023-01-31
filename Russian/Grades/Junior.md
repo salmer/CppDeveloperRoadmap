@@ -1,4 +1,4 @@
-# :innocent: Junior C++
+# :yum: Junior C++
 
 ## :question: Кто это?
 

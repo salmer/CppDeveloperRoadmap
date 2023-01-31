@@ -1,4 +1,4 @@
-# Senior
+# :smiling_imp: Senior
 
 ## :pencil: C++
 

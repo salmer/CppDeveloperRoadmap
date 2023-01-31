@@ -18,11 +18,8 @@
 В нижеперечисленных статьях мы попытались дать осредненное описание для каждого уровня разработчика:
 
 - :alien: [Pre-Junior C++](PreJunior.md)
-
-- :innocent: [Junior C++](Junior.md)
-
+- :yum: [Junior C++](Junior.md)
 - :sunglasses: [Middle C++](Middle.md)
-
 - :smiling_imp: [Senior C++](Senior.md)
 
 ---

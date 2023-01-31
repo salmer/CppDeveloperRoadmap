@@ -1,4 +1,4 @@
-# Junior
+# :yum: Junior
 
 ## :innocent: Мотивация и опыт
 

@@ -8,9 +8,9 @@ The language has specific areas of application. Try to search and dive into them
 
 - It might be that in the area that you are interested in a different language might be popular. For example, in machine learning, the most common language is Python and specialized libraries for it.
 
-# I already know C/C#/Java/Python and so on. Can I already start to work using C++?
+# :question: I already know C/C#/Java/Python and so on. Can I already start to work using C++?
 
-Yes and no. :) 
+Yes and no. :)
 
 Computer science basics will help you for sure. For example, understanding procedural programming, OOP or other concepts and general knowledge. But you shouldn't rely on them completely. The most common case that newbies often find themselves in is that they try to write in C++ in the paradigms of other languages. For example, C developers tend to write C++ programs in procedural style, or they tend to think that C++ is "C with classes".
 
