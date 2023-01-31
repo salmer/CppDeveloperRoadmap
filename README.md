@@ -1,4 +1,4 @@
-# :bulb: C++ Developer Roadmap
+# C++ Developer Roadmap
 
 ## Additional languages: [Русский](Russian/README.md)
 
