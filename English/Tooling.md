@@ -4,7 +4,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :page_facing_up: Text editors
 
-* **Visual Studio Code**
+* :arrow_forward: **Visual Studio Code**
 
     Site: https://code.visualstudio.com/
 
@@ -13,7 +13,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Powerful and efficient editor for text files and source code. Has a rich library of extensions that will allow you to customize it for yourself. It is also possible to customize it to work with source code: compile, run and debug. It has a powerful search engine for files and folders, which increases the efficiency of searching, reading and working with large projects.
 
 
-* **Notepad++**
+* :arrow_forward: **Notepad++**
 
     Site: https://notepad-plus-plus.org/
 
@@ -24,7 +24,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :open_file_folder: IDE (Integrated Development Environment)
 
-* **Microsoft Visual Studio IDE**
+* :arrow_forward: **Microsoft Visual Studio IDE**
 
     Site: https://visualstudio.microsoft.com
 
@@ -33,7 +33,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Integrated development environment from Microsoft. Provides all the necessary set of tools (code editor, compiler, debugger, profiler, etc.) out of the box. Supports development in various programming languages as well as cross-platform development. A great start for newbies as the modern interface of the studio is as friendly as possible, and practically does not require any adjustment out of the box.
 
 
-* **Qt Creator IDE**
+* :arrow_forward: **Qt Creator IDE**
 
     Site: https://www.qt.io/product/development-tools
     
@@ -42,7 +42,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Initially, Qt Creator was positioned as an IDE for developing graphical interfaces for applications in C++. But over the time, the framework has acquired tremendous opportunities. As a result, the framework has grown into a full-fledged ecosystem for developing cross-platform applications. It provides a large library of primitives for various needs: networking, graphical interface, database work, work with popular formats: images, text files, etc. Modern Qt Creator acts as a competitor for Visual Studio, but mostly it has gained developers who develop applications for various Linux distributions. 
 
 
-* **Eclipse IDE**
+* :arrow_forward: **Eclipse IDE**
 
     Site: https://www.eclipse.org/downloads/packages
 
@@ -51,7 +51,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Quite a powerful multi-platform development environment, but at the same time heavyweight. A key feature of Eclipse is modularity. The philosophy of Eclipse is that any developer can modify the development environment for himself by connecting additional extensions. Taken as a basis by some compiler developers for specialized OS or microcontrollers (for example: QNX real-time OS).
 
 
-* **JetBrains Clion IDE**
+* :arrow_forward: **JetBrains Clion IDE**
 
     Site: https://www.jetbrains.com/clion
 
@@ -61,7 +61,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :flashlight: Extensions
 
-* **JetBrains ReSharper C++**
+* :arrow_forward: **JetBrains ReSharper C++**
 
     Site: https://www.jetbrains.com/resharper-cpp
 
@@ -69,14 +69,14 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     Extension for MS Visual Studio. Adds additional features for working with source code: extended highlighting of the code and hints on it, building dependency diagrams between projects, recommendations on common errors in the code and how to improve it, extended information during debugging, advanced search, project navigation, etc. It is a competitor to Visual Assist.
 
-* **Visual Assist**
+* :arrow_forward: **Visual Assist**
 
     Site: https://www.wholetomato.com
 
     Extension for MS Visual Studio. Adds additional features for working with source code: extended code highlighting and hints on it, extended information during debugging or when writing code, advanced search, project navigation, etc. It is a competitor to JetBrains ReSharper.
 
 
-* **Incredibuild**
+* :arrow_forward: **Incredibuild**
 
     Site: https://www.incredibuild.com
 
@@ -86,13 +86,13 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :electric_plug: Package managers and build systems
 
-* **Cmake**
+* :arrow_forward: **Cmake**
 
     Site: https://cmake.org
 
     A cross-platform automation system for building an application from source code. Generates the necessary artifacts for the subsequent assembly of the application on the target platform. It is currently considered the "standard" tool for building various libraries when supplied as source.
 
-* **Conan**
+* :arrow_forward: **Conan**
 
     Site: https://conan.io
 
@@ -101,7 +101,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     A package manager as well as a dependency manager for organizing C++ libraries and frameworks. Supports work with various platforms: Windows, Linux, etc. Supports integration with CMake, Visual Studio, etc.
 
 
-* **Ninja**
+* :arrow_forward: **Ninja**
 
     Site: https://ninja-build.org
 
@@ -112,7 +112,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :mag: Code analyzers
 
-* **PVS Studio**
+* :arrow_forward: **PVS Studio**
 
     Site: https://pvs-studio.com
 
@@ -121,7 +121,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Cross-platform (Windows, Linux, MacOS) static code analyzer from the Russian company PVS-Studio. The main task of the analyzer is to analyze the source code for various errors that are not detected by compilers or at the stage of code review. It helps to minimize number of errors associated with the syntactic structures of the language and their pitfalls.
 
 
-* **Cpp Check**
+* :arrow_forward: **Cpp Check**
 
     Site: https://cppcheck.sourceforge.io
 
@@ -130,7 +130,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     Free code analyzer. It will help you catch common errors by analyzing the source code, which may be missed by the compiler or during the code review process. Cross-platform, supports popular Linux distributions and Windows.
 
 
-* **Valgrind**
+* :arrow_forward: **Valgrind**
 
     Site: https://www.valgrind.org
 
@@ -140,7 +140,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
 ## :floppy_disk: Git clients
 
-* **SmartGit**
+* :arrow_forward: **SmartGit**
 
     Site: https://www.syntevo.com/smartgit/
 
@@ -148,7 +148,7 @@ Newborn developers have a limited understanding of the tools available, which ma
 
     A complete cross-platform tool for working with git repositories. Out of the box, it provides the following features: receiving/sending changes to the repository, viewing the history of changes, a text editor for resolving conflicts, etc. Supports integration with all popular repositories: GitHub, BitBucket, GitLab, etc.
 
-* **Atlassian SourceTree**
+* :arrow_forward: **Atlassian SourceTree**
 
     Site: https://www.sourcetreeapp.com/
 
@@ -157,7 +157,7 @@ Newborn developers have a limited understanding of the tools available, which ma
     A great free alternative for working with git using GUI. Has the same functionality as SmartGit. The only exception is absence of its own editor for conflict resolution. But this can be easily fixed by integrating Visual Code or any other editor that can compare files with each other. In all other respects, it completely duplicates the functionality of SmartGit: cross-platform, supports integration with public repositories: GitHub, BitBucket, GitLab, etc.
 
 
-* **Git Kraken**
+* :arrow_forward: **Git Kraken**
 
     Site: https://www.gitkraken.com/
 
