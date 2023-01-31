@@ -26,10 +26,10 @@
 
 ## Альтернативные источники для изучения С++
 
-- [Learn C++](https://www.learncpp.com/) - Бесплатный учебник по изучению C++, постоянно дополняется.
-- [Коллекция различных ресурсов по C++](https://awesomecpp.com)
-- [Cpp con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
-- [C++ курс для изучения основ языка](https://www.learncpp.com/)
+- [Hackingcpp.com](https://hackingcpp.com/index.html) - Портал с различным набором структурированных материалов по C++: книги, шпаргалки, видео с конференций 
+- [Awesomecpp.com](https://awesomecpp.com) - Коллекция различных ресурсов по C++.
+- [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+- [Learncpp.com](https://www.learncpp.com/) - C++ курс для изучения основ языка. Обновляется и дополняется.
 
 ## Другие интересные репозитории
 
