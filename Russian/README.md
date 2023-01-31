@@ -9,36 +9,38 @@
 Прежде чем начать изучать карту рекомендуем прочитать статьи, перечисленные ниже.
 
 
-# Статьи
+# :bookmark_tabs: Статьи
 
-1. [Почему появилась дорожная карта](Rationale.md)
-1. [А нужен ли вам C++?](SelfIdentification.md)
-1. [C++ - это просто!](FunCpp.md)
-1. [Области применения языка](AreasOfApplication.md)
-1. [Легенды и мифы про C++](Mythbusters.md)
-1. [Грейды разработчиков](Grades/Overview.md)
-1. [Как учиться](HowToStudy.md)
-1. [Книги и прочие материалы по С++](Books/Overview.md)
-1. [Идеи для пет-проектов](PetProjects.md)
-1. [Инструментарий для С++](Tooling.md)
-1. [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
+1. :flashlight: [Почему появилась дорожная карта](Rationale.md)
+1. :mag: [А нужен ли вам C++?](SelfIdentification.md)
+1. :space_invader: [C++ - это просто!](FunCpp.md)
+1. :clipboard: [Области применения языка](AreasOfApplication.md)
+1. :ghost: [Легенды и мифы про C++](Mythbusters.md)
+1. :chart_with_upwards_trend: [Грейды разработчиков](Grades/Overview.md)
+1. :mortar_board: [Как учиться](HowToStudy.md)
+1. :books: [Книги и прочие материалы по С++](Books/Overview.md)
+1. :telescope: [Идеи для пет-проектов](PetProjects.md)
+1. :triangular_ruler: [Инструментарий для С++](Tooling.md)
+1. :gem: [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
 
-# Дорожная карта
+# :milky_way: Дорожная карта
 
-* [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lFH_iBs=/)
-* [GraphML - C++ Developer Roadmap](Graph/roadmap.svg)
+Дорожная карта представлена в двух вариантах:
+
+* :arrow_forward: [Miro](https://miro.com/app/board/o9J_lFH_iBs=/)
+* :arrow_forward: [GraphML](Graph/roadmap.svg)
 
 Информация о том, как просматривать и модифицировать роадмапу в формате graphML есть [здесь](./Graph/README.md)
 
-# Лицензия 
+# :key: Лицензия 
 Карта распространяется по лицензии **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). Если вкратце:
 
 - Вы можете делиться, адаптировать и копировать весь представленный материал, но с указанием ссылки на оригинал
 - **НЕ** допускается использование любой части представленных материалов в коммерческих целях
 
 
-# Предложения и замечания
+# :mailbox: Предложения и замечания
 
 Если у вас есть замечания, вопросы или предложения, будем рады получить любую помощь и поддержку. Мы открыты для общения :)
 
@@ -47,7 +49,7 @@
 - Предложения/правки **по дорожной карте в Miro** - создавайте и присылайте новый запрос в [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (в Miro нет возможности вести историю изменений, потому доступ к изменениям в карте ограничен. Все правки мы вносим сами после ознакомления с предложениями).
 
 
-# Контакты
+# :telephone: Контакты
 
 Авторы:
 - [Евгений Мельников](https://github.com/salmer),

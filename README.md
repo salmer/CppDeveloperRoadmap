@@ -9,36 +9,38 @@ We tried to answer these questions in the presented roadmap. The map focuses on 
 Before you start exploring the map, it's recommended to read the articles listed below.
 
 
-# Articles
+# :bookmark_tabs: Articles
 
-1. [Why and what for the roadmap has been created?](English/Rationale.md)
-1. [Are you sure that you need C++?](English/SelfIdentification.md)
-1. [C++ - It's Not Rocket Science](English/FunCpp.md)
-1. [Application areas of C++](English/AreasOfApplication.md)
-1. [Myths and Legends of C++](English/Mythbusters.md)
-1. [Developers grading](English/Grades/Overview.md)
-1. [How to study?](English/HowToStudy.md)
-1. [Books and other resources about C++](English/Books/Overview.md)
-1. [Pet-project ideas](English/PetProjects.md)
-1. [Language toolkit](English/Tooling.md)
-1. [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
+1. :flashlight: [Why and what for the roadmap has been created?](English/Rationale.md)
+1. :mag: [Are you sure that you need C++?](English/SelfIdentification.md)
+1. :space_invader: [C++ - It's Not Rocket Science](English/FunCpp.md)
+1. :clipboard: [Application areas of C++](English/AreasOfApplication.md)
+1. :ghost: [Myths and Legends of C++](English/Mythbusters.md)
+1. :chart_with_upwards_trend: [Developers grading](English/Grades/Overview.md)
+1. :mortar_board: [How to study?](English/HowToStudy.md)
+1. :books: [Books and other resources about C++](English/Books/Overview.md)
+1. :telescope: [Pet-project ideas](English/PetProjects.md)
+1. :triangular_ruler: [Language toolkit](English/Tooling.md)
+1. :gem: [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
 
-# Roadmap
+# :milky_way: Roadmap
 
-* [Miro - C++ Developer Roadmap](https://miro.com/app/board/o9J_lpap34Q=/)
-* [GraphML - C++ Developer Roadmap](English/Graph/roadmap.svg)
+The roadmap is available in the following formats:
+
+* :arrow_forward: [Miro](https://miro.com/app/board/o9J_lpap34Q=/)
+* :arrow_forward: [GraphML](English/Graph/roadmap.svg)
 
 More information on how to view and edit graphML file is stored [here](English/Graph/README.md)
 
-# License and conditions
+# :key: License and conditions
 The roadmap is published under the license **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). In a nutshell:
 
 - You can share, adopt or copy any chunk of the presented materials only in case you share a link to the original sources
 - It's **PROHIBITED** to use any chunk of the materials with any commercial reason.
 
 
-# Feedback and communication
+# :mailbox: Feedback and communication
 
 In case of any remarks, proposals or ideas don't hesitate to contact us. We really appreciate your support :)
 
@@ -47,7 +49,7 @@ Please use one of the following paths via Github:
 - In case of any proposal or modification in the **repository** content - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework doesn't support a history tracker and the access to the roadmap is limited. We add all changes manually after their review and acceptance)
 
 
-# Contacts
+# :telephone: Contacts
 
 Creators:
 - [Evgenii Melnikov](https://github.com/salmer),
