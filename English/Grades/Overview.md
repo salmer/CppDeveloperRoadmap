@@ -1,4 +1,4 @@
-# Developers grading
+# :chart_with_upwards_trend: Developers grading
 
 > Grading - it's an approach to classify developers by their set of skills and experience. By means of grading it's possible to understand how to differentiate tasks difficulty with an expected set of skills to deal with it. 
 

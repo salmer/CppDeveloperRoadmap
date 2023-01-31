@@ -1,4 +1,4 @@
-# C++ - It's Not Rocket Science
+# :space_invader: C++ - It's Not Rocket Science
 
 Modern C++ is much simpler than it is thought to be. The language has changed a lot during all the years of transformation, and gained the capabilities that allow writing safe and effective code. No need to think about memory leaks when using the primitives of the latest standards. The compiler has also become much smarter. It can apply a tremendous amount of optimizations to your code, delivering the maximum performance. It is still possible to optimize the code by manual tweaks and tricks, though.
 

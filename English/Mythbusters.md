@@ -1,4 +1,4 @@
-# Myths and Legends of C++
+# :ghost: Myths and Legends of C++
 
 ## C++ is dead, it's impossible to code anything with it
 

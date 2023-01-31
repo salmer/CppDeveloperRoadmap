@@ -1,4 +1,4 @@
-# Are you sure that you need C++?
+# :mag: Are you sure that you need C++?
 
 The first thing about which you should really think is: Why do you need to learn C++?
 

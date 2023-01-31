@@ -1,4 +1,4 @@
-# How to study?
+# :mortar_board: How to study?
 
 The main thing that can be advised is that you should understand that only you are responsible for your development. Of course, you will find many enthusiasts around who will be happy to help you with advice, but no one will produce specific tasks or training programs for you. The best friend in this business is you, Google search, and the tutorials.
 

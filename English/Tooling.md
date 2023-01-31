@@ -1,4 +1,4 @@
-# Language toolkit
+# :triangular_ruler: Language toolkit
 
 Newborn developers have a limited understanding of the tools available, which make it easier to work with code, as well as increase efficiency and protect against many mistakes. All these tools are not a silver bullet for difficulties that language has for you, but they significantly smooth out the corners. Below is a list of common and popular tools recognized by developers around the world. This list is only a small part of the available tools. Over time, you will begin to better navigate them and find something new for yourself.
 

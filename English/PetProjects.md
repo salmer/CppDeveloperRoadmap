@@ -1,4 +1,4 @@
-# Pet-projects
+# :telescope: Pet-projects
 
 The pet-projects are a great chance to gain hands-on experience when learning a programming language or libraries and/or frameworks. The pet-projects can also become a starting point for interviews and an invitation to dialogue if you start your career.
 
