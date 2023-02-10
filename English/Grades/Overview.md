@@ -1,13 +1,13 @@
 # :chart_with_upwards_trend: Developers grading
 
-> Grading - it's an approach to classify developers by their set of skills and experience. By means of grading it's possible to understand how to differentiate tasks difficulty with an expected set of skills to deal with it. 
+> Grading is an approach to classify developers based on their skills and experience. Through grading, it is possible to understand how to differentiate the difficulty of tasks and the expected set of skills required to handle them.
 
-Nowadays, you can meet the following common grading approach. It is possible to mark the following levels:
+Nowadays, you can encounter the following common grading approach. The following levels can be marked:
 - Junior;
 - Middle;
 - Senior.
 
-Each company has its own vision of developers grading and a set of skills/responsibilities declared for different levels. It's really simple to meet the following case: you will be promoted as a senior in a first company, but if you go to another one you will be assessed as a middle. Despite all, it's possible to introduce common expectations for each level. We will use a simplified approach declared before to describe each grade.
+Each company has its own vision of developer grading and a set of skills and responsibilities declared for different levels. It's common to encounter the following situation: you may be promoted to a senior role in one company, but in another company you might be assessed as a mid-level developer. Despite this, it's possible to introduce common expectations for each level. We will use the simplified approach described previously to describe each grade.
 
 **Example:** You can check this website to get knowledge about leveling systems in different companies: [levels.fyi](https://www.levels.fyi/)
 ![](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Russian/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
@@ -15,7 +15,7 @@ Each company has its own vision of developers grading and a set of skills/respon
 
 ## Level Descriptions
 
-You can read these articles to get understanding about each level, and its common expectations:
+You can read these articles to gain understanding about each level and its common expectations:
 - :alien: [Pre-Junior C++](PreJunior.md)
 - :yum: [Junior C++](Junior.md)
 - :sunglasses: [Middle C++](Middle.md)

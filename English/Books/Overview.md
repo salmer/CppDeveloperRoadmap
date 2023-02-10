@@ -1,6 +1,6 @@
 # :books: Books and sources
 
-These articles will help you find your way to study C++. All books are divided according to suitable grades. It's recommended to check suitable books corresponding to your current grade and choose those that fit you the best. The presented library does not concentrate on books related to any specific domain area or highly specialized areas. The idea of this project is to help people acquire generic knowledge about C++ and software development. If you are looking for specified materials, we recommend you contact experts in an area you are interested in.
+This guide presents a collection of books for learning C++, divided into appropriate levels of difficulty. It is suggested to determine your current proficiency and select books that match it. The focus of this guide is to provide a general understanding of C++ and software development, rather than covering specialized topics. If you are searching for more specific information, it is advised to reach out to experts in your area of interest.
 
 - :blue_book: [PreJunior](PreJunior.md)
 - :green_book: [Junior](Junior.md)

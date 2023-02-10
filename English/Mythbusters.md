@@ -4,45 +4,45 @@
 
 C++'s not dead.
 
-C++ made its way to the top of a wide range of ratings of programming languages, and it is scoring, moreover, popularity points, for example in the [Tiobe](https://www.tiobe.com/tiobe-index/) index. C++ got its notorious "dead language" badge during the noughties, while it was dormant and the language standardization committee fell off the radar. But the language is experiencing a renaissance since the C++11 standard. It is arduously getting new features and functionality, every three years. Many problems claimed by the "dead C++ witnesses" have been solved, but since such specialists have stopped developing using C++ - or got a smattering of C++ during courses (from those very "witnesses") - they continue repeating and reiterating the myths and legends of the horrors of C++. 
+In fact, it has consistently ranked among the top programming languages in various ratings, such as the [Tiobe](https://www.tiobe.com/tiobe-index/) index. The perception that C++ is a "dead language" emerged during the early 2000s, when the language standardization committee was inactive. However, C++ has since undergone a resurgence, with new features and functionality being added every three years since the C++11 standard. Despite this, there are still those who perpetuate the myths and legends of C++ being a difficult and problematic language, often because they haven't kept up with the developments in the language or have only had limited exposure to it in their education.
 
 ## :question: Real programmers learn C++ using Linux/Vim/gcc
 
-If you are unfamiliar with the aforementioned combo, we recommend you concentrate on learning the basics of C++ alone. We also suggest you start developing your first applications using Microsoft Visual Studio IDE (see [PreJunior Books](Books/PreJunior.md) for the details).
+If you are not familiar with the mentioned combination, it is recommended to focus on learning the basics of C++ first. It is suggested to start developing your first applications using Microsoft Visual Studio IDE. For more information, see the [PreJunior Books](Books/PreJunior.md).
 
-Choosing the hard way looks cool, but there is a high chance that the volume of the information needed to build the "Hello World" using Linux + Vim + gcc would be overwhelming. It is fraught with an early frustration and disaffection with programming as a whole. Try to follow the path from simple to complicated. Novices don't try to lift the heaviest weights during the first workout because they know what it might lead to. The same rule applies to education. You can try developing under Linux once you are comfortable with the language. But it's a different story altogether...
+Taking the challenging path may seem cool, but there is a high probability that the amount of information needed to create a "Hello World" program using Linux, Vim, and GCC will be overwhelming. This could lead to early frustration and disillusionment with programming as a whole. Try to follow a path that starts with simple things and gradually increases in complexity. Just like a novice shouldn't try to lift the heaviest weights during their first workout, the same rule applies to learning. Once you are comfortable with the language, you can try developing using Linux. But that is a different story altogether...
 
 ## :question: You'd better master C/Assembler/etc. before learning C++
 
 No, no, and no again!
 
-This statement continues to live due to two widespread scenarios: it's how they used to teach in the university, and the members of the "Old Guard" went through a similar path. Modern C++ doesn't require such torture. This language is self-sufficient and can be learned with no background whatsoever. It's more likely that learning the "C -> C++" way you get a mess in your head and a firm desire to write C++ in the "C with classes" style.
+This statement persists due to two widespread scenarios: it's how C++ was taught in universities in the past, and members of the "Old Guard" went through a similar path. Modern C++ does not require such a challenging approach. The language is self-sufficient and can be learned without any prior background. It's more likely that learning C++ through the "C -> C++" approach will result in confusion and a desire to write C++ in a "C with classes" style.
 
 ## :question: Learn C++ using the book by Stroustrup
 
-A highly damaging thesis taking origin from the "Old Guard" or someone born with a keyboard in hand.
+A highly damaging statement that originates from the "Old Guard" or those who were born with a keyboard in hand.
 
-Those who had extensive experience of development in other languages (C, Fortran, Delphi, etc.) and transitioned to C++ are most likely to give this piece of advice. Stroustrup wrote this book like a reference ([The C++ Programming Language](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840)), therefore one needs to use it in the appropriate manner, which requires some knowledge of the language. Better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
+This piece of advice is likely given by those who have extensive experience in developing other languages (such as C, Fortran, Delphi, etc.) and then transitioned to C++. Stroustrup wrote the book [The C++ Programming Language](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840) as a reference, so it must be used in an appropriate manner, which requires some knowledge of the language. Instead, it's better to look at the [Books](Books/Overview.md) section, where you'll find books for all levels of language proficiency.
 
 ## :question: Learn C++ using the Standard only
 
 Another snobbish statement.
 
-First, the modern C++ standard exceeds 2000 pages. Secondly, the access to the up-to-date version requires payment. Thirdly, the standard isn't composed in a friendly way. Those who learned the language using its standard can be pat on the back, but we do not recommend abusing oneself this way. Once again, better look at the [Books](Books/Overview.md) section, you'll find books for any level of language proficiency.
+The modern C++ standard, which exceeds 2000 pages, requires payment for access to the up-to-date version and is not composed in a user-friendly manner. While it is commendable for those who learned the language using its standard, it is not recommended as a way to learn for most individuals. Instead, it's better to check out the [Books](Books/Overview.md) section, where you'll find books suitable for various levels of language proficiency.
 
 ## :question: Undefined Behavior haunts the developer everywhere
 
 More likely no than yes.
 
-Modern C++ and the tooling emerged around the language allow to avoid the lion's share of the problems related to the undefined behavior. We can give a rather simple piece of advice: when hesitant what a particular construct does, read about it on [CppReference](https://en.cppreference.com), [StackOverflow](https://stackoverflow.com/) or other dedicated resources. If still in doubt after the reading, try rewriting the code in a simpler manner to avoid the undefined behavior. In simplicity there lies a great power.
+Modern C++ and the tooling that has emerged around the language allow avoiding the lion's share of problems related to undefined behavior. We can give a simple piece of advice: when unsure what a particular construct does, read about it on [CppReference](https://en.cppreference.com), [StackOverflow](https://stackoverflow.com/) or other dedicated resources. If you're still in doubt after reading, try rewriting the code in a simpler manner to avoid undefined behavior. There lies great power in simplicity.
 
 ## :question: One needs to manage memory manually, there is no garbage collection in the language
 
-This is another urban legend from the "Old Guard" that had stopped writing C++ before C++11 or those who superficially learned it in university disregarding the latest standards. Modern C++ contains a set of primitives in its standard library which are responsible for the automatic memory allocation and deallocation. The manual memory management fell by the wayside. Many teams and companies even have the rule: "No raw pointers". Once again, do not neglect the modern tools and sanitizers: they can detect possible memory leaks at the source code level.
+This is another urban legend from the "Old Guard," who stopped writing C++ before C++11 or those who superficially learned it in university and disregarded the latest standards. Modern C++ has a set of primitives in its standard library that are responsible for automatic memory allocation and deallocation. Manual memory management has fallen by the wayside. Many teams and companies even have the rule: "No raw pointers." Once again, do not neglect the modern tools and sanitizers, as they can detect possible memory leaks at the source code level.
 
 ## :question: C++ is legacy area only
 
-Partially it's true, but it's good to note that it's applicable for other languages. Even with a modern stack, developers can produce code that will become legacy very fast. The code quality mainly depends on the technical culture of a team and its pioneers, not a language. The majority amount of legacy code is produced under the human factor: developer's grade and skill set, work ethic, wrong estimations, etc. Nowadays, you can meet a lot of projects working 24/7 for years and written in C++. Such kinds of systems are often the business foundation of revenue. In this case, it's really dangerous to perform any huge changes in short time. The developers make any changes with high attention to any regression. But don't think that legacy projects can not help you to improve yourself. In fact, these projects can give you a challenge that can bring you widespread experience in different areas: code reading, reverse-engineering, testing, designing of SW architecture, automation, requirements gathering, etc.
+Partially, it's true, but it's worth noting that it's not only applicable to C++. The code quality in any language mainly depends on the technical culture of a team and its pioneers, not just the language. The majority of legacy code is produced due to human factors: the developer's skill level, work ethic, and incorrect estimations, among others. Nowadays, there are many projects written in C++ that have been working 24/7 for years and are the foundation of a company's revenue. In such cases, it's dangerous to make any significant changes in a short period. The developers take great care when making changes to avoid any regressions. However, don't think that working on legacy projects cannot help you improve. In fact, these projects can provide a challenge that can give you a wealth of experience in areas such as code reading, reverse engineering, testing, software architecture design, automation, and requirements gathering, among others.
 
 ---
 
