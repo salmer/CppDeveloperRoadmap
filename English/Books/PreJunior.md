@@ -4,44 +4,44 @@
 
 - [Chad Fowler - Passionate Programmer](https://www.amazon.com/Passionate-Programmer-Remarkable-Development-Pragmatic-ebook/dp/B00AYQNR5U)
 
-    This book can be called a classic in the motivation genre for beginners. Chad Fowler tries to share his experience: how to become a professional programmer and ride the IT industry wave.
+    The book is a classic in the motivation genre for beginners. Chad Fowler shares his experience on how to become a professional programmer and navigate the IT industry.
 
 
 ## :bar_chart: Computer Science
 
 - [Wladston Ferreira Filho - Computer Science Distilled: Learn the Art of Solving Computational Problems](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316020)
 
-    The book is an overview on different Computer Science basics: math, algorithms, databases, hardware basics of computers, etc. It can be a good starting point to find interesting areas for yourself and to prioritize them. 
+    The book provides a comprehensive overview of various basic concepts in Computer Science, including mathematics, algorithms, databases, and the hardware basics of computers. It serves as an ideal starting point to discover and prioritize areas of interest in the field.
     
 - [Charles Petzold - Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319)
 
-    Before starting studying C++ it's recommended to pick this book first. In simple words, it describes how a computer works. It avoids complex technical or theoretical aspects. This book contains foundations that won't become obsolete in the far future. It will also help you to better understand the foundation ideas of C++ later. This book is a good complement to the previous one as it dives deeper into the device of computers.
+    Before starting your study of C++, it's recommended to read this book first. It provides a simple explanation of how a computer works, avoiding complex technical or theoretical aspects. The concepts presented in this book are fundamental and will remain relevant in the future. It will also aid in your understanding of the foundational ideas of C++ later on. This book serves as a complement to the previous one as it delves deeper into the workings of computers.
 
 - [Aditya Bhargava  - Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
 
-    The book contains a brilliant introduction to the world of Computers Science algorithms and data structures for beginners. It also contains a list of tasks that will help you to implement your first algorithms.
+    The book provides a brilliant introduction to the world of computer science algorithms and data structures for beginners. It also includes a list of tasks that will help you implement your first algorithms.
 
 
 ## :pencil: C++
 
 - [Stephen Prata - C++ Primer Plus](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 
-    The book is an excellent start for people who stand at the beginning of the studying path in C++ World. It doesn't require any extra knowledge to start your path. This book also contains a list of exercises which help to get experience and understanding of C++ basics.
+    The book is an excellent starting point for people who are just beginning their journey in the world of C++. No prior knowledge is required to get started. The book also includes a list of exercises that can help you gain hands-on experience and a deeper understanding of the basics of C++.
 
 - [Stanley Lippman - C++ Primer](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)
 
-    The book is a good complement to the previous one. It's good to use this book in parallel with Prata's book. We recommend you find a balance between these books, as information is given differently: mixing information from both books will help you to better understand different topics and language aspects.
+    This book is a great complement to the previous one. It's recommended to use it in parallel with Prata's book. Finding a balance between these books is advised, as the information is presented differently. Mixing information from both books will help to better understand various topics and aspects of the language.
 
 - [Andrew Koenig - Accelerated C++: Practical Programming by Example](https://www.amazon.com/Accelerated-C-Practical-Programming-Example/dp/020170353X)
 
-    This book is an excellent one for beginners. Each chapter of the book widely describes a different foundation aspect of the language. When it's done, it offers you a set of exercises to train yourself. The book explains the most fundamental topics that can be reused in the future to study new language mechanisms. It's recommended to pick up this book after Prata's, Lippman's books or in parallel with them.
+    This book is an excellent choice for beginners. Each chapter provides a comprehensive description of different foundational aspects of the language. Upon completion of each chapter, the reader is offered a set of exercises to practice and reinforce their understanding. The book covers the most fundamental topics that can be applied in future studies of new language mechanisms. It is recommended to read this book after studying Prata's or Lippman's books or alongside them.
 
 
 ## :electric_plug: Hard skills
 
 - [MSDN](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160)
 
-    If you are at the starting point of your studying path, it's recommended to start practicing and doing exercises in the IDE: Microsoft Visual Studio (Community Edition). Nowadays, it's one of the friendliest IDEs among others to beginners, either in installation or usage (and it's absolutely for free!). It will help you to concentrate on language and not to struggle with the development environment. On MSDN you will find a nice guidebook that describes the following aspects: how to install the Visual Studio, create the first console project, and implement the first application.
+    If you are just starting on your learning journey, it is recommended to begin practicing and doing exercises in the IDE Microsoft Visual Studio (Community Edition). It is currently one of the most user-friendly IDEs for beginners, both in terms of installation and usage, and it's completely free! This will allow you to focus on the language and not be burdened by the development environment. A helpful guidebook on MSDN explains the steps to install Visual Studio, create your first console project, and implement your first application.
 
 ---
 

@@ -2,49 +2,48 @@
 
 ## :question: Who is it?
 
-It's a developer that understands the technical context of development and has abilities to create a design and a solution for functionality that is a part of an application or component. The design also can be created even in case of an insufficient amount of requirements. This person also has a commercial experience background and is familiar with common business processes of development.
+It's a developer who understands the technical context of software development and has the ability to create a design and solution for functionality that is part of an application or component. The design can also be created even when there is an insufficient amount of requirements. This person has a background in commercial experience and is familiar with common business processes in development.
 
-In general, the middle developer solves technical tasks. In comparison with a Junior, this person can do work without any help or minor assistance from a Senior/Lead engineer.
+In general, the middle developer solves technical tasks, and compared to a Junior, this person can complete work without help or with minimal assistance from a Senior/Lead engineer.
 
 
 ## :computer: What coding abilities are expected?
 
-- A compiler and a programming language is not a "magic box" anymore. Any obstacles or surprises can be solved by generating hypothesis, validation, and confirmation/rejection.
-- Understands foundation concepts of C++, knows about other languages, and can compare them with each other
-- Writes readable, extendable, and maintainable code 
-- Knows design patterns and principles, can make technical decisions
-- Understands the technical context of the language: e.g. how the code is compiled, knows the tools that help to maintain a code lifecycle:
-    - Code writing (IDE, text editors, code quality, best practices, etc.)
-    - Source code and product storage (version system control, package managers, servers, etc.)
-    - Compilation (compilers, build systems, libraries)
-    - Testing (frameworks, testing strategies)
-    - Shipment/Deployment
-    - Execution on a target system,
-- Has more knowledge on Computer Science foundations (data structures, graphs, finite machines, algorithms)
+- Does not see a compiler and a programming language as a "magic box" anymore; able to solve any obstacles or surprises by generating hypotheses, validating them, and confirming or rejecting them.
+- Has a deep understanding of the foundation concepts of C++ and knowledge of other programming languages, able to compare them.
+- Writes readable, extendable, and maintainable code.
+- Familiar with design patterns and principles and able to make technical decisions.
+- Has a clear understanding of the technical context of C++, including:
+    - the code writing process (such as using IDEs, text editors, and following best practices)
+    - source code and product storage (such as using version control systems and package managers)
+    - compilation (compilers, build systems, and libraries)
+    - testing (testing frameworks and strategies)
+    - shipment/deployment and execution on a target system.
+- Has a strong knowledge of computer science foundations, including data structures, graphs, finite machines, and algorithms.
 
 
 ## :bust_in_silhouette: What general skills are expected?
 
-- Can personally make decisions based on technical knowledge/background of a project
-- Understands when a solution is "good enough" to prevent overengineering
-- Has a team player mindset
-- Can formulate and share an opinion with other teammates
-- Has experience of work with different methodologies: Kanban, Agile/Scrum, Waterfall, etc.
-- Helps other teammates
+- Is able to make decisions based on personal technical knowledge and background of a project
+- Understands the concept of "good enough" solutions to prevent overengineering
+- Has a mindset of being a team player
+- Can articulate and share opinions with other team members
+- Has experience working with various methodologies such as Kanban, Agile/Scrum, Waterfall, etc.
+- Is willing to assist and support other team members.
 
 
 ## :eyes: Tips and recommendations
 
 ### :arrow_forward: Studying
 
-- It's time to improve soft skills if you want to become a Senior developer. Technical expertise goes a bit behind and an ability to build dialogs and find compromises with others go first. A good developer is not the one who writes a lot of code but the one who understands how to solve a problem efficiently with minimal loses. It is better if you can solve a problem without any new code. It is ideal if you can even remove tens/hundreds lines of code.
-- The middle role is most difficult for studying. You need to think not only about hard skills but also about soft skills and business-problem solving. It means you're asked to concentrate on both aspects simultaneously either about hard skills or soft skills.
-- Good attention to soft-skills increases the probability to become a high-demand professional on the marker. You can try to grow as a highly specialized developer and ignore soft skills, but first - this kind of specialists are not often needed in business problems, second - competition among such kinds of developers is extremely high. If you're ready to compete with the best specialists on the market then don't listen to us and bravely go forward, but we still recommend thinking about skills diversity.
+- Improving soft skills is crucial if you want to become a senior developer. Technical expertise takes a backseat and the ability to build relationships and find compromises with others becomes more important. A good developer is not someone who writes a lot of code, but rather, someone who knows how to solve a problem efficiently with minimal losses. Ideally, you should be able to solve a problem without writing any new code or even remove tens or hundreds of lines of code.
+- The middle role is the most challenging to master. You have to focus on both hard skills and soft skills and business problem-solving. This means you need to concentrate on both aspects at the same time.
+- Paying attention to soft skills increases your chances of becoming a highly sought-after professional in the market. You can choose to focus on becoming a highly specialized developer and ignore soft skills, but keep in mind that such specialists are not always in high demand and the competition among them is extremely high. If you're ready to compete with the best specialists in the market, then by all means, go ahead. However, we still recommend considering diversifying your skills.
 
 ### :arrow_forward: Experience
 
-- The main trap of many middle developers: they're "fanboys" of technologies, frameworks, design patterns, or methodologies. Try to be more pragmatic while solving tasks on your project. Don't try to intake all the newest ideas only to play with them or get "yet another skill" to your CV. The Middle role is a "pandora box" of overengineering or "diving" around frameworks.
-- If you really think a library/framework is needed for a project - discuss it with a Senior or Lead engineer first. Propose them to create a "proof of concept" where you will be able to check all hypotheses in action before intake a new dependency. Please, don't try to do it in secret from your team! It's fun for you, but it's a "disaster" for your team in the future. It increases maintenance costs and might bring unforeseen consequences.
+- Many middle developers fall into the trap of becoming "fanboys" of technologies, frameworks, design patterns, or methodologies. It's important to be more pragmatic while solving tasks on your project and not just try to adopt the latest ideas for the sake of adding another skill to your resume. The middle role can lead to overengineering or constantly changing frameworks.
+- If you believe that a library or framework is necessary for a project, it's best to discuss it with a Senior or Lead engineer first. Propose creating a "proof of concept" where you can test all of your hypotheses before adding a new dependency. Don't try to do this behind your team's back, as it could result in increased maintenance costs and unforeseen consequences.
 
 ---
 
