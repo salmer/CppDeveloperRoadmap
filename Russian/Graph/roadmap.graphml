@@ -3682,6 +3682,7 @@ MSVS - стиль кода.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
       </data>
       <graph edgedefault="directed" id="n97:">
         <node id="n97::n0">
+          <data key="d4" xml:space="preserve"><![CDATA[https://github.com/NiekBeijloos/Design-Patterns]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="319.13671875" x="2022.2396929194304" y="4720.941162109375"/>
