@@ -5554,17 +5554,19 @@
       </g>
     </g>
     <g id="y.node.308">
-      <g fill="rgb(250,213,134)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(0.5,0,0,0.5,878,2917.5)" stroke="rgb(250,213,134)">
-        <rect x="2022.2397" width="319.1367" height="30" y="4720.9412" stroke="none"/>
-      </g>
-      <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(0.5,0,0,0.5,878,2917.5)" stroke-linecap="butt">
-        <rect fill="none" x="2022.2397" width="319.1367" height="30" y="4720.9412"/>
-      </g>
-      <g>
-        <g font-size="20px" stroke-linecap="butt" transform="matrix(0.5,0,0,0.5,878,2917.5)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-          <text x="2029.2397" xml:space="preserve" y="4743.7979" stroke="none">Паттерны проектирования (GoF)</text>
+      <a target="_blank" xlink:type="simple" xlink:href="https://github.com/NiekBeijloos/Design-Patterns" xlink:show="new">
+        <g fill="rgb(250,213,134)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(0.5,0,0,0.5,878,2917.5)" stroke="rgb(250,213,134)">
+          <rect x="2022.2397" width="319.1367" height="30" y="4720.9412" stroke="none"/>
         </g>
-      </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(0.5,0,0,0.5,878,2917.5)" stroke-linecap="butt">
+          <rect fill="none" x="2022.2397" width="319.1367" height="30" y="4720.9412"/>
+        </g>
+        <g>
+          <g font-size="20px" stroke-linecap="butt" transform="matrix(0.5,0,0,0.5,878,2917.5)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
+            <text x="2029.2397" xml:space="preserve" y="4743.7979" stroke="none">Паттерны проектирования (GoF)</text>
+          </g>
+        </g>
+      </a>
     </g>
     <g id="y.node.309">
       <g fill="rgb(250,213,134)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(0.5,0,0,0.5,878,2917.5)" stroke="rgb(250,213,134)">

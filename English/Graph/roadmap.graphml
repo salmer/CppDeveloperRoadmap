@@ -3663,6 +3663,7 @@ They are your friends, not enemies<y:LabelModel><y:SmartNodeLabelModel distance=
       </data>
       <graph edgedefault="directed" id="n97:">
         <node id="n97::n0">
+          <data key="d4" xml:space="preserve"><![CDATA[https://github.com/NiekBeijloos/Design-Patterns]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="202.9453125" x="2146.657600489647" y="4720.941162109375"/>
