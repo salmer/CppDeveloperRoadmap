@@ -50,6 +50,10 @@
 
     This is a short and practical guide on how to approach programming using the theory of finite machines. You won't find a simpler and more elegant explanation of finite machine theory and its practical applications.
 
+- [Vladimir Khorikov - Unit Testing Principles, Practices, and Patterns: Effective testing styles, patterns, and reliable automation for unit testing, mocking, and integration testing with examples in C#](https://www.amazon.com/Unit-Testing-Principles-Practices-Patterns-ebook/dp/B09782L692)
+
+   The book provides a detailed overview of recommendations, patterns, and anti-patterns commonly encountered in the field of unit testing. After reading this book, you will know everything you need to become an expert in creating successful projects that are easily scalable and maintainable thanks to good tests.
+
 
 ## :zap: Operating systems
 
