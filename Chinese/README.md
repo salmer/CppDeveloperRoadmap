@@ -16,9 +16,9 @@ C++ 仍然是 [2021年](https://insights.stackoverflow.com/survey/2021#most-popu
 6. :chart_with_upwards_trend: [开发者评级体系概述 ](Grades/Overview.md)
 7. :mortar_board: [如何学习? ](HowToStudy.md)
 8. :books: [关于 C++ 的书籍和其他资源](Books/Overview.md)
-9. [Pet-project ideas](PetProjects.md)
-10. [Language toolkit](Tooling.md)
-11. [More resources about C ++：documentation, community links, etc.](CommunitySources.md)
+9. :books: [宠物项目](PetProjects.md)
+10. :books: [工具](Tooling.md)
+11. :books:  [更多的 C++ 资源/社区等](CommunitySources.md)
 
 
 # :milky_way: 路线图
