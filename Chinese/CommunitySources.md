@@ -37,4 +37,4 @@
 
 ---
 
-[**To main page**](../README.md)
+[**To main page**](README.md)

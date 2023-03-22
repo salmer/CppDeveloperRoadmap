@@ -1,6 +1,6 @@
 # C++ Developer Roadmap
 
-## :speech_balloon: Additional languages: [Русский](Russian/README.md)
+## :speech_balloon: Additional languages: [Русский](Russian/README.md) [中文](Chinese/README.md)
 
 C++ is still one of the most popular development languages in [2021](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language-prof) and [2022](https://survey.stackoverflow.co/2022/#most-popular-technologies-language-prof). There are quite a few people who want to start learning C++ and become a developer. They face the questions: "Where should I start? What and in what order should I study? What books should I read?
 
