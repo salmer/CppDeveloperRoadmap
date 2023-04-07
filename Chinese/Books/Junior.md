@@ -30,7 +30,7 @@
 
     这是一份针对经验不足的 C++ 开发人员的技巧汇编，重点放在最常见的错误上。解释简洁明了。大多数提示包括指向其他资源的链接。由于该书没有对每条建议进行彻底检查，因此建议将来深入研究每一个建议，以真正理解它们背后的原因。
 
-- [Herb Sutter, Andrei Alexandrescu - C++编码标准：101 个规则、指南和最佳实践](https://www.amazon.com/Coding-Standards-Rules-Guidelines-Practices/dp/0321113586)
+- [Herb Sutter, Andrei Alexandrescu - C++ 编程规范：101 条规则、准则与最佳实践](https://book.douban.com/subject/26899830/)
 
     这本小书概述了商业项目中编写代码的常见最佳实践。这是从各种公司收集到的经验总结。这本书也是[C++ 核心准则](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) 的基础之一。建议先阅读本书再访问 C++ 核心准则网站。它将为您提供有关项目中使用代码指南的第一印象。阅读完本书后，您可以访问 C++ 核心准则网站获取最新批准方法。
 
@@ -40,7 +40,7 @@
 
     该书是学习设计模式的完美起点。另外一个选择是[refactoring.guru](https://refactoring.guru/design-patterns)，但如果使用这本书，则可以进行大量练习，帮助您更好地理解常见设计模式思想。
 
-- [Sanjay Madhav, Josh Glazer - 多人游戏编程：构架网络游戏（英文版）](https://www.amazon.com/Multiplayer-Game-Programming-Architecting-Networked/dp/0134034309)
+- [Sanjay Madhav, Josh Glazer - 网络多人游戏架构与编程](https://book.douban.com/subject/27135506/)
 
     该书是网络理论方面出色介绍，并通过视频游戏示例解释网络基础知识。它将帮助你编写第一个可通过网络工作应用程序，并且你会获得与在 C++ 中处理网络相关问题方面有关联系方面实际经验。该书中所有示例都使用 C++11 /14 编写。
 
