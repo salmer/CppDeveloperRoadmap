@@ -31,7 +31,7 @@ C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-pop
 
 ## :key: 许可证和条件
 
-该路线图根据许可证**CC BY-NC-SA 4.0**发布：[中文](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)|| [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en）。简而言之：
+该路线图根据许可证**CC BY-NC-SA 4.0**发布：[中文](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)|| [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)。简而言之：
 
 * 只有在提供原始来源链接时，您才可以共享、采用或复制所呈现材料的任何部分。
 * **禁止**将任何部分材料用于任何商业目的。
