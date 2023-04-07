@@ -32,7 +32,7 @@
 
 ## :star: 其他有趣的仓库
 
-- [现代C++语言和库特性速查表](https://github.com/AnthonyCalandra/modern-cpp-features)
+- [现代 C++语言和库特性速查表](https://github.com/AnthonyCalandra/modern-cpp-features)
 - [C++的库和框架集合](https://github.com/fffaraz/awesome-cpp)
 
 ---
