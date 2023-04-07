@@ -40,8 +40,8 @@ Pet Projects 想法轮盘允许您设置所需复杂性级别并旋转轮盘。�
 * 面向两个至四个玩家网络游戏：弹球、扑克、国际象棋、海战等 
 
 建议阅读以下源代码，其中包含有关 gamedev 各种算法信息。他们可能对上述任何一个游戏或者你自己构思出来都非常有用：
-– https://www.redblobgames.com/
-– http://www.squidi.net/three/
+- https://www.redblobgames.com/
+- http://www.squidi.net/three/
 
 ---
 
