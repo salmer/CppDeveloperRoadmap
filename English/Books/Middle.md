@@ -52,7 +52,7 @@
 
 - [Vladimir Khorikov - Unit Testing Principles, Practices, and Patterns: Effective testing styles, patterns, and reliable automation for unit testing, mocking, and integration testing with examples in C#](https://www.amazon.com/Unit-Testing-Principles-Practices-Patterns-ebook/dp/B09782L692)
 
-   The book provides a detailed overview of recommendations, patterns, and anti-patterns commonly encountered in the field of unit testing. After reading this book, you will know everything you need to become an expert in creating successful projects that are easily scalable and maintainable thanks to good tests.
+   The book provides insights into the best practices and common anti-patterns that surround the topic of unit testing. After reading this book, armed with your newfound skills, you’ll have the knowledge needed to become an expert at delivering successful projects that are easy to maintain and extend, thanks to the tests you build along the way.
 
 
 ## :zap: Operating systems
