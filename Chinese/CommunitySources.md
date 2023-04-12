@@ -25,9 +25,9 @@
 
 ## :exclamation: 学习 C++ 的可选资源
 
-- [Learncpp.com](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
-- [Hackingcpp.com](https://hackingcpp.com/index.html) - The all-in-one web portal with diffenent collections of materials related to C++: books, cheat sheets, recordings from conferences, etc.
-- [Awesomecpp.com](https://awesomecpp.com) - The set of different sources about the C++.
+- [Learncpp.com](https://www.learncpp.com/)- 一个致力于教您如何使用 C++ 进行编程的免费网站，定期更新。
+- [Hackingcpp.com](https://hackingcpp.com/index.html) - 一站式的 C++ 资源网站，包括书籍、速查表、会议记录等。
+- [Awesomecpp.com](https://awesomecpp.com) - 一系列 C++ 相关的资源
 - [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 
 ## :star: 其他有趣的仓库
