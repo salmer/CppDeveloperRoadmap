@@ -1,6 +1,6 @@
 # C++ 开发者路线图
 
-## :speech_balloon: Additional languages: [English](../README.md) [Русский](Russian/README.md)
+## :speech_balloon: Additional languages: [English](../README.md) [Русский](../Russian/README.md)
 
 C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language-prof) 和 [2022 年](https://survey.stackoverflow.co/2022/#most-popular-technologies-language-prof) 中最受欢迎的开发语言之一。有很多人想开始学习 C++ 并成为开发者。他们面临着这些问题：“我应该从哪里开始？我应该按照什么顺序学习？我应该读哪些书？”
 
@@ -27,7 +27,7 @@ C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-pop
 路线图提供以下格式：
 
 * :arrow_forward: [Miro](https://miro.com/app/board/o9J_lpap34Q=/)
-* :arrow_forward: [GraphML](English/Graph/roadmap.svg)
+* :arrow_forward: [GraphML](../English/Graph/roadmap.svg)
 
 有关如何查看和编辑 graphML 文件的说明，请参见[此处](English/Graph/README.md)。
 
