@@ -1,5 +1,7 @@
 # C++ 开发者路线图
 
+## :speech_balloon: Additional languages: [English](../README.md) [Русский](Russian/README.md)
+
 C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language-prof) 和 [2022 年](https://survey.stackoverflow.co/2022/#most-popular-technologies-language-prof) 中最受欢迎的开发语言之一。有很多人想开始学习 C++ 并成为开发者。他们面临着这些问题：“我应该从哪里开始？我应该按照什么顺序学习？我应该读哪些书？”
 
 我们试图通过提供的路线图来回答这些问题。路线图侧重于大多数项目中常见的通用能力和技能。它旨在帮助那些刚开始教育或经验有限的人士。如果您学习了列出的材料，就可以创建一个更有效的学习计划，而不会被无关信息分心。它将帮助您达到 C++ 在许多商业项目中普遍使用的水平。
@@ -44,3 +46,10 @@ C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-pop
 
 * 如果对存储库内容进行任何建议或修改 - 在[Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) 中创建新 PR
 * 如果对存储库内容进行任何建议或修改 - 在[Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)中提交新问题。(不幸的是，Miro 框架没有历史跟踪器并且无法访问路线图。所有更改都是在审核和批准后手动添加。)
+
+# :telephone: Contacts
+
+Creators:
+- [Evgenii Melnikov](https://github.com/salmer),
+- [Dmitrii Dmitriev](https://github.com/DmitrievDmitriyA),
+- [lusipad](https://github.com/lusipad)
