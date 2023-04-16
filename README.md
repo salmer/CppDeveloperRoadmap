@@ -53,7 +53,7 @@ You can reach us through one of the following channels via Github:
 
 Creators:
 - [Evgenii Melnikov](https://github.com/salmer),
-- [Dmitriy Dmitriev](https://github.com/DmitrievDmitriyA),
+- [Dmitrii Dmitriev](https://github.com/DmitrievDmitriyA),
 - [Dmitriy Savin](https://github.com/SD57)
 
 Reviewers:
