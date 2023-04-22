@@ -10,7 +10,7 @@ To get started with C++, one needs a basic understanding of:
 - Arithmetic
 - Boolean algebra
 - Drawing flowcharts
-- NRepresentation of numbers in different numeral systems
+- Representation of numbers in different numeral systems
 
 Despite its history, modern C++ is much simpler than it used to be.
 
