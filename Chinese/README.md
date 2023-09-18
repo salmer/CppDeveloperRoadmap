@@ -27,7 +27,7 @@ C++ 仍然是 [2021 年](https://insights.stackoverflow.com/survey/2021#most-pop
 路线图提供以下格式：
 
 * :arrow_forward: [Miro](https://miro.com/app/board/uXjVMQjliUg=/)
-* :arrow_forward: [GraphML](../English/Graph/roadmap.svg)
+* :arrow_forward: [GraphML](Graph/roadmap.svg)
 
 有关如何查看和编辑 graphML 文件的说明，请参见[此处](English/Graph/README.md)。
 
