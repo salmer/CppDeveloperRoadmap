@@ -14,7 +14,7 @@
 
 Репозиторий содержит коллекцию пет-проектов, собранные для различных языков программирования. Также включает обширный список идей для C++.
 
-* [Programming challenges](https://programming-challenges.jeremyjaydan.dev/) - [PNG изображение](https://programming-challenges.jeremyjaydan.dev/media/programming-challenges-v4.0.png)
+* [Programming challenges](https://challenges.jeremyjaydan.com/) - [PNG image](https://challenges.jeremyjaydan.com/media/programming-challenges-v4.0.png)
 
 Рулетка с идеями для пет-проектов. Настраиваете ожидаемую сложность проекта и запускаете рулетку. Дальше случайность решит за вас, какую задачу придется решать :)
 
