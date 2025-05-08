@@ -14,7 +14,7 @@
 
 该存储库保存了不同编程语言（包括 C++）的一组小型项目集合，并提供广泛且详细清单。
 
-* [Programming challenges](https://programming-challenges.jeremyjaydan.dev/) - [PNG image](https://programming-challenges.jeremyjaydan.dev/media/programming-challenges-v4.0.png)
+* [Programming challenges](https://challenges.jeremyjaydan.com/) - [PNG image](https://challenges.jeremyjaydan.com/media/programming-challenges-v4.0.png)
 
 Pet Projects 想法轮盘允许您设置所需复杂性级别并旋转轮盘。旋转结果将随机选择要解决任务：)
 
