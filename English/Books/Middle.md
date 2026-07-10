@@ -7,8 +7,8 @@
     It's a new chapter in the collection of books by Scott Meyers. This book compiles a set of tips for the C++11/14 standards.
 
 - Nicolai Josuttis:
-    - [C++17 - The Complete Guide](https://www.cppstd17.com)
-    - [C++20 - The Complete Guide](https://cppstd20.com)
+    - [C++17 - The Complete Guide](https://leanpub.com/cpp17)
+    - [C++20 - The Complete Guide](https://leanpub.com/cpp20)
 
     Meyers' book stops at C++14, and these two volumes pick up where it leaves off. Each one systematically walks through everything its standard added — language features and library alike — with practical examples and advice on when (and when not) to use the new tools.
 

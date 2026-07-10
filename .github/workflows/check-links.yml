@@ -33,7 +33,6 @@ jobs:
         with:
           args: >-
             --no-progress
-            --insecure
             --accept 200..=204,429
             --max-retries 2
             --timeout 45
