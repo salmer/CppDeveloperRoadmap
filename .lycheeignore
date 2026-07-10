@@ -1,0 +1,7 @@
+# Domains that block automated clients (return 403/503 to anything that is
+# not a real browser), so checking them from CI produces false positives.
+# They still need an occasional manual check.
+https://www\.amazon\.com/.*
+https://book\.douban\.com/.*
+https://www\.reddit\.com/.*
+https://www\.levels\.fyi/.*

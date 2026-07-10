@@ -1,6 +1,6 @@
 # C++ 开发者路线图
 
-## :speech_balloon: Additional languages: [English](../README.md) [Русский](../Russian/README.md)
+## :speech_balloon: 其他语言：[English](../README.md) [Русский](../Russian/README.md)
 
 C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-popular-technologies) 中最受欢迎的开发语言之一。有很多人想开始学习 C++ 并成为开发者。他们面临着这些问题：“我应该从哪里开始？我应该按照什么顺序学习？我应该读哪些书？”
 

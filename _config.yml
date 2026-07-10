@@ -1,8 +1,20 @@
+title: C++ Developer Roadmap
+description: >-
+  A roadmap for learning C++: what to study and in what order, book
+  recommendations per level, developer grading, pet-project ideas, and tooling.
+  Available in English, Russian, and Chinese.
+
 # Used theme: https://github.com/pages-themes/cayman
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jemoji
+  # Rewrites relative *.md links to the generated *.html pages, so navigation
+  # works on the published GitHub Pages site, not just in the repo view.
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
 
 # GoatCounter site code for the /goto/* redirect pages (click counting for the
 # roadmap formats). Register a free account at https://www.goatcounter.com,

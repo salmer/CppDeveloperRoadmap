@@ -1,6 +1,6 @@
 # C++ Developer Roadmap
 
-## :speech_balloon: Additional languages: [English](../README.md) [中文](../Chinese/README.md)
+## :speech_balloon: Другие языки: [English](../README.md) [中文](../Chinese/README.md)
 
 С++ является одним из самых популярных языков разработки: [2025](https://survey.stackoverflow.co/2025/technology#most-popular-technologies). Есть немало желающих начать его изучать и стать C++ разработчиками. Перед такими людьми встают вопросы: "С чего мне начать? Что и в каком порядке мне изучать? Какие книги стоит почитать?"
 
