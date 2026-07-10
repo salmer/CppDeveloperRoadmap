@@ -2,7 +2,13 @@
 
 ## :pencil: C++
 
-- There are no specific recommendations for books for senior level students. At this level, it is assumed that you have a good understanding of the fundamentals of C++. The only challenge is to stay updated on the latest standards, new features, and tools in the C++ ecosystem.
+- There are few book recommendations at the senior level: it is assumed that you have a solid command of the language, and the main challenge is staying current with new standards, features, and tools. Useful channels for that:
+    - [Standard C++ Foundation news and WG21 trip reports](https://isocpp.org/) - summaries of what the standardization committee is working on, written for practitioners.
+    - Conference talks - see the [conference YouTube channels](../CommunitySources.md) (CppCon, Meeting C++, C++Now); keynotes and "What's new in C++XX" talks are an efficient way to keep up.
+
+- [John Lakos - Large-Scale C++ Volume I: Process and Architecture](https://www.informit.com/store/large-scale-c-plus-plus-process-and-architecture-volume-9780201717068)
+
+    A deep treatment of physical design — how to organize components, packages, and dependencies so a C++ codebase stays maintainable as it grows to millions of lines. Most relevant for seniors who own the structure of large, long-lived projects.
 
 
 ## :muscle: Team management

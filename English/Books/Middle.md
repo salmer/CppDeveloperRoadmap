@@ -6,6 +6,16 @@
 
     It's a new chapter in the collection of books by Scott Meyers. This book compiles a set of tips for the C++11/14 standards.
 
+- Nicolai Josuttis:
+    - [C++17 - The Complete Guide](https://www.cppstd17.com)
+    - [C++20 - The Complete Guide](https://cppstd20.com)
+
+    Meyers' book stops at C++14, and these two volumes pick up where it leaves off. Each one systematically walks through everything its standard added — language features and library alike — with practical examples and advice on when (and when not) to use the new tools.
+
+- [Klaus Iglberger - C++ Software Design: Design Principles and Patterns for High-Quality Software](https://www.amazon.com/Software-Design-Principles-Patterns-High-Quality/dp/1098113160)
+
+    A modern take on design patterns, written specifically for C++. It shows how classic patterns look when built on today's idioms — value semantics, type erasure, `std::variant` — instead of deep inheritance hierarchies, and is a great bridge between knowing the language and designing with it.
+
 - [Anthony Williams - C++ Concurrency in Action](https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691/ref=sr_1_3?keywords=C%2B%2B+Concurrency+in+Action%3A+Practical+Multithreading&qid=1636314477&s=books&sr=1-3)
 
     This book is a comprehensive guide to multithreading programming and the use of standard library features. It provides detailed explanations about all primitives and their intricacies "behind the scenes."
@@ -65,7 +75,7 @@
 
     This book delves into the same topics as the previous book, but with a focus exclusively on the Microsoft Windows operating system. It provides a deep and detailed look at every aspect of the OS with a specific focus on Windows and covers various nuances and aspects that may not be officially declared by the developers. It is a useful resource for those who develop low-level applications that require intensive interaction with the OS system libraries.
 
-- [Christopher Negus - Linux Bible](https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1119578884)
+- [Christopher Negus - Linux Bible](https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1394317468)
 
     This book can serve as a follow-up to Tanenbaum's work, delving into the intricacies of the Linux operating system. The book includes detailed analysis of various aspects of the OS, with a focus on popular distributions like Red Hat, Ubuntu, and Fedora. It is an ideal resource for developers who use Linux on a daily basis
 
@@ -76,7 +86,7 @@
 
 ## :globe_with_meridians: Computer networks
 
-- [Andrew S. Tanenbaum - Computer Networks](https://www.amazon.com/Computer-Networks-5th-Andrew-Tanenbaum/dp/0132126958)
+- [Andrew S. Tanenbaum - Computer Networks](https://www.amazon.com/Computer-Networks-Andrew-Tanenbaum/dp/0136764053)
 
     A classic book on the theoretical foundations of computer networks provides a detailed description, starting from the physical layer and ending with data transfer protocols. It will be extremely useful for developers who are closely involved in projects that interact with networks.
 

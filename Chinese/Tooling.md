@@ -112,6 +112,13 @@
 
     PC 和 C++应用程序的项目构建管理器。该管理器的主要优点是快速项目组装。它支持跨平台开发，并与所有流行的编译器兼容。
 
+* :arrow_forward: **ccache**
+
+    网址：https://ccache.dev  
+    价格：免费
+
+    编译器缓存：它会存储以前的编译结果，并在再次进行相同的编译时重用它们，这可以极大地加快重新构建的速度。它透明地位于 GCC 或 Clang 之前，并只需几行代码即可与 CMake 集成，使其成为中大型项目中在构建时间方面最廉价的收益之一。
+
 ## :mag: 代码分析器和格式化工具
 
 * :arrow_forward: **clang-format**
@@ -138,7 +145,7 @@
 * :arrow_forward: **PVS Studio**
 
     网址：https://pvs-studio.com  
-    价格：30 天免费试用
+    价格：付费；开源项目和学生免费
 
     由 PVS-Studio 开发的跨平台（Windows、Linux、MacOS）静态代码分析器。该分析器的主要目标是对源代码进行分析，以检测编译器或代码审查期间可能未被发现的各种错误。它有助于减少与语言语法和陷阱相关的错误数量。
 
@@ -171,6 +178,29 @@
     价格：免费
 
     来自 LLVM 项目的调试器，也是 macOS 上的默认调试器（Xcode 使用它）。它提供与 GDB 类似的功能，但架构更现代。在 Windows 上，随 IDE 一起提供的 Visual Studio 调试器扮演着相同的角色。
+
+## :stopwatch: 性能分析器
+
+* :arrow_forward: **perf**
+
+    网址：https://perfwiki.github.io/main/  
+    价格：免费
+
+    Linux 上的标准采样性能分析器，内置于内核中。它能显示应用程序实际消耗 CPU 时间的位置，并在需要时提供硬件计数器细节（如缓存未命中、分支预测错误）。通常与火焰图 (flame-graph) 可视化一起使用，使性能瓶颈一目了然。
+
+* :arrow_forward: **Tracy**
+
+    网址：https://github.com/wolfpld/tracy  
+    价格：免费
+
+    一种实时帧性能分析器，在游戏开发中尤为流行。你可以使用轻量级宏在代码中标记区域，并在图形客户端中实时观察计时，精确到各个帧和线程。它跨平台且开销极低。
+
+* :arrow_forward: **Intel VTune Profiler**
+
+    网址：https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html  
+    价格：免费
+
+    一款功能强大的性能分析器，用于 x86 架构上的深度性能分析：瓶颈、线程效率、内存访问模式以及微架构级别的指标。当 `perf` 输出不够详细时的首选工具。在 Windows 上，Visual Studio IDE 也内置了功能强大的 CPU 和内存性能分析器。
 
 ## :floppy_disk: Git 客户端
 

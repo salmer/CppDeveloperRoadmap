@@ -14,7 +14,7 @@
 
 - 在[C++会议](CommunitySources.md)中的演示
 - 在[CppReference](https://en.cppreference.com/w/cpp)主页上，您将找到链接到最新功能概述列表页面的链接
-- 您可以阅读[Bjarne Stroustrup - A Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832)这本书。定期检查该书以获取更新，因为它会随着每个新版本的 C ++标准进行修订。
+- 您可以阅读[Bjarne Stroustrup - A Tour of C++](https://www.amazon.com/Tour-C-Depth/dp/0136816487)这本书 (第3版/覆盖 C++20)。定期检查该书以获取更新，因为它会随着每个新版本的 C ++标准进行修订。
 - 专业论坛/聊天/讨论等。
 - 社区 YouTube 上的概述视频
 - [现代 C ++语言和库功能速查表]（ https://github.com/AnthonyCalandra/modern-cpp-features ）

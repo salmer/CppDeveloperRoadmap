@@ -46,11 +46,11 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 您可以通过 Github 中的以下渠道之一联系我们：
 
 * 如果对存储库内容进行任何建议或修改 - 在[Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) 中创建新 PR
-* 如果对存储库内容进行任何建议或修改 - 在[Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)中提交新问题。(不幸的是，Miro 框架没有历史跟踪器并且无法访问路线图。所有更改都是在审核和批准后手动添加。)
+* 如果对 **Miro 路线图** 有任何建议或修改 - 在[Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)中提交新问题。(不幸的是，Miro 框架没有历史跟踪器并且无法访问路线图。所有更改都是在审核和批准后手动添加。)
 
-# :telephone: Contacts
+# :telephone: 联系方式
 
-Creators:
+作者：
 - [Evgenii Melnikov](https://github.com/salmer),
 - [Dmitrii Dmitriev](https://github.com/DmitrievDmitriyA),
 - [lusipad](https://github.com/lusipad)

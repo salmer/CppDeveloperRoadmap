@@ -2,7 +2,13 @@
 
 ## :pencil: C++
 
-- 对于高级学生，没有特定的书籍推荐。在这个层次上，假设您已经对 C++的基础知识有很好的理解。唯一的挑战是要了解 C++生态系统中最新标准、新功能和工具。
+- 高级阶段的书籍推荐较少：假设您已经牢固掌握了语言本身，主要挑战是紧跟新标准、新特性和新工具。以下渠道会很有帮助：
+    - [Standard C++ Foundation 新闻和 WG21 trip report](https://isocpp.org/) - 面向实践者撰写的标准委员会工作摘要。
+    - 会议演讲 - 参见[会议 YouTube 频道](../CommunitySources.md)（CppCon、Meeting C++、C++Now）；主题演讲和"C++XX 新特性"类演讲是保持更新的高效方式。
+
+- [John Lakos - Large-Scale C++ Volume I: Process and Architecture（英文）](https://www.informit.com/store/large-scale-c-plus-plus-process-and-architecture-volume-9780201717068)
+
+    关于物理设计的深入著作——如何组织组件、包和依赖关系，使 C++ 代码库在增长到数百万行时仍然易于维护。最适合负责大型长期项目结构的高级开发者。
 
 ## :muscle: 团队管理
 

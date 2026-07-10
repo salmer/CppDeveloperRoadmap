@@ -15,7 +15,7 @@ C++, like other languages, evolves by incorporating popular ideas from computer 
 
 - Presentations among [C++ conferences](CommunitySources.md)
 - On the main page of the [CppReference](https://en.cppreference.com/w/cpp) you will find links to pages with overview lists of the newest features
-- You can read the following book by [Bjarne Stroustrup - A Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832). Regularly check the book for updates, as it is revised with each new release of the C++ standard
+- You can read the following book by [Bjarne Stroustrup - A Tour of C++ (3rd Edition, covers C++20)](https://www.amazon.com/Tour-C-Depth/dp/0136816487). Regularly check the book for updates, as it is revised with each new release of the C++ standard
 - Professional forums/chats/discussions/etc.
 - Overview videos on YouTube by community
 - [A cheatsheet of modern C++ language and library features](https://github.com/AnthonyCalandra/modern-cpp-features)
