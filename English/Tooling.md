@@ -2,6 +2,34 @@
 
 Newborn developers often have a limited understanding of the tools available to make working with code easier, increase efficiency, and protect against many mistakes. These tools are not a silver bullet for the difficulties the language may present, but they can significantly smooth out the rough edges. The following is a list of common and popular tools recognized by developers around the world, but it is only a small portion of what is available. Over time, you will become more familiar with these tools and discover new ones that suit your needs.
 
+## :gear: Compilers
+
+* :arrow_forward: **GCC (GNU Compiler Collection)**
+
+    Site: https://gcc.gnu.org
+
+    Price: free
+
+    The default compiler on most Linux distributions and one of the most widely used C++ compilers in the world. It closely tracks the latest language standards and produces highly optimized code. On Windows, it is available through the MSYS2 and MinGW-w64 projects.
+
+* :arrow_forward: **Clang**
+
+    Site: https://clang.llvm.org
+
+    Price: free
+
+    A compiler built on the LLVM infrastructure and the default compiler on macOS. It is known for fast compilation and clear, human-friendly error messages, which makes it a good choice for beginners. Clang is also the foundation of a whole family of developer tools, such as clang-format, clang-tidy, and the clangd language server used by many editors.
+
+* :arrow_forward: **MSVC (Microsoft Visual C++)**
+
+    Site: https://visualstudio.microsoft.com
+
+    Price: included in Visual Studio (Community Edition is free)
+
+    Microsoft's compiler, shipped as part of Visual Studio, and the primary choice for Windows development. Most commercial Windows software and game projects are built with it.
+
+    **Tip:** You can quickly try your code on all three compilers side by side without installing anything using [Compiler Explorer](https://godbolt.org).
+
 ## :page_facing_up: Text editors
 
 * :arrow_forward: **Visual Studio Code**
@@ -55,7 +83,7 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Site: https://www.jetbrains.com/clion
 
-    Price: free for students and teachers
+    Price: free for non-commercial use (since May 2025); paid license required for commercial development
 
     Powerful multi-platform IDE from JetBrains. Like other IDEs, it provides a comprehensive set of tools for comfortable software development. It is convenient for cross-platform development in both C and C++.
 
@@ -86,9 +114,11 @@ Newborn developers often have a limited understanding of the tools available to 
 
 ## :electric_plug: Package managers and build systems
 
-* :arrow_forward: **Cmake**
+* :arrow_forward: **CMake**
 
     Site: https://cmake.org
+
+    Price: free
 
     A cross-platform automation system for building an application from source code, which generates the necessary artifacts for subsequent assembly on the target platform. It is currently considered the standard tool for building various libraries when supplied as source.
 
@@ -100,6 +130,14 @@ Newborn developers often have a limited understanding of the tools available to 
 
     A package manager and dependency manager for organizing C++ libraries and frameworks. It supports work on various platforms such as Windows and Linux, and has integration with tools such as CMake and Visual Studio.
 
+* :arrow_forward: **vcpkg**
+
+    Site: https://vcpkg.io
+
+    Price: free
+
+    A free and open-source package manager for C and C++ libraries, developed by Microsoft. It provides thousands of ready-to-use libraries and integrates smoothly with CMake and Visual Studio. Together with Conan, it is one of the two most popular dependency managers in the C++ ecosystem.
+
 
 * :arrow_forward: **Ninja**
 
@@ -110,7 +148,31 @@ Newborn developers often have a limited understanding of the tools available to 
     Project build manager for C and C++ applications. The main advantage of this manager is quick project assembly. It supports cross-platform development and works with all popular compilers.
 
 
-## :mag: Code analyzers
+## :mag: Code analyzers and formatters
+
+* :arrow_forward: **clang-format**
+
+    Site: https://clang.llvm.org/docs/ClangFormat.html
+
+    Price: free
+
+    The de-facto standard automatic code formatter for C++. A single configuration file (`.clang-format`) stored in the repository keeps the whole team's code style consistent and removes formatting debates from code review. It is supported out of the box by virtually all editors and IDEs.
+
+* :arrow_forward: **clang-tidy**
+
+    Site: https://clang.llvm.org/extra/clang-tidy/
+
+    Price: free
+
+    A static analysis tool (linter) from the LLVM project. It checks code against hundreds of rules — bug-prone patterns, performance issues, readability, modern C++ style — and can automatically fix many of the problems it finds. It is integrated into most IDEs, including Visual Studio, CLion, VS Code, and Qt Creator.
+
+* :arrow_forward: **Sanitizers (ASan, UBSan, TSan)**
+
+    Site: https://github.com/google/sanitizers
+
+    Price: free
+
+    Dynamic analysis tools built directly into GCC, Clang, and MSVC and enabled with compiler flags (e.g. `-fsanitize=address`). AddressSanitizer catches memory errors such as out-of-bounds access and use-after-free, UndefinedBehaviorSanitizer catches undefined behavior, and ThreadSanitizer catches data races. Running your tests with sanitizers enabled is considered a baseline practice in modern C++ development.
 
 * :arrow_forward: **PVS Studio**
 
@@ -121,7 +183,7 @@ Newborn developers often have a limited understanding of the tools available to 
     Cross-platform (Windows, Linux, MacOS) static code analyzer by PVS-Studio. The main aim of the analyzer is to analyze the source code for various errors that may go undetected by compilers or during code review. It helps reduce the number of errors related to language syntax and pitfalls.
 
 
-* :arrow_forward: **Cpp Check**
+* :arrow_forward: **Cppcheck**
 
     Site: https://cppcheck.sourceforge.io
 
@@ -132,11 +194,29 @@ Newborn developers often have a limited understanding of the tools available to 
 
 * :arrow_forward: **Valgrind**
 
-    Site: https://www.valgrind.org
+    Site: https://valgrind.org
 
     Price: free
 
-    A set of tools that can help you investigate various problems while the application is running, such as memory leaks and performance profiling. It is compatible with multiple Linux distributions.
+    A set of tools that can help you investigate various problems while the application is running, such as memory leaks and performance profiling. It is compatible with multiple Linux distributions. On modern projects, sanitizers cover many of the same use cases with much lower overhead, but Valgrind remains useful because it requires no recompilation.
+
+## :beetle: Debuggers
+
+* :arrow_forward: **GDB (GNU Debugger)**
+
+    Site: https://sourceware.org/gdb/
+
+    Price: free
+
+    The standard debugger in the GNU/Linux world. It lets you set breakpoints, step through code, inspect variables and memory, and analyze core dumps of crashed applications. Most IDE debugging front-ends on Linux (VS Code, Qt Creator, CLion) use GDB under the hood, so understanding its basics pays off even if you mostly debug from an IDE.
+
+* :arrow_forward: **LLDB**
+
+    Site: https://lldb.llvm.org
+
+    Price: free
+
+    The debugger from the LLVM project and the default debugger on macOS (used by Xcode). It offers capabilities similar to GDB with a more modern architecture. On Windows, the same role is filled by the Visual Studio debugger, which ships with the IDE.
 
 ## :floppy_disk: Git clients
 
@@ -154,7 +234,7 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Price: free
 
-    A great free alternative for working with Git using a GUI. It has the same functionality as SmartGit, with the exception of the absence of its own editor for conflict resolution. However, this can be easily fixed by integrating Visual Studio Code or any other editor that can compare files. In all other respects, it completely duplicates the functionality of SmartGit: it is cross-platform and supports integration with popular repositories such as GitHub, BitBucket, GitLab, etc.
+    A great free alternative for working with Git using a GUI. It has the same functionality as SmartGit, with the exception of the absence of its own editor for conflict resolution. However, this can be easily fixed by integrating Visual Studio Code or any other editor that can compare files. Note that unlike SmartGit, it is only available for Windows and macOS. It supports integration with popular repositories such as GitHub, BitBucket, GitLab, etc.
 
 
 * :arrow_forward: **Git Kraken**
