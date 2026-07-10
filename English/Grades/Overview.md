@@ -10,7 +10,7 @@ Nowadays, you can encounter the following common grading approach. The following
 Each company has its own vision of developer grading and a set of skills and responsibilities declared for different levels. It's common to encounter the following situation: you may be promoted to a senior role in one company, but in another company you might be assessed as a mid-level developer. Despite this, it's possible to introduce common expectations for each level. We will use the simplified approach described previously to describe each grade.
 
 **Example:** You can check this website to get knowledge about leveling systems in different companies: [levels.fyi](https://www.levels.fyi/)
-![](Source/GradeTable.PNG "GradeTable")
+![](../../assets/GradeTable.PNG "GradeTable")
 
 
 ## Level Descriptions
