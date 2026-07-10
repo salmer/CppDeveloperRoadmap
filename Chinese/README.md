@@ -29,7 +29,7 @@ C++ 仍然是 [2024 年](https://survey.stackoverflow.co/2024/technology#most-po
 * :arrow_forward: [Miro](https://miro.com/app/board/uXjVMQjliUg=/)
 * :arrow_forward: [GraphML](Graph/roadmap.svg)
 
-有关如何查看和编辑 graphML 文件的说明，请参见[此处](English/Graph/README.md)。
+有关如何查看和编辑 graphML 文件的说明，请参见[此处](Graph/README.md)。
 
 ## :key: 许可证和条件
 

@@ -11,7 +11,7 @@
 每个公司都有自己对开发人员评估和不同等级所声明的技能和责任视野。通常会遇到以下情况：您可能会在一家公司晋升为高级角色，但在另一家公司中被评估为中层开发人员。尽管如此，仍然可以针对每个等级引入共同期望。我们将使用先前描述过程来描述每个等级。
 
 **示例：** 您可以查看此网站以了解不同公司中关于定位系统知识：[levels.fyi](https://www.levels.fyi/)
-![定位](https://github.com/Salmer/CppDeveloperRoadmap/blob/main/Russian/Grades/Source/GradeTable.PNG?raw=true "GradeTable")
+![定位](Source/GradeTable.PNG "GradeTable")
 
 ## 级别说明
 
