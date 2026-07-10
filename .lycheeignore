@@ -14,3 +14,5 @@ https://medium\.com/.*
 # their CDN returns 403 to GitHub-hosted runner (datacenter) IPs.
 https://(en|ru|zh)\.cppreference\.com/.*
 https://isocpp\.org/.*
+# Intel blocks automated clients (bots)
+https://www\.intel\.com/.*

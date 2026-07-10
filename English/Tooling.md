@@ -147,6 +147,14 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Project build manager for C and C++ applications. The main advantage of this manager is quick project assembly. It supports cross-platform development and works with all popular compilers.
 
+* :arrow_forward: **ccache**
+
+    Site: https://ccache.dev
+
+    Price: free
+
+    A compiler cache: it stores the results of previous compilations and reuses them when the same compilation happens again, which can dramatically speed up rebuilds. It sits transparently in front of GCC or Clang and integrates with CMake in a couple of lines, making it one of the cheapest build-time wins on medium and large projects.
+
 
 ## :mag: Code analyzers and formatters
 
@@ -178,7 +186,7 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Site: https://pvs-studio.com
 
-    Price: 30 days trial
+    Price: paid; free for open-source projects and students
 
     Cross-platform (Windows, Linux, MacOS) static code analyzer by PVS-Studio. The main aim of the analyzer is to analyze the source code for various errors that may go undetected by compilers or during code review. It helps reduce the number of errors related to language syntax and pitfalls.
 
@@ -217,6 +225,32 @@ Newborn developers often have a limited understanding of the tools available to 
     Price: free
 
     The debugger from the LLVM project and the default debugger on macOS (used by Xcode). It offers capabilities similar to GDB with a more modern architecture. On Windows, the same role is filled by the Visual Studio debugger, which ships with the IDE.
+
+## :stopwatch: Profilers
+
+* :arrow_forward: **perf**
+
+    Site: https://perfwiki.github.io/main/
+
+    Price: free
+
+    The standard sampling profiler on Linux, built into the kernel. It shows where an application actually spends its CPU time, with hardware-counter details (cache misses, branch mispredictions) when you need them. Often used together with flame-graph visualizations to make hotspots obvious.
+
+* :arrow_forward: **Tracy**
+
+    Site: https://github.com/wolfpld/tracy
+
+    Price: free
+
+    A real-time frame profiler that is especially popular in game development. You annotate zones in your code with lightweight macros and watch timings live in a graphical client, down to individual frames and threads. Cross-platform and remarkably low-overhead.
+
+* :arrow_forward: **Intel VTune Profiler**
+
+    Site: https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html
+
+    Price: free
+
+    A powerful profiler for deep performance analysis on x86: hotspots, threading efficiency, memory access patterns, and microarchitecture-level metrics. The go-to tool when `perf` output is not detailed enough. On Windows, the Visual Studio IDE also ships a capable built-in CPU and memory profiler.
 
 ## :floppy_disk: Git clients
 

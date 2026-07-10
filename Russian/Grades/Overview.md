@@ -10,7 +10,14 @@
 Многие компании имеют персональное видение по набору обязанностей и компетенций, предъявляемые к разработчикам. Легко встретить ситуацию: работая в одной компании, вы можете быть Senior разработчиком, а в другой - еле-еле дотягиваете до Middle. Тем не менее можно охарактеризовать общие ожидания для любого уровня во многих компаниях. В дальнейшем будет использоваться упрощенная классификация, описанная выше.
  
 **Пример:** Ознакомиться с принятыми классификациями в различных компаниях можно здесь: https://www.levels.fyi/
-![](../../assets/GradeTable.PNG "GradeTable")
+| Уровень | Apple | Amazon | Google | Facebook | Microsoft |
+|---|---|---|---|---|---|
+| Junior | ICT2 | SDE I (L4) | L3 | E3 | SDE (59-60) |
+| Middle | ICT3 | SDE II (L5) | L4 | E4 | SDE II (61-62) |
+| Senior | ICT4 | SDE III (L6) | L5 | E5 | Senior SDE (63-64) |
+| Staff | ICT5 | Principal SDE (L7) | L6 | E6 | Principal SDE (65-67) |
+| Principal | ICT6 | Senior Principal (L8) | L7 / L8 | E7 / E8 | Partner (68-70) |
+| Distinguished/Fellow | Distinguished / Fellow | Distinguished (L10) | L9 / L10 | E9 | Distinguished / Fellow |
 
 
 ## Описание

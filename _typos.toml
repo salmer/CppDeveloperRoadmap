@@ -1,0 +1,13 @@
+[default]
+extend-ignore-re = [
+    # Ignore Cyrillic and CJK text, and any markdown links that might trigger typos
+    "(?i)[а-яё]",
+    "[\u4e00-\u9fff]",
+]
+
+[files]
+extend-exclude = [
+    "*.graphml",
+    "*.svg",
+    ".lycheecache"
+]

@@ -6,6 +6,16 @@
 
     这是 Scott Meyers 的书籍系列中的新章节。本书汇编了一组针对 C++11 / 14 标准的技巧。
 
+- Nicolai Josuttis:
+  - [C++17 - The Complete Guide（英文）](https://www.cppstd17.com)
+  - [C++20 - The Complete Guide（英文）](https://cppstd20.com)
+
+    Meyers 的书止步于 C++14，这两卷正好接续其后。每一卷都系统地讲解了对应标准新增的全部内容——语言特性和标准库——并配有实用示例，以及何时（和何时不）使用这些新工具的建议。
+
+- [Klaus Iglberger - C++ Software Design：高质量软件的设计原则与模式（英文）](https://www.amazon.com/Software-Design-Principles-Patterns-High-Quality/dp/1098113160)
+
+    一本专为 C++ 撰写的现代设计模式著作。它展示了经典模式基于当今惯用法——值语义、类型擦除、`std::variant`——而非深层继承体系时的样子，是从掌握语言到用语言做设计之间的绝佳桥梁。
+
 - [Anthony Williams - C++ 并发编程实战](https://book.douban.com/subject/35653912/)
 
     本书是多线程编程和使用标准库特性的全面指南。它提供了有关所有原语及其“幕后”复杂性的详细说明。

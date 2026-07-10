@@ -2,7 +2,7 @@
 
 ## :speech_balloon: Additional languages: [Русский](Russian/README.md) [中文](Chinese/README.md)
 
-C++ is still one of the most popular development languages in [2025](https://survey.stackoverflow.co/2025/technology#most-popular-technologies). There are quite a few people who want to start learning C++ and become a developer. They face the questions: "Where should I start? What and in what order should I study? What books should I read?
+C++ is still one of the most popular development languages in [2025](https://survey.stackoverflow.co/2025/technology#most-popular-technologies). There are quite a few people who want to start learning C++ and become a developer. They face the questions: "Where should I start? What and in what order should I study? What books should I read?"
 
 We have tried to answer these questions through the presented roadmap. The roadmap focuses on the general competencies and skills that are commonly found in most projects. It is designed to assist those who are just beginning their education or have limited experience. You can create a more effective learning plan without being sidetracked by irrelevant information if you study the materials listed. It will aid you in mastering C++ to the level commonly used in many commercial projects.
 
@@ -47,7 +47,7 @@ In the event of any comments, proposals, or ideas, please do not hesitate to con
 
 You can reach us through one of the following channels via Github:
 - In case of any proposal or modification in the **repository** content - create a new PR in [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls)
-- In case of any proposal or modification in the **repository** content - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework does not have a history tracker and access to the roadmap is restricted. All changes are added manually after they have been reviewed and approved)
+- In case of any proposal or modification in the **Miro roadmap** - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework does not have a history tracker and access to the roadmap is restricted. All changes are added manually after they have been reviewed and approved)
 
 
 # :telephone: Contacts

@@ -25,8 +25,8 @@
 ## :exclamation: Alternative sources for learning C++
 
 - [Learncpp.com](https://www.learncpp.com/) - It is a free website devoted to teaching you how to program in C++. It's being updated regularly.
-- [Hackingcpp.com](https://hackingcpp.com/index.html) - The all-in-one web portal with diffenent collections of materials related to C++: books, cheat sheets, recordings from conferences, etc.
-- [Awesomecpp.com](https://awesomecpp.com) - The set of different sources about the C++.
+- [Hackingcpp.com](https://hackingcpp.com/index.html) - The all-in-one web portal with different collections of materials related to C++: books, cheat sheets, recordings from conferences, etc.
+- [Awesomecpp.com](https://awesomecpp.com) - A curated collection of C++ resources.
 - [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
 - [C++ Weekly](https://www.youtube.com/@cppweekly) - Jason Turner's YouTube show with short weekly episodes about C++ features and best practices.
 - [CppCast](https://cppcast.com/) - A podcast for C++ developers with interviews about the language, libraries, and community.
