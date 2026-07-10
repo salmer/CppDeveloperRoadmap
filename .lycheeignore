@@ -5,3 +5,8 @@ https://www\.amazon\.com/.*
 https://book\.douban\.com/.*
 https://www\.reddit\.com/.*
 https://www\.levels\.fyi/.*
+# Ozon's anti-bot answers with an endless 307 redirect loop (?__rr=N).
+https://www\.ozon\.ru/.*
+# Epic Games and Medium return 403 to non-browser clients.
+https://www\.unrealengine\.com/.*
+https://medium\.com/.*

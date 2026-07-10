@@ -15,7 +15,7 @@ A collection of projects is offered by various companies and the community as pa
 
 The repository holds a collection of pet projects for different programming languages, including an extensive list of ideas for C++.
 
-* [Programming challenges](https://challenges.jeremyjaydan.com/) - [PNG image](https://challenges.jeremyjaydan.com/media/programming-challenges-v4.0.png)
+* [Programming challenges](https://web.archive.org/web/20250313115753/https://challenges.jeremyjaydan.com/) (archived copy — the original site is gone)
 
 The Roulette of Ideas for Pet Projects allows you to set the desired complexity level and spin the wheel. The result of the spin will determine the task for you to solve, chosen randomly. :)
 

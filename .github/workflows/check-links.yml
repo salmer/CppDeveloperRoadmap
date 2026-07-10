@@ -20,10 +20,10 @@ jobs:
       - name: Check links in markdown files
         uses: lycheeverse/lychee-action@v2
         with:
-          # --base . resolves relative links against the repo root;
-          # 429 (rate limited) is accepted so busy sites don't fail the run.
+          # Relative links are resolved against each file's own directory
+          # (lychee's default); 429 (rate limited) is accepted so busy sites
+          # don't fail the run.
           args: >-
-            --base .
             --no-progress
             --accept 200..=204,429
             --max-retries 2
