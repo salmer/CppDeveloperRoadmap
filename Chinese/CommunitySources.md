@@ -3,22 +3,21 @@
 ## :bookmark_tabs: C++ 通用
 
 - [CppReference](https://en.cppreference.com)
-- [CPlusPlus](https://www.cplusplus.com/reference)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [Microsoft GSL C++ (Guidelines Support Library)](https://github.com/microsoft/GSL)
 - [News from the C++ Standardization Committee](https://isocpp.org/)
 - [C++ Online Compiler Explorer](https://gcc.godbolt.org)
+- [C++ Insights](https://cppinsights.io/) - 用编译器的视角看你的代码：展示编译器如何转换模板、lambda、range-based 循环等。
+- [r/cpp](https://www.reddit.com/r/cpp/) - Reddit 上的 C++ 社区：新闻、文章和讨论。
 
 ## :satellite: 流行的 C++ 会议
 
-- [C++ Russia](https://cppconf.ru/en)
 - [Cpp Con](https://cppcon.org/)
 - [Meeting C++](https://meetingcpp.com/)
 - [C++ Now](https://cppnow.org/)
 
 ## :tv: C++ 会议 YouTube 频道
 
-- [C++ Russia](https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA)
 - [Cpp Con](https://www.youtube.com/user/CppCon)
 - [Meeting C++](https://www.youtube.com/user/MeetingCPP)
 - [C++ Now](https://www.youtube.com/user/BoostCon)
@@ -29,6 +28,13 @@
 - [Hackingcpp.com](https://hackingcpp.com/index.html) - 一站式的 C++ 资源网站，包括书籍、速查表、会议记录等。
 - [Awesomecpp.com](https://awesomecpp.com) - 一系列 C++ 相关的资源
 - [Cpp Con (back to basics)](https://www.youtube.com/playlist?list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e)
+- [C++ Weekly](https://www.youtube.com/@cppweekly) - Jason Turner 的 YouTube 节目，每周一期，短小精悍地介绍 C++ 特性和最佳实践。
+- [CppCast](https://cppcast.com/) - 面向 C++ 开发者的播客，内容包括关于语言、库和社区的访谈。
+
+## :cn: 中文资源
+
+- [cppreference 中文版](https://zh.cppreference.com) - 语言和标准库权威参考手册的中文版本。
+- [Microsoft C++ 中文文档](https://learn.microsoft.com/zh-cn/cpp/) - 关于 C++、MSVC 和 Visual Studio 的官方中文文档。
 
 ## :star: 其他有趣的仓库
 

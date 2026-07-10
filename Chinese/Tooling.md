@@ -2,6 +2,31 @@
 
 新手开发者通常对于可用的工具了解有限，这些工具可以使编写代码更加容易、提高效率并防止许多错误。这些工具不是解决语言可能出现的困难的万能药，但它们可以化腐朽为神奇。以下是全球开发人员公认的常见和流行的工具列表，但这只是其中一小部分。随着时间推移，您将会更加熟悉这些工具，并发现适合自己需求的新工具。
 
+## :gear: 编译器
+
+* :arrow_forward: **GCC (GNU Compiler Collection)**
+
+    网址：https://gcc.gnu.org  
+    价格：免费
+
+    大多数 Linux 发行版的默认编译器，也是世界上使用最广泛的 C++ 编译器之一。它紧跟最新的语言标准，并能生成高度优化的代码。在 Windows 上可以通过 MSYS2 和 MinGW-w64 项目使用。
+
+* :arrow_forward: **Clang**
+
+    网址：https://clang.llvm.org  
+    价格：免费
+
+    基于 LLVM 基础设施构建的编译器，也是 macOS 上的默认编译器。它以编译速度快、错误信息清晰友好著称，非常适合初学者。Clang 还是一整套开发者工具的基础，例如 clang-format、clang-tidy 以及许多编辑器使用的 clangd 语言服务器。
+
+* :arrow_forward: **MSVC (Microsoft Visual C++)**
+
+    网址：https://visualstudio.microsoft.com  
+    价格：包含在 Visual Studio 中（社区版免费）
+
+    微软的编译器，随 Visual Studio 一起发布，是 Windows 开发的首选。大多数 Windows 商业软件和游戏项目都使用它构建。
+
+    **提示：** 使用 [Compiler Explorer](https://godbolt.org)，无需安装任何东西，即可在三种编译器上并排快速测试您的代码。
+
 ## :page_facing_up: 文本编辑器
 
 * :arrow_forward: **Visual Studio Code**
@@ -38,7 +63,7 @@
      Eclipse 是一个功能强大的跨平台开发环境，但也相当沉重。Eclipse 的关键特性之一是其模块化。Eclipse 的哲学是任何开发人员都可以通过连接其他扩展来修改开发环境以适应他们的需求。它被某些编译器开发人员用作专门针对 OS 或微控制器（例如 QNX 实时操作系统，Red-Hat Linux 等）的基础。
 
 * :arrow_forward: **JetBrains Clion IDE**  
-     Clion 是来自 JetBrains 公司的强大跨平台 IDE。与其他 IDE 一样，它提供了全面的工具集，方便软件开发，并且非常适合 C 和 C++中进行跨平台开发。
+     Clion 是来自 JetBrains 公司的强大跨平台 IDE。与其他 IDE 一样，它提供了全面的工具集，方便软件开发，并且非常适合 C 和 C++中进行跨平台开发。自 2025 年 5 月起，CLion 对非商业用途免费；商业开发需要付费许可证。
 
 ## :flashlight: 扩展
 
@@ -57,9 +82,9 @@
 
     这是一个用于分布式编译项目的应用程序/扩展，它将所有开发者工作站合并成一个单一的网络，提供使用数十台机器来组装和编译源代码的可能性。这可以加速大型项目的构建过程。
 
-## :electric_plug: Package managers and build systems
+## :electric_plug: 包管理器和构建系统
 
-* :arrow_forward: **Cmake**
+* :arrow_forward: **CMake**
 
     网址：https://cmake.org  
     价格：免费
@@ -73,6 +98,13 @@
 
     一个用于组织 C++ 库和框架的软件包管理器和依赖项管理器。它支持在 Windows 和 Linux 等各种平台上工作，并与 CMake 和 Visual Studio 等工具集成。
 
+* :arrow_forward: **vcpkg**
+
+    网址：https://vcpkg.io  
+    价格：免费
+
+    由微软开发的免费开源 C/C++ 库包管理器。它提供数千个即用型库，并与 CMake 和 Visual Studio 无缝集成。与 Conan 一起，它是 C++ 生态系统中最流行的两个依赖管理器之一。
+
 * :arrow_forward: **Ninja**
 
     网址：https://ninja-build.org  
@@ -80,7 +112,28 @@
 
     PC 和 C++应用程序的项目构建管理器。该管理器的主要优点是快速项目组装。它支持跨平台开发，并与所有流行的编译器兼容。
 
-## :mag: Code analyzers
+## :mag: 代码分析器和格式化工具
+
+* :arrow_forward: **clang-format**
+
+    网址：https://clang.llvm.org/docs/ClangFormat.html  
+    价格：免费
+
+    C++ 事实上的标准自动代码格式化工具。在仓库中存放一个配置文件（`.clang-format`）即可保持整个团队代码风格的一致性，并消除代码审查中关于格式的争论。几乎所有编辑器和 IDE 都开箱即用地支持它。
+
+* :arrow_forward: **clang-tidy**
+
+    网址：https://clang.llvm.org/extra/clang-tidy/  
+    价格：免费
+
+    来自 LLVM 项目的静态分析工具（linter）。它根据数百条规则检查代码——易出错的模式、性能问题、可读性、现代 C++ 风格——并能自动修复它发现的许多问题。它已集成到大多数 IDE 中，包括 Visual Studio、CLion、VS Code 和 Qt Creator。
+
+* :arrow_forward: **Sanitizers（ASan、UBSan、TSan）**
+
+    网址：https://github.com/google/sanitizers  
+    价格：免费
+
+    直接内置于 GCC、Clang 和 MSVC 中的动态分析工具，通过编译器标志启用（例如 `-fsanitize=address`）。AddressSanitizer 捕获内存错误（如越界访问和 use-after-free），UndefinedBehaviorSanitizer 捕获未定义行为，ThreadSanitizer 捕获数据竞争。在启用 sanitizers 的情况下运行测试被认为是现代 C++ 开发的基本实践。
 
 * :arrow_forward: **PVS Studio**
 
@@ -89,7 +142,7 @@
 
     由 PVS-Studio 开发的跨平台（Windows、Linux、MacOS）静态代码分析器。该分析器的主要目标是对源代码进行分析，以检测编译器或代码审查期间可能未被发现的各种错误。它有助于减少与语言语法和陷阱相关的错误数量。
 
-* :arrow_forward: **Cpp Check**
+* :arrow_forward: **Cppcheck**
 
     网址：https://cppcheck.sourceforge.io  
     价格：免费
@@ -98,12 +151,28 @@
 
 * :arrow_forward: **Valgrind**
 
-    Site: https://www.valgrind.org  
+    网址：https://valgrind.org  
     价格：免费
 
-    一组工具，可以帮助您在应用程序运行时调查各种问题，例如内存泄漏和性能分析。它与多个 Linux 发行版兼容。
+    一组工具，可以帮助您在应用程序运行时调查各种问题，例如内存泄漏和性能分析。它与多个 Linux 发行版兼容。在现代项目中，sanitizers 以更低的开销覆盖了许多相同的使用场景，但 Valgrind 无需重新编译，因此仍然很有用。
 
-## :floppy_disk: Git clients
+## :beetle: 调试器
+
+* :arrow_forward: **GDB (GNU Debugger)**
+
+    网址：https://sourceware.org/gdb/  
+    价格：免费
+
+    GNU/Linux 世界中的标准调试器。它允许您设置断点、单步执行代码、检查变量和内存，以及分析崩溃应用程序的核心转储（core dump）。Linux 上大多数 IDE 的调试前端（VS Code、Qt Creator、CLion）底层都使用 GDB，因此即使您主要在 IDE 中调试，了解它的基础知识也很有价值。
+
+* :arrow_forward: **LLDB**
+
+    网址：https://lldb.llvm.org  
+    价格：免费
+
+    来自 LLVM 项目的调试器，也是 macOS 上的默认调试器（Xcode 使用它）。它提供与 GDB 类似的功能，但架构更现代。在 Windows 上，随 IDE 一起提供的 Visual Studio 调试器扮演着相同的角色。
+
+## :floppy_disk: Git 客户端
 
 * :arrow_forward: **SmartGit**
 
@@ -117,7 +186,7 @@
     网址：https://www.sourcetreeapp.com/  
     价格：免费
 
-  一个很好的免费替代品，使用图形界面来处理 Git。它具有与 SmartGit 相同的功能，唯一不同之处是没有自己的编辑器用于冲突解决。但是，可以通过集成 Visual Studio Code 或任何其他可以比较文件的编辑器轻松解决此问题。在所有其他方面，它完全复制了 SmartGit 的功能：跨平台，并支持与流行存储库（如 GitHub、BitBucket、GitLab 等）集成。
+  一个很好的免费替代品，使用图形界面来处理 Git。它具有与 SmartGit 相同的功能，唯一不同之处是没有自己的编辑器用于冲突解决。但是，可以通过集成 Visual Studio Code 或任何其他可以比较文件的编辑器轻松解决此问题。请注意，与 SmartGit 不同，它仅适用于 Windows 和 macOS。它支持与流行存储库（如 GitHub、BitBucket、GitLab 等）集成。
 
 * :arrow_forward: **Git Kraken**
 
