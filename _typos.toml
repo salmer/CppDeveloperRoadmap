@@ -5,6 +5,8 @@ extend-ignore-re = [
     "[\u4e00-\u9fff]",
 ]
 
+[default.extend-words]
+Savin = "Savin"
 [files]
 extend-exclude = [
     "*.graphml",
