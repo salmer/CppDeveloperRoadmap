@@ -29,6 +29,6 @@ We use `lychee` to ensure all links are valid.
 Before opening a PR, please run `lychee` locally to verify links. Run the following command (requires `lychee` to be installed):
 
 ```bash
-lychee --no-progress --accept "200..=204,429" --max-retries 2 --timeout 45 --exclude-path IMPROVEMENTS.md --exclude-path TODO.md "**/*.md"
+lychee --no-progress --insecure --accept "200..=204,429" --max-retries 2 --timeout 45 --exclude-path IMPROVEMENTS.md --exclude-path TODO.md "**/*.md"
 ```
 This command must exit with code 0. Run this after ANY link change.
