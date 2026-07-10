@@ -28,8 +28,9 @@ It is recommended that you read the articles listed below before starting to exp
 
 The roadmap is available in the following formats:
 
-* :arrow_forward: [Miro](https://miro.com/app/board/o9J_lpap34Q=/)
-* :arrow_forward: [GraphML](English/Graph/roadmap.svg)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=en)
+* :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=en)
+* :arrow_forward: [GraphML (source)](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=en)
 
 Instructions on how to view and edit a graphML file can be found [here](English/Graph/README.md)
 

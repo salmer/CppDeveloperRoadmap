@@ -28,8 +28,9 @@
 
 Дорожная карта представлена в двух вариантах:
 
-* :arrow_forward: [Miro](https://miro.com/app/board/o9J_lFH_iBs=/)
-* :arrow_forward: [GraphML](Graph/roadmap.svg)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=ru)
+* :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=ru)
+* :arrow_forward: [GraphML (исходник)](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=ru)
 
 Информация о том, как просматривать и модифицировать роадмапу в формате graphML есть [здесь](./Graph/README.md)
 
