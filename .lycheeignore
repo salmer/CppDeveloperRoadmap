@@ -10,3 +10,7 @@ https://www\.ozon\.ru/.*
 # Epic Games and Medium return 403 to non-browser clients.
 https://www\.unrealengine\.com/.*
 https://medium\.com/.*
+# cppreference and isocpp are fine from browsers and residential IPs, but
+# their CDN returns 403 to GitHub-hosted runner (datacenter) IPs.
+https://(en|ru|zh)\.cppreference\.com/.*
+https://isocpp\.org/.*

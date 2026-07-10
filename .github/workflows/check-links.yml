@@ -22,10 +22,12 @@ jobs:
         with:
           # Relative links are resolved against each file's own directory
           # (lychee's default); 429 (rate limited) is accepted so busy sites
-          # don't fail the run.
+          # don't fail the run; the timeout is raised above the 20s default
+          # because some sites (e.g. sfml-dev.org) respond slowly to runners.
           args: >-
             --no-progress
             --accept 200..=204,429
             --max-retries 2
+            --timeout 45
             "**/*.md"
           fail: true
