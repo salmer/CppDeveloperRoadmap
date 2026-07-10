@@ -26,8 +26,9 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 
 路线图提供以下格式：
 
-* :arrow_forward: [Miro](https://miro.com/app/board/uXjVMQjliUg=/)
-* :arrow_forward: [GraphML](Graph/roadmap.svg)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=zh)
+* :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=zh)
+* :arrow_forward: [GraphML（源文件）](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=zh)
 
 有关如何查看和编辑 graphML 文件的说明，请参见[此处](Graph/README.md)。
 

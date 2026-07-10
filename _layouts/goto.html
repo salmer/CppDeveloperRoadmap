@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>C++ Developer Roadmap — redirecting…</title>
+  <!-- Fallback for browsers without JavaScript: go to the English target after 3s.
+       With JavaScript enabled the script below redirects much earlier. -->
+  <meta http-equiv="refresh" content="3;url={{ page.targets.en }}">
+</head>
+<body>
+  <p>Redirecting to the roadmap ({{ page.format }})… If nothing happens, pick your language:</p>
+  <ul>
+    <li><a href="{{ page.targets.en }}">English</a></li>
+    <li><a href="{{ page.targets.ru }}">Русский</a></li>
+    <li><a href="{{ page.targets.zh }}">中文</a></li>
+  </ul>
+  <script>
+    (function () {
+      var targets = {{ page.targets | jsonify }};
+      var lang = new URLSearchParams(window.location.search).get('l');
+      if (!targets[lang]) lang = 'en';
+      var redirected = false;
+      function go() {
+        if (!redirected) {
+          redirected = true;
+          window.location.replace(targets[lang]);
+        }
+      }
+      var code = '{{ site.goatcounter }}';
+      if (code) {
+        // Count the visit with the GoatCounter pixel, then redirect as soon as
+        // the request finishes (or after 1.5s, whichever comes first).
+        var img = new Image();
+        img.onload = go;
+        img.onerror = go;
+        img.src = 'https://' + code + '.goatcounter.com/count' +
+                  '?p=' + encodeURIComponent('/goto/{{ page.format }}-' + lang) +
+                  '&r=' + encodeURIComponent(document.referrer);
+        setTimeout(go, 1500);
+      } else {
+        go();
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -3,3 +3,9 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jemoji
+
+# GoatCounter site code for the /goto/* redirect pages (click counting for the
+# roadmap formats). Register a free account at https://www.goatcounter.com,
+# pick a code (e.g. "cpproadmap" -> cpproadmap.goatcounter.com) and put it here.
+# While this is empty, the redirect pages work but nothing is counted.
+goatcounter: "cpproadmap"
