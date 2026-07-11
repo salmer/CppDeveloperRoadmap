@@ -26,11 +26,11 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 
 路线图提供以下格式：
 
+* :arrow_forward: [draw.io（源文件，可编辑）](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=zh)
 * :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=zh)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=zh)
-* :arrow_forward: [GraphML（源文件）](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=zh)
 
-有关如何查看和编辑 graphML 文件的说明，请参见[此处](Graph/README.md)。
+每种语言的路线图都是一个 `roadmap.drawio.svg` 文件——您看到的图像和可编辑的 [draw.io](https://www.drawio.com) 源文件合二为一。有关如何查看和编辑的说明，请参见[此处](Graph/README.md)。
 
 ## :key: 许可证和条件
 
@@ -45,8 +45,8 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 
 您可以通过 Github 中的以下渠道之一联系我们：
 
-* 如果对存储库内容进行任何建议或修改 - 在[Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) 中创建新 PR
-* 如果对 **Miro 路线图** 有任何建议或修改 - 在[Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)中提交新问题。(不幸的是，Miro 框架没有历史跟踪器并且无法访问路线图。所有更改都是在审核和批准后手动添加。)
+* 如果对**内容或路线图**有任何建议或修改 - 在[Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) 中创建新 PR（路线图可以像普通文件一样编辑——参见[说明](Graph/README.md)）
+* 如果有**不涉及具体修改**的问题或建议 - 在[Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)中提交新问题
 
 # :telephone: 联系方式
 

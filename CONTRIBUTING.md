@@ -8,6 +8,10 @@ This project maintains parity across three languages: English (`English/`), Russ
 **Any content change (e.g., adding a book, updating a tool, fixing a description) MUST be mirrored across all three languages.** 
 If you are unable to translate the content into all languages, please create an issue or note it in your Pull Request so someone can help translate it.
 
+## Editing the Roadmap
+
+The roadmap is one `roadmap.drawio.svg` file per language (`English/Graph/`, `Russian/Graph/`, `Chinese/Graph/`) — an SVG image with the editable draw.io diagram embedded inside it. Edit it only with a draw.io editor (sketch.diagrams.net — the whiteboard-style UI with GitHub integration, the draw.io desktop app, or the VS Code extension) and submit the change as a normal pull request; see the per-language `Graph/README.md` for step-by-step instructions. **Never edit the SVG text by hand** — that can strip the embedded source and make the file uneditable. The language sync rule applies to the roadmap too: structural changes should be mirrored in all three language files.
+
 ## Local Jekyll Preview
 
 To preview the site locally using GitHub Pages:
@@ -29,6 +33,6 @@ We use `lychee` to ensure all links are valid.
 Before opening a PR, please run `lychee` locally to verify links. Run the following command (requires `lychee` to be installed):
 
 ```bash
-lychee --no-progress --accept "200..=204,429" --max-retries 2 --timeout 45 --exclude-path IMPROVEMENTS.md --exclude-path TODO.md "**/*.md"
+lychee --no-progress --accept "200..=204,429" --max-retries 2 --timeout 45 "**/*.md"
 ```
 This command must exit with code 0. Run this after ANY link change.

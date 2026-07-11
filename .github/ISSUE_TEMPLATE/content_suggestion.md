@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Which part of the roadmap?**
-File/section (e.g. `English/Tooling.md`) or the roadmap graph/Miro board.
+File/section (e.g. `English/Tooling.md`) or the roadmap diagram (`Graph/roadmap.drawio.svg`).
 
 **What should be changed and why?**
 Describe the correction or improvement. If something is factually outdated

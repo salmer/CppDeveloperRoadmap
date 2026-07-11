@@ -28,11 +28,11 @@ It is recommended that you read the articles listed below before starting to exp
 
 The roadmap is available in the following formats:
 
+* :arrow_forward: [draw.io (source, editable)](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=en)
 * :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=en)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=en)
-* :arrow_forward: [GraphML (source)](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=en)
 
-Instructions on how to view and edit a graphML file can be found [here](English/Graph/README.md)
+The roadmap is a single `roadmap.drawio.svg` file per language — the image you see and the editable [draw.io](https://www.drawio.com) source in one. Instructions on how to view and edit it can be found [here](English/Graph/README.md)
 
 # :key: License and conditions
 The roadmap is published under the license **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). In a nutshell:
@@ -46,8 +46,8 @@ The roadmap is published under the license **CC BY-NC-SA 4.0**: [RUS](https://cr
 In the event of any comments, proposals, or ideas, please do not hesitate to contact us. We truly value your support.
 
 You can reach us through one of the following channels via Github:
-- In case of any proposal or modification in the **repository** content - create a new PR in [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls)
-- In case of any proposal or modification in the **Miro roadmap** - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (Unfortunately, the Miro framework does not have a history tracker and access to the roadmap is restricted. All changes are added manually after they have been reviewed and approved)
+- In case of any proposal or modification in the **content or the roadmap** - create a new PR in [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) (the roadmap is edited like any other file — see [the instructions](English/Graph/README.md))
+- For questions or suggestions **without a concrete change** - submit a new Issue in [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)
 
 
 # :telephone: Contacts
