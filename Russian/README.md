@@ -26,13 +26,13 @@
 
 # :milky_way: Дорожная карта
 
-Дорожная карта представлена в двух вариантах:
+Дорожная карта представлена в следующих форматах:
 
+* :arrow_forward: [draw.io (исходник, редактируемый)](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=ru)
 * :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=ru)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=ru)
-* :arrow_forward: [GraphML (исходник)](https://salmer.github.io/CppDeveloperRoadmap/goto/graphml/?l=ru)
 
-Информация о том, как просматривать и модифицировать роадмапу в формате graphML есть [здесь](./Graph/README.md)
+Дорожная карта — это один файл `roadmap.drawio.svg` на язык: изображение и редактируемый исходник [draw.io](https://www.drawio.com) в одном файле. Как её просматривать и редактировать, описано [здесь](./Graph/README.md)
 
 # :key: Лицензия 
 Карта распространяется по лицензии **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). Если вкратце:
@@ -46,8 +46,8 @@
 Если у вас есть замечания, вопросы или предложения, будем рады получить любую помощь и поддержку. Мы открыты для общения :)
 
 Для этого используйте следующие механизмы Github:
-- Предложения/правки **по репозиторию** - создавайте и присылайте новый PR в [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls)
-- Предложения/правки **по дорожной карте в Miro** - создавайте и присылайте новый запрос в [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues) (в Miro нет возможности вести историю изменений, потому доступ к изменениям в карте ограничен. Все правки мы вносим сами после ознакомления с предложениями).
+- Предложения/правки **по контенту или дорожной карте** - создавайте и присылайте новый PR в [Pull Requests](https://github.com/salmer/CppDeveloperRoadmap/pulls) (карта редактируется как обычный файл — см. [инструкцию](./Graph/README.md))
+- Вопросы и предложения **без конкретной правки** - создавайте новый запрос в [Issues](https://github.com/salmer/CppDeveloperRoadmap/issues)
 
 
 # :telephone: Контакты
