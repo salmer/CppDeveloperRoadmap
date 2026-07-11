@@ -16,3 +16,7 @@ https://(en|ru|zh)\.cppreference\.com/.*
 https://isocpp\.org/.*
 # Intel blocks automated clients (bots)
 https://www\.intel\.com/.*
+# Our own /goto/ redirect pages: a PR that adds a new one always 404s until
+# it is merged and GitHub Pages redeploys, so checking them pre-merge is a
+# guaranteed false positive (chicken-and-egg).
+https://salmer\.github\.io/CppDeveloperRoadmap/goto/.*
