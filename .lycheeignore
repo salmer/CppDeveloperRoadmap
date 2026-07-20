@@ -20,3 +20,9 @@ https://www\.intel\.com/.*
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
 https://salmer\.github\.io/CppDeveloperRoadmap/goto/.*
+# autosar.org serves only the leaf certificate without the intermediate one
+# ("unable to verify the first certificate"). Browsers paper over this by
+# fetching the missing intermediate via AIA, strict TLS clients do not, so CI
+# reports an untrusted certificate. Server-side misconfiguration on their end,
+# nothing we can fix; drop this line once they fix their chain.
+https://www\.autosar\.org.*
