@@ -16,11 +16,14 @@
 1. :space_invader: [C++ - это просто](FunCpp.md)
 1. :clipboard: [Области применения языка](AreasOfApplication.md)
 1. :ghost: [Легенды и мифы про C++](Mythbusters.md)
+1. :robot: [C++ разработчик и искусственный интеллект](AI.md)
 1. :chart_with_upwards_trend: [Грейды разработчиков](Grades/Overview.md)
 1. :mortar_board: [Как учиться](HowToStudy.md)
 1. :books: [Книги и прочие материалы по С++](Books/Overview.md)
 1. :telescope: [Идеи для пет-проектов](PetProjects.md)
 1. :triangular_ruler: [Инструментарий для С++](Tooling.md)
+1. :package: [Популярные библиотеки и фреймворки](Libraries.md)
+1. :scales: [Стандарты кодирования и регуляторные требования](Compliance.md)
 1. :gem: [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
 

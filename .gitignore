@@ -10,6 +10,7 @@ Gemfile.lock
 .idea/
 *.swp
 *~
+*.dtmp
 
 # OS files
 .DS_Store
