@@ -16,7 +16,28 @@ https://(en|ru|zh)\.cppreference\.com/.*
 https://isocpp\.org/.*
 # Intel blocks automated clients (bots)
 https://www\.intel\.com/.*
+# cppcon.org and misra.org.uk answer 200 from browsers and residential IPs
+# (any User-Agent) but 403 to GitHub-hosted runner (datacenter) IPs — same
+# situation as cppreference/isocpp above. Surfaced once the lychee cache was
+# discarded as too old.
+https://cppcon\.org/.*
+https://misra\.org\.uk/.*
+# ko2.co.uk answers 200 from browsers and residential IPs (any headers) but
+# 415 to GitHub-hosted runner IPs — a WAF quirk on their end, same class of
+# datacenter-IP false positive as the entries above.
+https://www\.ko2\.co\.uk/.*
 # Our own /goto/ redirect pages: a PR that adds a new one always 404s until
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
 https://salmer\.github\.io/CppDeveloperRoadmap/goto/.*
+# sfml-dev.org is fast from normal networks (~0.1s) but repeatedly times out
+# from GitHub's datacenter runners, and lychee counts timeouts as failures.
+# Referenced from PetProjects.md in all three languages. Remove once it stops
+# flaking from CI.
+https://www\.sfml-dev\.org.*
+# autosar.org serves only the leaf certificate without the intermediate one
+# ("unable to verify the first certificate"). Browsers paper over this by
+# fetching the missing intermediate via AIA, strict TLS clients do not, so CI
+# reports an untrusted certificate. Server-side misconfiguration on their end,
+# nothing we can fix; drop this line once they fix their chain.
+https://www\.autosar\.org.*
