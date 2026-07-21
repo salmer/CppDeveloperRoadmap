@@ -22,6 +22,10 @@ https://www\.intel\.com/.*
 # discarded as too old.
 https://cppcon\.org/.*
 https://misra\.org\.uk/.*
+# ko2.co.uk answers 200 from browsers and residential IPs (any headers) but
+# 415 to GitHub-hosted runner IPs — a WAF quirk on their end, same class of
+# datacenter-IP false positive as the entries above.
+https://www\.ko2\.co\.uk/.*
 # Our own /goto/ redirect pages: a PR that adds a new one always 404s until
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
