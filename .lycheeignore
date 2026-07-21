@@ -20,6 +20,11 @@ https://www\.intel\.com/.*
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
 https://salmer\.github\.io/CppDeveloperRoadmap/goto/.*
+# sfml-dev.org is fast from normal networks (~0.1s) but repeatedly times out
+# from GitHub's datacenter runners, and lychee counts timeouts as failures.
+# Referenced from PetProjects.md in all three languages. Remove once it stops
+# flaking from CI.
+https://www\.sfml-dev\.org.*
 # autosar.org serves only the leaf certificate without the intermediate one
 # ("unable to verify the first certificate"). Browsers paper over this by
 # fetching the missing intermediate via AIA, strict TLS clients do not, so CI
