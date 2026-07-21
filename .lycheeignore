@@ -16,6 +16,12 @@ https://(en|ru|zh)\.cppreference\.com/.*
 https://isocpp\.org/.*
 # Intel blocks automated clients (bots)
 https://www\.intel\.com/.*
+# cppcon.org and misra.org.uk answer 200 from browsers and residential IPs
+# (any User-Agent) but 403 to GitHub-hosted runner (datacenter) IPs — same
+# situation as cppreference/isocpp above. Surfaced once the lychee cache was
+# discarded as too old.
+https://cppcon\.org/.*
+https://misra\.org\.uk/.*
 # Our own /goto/ redirect pages: a PR that adds a new one always 404s until
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
