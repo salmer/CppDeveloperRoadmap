@@ -32,8 +32,8 @@ It is recommended that you read the articles listed below before starting to exp
 The roadmap is available in the following formats:
 
 * :arrow_forward: [draw.io (source, editable)](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=en)
-* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=en)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=en)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=en) — :warning: obsolete, no longer kept in sync (last updated ~July 2026)
 
 The roadmap is a single `roadmap.drawio.svg` file per language — the image you see and the editable [draw.io](https://www.drawio.com) source in one. Instructions on how to view and edit it can be found [here](English/Graph/README.md)
 
