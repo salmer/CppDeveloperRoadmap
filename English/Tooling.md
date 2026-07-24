@@ -70,16 +70,16 @@ Newborn developers often have a limited understanding of the tools available to 
     Initially, Qt Creator was positioned as an IDE for developing graphical interfaces for C++ applications. Over time, the framework has acquired numerous capabilities and evolved into a comprehensive ecosystem for cross-platform development. It offers a vast library of primitives for various needs such as networking, graphical interface, database work, and handling popular formats like images and text files. Today, Qt Creator serves as a competitor to Visual Studio and is particularly popular among developers creating applications for various Linux distributions.
 
 
-* :arrow_forward: **Eclipse IDE**
+* :arrow_forward: **Xcode**
 
-    Site: https://www.eclipse.org/downloads/packages
+    Site: https://developer.apple.com/xcode/
 
     Price: free
-    
-    Eclipse is a highly capable multi-platform development environment, but it is also quite heavy. One of the key features of Eclipse is its modularity. The philosophy of Eclipse is that any developer can modify the development environment to fit their needs by connecting additional extensions. It is used as a foundation by some compiler developers for specialized OS or microcontrollers, such as the QNX real-time OS, Red-Hat Linux and more.
+
+    Apple's own development environment and the only way to build applications for macOS and iOS. It ships with Clang and LLDB. If you work on macOS, you will need Xcode at least for its command-line tools, even if you prefer to write code in a different editor.
 
 
-* :arrow_forward: **JetBrains Clion IDE**
+* :arrow_forward: **JetBrains CLion IDE**
 
     Site: https://www.jetbrains.com/clion
 
@@ -182,6 +182,14 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Dynamic analysis tools built directly into GCC, Clang, and MSVC and enabled with compiler flags (e.g. `-fsanitize=address`). AddressSanitizer catches memory errors such as out-of-bounds access and use-after-free, UndefinedBehaviorSanitizer catches undefined behavior, and ThreadSanitizer catches data races. Running your tests with sanitizers enabled is considered a baseline practice in modern C++ development.
 
+* :arrow_forward: **Fuzzing (libFuzzer, AFL++)**
+
+    Site: https://llvm.org/docs/LibFuzzer.html, https://github.com/AFLplusplus/AFLplusplus
+
+    Price: free
+
+    Fuzzing is the automatic feeding of a stream of random and deliberately malformed data into your code in search of crashes and hangs. It is especially useful for anything that parses external input: format parsers, network protocols, decoders. It is usually run together with sanitizers — the fuzzer finds the input that triggers an error, and the sanitizer shows exactly where it occurred. libFuzzer is built into Clang; AFL++ works as a standalone tool.
+
 * :arrow_forward: **PVS Studio**
 
     Site: https://pvs-studio.com
@@ -224,7 +232,15 @@ Newborn developers often have a limited understanding of the tools available to 
 
     Price: free
 
-    The debugger from the LLVM project and the default debugger on macOS (used by Xcode). It offers capabilities similar to GDB with a more modern architecture. On Windows, the same role is filled by the Visual Studio debugger, which ships with the IDE.
+    The debugger from the LLVM project and the default debugger on macOS (used by Xcode). It offers capabilities similar to GDB with a more modern architecture.
+
+* :arrow_forward: **WinDbg**
+
+    Site: https://learn.microsoft.com/windows-hardware/drivers/debugger/
+
+    Price: free
+
+    Microsoft's debugger for Windows. For everyday work on Windows the debugger built into Visual Studio is usually enough, but WinDbg is indispensable where its capabilities fall short: analyzing crash dumps from production machines, debugging drivers and kernel mode, working with an application without source. A useful skill for anyone doing low-level development or investigating crashes on users' machines.
 
 ## :stopwatch: Profilers
 
@@ -251,6 +267,75 @@ Newborn developers often have a limited understanding of the tools available to 
     Price: free
 
     A powerful profiler for deep performance analysis on x86: hotspots, threading efficiency, memory access patterns, and microarchitecture-level metrics. The go-to tool when `perf` output is not detailed enough. On Windows, the Visual Studio IDE also ships a capable built-in CPU and memory profiler.
+
+## :white_check_mark: Testing and benchmarks
+
+* :arrow_forward: **GoogleTest (gtest/gmock)**
+
+    Site: https://github.com/google/googletest
+
+    Price: free
+
+    The most widely used unit-testing framework in C++. It comes with GoogleMock for creating stubs and mocks, which lets you test code in isolation from its dependencies — databases, the network, the file system. It integrates well with CMake and can be pulled in through any of the popular package managers.
+
+* :arrow_forward: **Catch2**
+
+    Site: https://github.com/catchorg/Catch2
+
+    Price: free
+
+    A lighter alternative to GoogleTest with a concise syntax. A test here is an ordinary function with a `REQUIRE` macro instead of a set of special comparison macros. A good choice for small projects and for getting acquainted with unit testing: it can be pulled in as a single header file.
+
+* :arrow_forward: **Google Benchmark**
+
+    Site: https://github.com/google/benchmark
+
+    Price: free
+
+    A library for microbenchmarks. It picks the number of repetitions itself so that the result is statistically significant, and it can fight the optimizer's tendency to throw away code whose result is never used. It is needed where you have to compare two implementations by speed: timing "by hand" with a clock reading before and after almost always gives an unreliable result.
+
+## :robot: AI tools
+
+AI assistants have become part of a developer's everyday toolkit: they speed up writing boilerplate code, help you find your way around an unfamiliar codebase, and explain compiler errors. At the same time, they do not replace knowledge of the language — the reasons why are spelled out below.
+
+* :arrow_forward: **GitHub Copilot**
+
+    Site: https://github.com/features/copilot
+
+    Price: there is a limited free tier; full access is paid, and free for students, teachers, and maintainers of popular open source projects
+
+    Code completion right in the editor: it suggests the next lines based on the context of the file and project. It integrates with Visual Studio, VS Code, CLion, and other popular IDEs.
+
+* :arrow_forward: **Claude Code**
+
+    Site: https://claude.com/product/claude-code
+
+    Price: paid, as part of a subscription
+
+    An assistant that works in the terminal and in the IDE: it reads the whole project, makes edits across several files at once, and runs the build and tests. It is aimed at tasks larger than a single line — refactoring, exploring unfamiliar code, writing tests.
+
+* :arrow_forward: **Cursor**
+
+    Site: https://cursor.com
+
+    Price: there is a free tier; advanced features are paid
+
+    An editor based on VS Code with a built-in AI assistant. It can answer questions about the codebase and make edits across several files at once, while keeping the familiar VS Code extensions and settings.
+
+* :arrow_forward: **Local models (Ollama, llama.cpp)**
+
+    Site: https://ollama.com, https://github.com/ggml-org/llama.cpp
+
+    Price: free
+
+    Running models on your own machine. They are inferior to cloud models in quality and require noticeable resources, but the code never leaves your computer. This is an option for projects where sending source to external services is forbidden. Incidentally, `llama.cpp` is itself an instructive example of a modern C++ project.
+
+### :warning: What to keep in mind
+
+- **Verify everything that is generated.** A model can produce plausible but incorrect code: nonexistent standard-library functions, subtle object-lifetime bugs, race conditions. In C++ the cost of such a mistake is high — undefined behavior may not show up in any test and may blow up on a user's machine. This is exactly why knowledge of the language remains mandatory: to check an answer, you need to understand the subject no worse than you would when writing the code by hand.
+- **Follow company policy.** In many organizations, sending work code to external services is restricted or forbidden. Clarify the rules before you connect an assistant, not after.
+- **Remember licensing.** Generated code may reproduce fragments of other people's projects along with their licensing obligations. For commercial projects this is a separate risk worth discussing with your team.
+- **Do not skip the learning stage.** An assistant frees you from routine, but if it solves for you the very problems you are supposed to be learning from, you will not grow as an engineer. Early in your career it is useful to solve a problem yourself first and only then compare it with what the model suggests.
 
 ## :floppy_disk: Git clients
 

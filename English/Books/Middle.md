@@ -12,6 +12,10 @@
 
     Meyers' book stops at C++14, and these two volumes pick up where it leaves off. Each one systematically walks through everything its standard added — language features and library alike — with practical examples and advice on when (and when not) to use the new tools.
 
+- [Nicolai Josuttis - C++ Move Semantics: The Complete Guide](https://leanpub.com/cppmove)
+
+    Move semantics is one of those topics that "seem clear" until you start digging into the details: when the compiler applies a move on its own, how `std::move` differs from `std::forward`, why a move sometimes silently turns into a copy, and how the rule of five relates to `noexcept`. The book works through all of this step by step and with examples. It is one of the most frequent topics in Middle-level interviews.
+
 - [Klaus Iglberger - C++ Software Design: Design Principles and Patterns for High-Quality Software](https://www.amazon.com/Software-Design-Principles-Patterns-High-Quality/dp/1098113160)
 
     A modern take on design patterns, written specifically for C++. It shows how classic patterns look when built on today's idioms — value semantics, type erasure, `std::variant` — instead of deep inheritance hierarchies, and is a great bridge between knowing the language and designing with it.

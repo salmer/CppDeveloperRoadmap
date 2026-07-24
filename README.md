@@ -16,11 +16,14 @@ It is recommended that you read the articles listed below before starting to exp
 1. :space_invader: [C++ - It's Not Rocket Science](English/FunCpp.md)
 1. :clipboard: [Application areas of C++](English/AreasOfApplication.md)
 1. :ghost: [Myths and Legends of C++](English/Mythbusters.md)
+1. :robot: [The C++ developer and artificial intelligence](English/AI.md)
 1. :chart_with_upwards_trend: [Developers grading](English/Grades/Overview.md)
 1. :mortar_board: [How to study?](English/HowToStudy.md)
 1. :books: [Books and other resources about C++](English/Books/Overview.md)
 1. :telescope: [Pet-project ideas](English/PetProjects.md)
 1. :triangular_ruler: [Language toolkit](English/Tooling.md)
+1. :package: [Popular libraries and frameworks](English/Libraries.md)
+1. :scales: [Coding standards and regulatory requirements](English/Compliance.md)
 1. :gem: [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
 
