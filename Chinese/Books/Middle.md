@@ -12,6 +12,10 @@
 
     Meyers 的书止步于 C++14，这两卷正好接续其后。每一卷都系统地讲解了对应标准新增的全部内容——语言特性和标准库——并配有实用示例，以及何时（和何时不）使用这些新工具的建议。
 
+- [Nicolai Josuttis - C++ Move Semantics: The Complete Guide（英文）](https://leanpub.com/cppmove)
+
+    移动语义是那种"好像懂了"、可一旦开始深究细节就未必的话题：编译器什么时候会自己应用移动、`std::move` 与 `std::forward` 有何区别、为什么移动有时会悄悄退化成拷贝、以及五法则与 `noexcept` 有什么关系。本书循序渐进、配合示例把这些讲清楚。它也是 Middle 级别面试中最常见的话题之一。
+
 - [Klaus Iglberger - C++ Software Design：高质量软件的设计原则与模式（英文）](https://www.amazon.com/Software-Design-Principles-Patterns-High-Quality/dp/1098113160)
 
     一本专为 C++ 撰写的现代设计模式著作。它展示了经典模式基于当今惯用法——值语义、类型擦除、`std::variant`——而非深层继承体系时的样子，是从掌握语言到用语言做设计之间的绝佳桥梁。

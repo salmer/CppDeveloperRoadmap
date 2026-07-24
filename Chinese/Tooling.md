@@ -59,11 +59,15 @@
 
     最初 Qt Creator 是作为 C++ 应用程序图形界面开发 IDE 而定位。随着时间推移，框架已经拥有了众多功能并演变成跨平台应用程序的综合生态系统。它提供了广泛基础库原件以满足各种需求，如网络连接，图形接口，数据库操作和处理像图片或文本格式之类流行格式。如今 Qt Creator 成为 Visual Studio 的竞争对手，并特别受到创建适用于各种 Linux 发行版应用程序的开发人员的欢迎。
 
-* :arrow_forward: **Eclipse IDE**  
-     Eclipse 是一个功能强大的跨平台开发环境，但也相当沉重。Eclipse 的关键特性之一是其模块化。Eclipse 的哲学是任何开发人员都可以通过连接其他扩展来修改开发环境以适应他们的需求。它被某些编译器开发人员用作专门针对 OS 或微控制器（例如 QNX 实时操作系统，Red-Hat Linux 等）的基础。
+* :arrow_forward: **Xcode**
 
-* :arrow_forward: **JetBrains Clion IDE**  
-     Clion 是来自 JetBrains 公司的强大跨平台 IDE。与其他 IDE 一样，它提供了全面的工具集，方便软件开发，并且非常适合 C 和 C++中进行跨平台开发。自 2025 年 5 月起，CLion 对非商业用途免费；商业开发需要付费许可证。
+    网址：https://developer.apple.com/xcode/  
+    价格：免费
+
+    Apple 自家的开发环境，也是为 macOS 和 iOS 构建应用程序的唯一途径。它随附 Clang 和 LLDB。如果你在 macOS 上工作，即使你更喜欢用别的编辑器写代码，至少也会为了它的命令行工具而需要 Xcode。
+
+* :arrow_forward: **JetBrains CLion IDE**  
+     CLion 是来自 JetBrains 公司的强大跨平台 IDE。与其他 IDE 一样，它提供了全面的工具集，方便软件开发，并且非常适合 C 和 C++中进行跨平台开发。自 2025 年 5 月起，CLion 对非商业用途免费；商业开发需要付费许可证。
 
 ## :flashlight: 扩展
 
@@ -142,6 +146,13 @@
 
     直接内置于 GCC、Clang 和 MSVC 中的动态分析工具，通过编译器标志启用（例如 `-fsanitize=address`）。AddressSanitizer 捕获内存错误（如越界访问和 use-after-free），UndefinedBehaviorSanitizer 捕获未定义行为，ThreadSanitizer 捕获数据竞争。在启用 sanitizers 的情况下运行测试被认为是现代 C++ 开发的基本实践。
 
+* :arrow_forward: **模糊测试（libFuzzer、AFL++）**
+
+    网址：https://llvm.org/docs/LibFuzzer.html, https://github.com/AFLplusplus/AFLplusplus  
+    价格：免费
+
+    模糊测试就是自动向代码喂入一连串随机的、故意畸形的数据，以寻找崩溃和挂起。它对任何解析外部输入的东西尤其有用：格式解析器、网络协议、解码器。它通常与 sanitizers 一起运行——模糊器找到触发错误的输入，而 sanitizer 指出错误究竟发生在哪里。libFuzzer 内置于 Clang，AFL++ 则作为独立工具运行。
+
 * :arrow_forward: **PVS Studio**
 
     网址：https://pvs-studio.com  
@@ -177,7 +188,14 @@
     网址：https://lldb.llvm.org  
     价格：免费
 
-    来自 LLVM 项目的调试器，也是 macOS 上的默认调试器（Xcode 使用它）。它提供与 GDB 类似的功能，但架构更现代。在 Windows 上，随 IDE 一起提供的 Visual Studio 调试器扮演着相同的角色。
+    来自 LLVM 项目的调试器，也是 macOS 上的默认调试器（Xcode 使用它）。它提供与 GDB 类似的功能，但架构更现代。
+
+* :arrow_forward: **WinDbg**
+
+    网址：https://learn.microsoft.com/windows-hardware/drivers/debugger/  
+    价格：免费
+
+    微软面向 Windows 的调试器。在 Windows 上的日常工作中，通常内置于 Visual Studio 的调试器就够用了，但在它力所不及的地方，WinDbg 不可或缺：分析来自生产机器的崩溃转储、调试驱动和内核模式、处理没有源码的应用程序。对于从事底层开发、或排查用户机器上崩溃的人来说，这是一项有用的技能。
 
 ## :stopwatch: 性能分析器
 
@@ -201,6 +219,68 @@
     价格：免费
 
     一款功能强大的性能分析器，用于 x86 架构上的深度性能分析：瓶颈、线程效率、内存访问模式以及微架构级别的指标。当 `perf` 输出不够详细时的首选工具。在 Windows 上，Visual Studio IDE 也内置了功能强大的 CPU 和内存性能分析器。
+
+## :white_check_mark: 测试与基准测试
+
+* :arrow_forward: **GoogleTest (gtest/gmock)**
+
+    网址：https://github.com/google/googletest  
+    价格：免费
+
+    C++ 中使用最广泛的单元测试框架。它附带 GoogleMock 用于创建桩和 mock，从而让你能把代码与它的依赖——数据库、网络、文件系统——隔离开来测试。它与 CMake 集成良好，并可以通过任何一个流行的包管理器引入。
+
+* :arrow_forward: **Catch2**
+
+    网址：https://github.com/catchorg/Catch2  
+    价格：免费
+
+    一个比 GoogleTest 更轻量、语法更简洁的替代品。这里的一个测试就是一个普通函数，用一个 `REQUIRE` 宏，而不是一整套专门的比较宏。它是小型项目和入门单元测试的好选择：只需引入一个头文件即可。
+
+* :arrow_forward: **Google Benchmark**
+
+    网址：https://github.com/google/benchmark  
+    价格：免费
+
+    一个用于微基准测试的库。它会自己挑选重复次数，让结果具有统计意义，还能对抗优化器把"结果从未被使用的代码"直接丢弃的倾向。当你需要比较两种实现的速度时就用得上它："手动"地在前后读一下时间几乎总会给出不可靠的结果。
+
+## :robot: AI 工具
+
+AI 助手已经成为开发者日常工具的一部分：它们加快样板代码的编写、帮你熟悉陌生的代码库、并解释编译器错误。同时，它们并不能取代对语言的了解——下面详细说明原因。
+
+* :arrow_forward: **GitHub Copilot**
+
+    网址：https://github.com/features/copilot  
+    价格：有带限制的免费档；完整功能付费，对学生、教师以及流行开源项目的维护者免费
+
+    直接在编辑器里补全代码：它根据文件和项目的上下文提示接下来的几行。它与 Visual Studio、VS Code、CLion 以及其他流行 IDE 集成。
+
+* :arrow_forward: **Claude Code**
+
+    网址：https://claude.com/product/claude-code  
+    价格：付费，包含在订阅中
+
+    一个在终端和 IDE 中工作的助手：它读取整个项目、一次性修改多个文件、运行构建和测试。它面向的是比单行更大的任务——重构、理解陌生代码、编写测试。
+
+* :arrow_forward: **Cursor**
+
+    网址：https://cursor.com  
+    价格：有免费档，进阶功能付费
+
+    一个基于 VS Code、内置 AI 助手的编辑器。它能回答关于代码库的问题、一次性在多个文件里做修改，同时保留你熟悉的 VS Code 扩展和设置。
+
+* :arrow_forward: **本地模型（Ollama、llama.cpp）**
+
+    网址：https://ollama.com, https://github.com/ggml-org/llama.cpp  
+    价格：免费
+
+    在你自己的机器上运行模型。它们在质量上不及云端模型，并且需要相当的资源，但代码不会离开你的电脑。对于禁止把源码发送到外部服务的项目来说，这是一个选择。顺便一提，`llama.cpp` 本身就是一个很有代表性的现代 C++ 项目范例。
+
+### :warning: 需要记住的几点
+
+- **验证一切生成的内容。** 模型可能给出看似合理却错误的代码：不存在的标准库函数、微妙的对象生命周期错误、竞态条件。在 C++ 中这类错误的代价很高——未定义行为可能不会在任何测试中暴露，却会在用户那里爆发。正因如此，对语言的了解仍然是必需的：要检验一个答案，你对这个主题的理解必须不亚于手写代码时。
+- **遵守公司政策。** 在许多组织里，把工作代码发送到外部服务是受限或被禁止的。在接入助手**之前**弄清规则，而不是之后。
+- **记住许可问题。** 生成的代码可能连同许可义务一起，重现别人项目的片段。对商业项目来说这是一个单独的风险，值得与团队讨论。
+- **别跳过学习阶段。** 助手把你从重复劳动中解放出来，但如果它替你解决了那些你本该从中学习的问题，你作为工程师就不会成长。在职业生涯早期，先自己解决问题、然后再和模型给出的方案作对比，是有益的。
 
 ## :floppy_disk: Git 客户端
 

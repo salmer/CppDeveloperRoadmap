@@ -15,12 +15,15 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 3. :space_invader: [C++ - 这不是火箭科学](FunCpp.md)
 4. :clipboard: [C++ 的应用领域](AreasOfApplication.md)
 5. :ghost: [C++ 的神话和传说](Mythbusters.md)
-6. :chart_with_upwards_trend: [开发者评级体系概述 ](Grades/Overview.md)
-7. :mortar_board: [如何学习？](HowToStudy.md)
-8. :books: [关于 C++ 的书籍和其他资源](Books/Overview.md)
-9. :telescope: [宠物项目](PetProjects.md)
-10. :triangular_ruler: [工具](Tooling.md)
-11. :gem:  [更多的 C++ 资源/社区等](CommunitySources.md)
+6. :robot: [C++ 开发者与人工智能](AI.md)
+7. :chart_with_upwards_trend: [开发者评级体系概述 ](Grades/Overview.md)
+8. :mortar_board: [如何学习？](HowToStudy.md)
+9. :books: [关于 C++ 的书籍和其他资源](Books/Overview.md)
+10. :telescope: [宠物项目](PetProjects.md)
+11. :triangular_ruler: [工具](Tooling.md)
+12. :package: [流行的库与框架](Libraries.md)
+13. :scales: [编码标准与合规要求](Compliance.md)
+14. :gem:  [更多的 C++ 资源/社区等](CommunitySources.md)
 
 ## :milky_way: 路线图
 
