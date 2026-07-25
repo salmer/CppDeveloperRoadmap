@@ -76,10 +76,11 @@ foreach($ln in $lines){
   $t=$ln.Trim()
   if($t -eq "" -or $t.StartsWith("#")){ continue }
   if($t -match '^spine\b'){
-    $SPINE=@{ hubx=$null; gate=$null; header=$null }   # null hubx -> computed from left half
+    $SPINE=@{ hubx=$null; gate=$null; header=$null; center=$null }   # null hubx -> computed
     if($t -match 'hubx=(\d+)'){ $SPINE.hubx=[double]$Matches[1] }
     if($t -match 'gate=(\d+)'){ $SPINE.gate=[double]$Matches[1] }
     if($t -match 'header=(\S+)'){ $SPINE.header=$Matches[1] }
+    if($t -match 'center=(\S+)'){ $SPINE.center=$Matches[1] }   # node on the trunk; halves centre on it
     continue
   }
   if($t -match '^frame\s+\[([^\]]+)\]'){
@@ -128,38 +129,53 @@ function Build-Lang([string]$lang){
     if($n.children.Count -eq 0){ $n.cy=$MARGIN+$script:row*$PITCH+$H/2; $script:row++ }
     else{ foreach($c in $n.children){ Assign-Y $c }; $n.cy=($nodes[$n.children[0]].cy+$nodes[$n.children[-1]].cy)/2 }
   }
-  foreach($id in $order){ if($nodes[$id].depth -eq 0){ Assign-Y $id } }
-  # horizontal layout: one column per depth (per side), width = widest node in it,
-  # bus in the gap between columns. With a spine, the right half packs rightward
-  # from hub-x and the left half packs leftward (mirror). hub-x itself is COMPUTED
-  # from the left half's total width, so it shifts per language automatically.
-  $maxDepth=0; foreach($id in $order){ if($nodes[$id].depth -gt $maxDepth){$maxDepth=$nodes[$id].depth} }
-  $colWR=@{}; $colWL=@{}
-  foreach($id in $order){ $n=$nodes[$id]
-    if($n.side -eq 'left'){ if(-not $colWL.ContainsKey($n.depth) -or $n.width -gt $colWL[$n.depth]){ $colWL[$n.depth]=$n.width } }
-    else                 { if(-not $colWR.ContainsKey($n.depth) -or $n.width -gt $colWR[$n.depth]){ $colWR[$n.depth]=$n.width } } }
+  # left and right sections each stack from the top, so the two halves run in
+  # parallel down the trunk instead of one long sequential column.
+  $script:row=0
+  foreach($id in $order){ if($nodes[$id].depth -eq 0 -and $nodes[$id].side -ne 'left'){ Assign-Y $id } }
+  $script:row=0
+  foreach($id in $order){ if($nodes[$id].depth -eq 0 -and $nodes[$id].side -eq 'left'){ Assign-Y $id } }
+  # a centre node (spine center=<id>) sits on the trunk at the vertical middle;
+  # both halves are shifted so their midpoints line up on it.
+  $centerW=0; $centerY=$null
+  if($SPINE -and $SPINE.center){
+    $ctext = if($tr[$SPINE.center]){ $tr[$SPINE.center] } else { $SPINE.center }
+    $centerW=[math]::Ceiling((Measure-Width $ctext)+2*$PADX)
+    $rt=1e18;$rb=-1e18;$lt=1e18;$lb=-1e18
+    foreach($id in $order){ $n=$nodes[$id]
+      if($n.side -eq 'left'){ if($n.cy-$H/2 -lt $lt){$lt=$n.cy-$H/2}; if($n.cy+$H/2 -gt $lb){$lb=$n.cy+$H/2} }
+      else                 { if($n.cy-$H/2 -lt $rt){$rt=$n.cy-$H/2}; if($n.cy+$H/2 -gt $rb){$rb=$n.cy+$H/2} } }
+    $rH=[math]::Max(0,$rb-$rt); $lH=[math]::Max(0,$lb-$lt)
+    $centerY=$MARGIN+[math]::Max($rH,$lH)/2
+    if($rb -gt $rt){ $dy=$centerY-($rt+$rb)/2; foreach($id in $order){ if($nodes[$id].side -ne 'left'){$nodes[$id].cy+=$dy} } }
+    if($lb -gt $lt){ $dy=$centerY-($lt+$lb)/2; foreach($id in $order){ if($nodes[$id].side -eq 'left'){$nodes[$id].cy+=$dy} } }
+  }
+  # horizontal layout: LOCAL packing — each child sits just right of its own
+  # parent (bus in the gap), so the tree stays compact instead of aligning every
+  # depth to one global column (which sprawls on a deep map). With a spine the
+  # right half grows right from hub-x and the left half grows left; hub-x is
+  # computed from the left half's ACTUAL extent, so it shifts per language.
+  function Layout-X($id,$x,$dir){
+    $nodes[$id].x=$x; $n=$nodes[$id]
+    foreach($c in $n.children){
+      $cx = if($dir -eq 1){ $n.x+$n.width+2*$GAP } else { $n.x-2*$GAP-$nodes[$c].width }
+      Layout-X $c $cx $dir
+    }
+  }
+  $effStub = if($centerW -gt 0){ $centerW/2 + 2*$GAP } else { $SPINE_STUB }
+  $leftRoots=@(); $rightRoots=@()
+  foreach($id in $order){ if($nodes[$id].depth -eq 0){ if($nodes[$id].side -eq 'left'){$leftRoots+=$id}else{$rightRoots+=$id} } }
   if($SPINE){
-    $leftW=0
-    if($colWL.ContainsKey(0)){ $leftW=$colWL[0]; for($d=1;$d -le $maxDepth;$d++){ if($colWL.ContainsKey($d)){ $leftW+=2*$GAP+$colWL[$d] } } }
-    # per-language local; must NOT be written back into $SPINE (shared across langs)
-    $hubx = if($SPINE.hubx){ [double]$SPINE.hubx } elseif($colWL.ContainsKey(0)){ $MARGIN+$SPINE_STUB+$leftW } else { 460.0 }
-    $clR=$hubx+$SPINE_STUB              # right half: left-aligned, grows right
-    for($d=0;$d -le $maxDepth;$d++){
-      foreach($id in $order){ $n=$nodes[$id]; if($n.side -ne 'left' -and $n.depth -eq $d){ $n.x=$clR } }
-      if($colWR.ContainsKey($d)){ $clR += $colWR[$d]+2*$GAP }
+    $hubx = if($SPINE.hubx){ [double]$SPINE.hubx } else { 460.0 }
+    if($leftRoots.Count -gt 0){
+      foreach($id in $leftRoots){ Layout-X $id (-$effStub-$nodes[$id].width) -1 }   # relative to hub=0
+      $leftmost=1e18; foreach($id in $order){ if($nodes[$id].side -eq 'left' -and $nodes[$id].x -lt $leftmost){$leftmost=$nodes[$id].x} }
+      if(-not $SPINE.hubx){ $hubx=$MARGIN-$leftmost }
+      foreach($id in $order){ if($nodes[$id].side -eq 'left'){ $nodes[$id].x += $hubx } }
     }
-    $crL=$hubx-$SPINE_STUB              # left half: right-aligned, grows left
-    for($d=0;$d -le $maxDepth;$d++){
-      foreach($id in $order){ $n=$nodes[$id]; if($n.side -eq 'left' -and $n.depth -eq $d){ $n.x=$crL-$n.width } }
-      if($colWL.ContainsKey($d)){ $crL -= ($colWL[$d]+2*$GAP) }
-    }
+    foreach($id in $rightRoots){ Layout-X $id ($hubx+$effStub) 1 }
   } else {
-    $colLeft=@($MARGIN)
-    for($d=0;$d -le $maxDepth;$d++){
-      $w = if($colWR.ContainsKey($d)){ $colWR[$d] } else { 0 }
-      foreach($id in $order){ if($nodes[$id].depth -eq $d){ $nodes[$id].x=$colLeft[$d] } }
-      $colLeft+=($colLeft[$d]+$w+2*$GAP)
-    }
+    foreach($id in $rightRoots){ Layout-X $id $MARGIN 1 }
   }
   # hints: wrap text + size box, centre on target span (phase 1) ...
   foreach($hn in $hints){
@@ -167,17 +183,25 @@ function Build-Lang([string]$lang){
     $wl=Wrap $txt ($HINT_W-2*$PADX)
     $hn.lines=$wl; $hn.width=$HINT_W
     $hn.height=[math]::Max($H, $wl.Count*$LINEH+2*$PADV)
-    $cys=@(); foreach($tid in $hn.targets){ if($nodes[$tid]){ $cys+=$nodes[$tid].cy } }
+    $cys=@(); $hn.side='right'
+    foreach($tid in $hn.targets){ if($nodes[$tid]){ $cys+=$nodes[$tid].cy; $hn.side=$nodes[$tid].side } }
     $hn.cy=(($cys|Measure-Object -Minimum).Minimum + ($cys|Measure-Object -Maximum).Maximum)/2
   }
-  # ... then x = clear EVERY node whose vertical span overlaps the box (2D clearance)
+  # ... then x = clear EVERY node whose vertical span overlaps the box (2D clearance).
+  # A hint for the left branch goes to the LEFT of its targets (mirror).
   foreach($hn in $hints){
-    $hy0=$hn.cy-$hn.height/2; $hy1=$hn.cy+$hn.height/2; $rt=0
-    foreach($id in $order){
-      $n=$nodes[$id]; $ny0=$n.cy-$H/2; $ny1=$n.cy+$H/2
-      if($ny1 -ge $hy0 -and $ny0 -le $hy1 -and ($n.x+$n.width) -gt $rt){ $rt=$n.x+$n.width }
+    $hy0=$hn.cy-$hn.height/2; $hy1=$hn.cy+$hn.height/2
+    if($hn.side -eq 'left'){
+      $lt=1e18
+      foreach($id in $order){ $n=$nodes[$id]
+        if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and $n.x -lt $lt){ $lt=$n.x } }
+      $hn.x=$lt-$HINT_GAP-$hn.width
+    } else {
+      $rt=0
+      foreach($id in $order){ $n=$nodes[$id]
+        if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and ($n.x+$n.width) -gt $rt){ $rt=$n.x+$n.width } }
+      $hn.x=$rt+$HINT_GAP
     }
-    $hn.x=$rt+$HINT_GAP
   }
 
   # ---- emit mxGraph XML ----
@@ -223,6 +247,11 @@ function Build-Lang([string]$lang){
       $r=$nodes[$id]; $entry = if($r.side -eq 'left'){1}else{0}   # left roots attach on their right side
       [void]$sb.AppendLine("<mxCell id=""_s_$id"" parent=""1"" edge=""1"" target=""$id"" style=""edgeStyle=none;html=0;endArrow=none;strokeColor=#000000;entryX=$entry;entryY=0.5;entryDx=0;entryDy=0;""><mxGeometry relative=""1"" as=""geometry""><mxPoint x=""$hubx"" y=""$($r.cy)"" as=""sourcePoint""/></mxGeometry></mxCell>")
     }
+    if($SPINE.center){   # central node on the trunk, at the vertical middle
+      $ct = if($tr[$SPINE.center]){ $tr[$SPINE.center] } else { $SPINE.center }
+      $st="rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=$FONTSIZE;fontColor=#000000;fontFamily=$Font;verticalAlign=middle;align=center;fontStyle=1;"
+      [void]$sb.AppendLine("<mxCell id=""_center"" parent=""1"" vertex=""1"" style=""$st"" value=""$(XmlEsc $ct)""><mxGeometry x=""$($hubx-$centerW/2)"" y=""$($centerY-$H/2)"" width=""$centerW"" height=""$H"" as=""geometry""/></mxCell>")
+    }
   }
   # nodes
   foreach($id in $order){
@@ -249,11 +278,13 @@ function Build-Lang([string]$lang){
       [void]$sb.AppendLine("<mxCell id=""e_$cid"" parent=""1"" edge=""1"" source=""$id"" target=""$cid"" style=""$st""><mxGeometry relative=""1"" as=""geometry""><Array as=""points""><mxPoint x=""$busx"" y=""$($n.cy)""/><mxPoint x=""$busx"" y=""$($c.cy)""/></Array></mxGeometry></mxCell>")
     }
   }
-  # hint arrows: curved, hint left-middle -> each target right-middle
+  # hint arrows: curved, from the hint's inner edge to each target's facing edge
+  # (right branch: hint-left -> target-right; left branch: hint-right -> target-left)
   foreach($hn in $hints){
+    if($hn.side -eq 'left'){ $ex=1; $en=0 } else { $ex=0; $en=1 }
     foreach($tid in $hn.targets){
       if(-not $nodes[$tid]){continue}
-      $st="edgeStyle=none;html=0;strokeColor=#000000;strokeWidth=1;startArrow=none;endArrow=block;endFill=1;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;"
+      $st="edgeStyle=none;html=0;strokeColor=#000000;strokeWidth=1;startArrow=none;endArrow=block;endFill=1;curved=1;exitX=$ex;exitY=0.5;exitDx=0;exitDy=0;entryX=$en;entryY=0.5;entryDx=0;entryDy=0;"
       [void]$sb.AppendLine("<mxCell id=""a_$($hn.id)_$tid"" parent=""1"" edge=""1"" source=""$($hn.id)"" target=""$tid"" style=""$st""><mxGeometry relative=""1"" as=""geometry""/></mxCell>")
     }
   }

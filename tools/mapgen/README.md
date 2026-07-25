@@ -93,27 +93,42 @@ Without `contains`, it encloses everything; with it, only those roots' subtrees.
 frame [f5] title=stage5
 ```
 
-### Spine — `spine [hubx=<x>] [gate=<x>] [header=<key>]`
+### Spine — `spine [center=<id>] [hubx=<x>] [gate=<x>] [header=<key>]`
 
-A central trunk; depth-0 nodes become sections hanging off it. Each root can be placed on
-either side with `side=left|right` (inherited by its subtree, default `right`): the right
-half packs rightward from the trunk, the left half packs leftward (mirror).
+A central trunk; depth-0 nodes become sections hanging off it. Each root is placed on a
+side with `side=left|right` (inherited by its subtree, default `right`): the right half
+packs rightward from the trunk, the left half packs leftward (mirror). Nodes use **local
+packing** — each child sits just right of its own parent — so deep trees stay compact.
 
-**hub-x is computed** from the left half's total width when `hubx` is omitted — so wider
-labels in one language (e.g. Chinese) push the whole centre right automatically, per
-language. Pass an explicit `hubx` to pin it. Optional `gate`/`header` draw a dashed gate
-guide and a left-of-gate header (only when set).
+- **`center=<id>`** puts a node on the trunk at the vertical middle and centres both halves
+  on it (the "C++ developer" node the two halves emanate from). The two halves stack
+  top-down in parallel.
+- **hub-x is computed** from the left half's actual width when `hubx` is omitted — wider
+  labels in one language push the whole centre right, per language. Pass `hubx` to pin it.
+- Optional `gate`/`header` draw a dashed gate guide + a left-of-gate header.
 
 ```
-spine                       # bilateral, computed hub-x
-[softskills] side=left
-  [communication]
-[langsyntax] side=right
-  [stl]
-    [iostream]
+spine center=12             # bilateral, centre node, computed hub-x
+[13] side=left              # Soft skills
+  [21]                      # Communication ...
+[14] side=right             # Hard skills
+  [396]                     # Language syntax ...
 
 spine hubx=460 gate=420 header=hardskills   # pinned hub-x + gate guide (right side only)
 ```
+
+## Extracting a DSL from an existing map
+
+`extract.py` reverses a `roadmap.drawio.svg` into `structure.dsl` + `<lang>.tsv` (BFS tree
+from the centre/left/right anchors, grades from fill, pink boxes → hints; handles
+link-bearing `UserObject` nodes). Run once per language:
+
+```bash
+python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap
+```
+
+`examples/fullmap` is the result for the EN map (394 nodes + 28 hints). Not extracted yet:
+stage frames, the legend/title/About blocks, and a handful of isolated nodes.
 
 ### Translation files `<lang>.tsv`
 
@@ -129,12 +144,13 @@ Keys include node ids plus any `frame` title / `spine` header keys.
 | `examples/libraries` | frame grow-to-fit, two parents, 3rd-level sub-branches |
 | `examples/spine` | pinned trunk (hub-x) + left-of-gate header + right-half reflow |
 | `examples/bilateral` | two-sided spine: left mirror + **computed per-language hub-x** |
+| `examples/fullmap` | the whole EN map extracted end-to-end (centre node + 394 nodes + hints) |
 
 ## Known gaps (before this could replace the hand workflow)
 
-1. **Full-map assembly.** The bilateral spine + computed hub-x work per cluster, but the
-   whole map is many stacked sections on one trunk; laying out all of them together (and
-   choosing per-section left/right and vertical order) hasn't been driven end-to-end yet.
+1. **Decorative content not extracted.** The full-map extraction covers the skill tree +
+   hints; stage frames, the legend/title/About blocks and ~7 isolated nodes are not yet
+   pulled in. RU/ZH need `extract.py` run on their maps (upper-part ids are shared).
 2. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
    on regeneration. Discipline: structure in `structure.dsl`, text in `<lang>.tsv`, never
    hand-edit the generated `.drawio.svg`.

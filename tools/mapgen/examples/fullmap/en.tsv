@@ -1,0 +1,480 @@
+12	C++ developer
+13	Soft skills
+16	Ability to learn
+73	Ask the right questions
+76	Process information
+74	Experimenting
+75	Manage knowledge
+17	Manage mistakes
+72	Analyze mistakes
+71	Admitting your mistakes
+70	Notify about mistakes in time
+69	Accept criticism
+18	Thinking
+64	Logical
+68	Systems
+65	Critical
+66	Creative
+67	Strategic
+19	Responsibility
+59	Discipline
+60	Persistence
+61	Initiative
+62	Independence
+63	Problem solving
+20	Manage resources
+54	Time management
+55	Prioritization
+56	Taking decisions
+57	Blind typing
+58	Multitasking
+21	Communication
+43	Negotiation
+48	Ability to listen
+49	Persuasion
+50	Ability to communicate ideas and thoughts within the team
+53	Providing information to people outside the team
+51	Finding compromises
+52	Dispute resolution
+44	English
+45	Presentation
+46	Written communication skill
+47	Networking
+22	Team work
+34	Understanding the distribution of roles in a team
+35	Support team members
+36	Work in a distributed team
+37	Providing feedback
+38	Leadership
+41	Assigning and clarifying tasks to employees
+42	Planning and goal setting
+39	Mentoring
+40	Delegation
+23	Emotional intelligence
+32	Stress resistance
+33	Working in uncertainty
+31	Adaptability
+30	Open-mindedness
+29	Concentration
+28	Empathy
+24	Understanding the development context
+25	Customer focus
+26	Technology
+27	Trends
+14	Hard skills
+396	Language syntax
+89	Basic operations
+90	Arithmetic operations
+92	Logical operations
+91	Loops: for/while
+93	Bitwise operations
+94	Functions
+96	Operators
+95	lambda
+97	Data types
+99	Static typing
+98	Dynamic typing
+100	RTTI
+101	Pointers & References
+103	References
+105	Smart pointer
+111	unique_ptr
+112	shared_ptr
+115	weak_ptr
+104	Memory model
+113	Lifetime of objects
+106	Raw pointers
+114	new/delete operators
+109	Memory leakage
+102	Codebase structuring
+107	Code splitting into headers/cpp files
+110	Forward declaration
+108	Scope
+116	Namespaces
+119	Structures and classes
+123	Object Oriented programming (OOP)
+129	Static polymorphism
+121	Overloading of functions
+126	Dynamic polymorphism
+127	Virtual methods
+122	Virtual table (vtbl)
+128	The rule of zero/three/five
+130	Multiple inheritance
+131	Diamond inheritance
+120	Exception handling
+n936	std::optional / std::expected
+124	Exceptions
+125	Access violation
+n937	noexcept
+132	Error codes
+n938	std::error_code
+135	Language concepts
+134	auto (automatic type deduction)
+136	type casting
+137	static_cast
+138	const_cast
+139	dynamic_cast
+140	reinterpret_cast
+141	Undefined Behavior (UB)
+142	Argument-dependent lookup (ADL)
+n1000	constexpr / consteval
+143	Macros
+144	Name mangling
+n920	Move semantics
+n922	Value categories (lvalue/rvalue)
+n923	std::move / std::forward
+n924	Perfect forwarding
+n1005	Coroutines (C++20)
+n1006	Modules (C++20)
+145	Standard library + STL
+146	iostream
+n930	std::format / std::print
+150	Date/time
+149	Containers
+n932	std::span / std::string_view
+148	Iterators
+147	Algorithms
+n934	std::ranges
+151	Multithreading
+153	Templates
+154	Variadic templates
+155	The template specialization
+158	The full template specialization
+159	The partial template specialization
+156	type traits
+157	SFINAE
+n928	Concepts (C++20)
+173	Idioms
+160	RAII
+161	pimpl
+163	Non-Copyable/Non-Moveable
+162	Erase-Remove
+164	Copy and swap
+165	Copy on write
+166	CRTP
+167	Standards
+168	C++11/14
+169	C++17
+170	C++20
+171	C++23
+172	C++26 (newest)
+395	Language tools
+174	Working with source code
+175	Text editors
+176	IDE
+177	Code editors
+180	Knowledge of features and abilities (shortcuts, tools, plugins)
+178	Debugger
+181	Understanding of debugger messages
+182	Debugging symbols
+183	WinDbg
+184	GDB
+n900	LLDB
+179	Linters
+n903	Compiler Explorer (godbolt.org)
+191	Compilers
+192	Basic understanding of compilers stages
+193	Compilation of sources to object files (compilation)
+194	The object files linkage (linking)
+195	Working stages of compilers
+196	Features of a particular compiler
+199	Build systems
+200	CMake
+201	Makefile
+202	ninja
+203	Package managers
+206	Conan
+207	nuget
+204	vcpkg
+205	spack
+227	Working
+ with libraries
+212	Libraries inclusion
+228	Licensing
+208	Libraries
+209	boost
+210	opencv
+211	poco
+213	protobuf
+n909	Asio
+214	gRPC
+215	fmt
+n911	nlohmann/json
+216	pybind11
+217	spdlog
+218	range-v3
+219	tensorflow
+220	opencl
+221	Frameworks
+222	gtest/gmock
+223	Qt
+224	catch2
+n913	google benchmark
+225	google profiler
+226	pytorch c++
+394	Common skills
+229	Computers Science
+230	Data structures
+232	Boolean algebra
+231	Algorithms
+233	Finite-state machines
+235	Version control software
+236	Distributed
+239	git
+240	Mercurial
+237	Centralized
+238	SVN
+241	Best practices
+242	Code quality
+243	Code guidelines
+244	Principles of development
+245	KISS (Keep It Simple, Stupid)
+246	DRY (Don't Repeat Yourself)
+247	YAGNI (You Aren't Gonna Need It)
+248	APO (Avoid Premature Optimization)
+249	BDUF (Big Design Up Front)
+250	Composition is preferably than the inheritance
+251	Occam's razor
+252	Divide and Conquer
+253	Logging and telemetry
+254	Code review
+255	Skill to read existing code sources
+256	Skill to review code
+257	Lifecycle stages of a software
+258	Implementation
+259	Testing
+262	Unit tests
+263	Integration tests
+264	Functional tests
+265	Performance tests
+260	Maintanance
+261	Versioning
+295	Backward compatibility
+266	Software architecture and components design
+267	Components integration
+268	Deployment
+269	Collecting requirements
+270	End of a software lifecycle
+271	Code analyzers
+272	Static analyzers
+273	Dynamic analyzers
+274	Profilers
+n905	Valgrind
+n906	perf / VTune
+275	C++ core guidelines
+297	Microsoft GSL
+276	Industrial standards
+277	MISRA C++:2023
+278	Autosar
+n956	EU Cyber Resilience Act (CRA)
+n957	SBOM
+n958	IEC 62304 (medical)
+n959	ISO 26262 (automotive)
+n960	DO-178C (avionics)
+279	Command line
+281	Powershell
+280	batch
+282	bash
+283	CI/CD
+286	Creation of a software deployment package
+287	Documentation
+288	Installer package
+284	Trunk Based Development
+285	Zero downtime deployment
+n944	AI tools
+n945	AI assistants (Copilot, Claude Code, Cursor)
+n946	Verifying generated code
+n947	Company policy and confidentiality
+n948	Licensing risks of generated code
+n949	Local models
+289	Usage of other programming languages
+290	Language interoperability
+298	Software design
+309	Design Patters (GoF)
+311	Structural
+310	Behavioral
+312	Creational
+313	OOP
+314	SOLID
+315	UML
+299	Architecture styles
+300	Component-based
+301	Monolithic application
+302	Layered
+303	Client-server
+304	Microservices architecture
+305	Event-driven
+306	Plug-ins
+307	REST
+308	Service-oriented architecture
+316	Architecture patterns
+317	MVC
+318	MVVM
+319	Three-tier
+320	Onion
+321	Hexagon
+322	Methodologies of development
+323	Test Driven Development
+324	Behavior Driven Development
+325	Domain Driven Design
+339	Operating systems
+330	Binary units
+331	Executable file
+332	Static library
+333	Dynamic library
+326	Memory
+327	Memory abstractions
+334	Stack
+336	Heap
+335	Global memory
+337	Application memory
+328	Memory alignment
+329	Memory management
+338	Virtual memory
+346	Threads
+340	Multithreading
+341	Errors
+342	Dead lock
+343	Race condition
+344	Live lock
+345	Starvation
+n940	std::atomic, C++ memory model
+347	Concurrency
+348	Mutexes
+349	Semaphores
+350	lock-free
+n941	condition_variable
+n942	future / promise / async
+n943	jthread (C++20)
+351	Event handling
+352	Sync
+353	Async
+n1002	OpenMP / TBB
+354	Process
+355	Interprocess communication
+356	Shared memory
+357	Pipes
+358	Serialization
+359	json
+360	XML
+361	Network
+362	TCP/IP
+364	Sockets
+366	TCP
+367	UDP
+365	HTTP
+363	OSI
+368	File system
+369	Task scheduler
+370	Virtualization
+371	VirtualBox
+372	VMware Workstation
+374	Hyper-V
+373	Containers
+375	Docker
+377	Kubernetes
+376	Cloud Services
+378	Security
+n961	Vulnerabilities: buffer overflow, use-after-free
+n962	Sanitizers (ASan / TSan / UBSan)
+379	Encryption
+n963	Fuzzing
+n964	CERT C++ / CWE
+380	MultiCPU systems
+381	Multicore CPU
+382	NUMA
+383	Input/output
+384	Drivers
+385	Audio
+388	DirectSound
+389	OpenAL
+386	Graphics
+390	DirectX
+392	OpenGL
+391	Vulkan
+393	CUDA
+387	Printers (printing)
+15	At first, some of the skills may seem impossible to 
+develop. However, we think differently. It is possible to 
+work on each of the skills. Everything depends on your 
+desire and internal blocks. Everything is individual, and 
+it's up to you to decide. :)
+78	Reflection
+80	Take challenging tasks in order to develop your skills and 
+competencies, even when there is not enough 
+knowledge/experience (skills will develop much faster 
+through such tasks). The main thing is to distinguish a 
+really useful complex task that will help you to boost your 
+skills from a dumb task that requires a scapegoat.
+81	You should be responsible for your professional development. Don't wait 
+for the team lead to decide for you what to study. Do not forget that blind 
+adherence to someone else's plan will sharpen your skills according to 
+requirements of a particular company. It is better toÂ discuss and build in 
+your interests into the plan. If this is not done, there is a high risk of getting 
+irrelevant skills, which will hit career opportunities. But don't overdo it: don't 
+study absolutely everything or don't passively wait until a development plan 
+will be created for you.
+84	Conflict solving
+85	If you read this it means you already understand why it is so 
+important :)
+
+Usually, it is required at least to read because you would need to 
+understand technical documentation. But as you move up the career 
+ladder, you will need to speak and write more confidently in English.
+86	Look for like-minded people and join/create a community for 
+experience exchange.
+87	You should study and observe contemporary trends to be 
+competitive, as well as being able to adapt to them.
+88	Experienced developers should develop management skills and business 
+communication skills to complete tasks efficiently. It is easier to do if you 
+have developed emotional intelligence. For a junior developer, the skill is 
+also useful to better interact with colleagues.
+118	To prevent memory leakage problems it is better 
+to use smart pointers rather than raw pointers.
+133	It's preferred to avoid multiple inheritance 
+(excepting abstract classes) to prevent 
+runtime issues
+152	Some of language constructions have non-declared behavior according to 
+the ISO standard. In case of any error, it's not possible to predict further 
+behavior. It depends on a platform environment, runtime context, etc.
+185	Choose one of the popular IDEs and study it well:
+MS Visual Studio, VS Code, Qt Creator,
+JetBrains CLion, XCode, etc.
+186	Study how to use a debugger and all its features
+187	Choose one of the popular editors and study it well.
+For example: Notepad++, Sublime Text, etc.
+188	The ability to work with a debugger via command line is a not 
+common skill. It's sufficient to work with it via IDE. For example: 
+set conditional breakpoints, etc.
+189	Learn about common errors (segfault, out of memory, 
+access violation) and undefined behavior concept.
+190	Choose one of the popular editors and study it well. For
+example: VS Code, Sublime Text, Zed, etc.
+197	Each compiler has its nuances. It's 
+good to know about them to prevent getting any trap:Â 
+Clang++/LLVM, Intel C++, MSVS C++, GCC, MinGW
+198	The compiler performs several stages of code compilation. 
+It's good to know about all of them to better understand 
+compilation issues. Deep knowledge is needed for compiler 
+creators only.
+234	It's also good to know how to calculate algorithm complexity 
+and memory consumption.
+291	Naming conventions, tabs vs spaces, etc.
+292	To configure automated code formatting verification with one of 
+the suitable utilities: clang-format, Resharper - code style,
+MSVS - code style.
+293	- Scripting
+- Functional
+- SQL like
+- NoSQL
+294	Sometimes it's needed to provide an ability to reuse a library written in 
+a different language from another one. For example: to call C++ 
+libraries in C#.
+296	Do not ignore warnings from compiler and static analyzer. 
+They are your friends, not enemies
+n955	AI can generate plausible but incorrect
+code — verify and test everything.
+Knowledge of C++ is required.
+n965	Memory-safety requirements are rising
+(US and EU regulators). Learn safe
+practices and analysis tools.
