@@ -93,13 +93,26 @@ Without `contains`, it encloses everything; with it, only those roots' subtrees.
 frame [f5] title=stage5
 ```
 
-### Spine — `spine hubx=<x> gate=<x> header=<key>`
+### Spine — `spine [hubx=<x>] [gate=<x>] [header=<key>]`
 
-A fixed central trunk at `hubx`; depth-0 nodes become sections hanging off it. A header
-node (translation key) sits left of `gate`. A dashed `gate` guide is drawn for reference.
+A central trunk; depth-0 nodes become sections hanging off it. Each root can be placed on
+either side with `side=left|right` (inherited by its subtree, default `right`): the right
+half packs rightward from the trunk, the left half packs leftward (mirror).
+
+**hub-x is computed** from the left half's total width when `hubx` is omitted — so wider
+labels in one language (e.g. Chinese) push the whole centre right automatically, per
+language. Pass an explicit `hubx` to pin it. Optional `gate`/`header` draw a dashed gate
+guide and a left-of-gate header (only when set).
 
 ```
-spine hubx=460 gate=420 header=hardskills
+spine                       # bilateral, computed hub-x
+[softskills] side=left
+  [communication]
+[langsyntax] side=right
+  [stl]
+    [iostream]
+
+spine hubx=460 gate=420 header=hardskills   # pinned hub-x + gate guide (right side only)
 ```
 
 ### Translation files `<lang>.tsv`
@@ -114,23 +127,20 @@ Keys include node ids plus any `frame` title / `spine` header keys.
 | `examples/stl` | multi-child tree + bus; per-language width (EN/RU/ZH) |
 | `examples/debugger` | hint callouts + curved multi-target arrows + 2D clearance |
 | `examples/libraries` | frame grow-to-fit, two parents, 3rd-level sub-branches |
-| `examples/spine` | fixed trunk (hub-x) + left-of-gate header + right-half reflow |
+| `examples/spine` | pinned trunk (hub-x) + left-of-gate header + right-half reflow |
+| `examples/bilateral` | two-sided spine: left mirror + **computed per-language hub-x** |
 
 ## Known gaps (before this could replace the hand workflow)
 
-1. **Per-language `hub-x`/`gate`.** Here they're constant to demonstrate the invariant.
-   In the real map they differ per language (RU 2945 / EN 3044 / ZH 2680) because the
-   left half's width shifts the centre. They're already inputs to the generator, but
-   need to be **computed** from the left-half width rather than hard-coded.
-2. **Left half (soft skills) is not laid out.** The trunk carries content on both sides;
-   only the right half + a header stub on the left are generated. Leftward packing is a
-   symmetric extension, not yet done.
-3. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
+1. **Full-map assembly.** The bilateral spine + computed hub-x work per cluster, but the
+   whole map is many stacked sections on one trunk; laying out all of them together (and
+   choosing per-section left/right and vertical order) hasn't been driven end-to-end yet.
+2. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
    on regeneration. Discipline: structure in `structure.dsl`, text in `<lang>.tsv`, never
    hand-edit the generated `.drawio.svg`.
-4. **Hardening.** Not yet run on all 457 nodes; needs stable output ordering (clean
+3. **Hardening.** Not yet run on all 457 nodes; needs stable output ordering (clean
    diffs), error handling, and integration into the repo build.
-5. **Platform.** Windows-only today (System.Drawing + draw.io CLI). Text metrics use a
+4. **Platform.** Windows-only today (System.Drawing + draw.io CLI). Text metrics use a
    font that covers Latin+Cyrillic+CJK (default `Microsoft YaHei`); the map itself uses
    Helvetica for Latin, so generated widths won't be pixel-identical to hand-drawn ones.
 
