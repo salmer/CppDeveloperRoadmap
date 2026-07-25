@@ -1,0 +1,37 @@
+name: Check maps
+
+on:
+  pull_request:
+    paths:
+      - "*/Graph/roadmap.drawio.svg"
+      - "tools/mapcheck/**"
+      - ".github/workflows/map-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mapcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0            # date check reads each map's last-commit date
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --quiet Pillow
+          sudo apt-get update -qq
+          # Liberation Sans is metric-compatible with Arial (what draw.io uses);
+          # Noto CJK covers the Chinese map.
+          sudo apt-get install -y -qq fonts-liberation fonts-noto-cjk
+
+      - name: Validate maps
+        run: python tools/mapcheck/check.py
