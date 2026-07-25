@@ -1,117 +1,119 @@
-# Заметки для ИИ-агентов: работа над дорожной картой
+# Notes for AI agents: working on the roadmap
 
-Этот файл помогает ИИ-агенту (или человеку) быстро включиться в работу над репозиторием:
-как устроена карта, как её безопасно править и как переносить правки между языками.
+This file helps an AI agent (or a human) get up to speed on the repository quickly:
+how the map is structured, how to edit it safely, and how to port edits between languages.
 
-Это **не журнал изменений** — что и когда менялось, смотрите в истории git; актуальные
-задачи владельца — в [TODO.md](TODO.md).
+This is **not a changelog** — for what changed and when, see the git history; the owner's
+current tasks live in [TODO.md](TODO.md).
 
-> **ВАЖНО: карту редактирует и сам владелец репозитория, вручную в draw.io.**
-> Перед любой правкой заново извлекайте XML из `<Язык>/Graph/roadmap.drawio.svg` —
-> нельзя переиспользовать XML, извлечённый в прошлой сессии, иначе чужие правки будут затёрты.
-> Перед записью файла сверяйте `LastWriteTime`: если он новее вашей копии — перечитывайте.
+> **IMPORTANT: the repository owner also edits the map by hand, in draw.io.**
+> Before any edit, re-extract the XML from `<Language>/Graph/roadmap.drawio.svg` —
+> do not reuse XML extracted in a previous session, or you will overwrite their changes.
+> Before writing the file, check `LastWriteTime`: if it's newer than your copy, re-read it.
 
-## Соглашения репозитория
+## Repository conventions
 
-- **Сообщения коммитов — только на английском.** Содержимое статей и карты ведётся
-  на русском/английском/китайском, но история git — англоязычная.
-- Ветка `main` — основная; работать через отдельные ветки и pull request'ы.
-- Имена файлов статей и URL менять нельзя: на них ссылаются извне.
-- Языковые версии: `Russian/` — эталон (правки делаются сначала здесь), затем переносятся
-  в `English/` (корневой `README.md` — английский) и `Chinese/`. Испанской (`Spanish/`)
-  пока нет; при появлении на неё переносится всё то же (см. «Перенос правок между языками»).
+- **Commit messages: English only.** Article and map content is maintained in
+  Russian/English/Chinese, but the git history is English.
+- `main` is the primary branch; work through separate branches and pull requests.
+- Article file names and URLs must not change — they are linked from outside.
+- Language versions: `Russian/` is the reference (edits are made here first), then ported to
+  `English/` (the root `README.md` is the English one) and `Chinese/`. There is no Spanish
+  version (`Spanish/`) yet; when one appears, everything is ported to it the same way
+  (see "Porting edits between languages").
 
-## Устройство карты
+## How the map is structured
 
-- Карта каждого языка — один файл `<Язык>/Graph/roadmap.drawio.svg`: SVG-изображение со
-  **встроенным исходником draw.io** в атрибуте `content` корневого тега `<svg>` (несжатый mxfile XML).
-- **Нельзя редактировать SVG-часть руками** — только через draw.io (десктоп/веб/VS Code-расширение)
-  или через цикл «извлечь XML → править XML → пересобрать через draw.io CLI».
-- Легенда цветов (fillColor): Optional `#CCEEFF`, Junior `#96BB7C`, Middle `#FAD586`,
-  Senior `#BBCCEE`, розовые подсказки `#FFD5E4`, серые боксы этапов `#F5F5F5`,
-  бокс даты в шапке `#FFF5EB`.
-- Внешние ссылки на карту идут через редиректы `goto/*.html` (drawio/miro/svg) со счётчиком
-  GoatCounter — имена файлов и URL менять нельзя.
+- Each language's map is a single `<Language>/Graph/roadmap.drawio.svg` file: an SVG image with
+  the **embedded draw.io source** in the `content` attribute of the root `<svg>` tag
+  (uncompressed mxfile XML).
+- **Do not hand-edit the SVG part** — only via draw.io (desktop/web/VS Code extension) or through
+  the cycle "extract XML → edit XML → rebuild via the draw.io CLI".
+- Color legend (fillColor): Optional `#CCEEFF`, Junior `#96BB7C`, Middle `#FAD586`,
+  Senior `#BBCCEE`, pink hints `#FFD5E4`, gray stage boxes `#F5F5F5`,
+  header date box `#FFF5EB`.
+- External links to the map go through `goto/*.html` redirects (drawio/miro/svg) with a
+  GoatCounter counter — file names and URLs must not change.
 
-## Конвейер правок через CLI (Windows)
+## The edit pipeline via the CLI (Windows)
 
-1. Извлечь XML из `.drawio.svg` — атрибут `content` корневого `<svg>`.
-   **Только через UTF-8** (см. «грабли с кодировкой» ниже).
-2. Править XML (текстовые правки, новые узлы `mxCell` + рёбра). Новым узлам давать строковые id
-   с префиксом (например `n900`+), чтобы не конфликтовать с числовыми.
-3. Экспорт: `draw.io.exe -x -f svg -e -u --svg-theme auto -o out.drawio.svg in.drawio`
+1. Extract the XML from `.drawio.svg` — the `content` attribute of the root `<svg>`.
+   **Only via UTF-8** (see "encoding gotcha" below).
+2. Edit the XML (text edits, new `mxCell` nodes + edges). Give new nodes string ids with a
+   prefix (e.g. `n900`+) so they don't collide with the numeric ones.
+3. Export: `draw.io.exe -x -f svg -e -u --svg-theme auto -o out.drawio.svg in.drawio`
    (draw.io CLI, `%LOCALAPPDATA%\Programs\draw.io\`).
-4. **Обязательно**: CLI ставит прозрачный фон — вернуть в SVG-теге
+4. **Required**: the CLI produces a transparent background — restore it in the SVG tag:
    `style="background: #ffffff; background-color: light-dark(#ffffff, #121212); color-scheme: light dark;"`.
-5. Верификация: рендерить SVG в **headless Edge**
-   (`msedge --headless=new --screenshot=... --window-size=...` + HTML-обёртка с окнами-панелями
-   в нужные области) и прогонять поиск наложений bbox (0 наложений — обязательное условие).
-   Интерактивный браузерный рендер и PNG-экспорт этому большому SVG доверять нельзя.
+5. Verification: render the SVG in **headless Edge**
+   (`msedge --headless=new --screenshot=... --window-size=...` plus an HTML wrapper with
+   panes over the regions of interest) and run a bbox overlap check (0 overlaps is mandatory).
+   Do not trust the interactive browser render or the PNG export on this large SVG.
 
-> **Грабли с кодировкой (важно!):** извлекать XML нужно ЧЕРЕЗ UTF-8:
-> `[IO.File]::ReadAllText($svg, [Text.Encoding]::UTF8)` + `LoadXml`, а НЕ `Get-Content -Raw`
-> (в PowerShell 5 читает системной кодировкой и корёжит китайский в двойной мохибейк).
-> Сохранять — `StreamWriter` с `UTF8Encoding($false)` (без BOM). Английская карта состоит
-> из ASCII и этой проблемой не задета; китайскую — задевает.
+> **Encoding gotcha (important!):** the XML must be extracted via UTF-8:
+> `[IO.File]::ReadAllText($svg, [Text.Encoding]::UTF8)` + `LoadXml`, NOT `Get-Content -Raw`
+> (PowerShell 5 reads it with the system codepage and mangles Chinese into double mojibake).
+> Save with a `StreamWriter` using `UTF8Encoding($false)` (no BOM). The English map is pure
+> ASCII and is unaffected; the Chinese map is affected.
 
-## Правила вёрстки карты
+## Map layout rules
 
-- **Дата в шапке — обновлять при каждой правке карты.** В шапке есть бокс
-  «Последнее обновление: ДД.ММ.ГГГГ» (id `n1100`). Бокс намеренно со светлой заливкой
-  `#FFF5EB` (не голый текст): чёрный текст на голом фоне не виден в тёмной теме, т.к. SVG
-  использует `light-dark()` фон. То же правило для любых новых подписей — голый
-  `fontColor=#000000` без светлого бокса нечитаем на тёмном фоне.
-- **Полоса заголовка рамок этапов ~37px.** У рамок «N этап» (id 2–11) верхнее поле до первого
-  узла — ~37px (исключение — рамка 2, там 61px); подпись сидит в этой полосе (`verticalAlign=top`).
-  Отсюда предел размера шрифта подписи: **максимум ~28px** влезает без сдвига узлов. Для
-  заметности используйте `fontStyle=1` (жирный), а не крупнее — высоту это не меняет.
-- **Рамки этапов — обычные vertex'ы, а не контейнеры** (`container=0`, дети не вложены).
-  Если сдвигаешь содержимое по вертикали, рамку нужно растить отдельно, иначе узлы вылезут
-  наружу. После любого сдвига проверяй для каждой рамки: низ рамки ≥ низа самого нижнего
-  элемента внутри неё.
-- **Точки крепления связей.** Наследие импорта из Miro — у части связей произвольные
-  `exitX/exitY`, `entryX/entryY`, из-за чего они выходят веером из разных точек одной грани.
-  Нормализация: крепить на середину грани, обращённой к линии (сторону определять по первому
-  излому для выхода / последнему для входа); если опорная точка внутри bbox узла — не трогать
-  (так сохраняются осознанные выходы «вниз»); связи со стилем `curved=1` (выноски-подсказки)
-  пропускать целиком.
-- **Известные грабли вёрстки:**
-  - рёбра имеют явные waypoint-массивы (`<Array as="points">`) и вертикальные «шины»
-    (магистрали с фиксированным x); новые рёбра строить по тому же паттерну, горизонтальные
-    сегменты вести в пустых полосах между рядами боксов (шаг рядов 60px, высота бокса 30px);
-  - если двигаешь узел явно, а потом прогоняешь общее правило сдвига — узел сдвинется **дважды**;
-    исключай такие узлы из общего прохода либо сдвигай после него;
-  - переносы строк в тексте узлов — это `&#xa;` в атрибуте `value`.
+- **Update the date in the header on every map edit.** The header has a box
+  "Last updated: DD.MM.YYYY" (id `n1100`). The box deliberately has a light fill
+  `#FFF5EB` (not bare text): black text on a bare background is invisible in dark theme, because
+  the SVG uses a `light-dark()` background. Same rule for any new labels — a bare
+  `fontColor=#000000` without a light box is unreadable on a dark background.
+- **Stage-frame title band ~37px.** For the "Stage N" frames (id 2–11) the top margin down to the
+  first node is ~37px (exception — frame 2, where it's 61px); the label sits in this band
+  (`verticalAlign=top`). Hence the limit on label font size: **~28px max** fits without shifting
+  nodes. For emphasis use `fontStyle=1` (bold) rather than a larger size — that doesn't change
+  the height.
+- **Stage frames are ordinary vertices, not containers** (`container=0`, children are not nested).
+  If you shift content vertically, the frame has to be grown separately, otherwise nodes spill
+  out. After any shift, check for each frame: frame bottom ≥ bottom of the lowest element inside it.
+- **Edge attachment points.** A legacy of the Miro import — some edges have arbitrary
+  `exitX/exitY`, `entryX/entryY`, so they leave one side of a node in a fan from different points.
+  Normalization: attach to the middle of the side facing the line (determine the side from the
+  first waypoint for the exit / the last for the entry); if the reference point is inside the
+  node's bbox, leave it alone (this preserves intentional downward exits); skip edges with the
+  `curved=1` style (hint callouts) entirely.
+- **Known layout gotchas:**
+  - edges have explicit waypoint arrays (`<Array as="points">`) and vertical "buses"
+    (trunk lines at a fixed x); build new edges to the same pattern, routing horizontal segments
+    in the empty bands between rows of boxes (row pitch 60px, box height 30px);
+  - if you move a node explicitly and then run a general shift rule, the node moves **twice**;
+    exclude such nodes from the general pass or shift them after it;
+  - line breaks in node text are `&#xa;` in the `value` attribute.
 
-## Перенос правок между языками
+## Porting edits between languages
 
-Правки делаются в русской карте, затем переносятся в английскую и китайскую.
+Edits are made in the Russian map first, then ported to the English and Chinese ones.
 
-- **Вертикальная структура карт идентична во всех языках** — у рамок этапов и всех строк
-  совпадают y-координаты. Отличаются только x/ширина (перевод меняет ширину узлов). Поэтому
-  вертикальные сдвиги переносятся один-в-один по тем же y-порогам.
-- **gate и hub-x зависят от языка** (центр карты в разном x): сдвигается только правая
-  (hard skills) половина, `x ≥ gate`; секционные заголовки («C++ syntax», «OS», …) сидят
-  левее gate и не сдвигаются. «Локти» центральной магистрали (на уровне узла «Hard skills»)
-  при вертикальных сдвигах не двигаются, иначе рвётся центральная линия карты.
-  Ориентиры текущего состояния: RU gate=2900 hub-x=2945.25; EN gate=3000 hub-x=3044.52;
+- **The vertical structure of the maps is identical across languages** — the stage frames and all
+  rows share y-coordinates. Only x/width differ (translation changes node widths). So vertical
+  shifts port one-to-one along the same y-thresholds.
+- **gate and hub-x are language-dependent** (the map center is at a different x): only the right
+  (hard skills) half shifts, `x ≥ gate`; section headers ("C++ syntax", "OS", …) sit left of the
+  gate and don't shift. The "elbows" of the central trunk (at the level of the "Hard skills" node)
+  must not move during vertical shifts, or the map's central line breaks.
+  Current-state reference points: RU gate=2900 hub-x=2945.25; EN gate=3000 hub-x=3044.52;
   ZH gate=2900 hub-x=2680.04.
-- **id узлов вверху карты (синтаксис, шаблоны, библиотеки) общие для всех языков**, а внизу
-  разошлись. Известные расхождения RU→EN/ZH: `242→241` (Практики разработки), `275→274`
-  (Профайлеры), `277→276` (Промышленные стандарты), `341→340` (Многопоточность),
-  `379→378` (Безопасность). Родителя нового узла искать по этой карте, не вслепую по id.
-- Новые узлы копируются из русской карты целиком и переносятся жёстко на
-  `delta = позиция_родителя(target) − позиция_родителя(RU)`; текст берётся из перевода,
-  ширина — под перевод; рёбра — те же waypoint'ы + delta; `source/target` дивергентных id
-  перемаппить. После — нормализация точек крепления.
-- **Китайские узлы шире** (формат «中文（English）»), поэтому отдельные колонки может
-  потребоваться сдвинуть вправо, чтобы они не наезжали на соседей; проверять поиском наложений.
+- **Node ids in the upper part of the map (syntax, templates, libraries) are shared across
+  languages**, but they diverge lower down. Known RU→EN/ZH divergences: `242→241` (Dev practices),
+  `275→274` (Profilers), `277→276` (Industrial standards), `341→340` (Multithreading),
+  `379→378` (Security). Find a new node's parent by this map, not blindly by id.
+- New nodes are copied whole from the Russian map and translated rigidly by
+  `delta = parent_position(target) − parent_position(RU)`; the text comes from the translation,
+  the width is fit to the translation; edges reuse the same waypoints + delta; remap the
+  `source/target` of divergent ids. Then normalize the attachment points.
+- **Chinese nodes are wider** (the "中文（English）" format), so individual columns may need to
+  be shifted right so they don't overlap their neighbors; verify with the overlap check.
 
-## Открытые вопросы
+## Open questions
 
-- **Судьба Miro.** Miro-доски (внешние) не синхронизируются с draw.io и отстают; в README
-  всех языков они помечены как устаревшие. План при желании: посмотреть трафик GoatCounter
-  `/goto/miro-*` vs `/goto/svg-*`; при малом трафике повесить на досках баннер «карта переехала»
-  и перенаправить `goto/miro` на SVG-просмотрщик (ссылки не ломать).
-- **Актуальные задачи владельца — в [TODO.md](TODO.md)**; дублировать их здесь не нужно,
-  сверяйтесь напрямую.
+- **The fate of Miro.** The Miro boards (external) don't sync with draw.io and have fallen behind;
+  they are marked obsolete in the README of every language. Optional plan: check GoatCounter
+  traffic for `/goto/miro-*` vs `/goto/svg-*`; if traffic is low, put a "the map has moved" banner
+  on the boards and redirect `goto/miro` to the SVG viewer (without breaking links).
+- **The owner's current tasks are in [TODO.md](TODO.md)**; no need to duplicate them here,
+  check it directly.
