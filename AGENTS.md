@@ -56,6 +56,34 @@ current tasks live in [TODO.md](TODO.md).
 > Save with a `StreamWriter` using `UTF8Encoding($false)` (no BOM). The English map is pure
 > ASCII and is unaffected; the Chinese map is affected.
 
+## Editing via the draw.io MCP (alternative to the CLI)
+
+This environment also exposes a **draw.io MCP server** (tools named `mcp__drawio__*`) that
+drives a **live draw.io instance** directly — read the model by cell id, edit/add/delete
+cells and edges, and export. It was added recently and hadn't been used before; prefer it
+when an instance is connected, and fall back to the CLI pipeline above when it isn't.
+
+- **Check connection first:** `list-documents`. An **empty result means no draw.io is
+  connected** — use the CLI pipeline instead. (You need the draw.io desktop app open with the
+  file; it registers itself with the MCP bridge.)
+- **Read the model instead of grepping XML:** `list-pages`, then `list-paged-model` with a
+  `filter` (by `cell_type`, `ids`, `parent_ids`/`layer_ids`, or attribute/style expressions)
+  to locate cells. `get-selected-cell` reads whatever the owner has selected in the editor —
+  handy when they say "this box".
+- **Edit by id:** `edit-cell` (x / y / **width** / height / style / text — e.g. widen a box
+  whose label overflows), `edit-edge` (waypoints, source/target, style), plus `add-rectangle`,
+  `add-cell-of-shape`, `add-edge`, `delete-cell-by-id`, `set-cell-parent`.
+- **Render for verification:** `export-diagram` (`format=svg|png|xml`; set `background=#ffffff`
+  and `crop=true`, or `selection_only=true` for a quick region check). This replaces the
+  headless-Edge crop step. Note the export's `background` is a solid color, **not** the
+  `light-dark(...)` CSS the saved file needs — see the layout rules below.
+- **Persistence:** MCP edits mutate the *live* document; the file on disk changes only when
+  draw.io saves. Don't treat a change as landed in `roadmap.drawio.svg` until it's saved —
+  verify `LastWriteTime` / re-extract the `content` attribute before relying on it.
+- **Same rules apply:** the MCP changes *how* you edit, not *what* a valid edit is — the
+  header date, background style, stage-frame growth, and attachment-point normalization in
+  "Map layout rules" still hold.
+
 ## Map layout rules
 
 - **Update the date in the header on every map edit.** The header has a box
