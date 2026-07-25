@@ -15,20 +15,23 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 3. :space_invader: [C++ - 这不是火箭科学](FunCpp.md)
 4. :clipboard: [C++ 的应用领域](AreasOfApplication.md)
 5. :ghost: [C++ 的神话和传说](Mythbusters.md)
-6. :chart_with_upwards_trend: [开发者评级体系概述 ](Grades/Overview.md)
-7. :mortar_board: [如何学习？](HowToStudy.md)
-8. :books: [关于 C++ 的书籍和其他资源](Books/Overview.md)
-9. :telescope: [宠物项目](PetProjects.md)
-10. :triangular_ruler: [工具](Tooling.md)
-11. :gem:  [更多的 C++ 资源/社区等](CommunitySources.md)
+6. :robot: [C++ 开发者与人工智能](AI.md)
+7. :chart_with_upwards_trend: [开发者评级体系概述 ](Grades/Overview.md)
+8. :mortar_board: [如何学习？](HowToStudy.md)
+9. :books: [关于 C++ 的书籍和其他资源](Books/Overview.md)
+10. :telescope: [宠物项目](PetProjects.md)
+11. :triangular_ruler: [工具](Tooling.md)
+12. :package: [流行的库与框架](Libraries.md)
+13. :scales: [编码标准与合规要求](Compliance.md)
+14. :gem:  [更多的 C++ 资源/社区等](CommunitySources.md)
 
 ## :milky_way: 路线图
 
 路线图提供以下格式：
 
 * :arrow_forward: [draw.io（源文件，可编辑）](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=zh)
-* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=zh)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=zh)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=zh) — :warning: 已过时，不再同步（最后更新约 2026 年 7 月）
 
 每种语言的路线图都是一个 `roadmap.drawio.svg` 文件——您看到的图像和可编辑的 [draw.io](https://www.drawio.com) 源文件合二为一。有关如何查看和编辑的说明，请参见[此处](Graph/README.md)。
 

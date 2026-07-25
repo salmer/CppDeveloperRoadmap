@@ -32,8 +32,8 @@
 Дорожная карта представлена в следующих форматах:
 
 * :arrow_forward: [draw.io (исходник, редактируемый)](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=ru)
-* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=ru)
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=ru)
+* :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=ru) — :warning: устарело, больше не синхронизируется (последнее обновление ~июль 2026)
 
 Дорожная карта — это один файл `roadmap.drawio.svg` на язык: изображение и редактируемый исходник [draw.io](https://www.drawio.com) в одном файле. Как её просматривать и редактировать, описано [здесь](./Graph/README.md)
 

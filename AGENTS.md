@@ -1,268 +1,147 @@
-# Заметки для ИИ-агентов: работа над дорожной картой
-
-Этот файл — журнал работ и инструкция для ИИ-агентов (и людей), продолжающих улучшение дорожной карты. Обновляйте его при каждом значимом изменении.
-
-> Человекочитаемый перечень всех правок (для ручного переноса в другие языки) — в [ROADMAP-CHANGES-RU.md](ROADMAP-CHANGES-RU.md).
-
-> **ВАЖНО: карту редактирует и сам владелец репозитория, вручную в draw.io.**
-> Перед любой правкой заново извлекайте XML из `Russian/Graph/roadmap.drawio.svg` —
-> нельзя переиспользовать XML, извлечённый в прошлой сессии, иначе чужие правки будут затёрты.
-> Перед записью файла сверяйте `LastWriteTime`: если он новее вашей копии — перечитывайте.
-
-## Соглашения репозитория
-
-- **Сообщения коммитов — только на английском.** Содержимое статей и карты ведётся
-  на русском/английском/китайском, но история git — англоязычная.
-- Ветка `main` — основная; работать через отдельные ветки и pull request'ы.
-- Имена файлов статей и URL менять нельзя: на них ссылаются извне (TODO, п. про совместимость).
-
-## Устройство карты (важно понимать перед правками)
-
-- Карта каждого языка — один файл `<Язык>/Graph/roadmap.drawio.svg`: SVG-изображение со **встроенным исходником draw.io** в атрибуте `content` корневого тега `<svg>` (несжатый mxfile XML).
-- **Нельзя редактировать SVG-часть руками** — только через draw.io (десктоп/веб/VS Code-расширение) или через цикл «извлечь XML → править XML → пересобрать через draw.io CLI».
-- Легенда цветов (fillColor): Optional `#CCEEFF`, Junior `#96BB7C`, Middle `#FAD586`, Senior `#BBCCEE`, розовые подсказки `#FFD5E4`, серые боксы этапов `#F5F5F5`.
-- Внешние ссылки на карту идут через редиректы `goto/*.html` (drawio/miro/svg) со счётчиком GoatCounter — имена файлов и URL менять нельзя (TODO.md, п.6).
-
-### Проверенный конвейер правок через CLI (Windows)
-
-1. Извлечь XML: атрибут `content` из `<svg>` (PowerShell: `([xml](Get-Content $svg -Raw)).svg.content`).
-2. Править XML (текстовые правки, новые узлы `mxCell` + рёбра). Новым узлам давать строковые id с префиксом (использован `n900`–`n914`), чтобы не конфликтовать с числовыми.
-3. Экспорт: `draw.io.exe -x -f svg -e -u --svg-theme auto -o out.drawio.svg in.drawio` (draw.io 30.2.6, `%LOCALAPPDATA%\Programs\draw.io\`).
-4. **Обязательно**: CLI ставит прозрачный фон — вернуть в SVG-теге `style="background: #ffffff; background-color: light-dark(#ffffff, #121212); color-scheme: light dark;"`.
-5. Верификация: рендерить SVG в **headless Edge** (`msedge --headless=new --screenshot=... --window-size=...` + HTML-обёртка с окнами-панелями в нужные области). Интерактивные скриншоты браузера на этом SVG (5500×15200 px) виснут.
-
-### Дата в шапке — обновлять при каждой правке карты
-
-В шапке карты есть бокс «Последнее обновление: ДД.ММ.ГГГГ» (id `n1100`, добавлен по ревью).
-**После любой правки карты обнови в нём дату** на актуальную. Бокс намеренно со светлой
-заливкой `#FFF5EB` (не голый текст) — иначе чёрный текст был бы не виден в тёмной теме
-(SVG использует `light-dark()` фон). То же правило для любых новых текстовых подписей:
-голый `fontColor=#000000` без светлого бокса нечитаем на тёмном фоне.
-
-### Рамки этапов: полоса заголовка ~37px
-
-У всех рамок «N этап» (id 2–11) верхнее поле до первого узла — ровно **~37px** (заложенная
-в дизайне полоса под подпись; исключение — рамка 2, там 61px). Подпись имеет
-`verticalAlign=top`, то есть сидит в этой полосе. Отсюда предел на размер шрифта подписи:
-**максимум ~28px** влезает без сдвига узлов; 40px (пробовал по ревью) вылезал на первый ряд
-в 4 рамках. Хочешь крупнее 28 — придётся расширять полосу во всех рамках (сдвиг всего
-содержимого вниз + рост высоты каждой рамки), это несоразмерно. Для заметности вместо
-размера используй `fontStyle=1` (жирный) — высоту не меняет.
-
-### Известные грабли
-
-- **PNG-экспорт draw.io CLI на этом файле глючит**: контент неравномерно смещается по вертикали. Для проверки рендера PNG-экспорту доверять нельзя — только браузерный рендер SVG.
-- Рёбра в карте имеют явные waypoint-массивы (`<Array as="points">`), вертикальные «шины» (например, x=3635.25 у библиотек, x=3970.6 у «Работы с исходным кодом», x=4240.6 у отладчика). Новые рёбра строить по тому же паттерну; горизонтальные сегменты вести в «пустых полосах» между рядами боксов (шаг рядов 60 px, высота бокса 30 px).
-- В тексте узлов переносы строк — это `&#xa;` в атрибуте `value`.
-
-## Сделано 2026-07-11 — ТОЛЬКО в русской карте (`Russian/Graph/roadmap.drawio.svg`)
-
-Пакеты правок «4–6» (безопасные, без изменения структуры знаний):
-
-### Опечатки и язык
-- «Таблица вирутальных методов» → «виртуальных» (id 122)
-- «Эмоциональный интелект» → «интеллект» (id 23)
-- «Переговорческие навыки» → «Переговорные навыки» (id 43)
-- «не стоит ударятся» → «ударяться» (id 81)
-- «Какие книги стоить почитать?» → «стоит» (id 400, вводный текст карты)
-- Латинская «C» в «Cпокойно реагировать…» → кириллическая «С» (id 79)
-- Убрано задвоенное «и и» в подсказке про редакторы (id 190)
-
-### Устаревшие инструменты
-- Atom (мёртв с 2022) убран из подсказок id 187 и id 190 → Notepad++/Sublime Text и VS Code/Sublime Text/Zed
-- Eclipse убран из подсказки про IDE (id 185); «Clion» → «CLion»; добавлен VS Code
-- SVN/Mercurial/tensorflow уже были помечены Optional — правка не потребовалась
-
-### Исправлены названия библиотек
-- `pybindll` → `pybind11` (id 216), `ranges_v3` → `range-v3` (id 218)
-
-### Новые узлы (все Optional `#CCEEFF`, id n900–n914 с рёбрами)
-- **LLDB** (n900) — под GDB/WinDbg у «Отладчика» + стрелка от розовой подсказки про CLI-отладчики
-- **Compiler Explorer (godbolt.org)** (n903) — потомок «Работы с исходным кодом», под «Линтерами»
-- **Valgrind** (n905), **perf / VTune** (n906) — потомки «Профайлеров»
-- **Asio** (n909), **nlohmann/json** (n911) — в «Популярных библиотеках»
-- **google benchmark** (n913) — во «Фреймворках»
-
-Верифицировано: пиксельный diff старого/нового рендера + визуальный осмотр всех изменённых областей; тёмная тема (light-dark) работает.
-
-## Сделано 2026-07-12 — структурные пакеты, ТОЛЬКО в русской карте
-
-### Пакет «Современный C++» (id n920–n943)
-- **Стандарты**: узел «C++0x» переименован в **«C++26 (newest)»** (Optional), «newest» → **«C++23»** (Senior). Порядок на карте: 11/14, 17, 20, 23, 26 ✓
-- **Move-семантика** (Middle) — новая ветка в «Концепциях языка»: «Категории значений (lvalue/rvalue)», «std::move / std::forward», «Perfect forwarding» (Senior)
-- **Concepts (C++20)** (Middle) — в «Шаблонах», под SFINAE
-- Стандартная библиотека — добавлены как дети соответствующих узлов: «std::format / std::print» → у «Потока ввода/вывода», «std::span / std::string_view» → у «Контейнеров», «std::ranges» (Senior) → у «Алгоритмов»
-- Обработка ошибок: «std::optional / std::expected» (Middle), «noexcept» (Middle), «std::error_code» (Optional, ребёнок «Кодов возврата»)
-- Многопоточность (раздел ОС): «std::atomic, модель памяти C++» (Senior), «condition_variable», «future / promise / async» (Middle), «jthread (C++20)» (Optional)
-- НЕ добавлены (решение отложено, чтобы не перегружать «Концепции языка»): `constexpr`/`consteval`, Coroutines, Modules — см. «Осталось»
-
-### Пакет «AI-секция» (id n944–n955, TODO.md п.3)
-Блок «AI-инструменты» (Junior) — ребёнок «Практик разработки»: «AI-ассистенты (Copilot, Claude Code, Cursor)», «Верификация сгенерированного кода», «Политика компании и конфиденциальность» (все Junior), «Лицензионные риски генерируемого кода» (Middle), «Локальные модели» (Optional) + розовая подсказка «AI может генерировать правдоподобный, но неверный код — проверяйте и тестируйте всё. Знание C++ обязательно».
-
-### Пакет «Регуляторика и безопасность» (id n956–n965, TODO.md п.4)
-- «Промышленные стандарты»: «MISRA» → «MISRA C++:2023»; добавлены (все Optional): «EU Cyber Resilience Act (CRA)», «SBOM», «IEC 62304 (медицина)», «ISO 26262 (автомобили)», «DO-178C (авиация)»
-- «Безопасность» (раздел ОС): «Уязвимости: buffer overflow, use-after-free» (Middle), «Санитайзеры (ASan / TSan / UBSan)» (Middle), «Fuzzing» (Optional), «CERT C++ / CWE» (Optional) + подсказка про тренд memory safety (регуляторы США/ЕС)
-
-Верифицировано: headless-Edge-рендер всех 9 изменённых областей — узлы, рёбра и подсказки без наложений.
-
-## Сделано 2026-07-20 — по запросам из GitHub issues, ТОЛЬКО в русской карте
-
-- **«constexpr / consteval»** (Middle, id n1000) — в «Концепциях языка», между ADL и веткой move-семантики. Закрывает issue **#106** (после переноса в en/zh можно закрывать со ссылкой на коммит).
-- **«OpenMP / TBB»** (Optional, id n1002) — в «Многопоточности» раздела ОС, под «jthread (C++20)». Закрывает issue **#53** (просили именно optional-узел про OpenMP; TBB добавлен как родственный task-based фреймворк).
-
-## Сделано 2026-07-20 (позже) — компоновка
-
-Узел «Compiler Explorer (godbolt.org)» не влезал: оказался в зазоре между рамками «1 этап» и «3 этап».
-Рамка «1 этап» (id 6) увеличена по высоте на 60 px (514.92 → 574.92), всё ниже неё в правой половине
-карты сдвинуто вниз на 60 px: условие сдвига `x >= 2900 && y >= 5231` (238 узлов, 403 точки рёбер).
-**Исключение:** точки `(2945.25, 6375.17)` — «локти» магистрали на уровне узла «Hard skills» (id 14),
-который не двигается; без исключения рвётся центральная линия карты (4 ребра: 679, 690, 703, 737).
-Скрипт: `scratchpad/shift.ps1`. Левая (soft skills) половина не двигалась. Высота карты 15182 → 15242 px.
-
-Затем разгружена область «Практики разработки» (после вставки AI-блока там всё слиплось):
-подсказка n955 перевёрстана в 3 строки и сужена 560 → 430 (правым краем заходила на магистраль
-ветки «жизненный цикл» на x=4557); ветка «Анализаторы кода» и всё ниже сдвинуты на 150 px
-(`x >= 2900 && y >= 9280`, 138 узлов, 225 точек). Подсказка 297 «Не игнорируйте предупреждения…»
-лежит выше порога, но относится к «Анализаторам кода» — сдвинута отдельно.
-Порог 9280 выбран так, чтобы не задеть ветку «Понимание жизненного цикла» (её низ — 9233).
-Высота карты 15242 → 15392 px.
-
-**Грабли при таких сдвигах:** если двигаешь узел явно, а потом прогоняешь общее правило —
-узел сдвинется **дважды**. Так и вышло с 297 (уехал на 300 px и наехал на «Анализаторы кода»).
-Либо исключай такие узлы из общего прохода, либо сдвигай их после него.
-
-**Вторые грабли — рамки этапов.** Рамки «N этап» (id 2–11) — это обычные vertex'ы, а не
-контейнеры (`container=0`, дети не вложены). Если порог сдвига проходит *внутри* рамки,
-её содержимое уедет, а рамка останется прежнего размера, и узлы вылезут наружу.
-Так и вышло с рамкой «4 этап» (id 10). После любого сдвига проверяй: для каждой рамки
-низ рамки >= низа самого нижнего элемента внутри неё.
-
-## Сделано 2026-07-20 (ещё позже) — перенос AI-блока под CI/CD
-
-По просьбе владельца AI-блок переехал из промежутка «жизненный цикл / анализаторы»
-(там было тесно и не по смыслу) вниз, сразу после ветки CI/CD. Скрипт `scratchpad/move_ai.ps1`:
-1. откат сдвига −150 (`y >= 9430`) + отдельно узел 297 — старое место вернулось к исходному виду;
-2. `+420` для `y >= 10240` — освобождено место под CI/CD;
-3. высота рамки «4 этап» +420 (иначе содержимое вылезает, см. грабли выше);
-4. перенос 7 узлов блока (n944–n949, n955) на +1433.05 вместе с точками рёбер n978–n982;
-   у ребра n977 (242 → n944) сдвинут **только** локоть со стороны AI (y≈8865), локоть
-   со стороны «Практик разработки» (y≈8674) остался на месте.
-
-Высота карты 15392 → 15662 px.
-
-## Сделано 2026-07-20 (последнее) — точки крепления связей
-
-Наследие импорта из Miro: у связей стояли произвольные `exitX/exitY` и `entryX/entryY`
-(0.19, 0.3, 0.38, 0.62, 0.92…), из-за чего несколько связей выходили из разных точек одной
-грани и сходились веером. Скрипт `scratchpad/fix_edges.ps1` (`-Apply` для записи) пересчитывает
-крепление на середину грани, обращённой к линии:
-
-- сторона определяется по первой точке излома (для выхода) / последней (для входа);
-  если опорная точка внутри bbox узла — крепление не трогается (так сохранены осознанные
-  выходы «вниз», например у ветки «Безопасность»);
-- первый/последний сегмент выравнивается по горизонтали: y «локтя» подтягивается
-  к центру узла (в исходнике был сдвиг на 2–5 px);
-- связи со стилем `curved=1` (выноски-подсказки) пропускаются целиком.
-
-Итог: 159 точек выхода, 111 точек входа, 285 изломов. Состав карты не менялся.
-Скрипт идемпотентен — повторный прогон даёт 0 изменений.
-
-## Сделано 2026-07-20 (финал) — Coroutines и Modules
-
-Закрыт остаток пакета «Современный C++». Скрипт `scratchpad/add_coro.ps1`:
-1. `+130` для `y >= 3140` (291 узел, 486 точек, 4 локтя магистрали сохранены) — освобождено
-   место в колонке «Концепции языка» под два новых узла;
-2. высота рамки «3 этап» (id 4) +130;
-3. добавлены **«Coroutines (C++20)»** (Senior, `#BBCCEE`) и **«Modules (C++20)»**
-   (Optional, `#CCEEFF`) как дети «Концепций языка», ниже «Move-семантики».
-
-Разделение уровней: корутины реально применяются (asio, генераторы) — Senior;
-модули пока сырые в тулчейнах — Optional. Высота карты 15662 → 15792 px.
-
-После сдвига прогнана проверка всех рамок «N этап» (id 2–11) на вылезание содержимого —
-все 10 в порядке.
-
-## Сделано 2026-07-21 — приведение статей в соответствие карте (TODO п. 2.1)
-
-Разбор показал: статьи и карта расходились ровно в одном месте — **Tooling.md**. Остальные
-файлы (Grades/*, Books/*, Mythbusters, HowToStudy) описывают ожидания и литературу в общих
-терминах и карте не противоречат — их не трогали.
-
-Правки в `Russian/Tooling.md`:
-- **удалён раздел про Eclipse IDE** — карта его больше не рекомендует (мёртв для C++);
-  на его место добавлен **Xcode**, который в подсказке на карте есть, а в статье не был;
-- `JetBrains Clion` → `JetBrains CLion`, `Visual Code` → `Visual Studio Code`;
-- добавлен **WinDbg** (на карте есть в ветке «Отладчик», в статье не было); из описания LLDB
-  убрана фраза про отладчик Visual Studio под Windows — она дублировала новый пункт;
-- добавлен **фаззинг** (libFuzzer, AFL++) — на карте есть в ветке «Безопасность»;
-- добавлен раздел **«Тестирование и бенчмарки»** (GoogleTest, Catch2, Google Benchmark) —
-  на карте ветка «Фреймворки» есть, а статьи не отвечали, чем писать тесты, хотя грейд
-  Junior их требует;
-- добавлен раздел **«AI-инструменты»** (Copilot, Claude Code, Cursor, локальные модели)
-  плюс блок предупреждений — зеркалит ветку «AI-инструменты» на карте, включая пункты
-  про верификацию, политику компании и лицензионные риски.
-
-Все 12 новых URL проверены curl'ом — отвечают 200 (в репозитории есть workflow lychee).
-
-## Сделано 2026-07-21 (продолжение) — две новые статьи
-
-Закрыты три пробела, оставленные на решение владельца.
-
-**Новый файл `Russian/Libraries.md`** — «Популярные библиотеки и фреймворки». Зеркалит ветки
-«Популярные библиотеки» и «Фреймворки» с карты, сгруппировано по назначению: общего назначения
-(Boost, {fmt}, spdlog, range-v3), сеть и обмен данными (Asio, nlohmann/json, protobuf, gRPC,
-POCO), GUI (Qt — с отдельным предупреждением про лицензирование), вычисления и ML (OpenCV,
-Eigen, CUDA/OpenCL, LibTorch/TensorFlow), связка с другими языками (pybind11). Инструменты
-разработки намеренно не дублируются — есть перекрёстная ссылка на `Tooling.md`.
-
-**Новый файл `Russian/Compliance.md`** — «Стандарты кодирования и регуляторные требования».
-Закрывает и TODO п. 4 (MDR и приближающиеся требования). Разделы: стандарты кодирования
-(MISRA C++:2023 с пояснением, что в него влился AUTOSAR C++14; SEI CERT C++; Core Guidelines),
-функциональная безопасность (IEC 61508 как базовый, ISO 26262 / IEC 62304 + MDR / DO-178C),
-кибербезопасность (EU CRA, SBOM — SPDX и CycloneDX), что меняется в работе на практике
-и раздел «кому это действительно нужно» (важно: **не всем**, чтобы джуниоры не пугались).
-Проставлена пометка, что сроки и требования меняются и сверяться нужно с актуальными редакциями.
-
-**`Books/Middle.md`** — добавлена книга Джосаттиса «C++ Move Semantics: The Complete Guide»
-(leanpub.com/cppmove): ветка move-семантики на карте новая, а в книгах тема не была закрыта.
-
-**`Russian/README.md`** — обе новые статьи добавлены в список статей после «Инструментария».
-
-**Новый файл `Russian/AI.md`** — «C++ разработчик и искусственный интеллект». Закрывает TODO п. 3
-(«отдельная заметка про ИИ»). Тезис владельца — «ИИ никого не уберёт, хорошие инженеры нужны,
-модель генерирует только то, чему обучена» — взят за основу, но подан с калибровкой: есть
-отдельный раздел «что действительно меняется» (рутина обесценивается, планка входа выросла)
-и раздел «чего никто не знает» — чтобы статья не читалась как самоуспокоение. Ключевые
-C++-специфичные аргументы: перекос обучающих данных в сторону старого C++ (`new`/`delete`
-вместо умных указателей), UB не ловится тестами, время жизни объектов — самое частое место
-ошибок модели. Отдельный раздел про ловушку для новичков: главный риск не «отнимет работу»,
-а «помешает научиться».
-
-> При правке этой статьи держите в голове: её писала языковая модель — то есть заинтересованная
-> сторона. Формулировки намеренно сдержанные, без обещаний в обе стороны. Если будете
-> дополнять, лучше сохранить этот тон.
-
-Ссылки: все внешние URL проверены curl'ом (200), внутренние — существованием файлов.
-Якорные ссылки на разделы (`Tooling.md#...`) намеренно не используются — в репозитории нет
-ни одного прецедента, и lychee их не проверяет, так что опечатка осталась бы незамеченной.
-
-## Осталось сделать
-
-### 1. Перенести ВСЕ правки в английскую и китайскую карты
-`English/Graph/roadmap.drawio.svg` и `Chinese/Graph/roadmap.drawio.svg` **не тронуты** — там всё ещё Atom, Eclipse, pybindll, ranges_v3, C++0x; нет LLDB/godbolt/Valgrind/perf/Asio/nlohmann/benchmark, нет move-семантики/Concepts/std::ranges и т.д., нет AI-секции и регуляторики. Полный перечень правок — в [ROADMAP-CHANGES-RU.md](ROADMAP-CHANGES-RU.md). Структура и id узлов в этих файлах могут отличаться — сверять по текстам узлов, не по id. Русские тексты новых узлов переводить, названия библиотек/стандартов оставлять как есть. Артефакт кривых точек крепления (см. «точки крепления связей») там тоже есть — `fix_edges.ps1` применим как есть.
-
-### 2. Судьба Miro (решение отложено)
-Miro-доски (3 шт., внешние) не синхронизируются с drawio и уже отстают. План: посмотреть статистику GoatCounter `/goto/miro-*` vs `/goto/svg-*`; при малом трафике — баннер «карта переехала» на досках и перенаправить `goto/miro` на SVG-просмотрщик (ссылки не ломаются). Пока — ничего не делать.
-
-### 3. Английские и китайские статьи
-Все правки статей (2026-07-21) сделаны **только в русской версии**:
-- `English/Tooling.md` и `Chinese/Tooling.md` не тронуты — там всё ещё Eclipse, `Clion`,
-  нет WinDbg, фаззинга, разделов про тестирование и AI;
-- статей `Libraries.md`, `Compliance.md` и `AI.md` в English/ и Chinese/ нет вообще,
-  в их `README.md` соответственно нет и ссылок на них;
-- в `English/Books/Middle.md` и `Chinese/Books/Middle.md` нет книги по move-семантике.
-
-### 4. Задачи владельца — в TODO.md
-Актуальный список ведёт владелец репозитория в [TODO.md](TODO.md); дублировать его здесь не нужно — сверяйтесь с ним напрямую. На момент этой записи там среди прочего: рефакторинг диаграммы и приведение остальных файлов в соответствие ей, отдельная заметка про ИИ, испанская версия, совместимость ссылок на существующие документы и идея конвейера Mermaid.js → файлы перевода → draw.io.
-
-Из пунктов TODO уже закрыто картой: AI-секция (п. 3 — кроме отдельной заметки) и MDR/регуляторика (п. 4).
+# Notes for AI agents: working on the roadmap
+
+This file helps an AI agent (or a human) get up to speed on the repository quickly:
+how the map is structured, how to edit it safely, and how to port edits between languages.
+
+This is **not a changelog** — for what changed and when, see the git history; the owner's
+current tasks live in [TODO.md](TODO.md).
+
+> **IMPORTANT: the repository owner also edits the map by hand, in draw.io.**
+> Before any edit, re-extract the XML from `<Language>/Graph/roadmap.drawio.svg` —
+> do not reuse XML extracted in a previous session, or you will overwrite their changes.
+> Before writing the file, check `LastWriteTime`: if it's newer than your copy, re-read it.
+
+## Repository conventions
+
+- **Commit messages: English only.** Article and map content is maintained in
+  Russian/English/Chinese, but the git history is English.
+- `main` is the primary branch; work through separate branches and pull requests.
+- Article file names and URLs must not change — they are linked from outside.
+- Language versions: `Russian/` is the reference (edits are made here first), then ported to
+  `English/` (the root `README.md` is the English one) and `Chinese/`. There is no Spanish
+  version (`Spanish/`) yet; when one appears, everything is ported to it the same way
+  (see "Porting edits between languages").
+
+## How the map is structured
+
+- Each language's map is a single `<Language>/Graph/roadmap.drawio.svg` file: an SVG image with
+  the **embedded draw.io source** in the `content` attribute of the root `<svg>` tag
+  (uncompressed mxfile XML).
+- **Do not hand-edit the SVG part** — only via draw.io (desktop/web/VS Code extension) or through
+  the cycle "extract XML → edit XML → rebuild via the draw.io CLI".
+- Color legend (fillColor): Optional `#CCEEFF`, Junior `#96BB7C`, Middle `#FAD586`,
+  Senior `#BBCCEE`, pink hints `#FFD5E4`, gray stage boxes `#F5F5F5`,
+  header date box `#FFF5EB`.
+- External links to the map go through `goto/*.html` redirects (drawio/miro/svg) with a
+  GoatCounter counter — file names and URLs must not change.
+
+## The edit pipeline via the CLI (Windows)
+
+1. Extract the XML from `.drawio.svg` — the `content` attribute of the root `<svg>`.
+   **Only via UTF-8** (see "encoding gotcha" below).
+2. Edit the XML (text edits, new `mxCell` nodes + edges). Give new nodes string ids with a
+   prefix (e.g. `n900`+) so they don't collide with the numeric ones.
+3. Export: `draw.io.exe -x -f svg -e -u --svg-theme auto -o out.drawio.svg in.drawio`
+   (draw.io CLI, `%LOCALAPPDATA%\Programs\draw.io\`).
+4. **Required**: the CLI produces a transparent background — restore it in the SVG tag:
+   `style="background: #ffffff; background-color: light-dark(#ffffff, #121212); color-scheme: light dark;"`.
+5. Verification: render the SVG in **headless Edge**
+   (`msedge --headless=new --screenshot=... --window-size=...` plus an HTML wrapper with
+   panes over the regions of interest) and run a bbox overlap check (0 overlaps is mandatory).
+   Do not trust the interactive browser render or the PNG export on this large SVG.
+
+> **Encoding gotcha (important!):** the XML must be extracted via UTF-8:
+> `[IO.File]::ReadAllText($svg, [Text.Encoding]::UTF8)` + `LoadXml`, NOT `Get-Content -Raw`
+> (PowerShell 5 reads it with the system codepage and mangles Chinese into double mojibake).
+> Save with a `StreamWriter` using `UTF8Encoding($false)` (no BOM). The English map is pure
+> ASCII and is unaffected; the Chinese map is affected.
+
+## Editing via the draw.io MCP (alternative to the CLI)
+
+This environment also exposes a **draw.io MCP server** (tools named `mcp__drawio__*`) that
+drives a **live draw.io instance** directly — read the model by cell id, edit/add/delete
+cells and edges, and export. It was added recently and hadn't been used before; prefer it
+when an instance is connected, and fall back to the CLI pipeline above when it isn't.
+
+- **Check connection first:** `list-documents`. An **empty result means no draw.io is
+  connected** — use the CLI pipeline instead. (You need the draw.io desktop app open with the
+  file; it registers itself with the MCP bridge.)
+- **Read the model instead of grepping XML:** `list-pages`, then `list-paged-model` with a
+  `filter` (by `cell_type`, `ids`, `parent_ids`/`layer_ids`, or attribute/style expressions)
+  to locate cells. `get-selected-cell` reads whatever the owner has selected in the editor —
+  handy when they say "this box".
+- **Edit by id:** `edit-cell` (x / y / **width** / height / style / text — e.g. widen a box
+  whose label overflows), `edit-edge` (waypoints, source/target, style), plus `add-rectangle`,
+  `add-cell-of-shape`, `add-edge`, `delete-cell-by-id`, `set-cell-parent`.
+- **Render for verification:** `export-diagram` (`format=svg|png|xml`; set `background=#ffffff`
+  and `crop=true`, or `selection_only=true` for a quick region check). This replaces the
+  headless-Edge crop step. Note the export's `background` is a solid color, **not** the
+  `light-dark(...)` CSS the saved file needs — see the layout rules below.
+- **Persistence:** MCP edits mutate the *live* document; the file on disk changes only when
+  draw.io saves. Don't treat a change as landed in `roadmap.drawio.svg` until it's saved —
+  verify `LastWriteTime` / re-extract the `content` attribute before relying on it.
+- **Same rules apply:** the MCP changes *how* you edit, not *what* a valid edit is — the
+  header date, background style, stage-frame growth, and attachment-point normalization in
+  "Map layout rules" still hold.
+
+## Map layout rules
+
+- **Update the date in the header on every map edit.** The header has a box
+  "Last updated: DD.MM.YYYY" (id `n1100`). The box deliberately has a light fill
+  `#FFF5EB` (not bare text): black text on a bare background is invisible in dark theme, because
+  the SVG uses a `light-dark()` background. Same rule for any new labels — a bare
+  `fontColor=#000000` without a light box is unreadable on a dark background.
+- **Stage-frame title band ~37px.** For the "Stage N" frames (id 2–11) the top margin down to the
+  first node is ~37px (exception — frame 2, where it's 61px); the label sits in this band
+  (`verticalAlign=top`). Hence the limit on label font size: **~28px max** fits without shifting
+  nodes. For emphasis use `fontStyle=1` (bold) rather than a larger size — that doesn't change
+  the height.
+- **Stage frames are ordinary vertices, not containers** (`container=0`, children are not nested).
+  If you shift content vertically, the frame has to be grown separately, otherwise nodes spill
+  out. After any shift, check for each frame: frame bottom ≥ bottom of the lowest element inside it.
+- **Edge attachment points.** A legacy of the Miro import — some edges have arbitrary
+  `exitX/exitY`, `entryX/entryY`, so they leave one side of a node in a fan from different points.
+  Normalization: attach to the middle of the side facing the line (determine the side from the
+  first waypoint for the exit / the last for the entry); if the reference point is inside the
+  node's bbox, leave it alone (this preserves intentional downward exits); skip edges with the
+  `curved=1` style (hint callouts) entirely.
+- **Known layout gotchas:**
+  - edges have explicit waypoint arrays (`<Array as="points">`) and vertical "buses"
+    (trunk lines at a fixed x); build new edges to the same pattern, routing horizontal segments
+    in the empty bands between rows of boxes (row pitch 60px, box height 30px);
+  - if you move a node explicitly and then run a general shift rule, the node moves **twice**;
+    exclude such nodes from the general pass or shift them after it;
+  - line breaks in node text are `&#xa;` in the `value` attribute.
+
+## Porting edits between languages
+
+Edits are made in the Russian map first, then ported to the English and Chinese ones.
+
+- **The vertical structure of the maps is identical across languages** — the stage frames and all
+  rows share y-coordinates. Only x/width differ (translation changes node widths). So vertical
+  shifts port one-to-one along the same y-thresholds.
+- **gate and hub-x are language-dependent** (the map center is at a different x): only the right
+  (hard skills) half shifts, `x ≥ gate`; section headers ("C++ syntax", "OS", …) sit left of the
+  gate and don't shift. The "elbows" of the central trunk (at the level of the "Hard skills" node)
+  must not move during vertical shifts, or the map's central line breaks.
+  Current-state reference points: RU gate=2900 hub-x=2945.25; EN gate=3000 hub-x=3044.52;
+  ZH gate=2900 hub-x=2680.04.
+- **Node ids in the upper part of the map (syntax, templates, libraries) are shared across
+  languages**, but they diverge lower down. Known RU→EN/ZH divergences: `242→241` (Dev practices),
+  `275→274` (Profilers), `277→276` (Industrial standards), `341→340` (Multithreading),
+  `379→378` (Security). Find a new node's parent by this map, not blindly by id.
+- New nodes are copied whole from the Russian map and translated rigidly by
+  `delta = parent_position(target) − parent_position(RU)`; the text comes from the translation,
+  the width is fit to the translation; edges reuse the same waypoints + delta; remap the
+  `source/target` of divergent ids. Then normalize the attachment points.
+- **Chinese nodes are wider** (the "中文（English）" format), so individual columns may need to
+  be shifted right so they don't overlap their neighbors; verify with the overlap check.
+
+## Open questions
+
+- **The fate of Miro.** The Miro boards (external) don't sync with draw.io and have fallen behind;
+  they are marked obsolete in the README of every language. Optional plan: check GoatCounter
+  traffic for `/goto/miro-*` vs `/goto/svg-*`; if traffic is low, put a "the map has moved" banner
+  on the boards and redirect `goto/miro` to the SVG viewer (without breaking links).
+- **The owner's current tasks are in [TODO.md](TODO.md)**; no need to duplicate them here,
+  check it directly.
