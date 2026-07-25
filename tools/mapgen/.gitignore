@@ -4,3 +4,5 @@ examples/**/*.drawio.svg
 # local render helpers
 examples/**/*.png
 examples/**/*.html
+# python bytecode (extract.py imported by remap.py)
+__pycache__/

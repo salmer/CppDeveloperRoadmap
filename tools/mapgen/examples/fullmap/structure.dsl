@@ -1,429 +1,435 @@
 # Auto-extracted from roadmap.drawio.svg by tools/mapgen/extract.py.
 # centre / left / right anchors; pink boxes -> hints. See extract.py header.
 
-spine center=12
+spine center=cpp-developer
 
-[13] side=left grade=junior
-  [16] grade=junior
-    [73] grade=junior
-    [76] grade=junior
-    [74] grade=middle
-    [75] grade=senior
-  [17] grade=junior
-    [72] grade=junior
-    [71] grade=junior
-    [70] grade=junior
-    [69] grade=junior
-  [18] grade=junior
-    [64] grade=junior
-    [68] grade=middle
-    [65] grade=middle
-    [66] grade=middle
-    [67] grade=senior
-  [19] grade=junior
-    [59] grade=junior
-    [60] grade=junior
-    [61] grade=middle
-    [62] grade=middle
-    [63] grade=middle
-  [20] grade=junior
-    [54] grade=junior
-    [55] grade=junior
-    [56] grade=middle
-    [57] grade=middle
-    [58] grade=senior
-  [21] grade=junior
-    [43] grade=junior
-      [48] grade=junior
-      [49] grade=middle
-      [50] grade=middle
-        [53] grade=senior
-      [51] grade=senior
-      [52] grade=senior
-    [44] grade=junior
-    [45] grade=middle
-    [46] grade=middle
-    [47] grade=senior
-  [22] grade=junior
-    [34] grade=junior
-    [35] grade=middle
-    [36] grade=middle
-    [37] grade=middle
-    [38] grade=senior
-      [41] grade=senior
-      [42] grade=senior
-    [39] grade=senior
-    [40] grade=senior
-  [23] grade=junior
-    [32] grade=junior
-      [33] grade=junior
-    [31] grade=junior
-    [30] grade=junior
-    [29] grade=junior
-    [28] grade=middle
-  [24] grade=middle
-    [25] grade=senior
-    [26] grade=senior
-    [27] grade=senior
+[soft-skills] side=left grade=junior
+  [ability-to-learn] grade=junior
+    [ask-the-right-questions] grade=junior
+    [process-information] grade=junior
+    [experimenting] grade=middle
+    [manage-knowledge] grade=senior
+  [manage-mistakes] grade=junior
+    [analyze-mistakes] grade=junior
+    [admitting-your-mistakes] grade=junior
+    [notify-about-mistakes-in] grade=junior
+    [accept-criticism] grade=junior
+  [thinking] grade=junior
+    [logical] grade=junior
+    [systems] grade=middle
+    [critical] grade=middle
+    [creative] grade=middle
+    [strategic] grade=senior
+  [responsibility] grade=junior
+    [discipline] grade=junior
+    [persistence] grade=junior
+    [initiative] grade=middle
+    [independence] grade=middle
+    [problem-solving] grade=middle
+  [manage-resources] grade=junior
+    [time-management] grade=junior
+    [prioritization] grade=junior
+    [taking-decisions] grade=middle
+    [blind-typing] grade=middle
+    [multitasking] grade=senior
+  [communication] grade=junior
+    [negotiation] grade=junior
+      [ability-to-listen] grade=junior
+      [persuasion] grade=middle
+      [ability-to-communicate-ideas] grade=middle
+        [providing-information-to-people] grade=senior
+      [finding-compromises] grade=senior
+      [dispute-resolution] grade=senior
+    [english] grade=junior
+    [presentation] grade=middle
+    [written-communication-skill] grade=middle
+    [networking] grade=senior
+  [team-work] grade=junior
+    [understanding-the-distribution-of] grade=junior
+    [support-team-members] grade=middle
+    [work-in-a-distributed] grade=middle
+    [providing-feedback] grade=middle
+    [leadership] grade=senior
+      [assigning-and-clarifying-tasks] grade=senior
+      [planning-and-goal-setting] grade=senior
+    [mentoring] grade=senior
+    [delegation] grade=senior
+  [emotional-intelligence] grade=junior
+    [stress-resistance] grade=junior
+      [working-in-uncertainty] grade=junior
+    [adaptability] grade=junior
+    [open-mindedness] grade=junior
+    [concentration] grade=junior
+    [empathy] grade=middle
+  [understanding-the-development-context] grade=middle
+    [customer-focus] grade=senior
+    [technology] grade=senior
+    [trends] grade=senior
 
-[14] side=right grade=junior
-  [396] grade=junior
-    [89] grade=junior
-      [90] grade=junior
-      [92] grade=junior
-      [91] grade=junior
-      [93] grade=middle
-    [94] grade=junior
-      [96] grade=middle
-      [95] grade=middle
-    [97] grade=junior
-      [99] grade=middle
-      [98] grade=middle
-        [100] grade=middle
-    [101] grade=junior
-      [103] grade=junior
-      [105] grade=junior
-        [111] grade=junior
-        [112] grade=junior
-        [115] grade=middle
-      [104] grade=junior
-        [113] grade=junior
-      [106] grade=junior
-        [114] grade=junior
-        [109] grade=junior
-    [102] grade=junior
-      [107] grade=junior
-        [110] grade=junior
-      [108] grade=junior
-        [116] grade=junior
-    [119] grade=junior
-      [123] grade=junior
-        [129] grade=junior
-          [121] grade=junior
-        [126] grade=junior
-          [127] grade=junior
-          [122] grade=junior
-      [128] grade=middle
-      [130] grade=middle
-        [131] grade=middle
-    [120] grade=junior
-      [n936] grade=middle
-      [124] grade=junior
-        [125] grade=junior
-      [n937] grade=middle
-      [132] grade=optional
-        [n938] grade=optional
-    [135] grade=junior
-      [134] grade=junior
-      [136] grade=junior
-        [137] grade=junior
-        [138] grade=junior
-        [139] grade=middle
-        [140] grade=middle
-      [141] grade=middle
-      [142] grade=middle
-      [n1000] grade=middle
-      [143] grade=senior
-      [144] grade=optional
-      [n920] grade=middle
-        [n922] grade=middle
-        [n923] grade=middle
-        [n924] grade=senior
-      [n1005] grade=senior
-      [n1006] grade=optional
-    [145] grade=junior
-      [146] grade=junior
-        [n930] grade=middle
-      [150] grade=junior
-      [149] grade=junior
-        [n932] grade=middle
-      [148] grade=junior
-      [147] grade=junior
-        [n934] grade=senior
-      [151] grade=middle
-    [153] grade=junior
-      [154] grade=middle
-      [155] grade=middle
-        [158] grade=middle
-        [159] grade=middle
-      [156] grade=senior
-      [157] grade=senior
-      [n928] grade=middle
-    [173] grade=junior
-      [160] grade=junior
-      [161] grade=middle
-      [163] grade=middle
-      [162] grade=middle
-      [164] grade=middle
-      [165] grade=middle
-      [166] grade=middle
-    [167] grade=junior
-      [168] grade=junior
-      [169] grade=junior
-      [170] grade=middle
-      [171] grade=senior
-      [172] grade=optional
-  [395] grade=junior
-    [174] grade=junior
-      [175] grade=junior
-      [176] grade=junior
-      [177] grade=junior
-        [180] grade=junior
-      [178] grade=junior
-        [181] grade=junior
-        [182] grade=junior
-        [183] grade=optional
-        [184] grade=optional
-        [n900] grade=optional
-      [179] grade=middle
-      [n903] grade=optional
-    [191] grade=junior
-      [192] grade=junior
-        [193] grade=junior
-        [194] grade=junior
-        [195] grade=senior
-      [196] grade=optional
-    [199] grade=junior
-      [200] grade=middle
-      [201] grade=optional
-      [202] grade=optional
-    [203] grade=junior
-      [206] grade=optional
-      [207] grade=optional
-      [204] grade=optional
-      [205] grade=optional
-    [227] grade=junior
-      [212] grade=junior
-      [228] grade=optional
-    [208] grade=junior
-      [209] grade=middle
-      [210] grade=optional
-      [211] grade=optional
-      [213] grade=optional
-      [n909] grade=optional
-      [214] grade=optional
-      [215] grade=optional
-      [n911] grade=optional
-      [216] grade=optional
-      [217] grade=optional
-      [218] grade=optional
-      [219] grade=optional
-      [220] grade=optional
-    [221] grade=junior
-      [222] grade=middle
-      [223] grade=optional
-      [224] grade=optional
-      [n913] grade=optional
-      [225] grade=optional
-      [226] grade=optional
-  [394] grade=junior
-    [229] grade=junior
-      [230] grade=junior
-      [232] grade=junior
-      [231] grade=middle
-      [233] grade=middle
-    [235] grade=junior
-      [236] grade=optional
-        [239] grade=junior
-        [240] grade=optional
-      [237] grade=optional
-        [238] grade=optional
-    [241] grade=junior
-      [242] grade=junior
-        [243] grade=junior
-        [244] grade=junior
-          [245] grade=junior
-          [246] grade=junior
-          [247] grade=junior
-          [248] grade=junior
-          [249] grade=middle
-          [250] grade=middle
-          [251] grade=middle
-          [252] grade=middle
-        [253] grade=junior
-        [254] grade=junior
-          [255] grade=junior
-          [256] grade=middle
-        [257] grade=junior
-          [258] grade=junior
-          [259] grade=junior
-            [262] grade=junior
-            [263] grade=junior
-            [264] grade=junior
-            [265] grade=middle
-          [260] grade=junior
-          [261] grade=junior
-            [295] grade=junior
-          [266] grade=middle
-          [267] grade=middle
-          [268] grade=middle
-          [269] grade=senior
-          [270] grade=senior
-        [271] grade=middle
-          [272] grade=middle
-          [273] grade=middle
-            [274] grade=middle
-              [n905] grade=optional
-              [n906] grade=optional
-        [275] grade=optional
-          [297] grade=optional
-        [276] grade=optional
-          [277] grade=optional
-          [278] grade=optional
-          [n956] grade=optional
-          [n957] grade=optional
-          [n958] grade=optional
-          [n959] grade=optional
-          [n960] grade=optional
-      [279] grade=junior
-        [281] grade=optional
-        [280] grade=optional
-        [282] grade=optional
-      [283] grade=junior
-        [286] grade=junior
-          [287] grade=junior
-          [288] grade=junior
-        [284] grade=optional
-        [285] grade=optional
-      [n944] grade=junior
-        [n945] grade=junior
-        [n946] grade=junior
-        [n947] grade=junior
-        [n948] grade=middle
-        [n949] grade=optional
-      [289] grade=middle
-      [290] grade=middle
-    [298] grade=junior
-      [309] grade=middle
-        [311] grade=middle
-        [310] grade=middle
-        [312] grade=middle
-      [313] grade=junior
-        [314] grade=middle
-      [315] grade=middle
-      [299] grade=senior
-        [300] grade=senior
-        [301] grade=senior
-        [302] grade=senior
-        [303] grade=senior
-        [304] grade=senior
-        [305] grade=senior
-        [306] grade=senior
-        [307] grade=senior
-        [308] grade=senior
-      [316] grade=senior
-        [317] grade=senior
-        [318] grade=senior
-        [319] grade=senior
-        [320] grade=senior
-        [321] grade=senior
-      [322] grade=junior
-        [323] grade=junior
-        [324] grade=middle
-        [325] grade=senior
-  [339] grade=junior
-    [330] grade=junior
-      [331] grade=junior
-      [332] grade=junior
-      [333] grade=junior
-    [326] grade=junior
-      [327] grade=junior
-        [334] grade=junior
-        [336] grade=junior
-        [335] grade=middle
-        [337] grade=middle
-      [328] grade=middle
-      [329] grade=senior
-      [338] grade=senior
-    [346] grade=junior
-      [340] grade=junior
-        [341] grade=junior
-          [342] grade=junior
-          [343] grade=junior
-          [344] grade=junior
-          [345] grade=junior
-        [n940] grade=senior
-        [347] grade=middle
-          [348] grade=middle
-          [349] grade=middle
-          [350] grade=middle
-        [n941] grade=middle
-        [n942] grade=middle
-        [n943] grade=optional
-        [351] grade=middle
-          [352] grade=middle
-          [353] grade=middle
-        [n1002] grade=optional
-    [354] grade=junior
-      [355] grade=middle
-        [356] grade=middle
-        [357] grade=middle
-        [358] grade=middle
-          [359] grade=middle
-          [360] grade=optional
-    [361] grade=junior
-      [362] grade=junior
-        [364] grade=junior
-          [366] grade=junior
-          [367] grade=junior
-        [365] grade=middle
-      [363] grade=junior
-    [368] grade=middle
-    [369] grade=senior
-    [370] grade=optional
-      [371] grade=optional
-      [372] grade=optional
-      [374] grade=optional
-      [373] grade=optional
-        [375] grade=optional
-        [377] grade=optional
-        [376] grade=optional
-    [378] grade=optional
-      [n961] grade=middle
-      [n962] grade=middle
-      [379] grade=optional
-      [n963] grade=optional
-      [n964] grade=optional
-    [380] grade=optional
-      [381] grade=optional
-      [382] grade=optional
-    [383] grade=optional
-      [384] grade=optional
-      [385] grade=optional
-        [388] grade=optional
-        [389] grade=optional
-      [386] grade=optional
-        [390] grade=optional
-        [392] grade=optional
-        [391] grade=optional
-        [393] grade=optional
-      [387] grade=optional
+[hard-skills] side=right grade=junior
+  [language-syntax] grade=junior
+    [basic-operations] grade=junior stage=1
+      [arithmetic-operations] grade=junior
+      [logical-operations] grade=junior
+      [loops-for-while] grade=junior
+      [bitwise-operations] grade=middle
+    [functions] grade=junior stage=1
+      [operators] grade=middle
+      [lambda] grade=middle
+    [data-types] grade=junior stage=1
+      [static-typing] grade=middle
+      [dynamic-typing] grade=middle
+        [rtti] grade=middle
+    [pointers-and-references] grade=junior stage=1
+      [references] grade=junior
+      [smart-pointer] grade=junior
+        [unique-ptr] grade=junior
+        [shared-ptr] grade=junior
+        [weak-ptr] grade=middle
+      [memory-model] grade=junior
+        [lifetime-of-objects] grade=junior
+      [raw-pointers] grade=junior
+        [new-delete-operators] grade=junior
+        [memory-leakage] grade=junior
+    [codebase-structuring] grade=junior stage=1
+      [code-splitting-into-headers] grade=junior
+        [forward-declaration] grade=junior
+      [scope] grade=junior
+        [namespaces] grade=junior
+    [structures-and-classes] grade=junior stage=2
+      [object-oriented-programming] grade=junior
+        [static-polymorphism] grade=junior
+          [overloading-of-functions] grade=junior
+        [dynamic-polymorphism] grade=junior
+          [virtual-methods] grade=junior
+          [virtual-table] grade=junior
+      [the-rule-of-zero] grade=middle
+      [multiple-inheritance] grade=middle
+        [diamond-inheritance] grade=middle
+    [exception-handling] grade=junior stage=2
+      [std-optional-std-expected] grade=middle
+      [exceptions] grade=junior
+        [access-violation] grade=junior
+      [noexcept] grade=middle
+      [error-codes] grade=optional
+        [std-error-code] grade=optional
+    [language-concepts] grade=junior stage=3
+      [auto] grade=junior
+      [type-casting] grade=junior
+        [static-cast] grade=junior
+        [const-cast] grade=junior
+        [dynamic-cast] grade=middle
+        [reinterpret-cast] grade=middle
+      [undefined-behavior] grade=middle
+      [argument-dependent-lookup] grade=middle
+      [constexpr-consteval] grade=middle
+      [macros] grade=senior
+      [name-mangling] grade=optional
+      [move-semantics] grade=middle
+        [value-categories] grade=middle
+        [std-move-std-forward] grade=middle
+        [perfect-forwarding] grade=senior
+      [coroutines] grade=senior
+      [modules] grade=optional
+    [standard-library-stl] grade=junior stage=3
+      [iostream] grade=junior
+        [std-format-std-print] grade=middle
+      [date-time] grade=junior
+      [containers] grade=junior
+        [std-span-std-string] grade=middle
+      [iterators] grade=junior
+      [algorithms] grade=junior
+        [std-ranges] grade=senior
+      [multithreading] grade=middle
+    [templates] grade=junior stage=4
+      [variadic-templates] grade=middle
+      [the-template-specialization] grade=middle
+        [the-full-template-specialization] grade=middle
+        [the-partial-template-specialization] grade=middle
+      [type-traits] grade=senior
+      [sfinae] grade=senior
+      [concepts] grade=middle
+    [idioms] grade=junior stage=4
+      [raii] grade=junior
+      [pimpl] grade=middle
+      [non-copyable-non-moveable] grade=middle
+      [erase-remove] grade=middle
+      [copy-and-swap] grade=middle
+      [copy-on-write] grade=middle
+      [crtp] grade=middle
+    [standards] grade=junior stage=4
+      [cpp11-14] grade=junior
+      [cpp17] grade=junior
+      [cpp20] grade=middle
+      [cpp23] grade=senior
+      [cpp26] grade=optional
+  [language-tools] grade=junior
+    [working-with-source-code] grade=junior stage=1
+      [text-editors] grade=junior
+      [ide] grade=junior
+      [code-editors] grade=junior
+        [knowledge-of-features-and] grade=junior
+      [debugger] grade=junior
+        [understanding-of-debugger-messages] grade=junior
+        [debugging-symbols] grade=junior
+        [windbg] grade=optional
+        [gdb] grade=optional
+        [lldb] grade=optional
+      [linters] grade=middle
+      [compiler-explorer] grade=optional
+    [compilers] grade=junior stage=3
+      [basic-understanding-of-compilers] grade=junior
+        [compilation-of-sources-to] grade=junior
+        [the-object-files-linkage] grade=junior
+        [working-stages-of-compilers] grade=senior
+      [features-of-a-particular] grade=optional
+    [build-systems] grade=junior stage=5
+      [cmake] grade=middle
+      [makefile] grade=optional
+      [ninja] grade=optional
+    [package-managers] grade=junior stage=5
+      [conan] grade=optional
+      [nuget] grade=optional
+      [vcpkg] grade=optional
+      [spack] grade=optional
+    [working-with-libraries] grade=junior stage=5
+      [libraries-inclusion] grade=junior
+      [licensing] grade=optional
+    [libraries] grade=junior stage=5
+      [boost] grade=middle
+      [opencv] grade=optional
+      [poco] grade=optional
+      [protobuf] grade=optional
+      [asio] grade=optional
+      [grpc] grade=optional
+      [fmt] grade=optional
+      [nlohmann-json] grade=optional
+      [pybind11] grade=optional
+      [spdlog] grade=optional
+      [range-v3] grade=optional
+      [tensorflow] grade=optional
+      [opencl] grade=optional
+    [frameworks] grade=junior stage=5
+      [gtest-gmock] grade=middle
+      [qt] grade=optional
+      [catch2] grade=optional
+      [google-benchmark] grade=optional
+      [google-profiler] grade=optional
+      [pytorch-cpp] grade=optional
+  [common-skills] grade=junior
+    [computers-science] grade=junior stage=1
+      [data-structures] grade=junior
+      [boolean-algebra] grade=junior
+      [computers-science-algorithms] grade=middle
+      [finite-state-machines] grade=middle
+    [version-control-software] grade=junior stage=4
+      [distributed] grade=optional
+        [git] grade=junior
+        [mercurial] grade=optional
+      [centralized] grade=optional
+        [svn] grade=optional
+    [best-practices] grade=junior stage=4
+      [code-quality] grade=junior
+        [code-guidelines] grade=junior
+        [principles-of-development] grade=junior
+          [kiss] grade=junior
+          [dry] grade=junior
+          [yagni] grade=junior
+          [apo] grade=junior
+          [bduf] grade=middle
+          [composition-is-preferably-than] grade=middle
+          [occam-s-razor] grade=middle
+          [divide-and-conquer] grade=middle
+        [logging-and-telemetry] grade=junior
+        [code-review] grade=junior
+          [skill-to-read-existing] grade=junior
+          [skill-to-review-code] grade=middle
+        [lifecycle-stages-of-a] grade=junior
+          [implementation] grade=junior
+          [testing] grade=junior
+            [unit-tests] grade=junior
+            [integration-tests] grade=junior
+            [functional-tests] grade=junior
+            [performance-tests] grade=middle
+          [maintanance] grade=junior
+          [versioning] grade=junior
+            [backward-compatibility] grade=junior
+          [software-architecture-and-components] grade=middle
+          [components-integration] grade=middle
+          [deployment] grade=middle
+          [collecting-requirements] grade=senior
+          [end-of-a-software] grade=senior
+        [code-analyzers] grade=middle
+          [static-analyzers] grade=middle
+          [dynamic-analyzers] grade=middle
+            [profilers] grade=middle
+              [valgrind] grade=optional
+              [perf-vtune] grade=optional
+        [cpp-core-guidelines] grade=optional
+          [microsoft-gsl] grade=optional
+        [industrial-standards] grade=optional
+          [misra-cpp-2023] grade=optional
+          [autosar] grade=optional
+          [eu-cyber-resilience-act] grade=optional
+          [sbom] grade=optional
+          [iec-62304] grade=optional
+          [iso-26262] grade=optional
+          [do-178c] grade=optional
+      [command-line] grade=junior
+        [powershell] grade=optional
+        [batch] grade=optional
+        [bash] grade=optional
+      [ci-cd] grade=junior
+        [creation-of-a-software] grade=junior
+          [documentation] grade=junior
+          [installer-package] grade=junior
+        [trunk-based-development] grade=optional
+        [zero-downtime-deployment] grade=optional
+      [ai-tools] grade=junior
+        [ai-assistants] grade=junior
+        [verifying-generated-code] grade=junior
+        [company-policy-and-confidentiality] grade=junior
+        [licensing-risks-of-generated] grade=middle
+        [local-models] grade=optional
+      [usage-of-other-programming] grade=middle
+      [language-interoperability] grade=middle
+    [software-design] grade=junior
+      [design-patters] grade=middle stage=2
+        [structural] grade=middle
+        [behavioral] grade=middle
+        [creational] grade=middle
+      [oop] grade=junior stage=2
+        [solid] grade=middle
+      [uml] grade=middle stage=2
+      [architecture-styles] grade=senior
+        [component-based] grade=senior
+        [monolithic-application] grade=senior
+        [layered] grade=senior
+        [client-server] grade=senior
+        [microservices-architecture] grade=senior
+        [event-driven] grade=senior
+        [plug-ins] grade=senior
+        [rest] grade=senior
+        [service-oriented-architecture] grade=senior
+      [architecture-patterns] grade=senior
+        [mvc] grade=senior
+        [mvvm] grade=senior
+        [three-tier] grade=senior
+        [onion] grade=senior
+        [hexagon] grade=senior
+      [methodologies-of-development] grade=junior
+        [test-driven-development] grade=junior
+        [behavior-driven-development] grade=middle
+        [domain-driven-design] grade=senior
+  [operating-systems] grade=junior
+    [binary-units] grade=junior
+      [executable-file] grade=junior
+      [static-library] grade=junior
+      [dynamic-library] grade=junior
+    [memory] grade=junior
+      [memory-abstractions] grade=junior
+        [stack] grade=junior
+        [heap] grade=junior
+        [global-memory] grade=middle
+        [application-memory] grade=middle
+      [memory-alignment] grade=middle
+      [memory-management] grade=senior
+      [virtual-memory] grade=senior
+    [threads] grade=junior
+      [threads-multithreading] grade=junior
+        [errors] grade=junior
+          [dead-lock] grade=junior
+          [race-condition] grade=junior
+          [live-lock] grade=junior
+          [starvation] grade=junior
+        [std-atomic-cpp-memory] grade=senior
+        [concurrency] grade=middle
+          [mutexes] grade=middle
+          [semaphores] grade=middle
+          [lock-free] grade=middle
+        [condition-variable] grade=middle
+        [future-promise-async] grade=middle
+        [jthread] grade=optional
+        [event-handling] grade=middle
+          [sync] grade=middle
+          [async] grade=middle
+        [openmp-tbb] grade=optional
+    [process] grade=junior
+      [interprocess-communication] grade=middle
+        [shared-memory] grade=middle
+        [pipes] grade=middle
+        [serialization] grade=middle
+          [json] grade=middle
+          [xml] grade=optional
+    [network] grade=junior
+      [tcp-ip] grade=junior
+        [sockets] grade=junior
+          [tcp] grade=junior
+          [udp] grade=junior
+        [http] grade=middle
+      [osi] grade=junior
+    [file-system] grade=middle
+    [task-scheduler] grade=senior
+    [virtualization] grade=optional
+      [virtualbox] grade=optional
+      [vmware-workstation] grade=optional
+      [hyper-v] grade=optional
+      [virtualization-containers] grade=optional
+        [docker] grade=optional
+        [kubernetes] grade=optional
+        [cloud-services] grade=optional
+    [security] grade=optional
+      [vulnerabilities-buffer-overflow-use] grade=middle
+      [sanitizers] grade=middle
+      [encryption] grade=optional
+      [fuzzing] grade=optional
+      [cert-cpp-cwe] grade=optional
+    [multicpu-systems] grade=optional
+      [multicore-cpu] grade=optional
+      [numa] grade=optional
+    [input-output] grade=optional
+      [drivers] grade=optional
+      [audio] grade=optional
+        [directsound] grade=optional
+        [openal] grade=optional
+      [graphics] grade=optional
+        [directx] grade=optional
+        [opengl] grade=optional
+        [vulkan] grade=optional
+        [cuda] grade=optional
+      [printers] grade=optional
 
-hint [15] -> 13
-hint [78] -> 72, 71
-hint [80] -> 61
-hint [81] -> 62
-hint [84] -> 51, 52
-hint [85] -> 44
-hint [86] -> 47
-hint [87] -> 31
-hint [88] -> 28
-hint [118] -> 103, 112, 111
-hint [133] -> 131
-hint [152] -> 141
-hint [185] -> 176
-hint [186] -> 178
-hint [187] -> 175
-hint [188] -> 183, 184, n900
-hint [189] -> 181
-hint [190] -> 180
-hint [197] -> 196
-hint [198] -> 195
-hint [234] -> 231
-hint [291] -> 243
-hint [292] -> 243
-hint [293] -> 289
-hint [294] -> 290
-hint [296] -> 271
-hint [n955] -> n944
-hint [n965] -> n961
+hint [the-overloading-of-regular] -> operators
+hint [to-prevent-memory-leakage] -> references, shared-ptr, unique-ptr
+hint [it-s-preferred-to] -> diamond-inheritance
+hint [some-of-language-constructions] -> undefined-behavior
+hint [ability-to-gather-analyze] -> process-information
+hint [choose-one-of-the] -> ide
+hint [choose-one-of-the-2] -> text-editors
+hint [choose-one-of-the-3] -> knowledge-of-features-and
+hint [learn-about-common-errors] -> understanding-of-debugger-messages
+hint [reflection] -> analyze-mistakes, admitting-your-mistakes
+hint [study-how-to-use] -> debugger
+hint [the-ability-to-work] -> windbg, gdb, lldb
+hint [calmly-react-to-what] -> accept-criticism
+hint [the-compiler-performs-several] -> working-stages-of-compilers
+hint [take-challenging-tasks-in] -> initiative
+hint [each-compiler-has-its] -> features-of-a-particular
+hint [you-should-be-responsible] -> independence
+hint [carefully-read-the-terms] -> licensing
+hint [self-organization] -> manage-resources
+hint [the-ability-to-provide] -> providing-information-to-people
+hint [at-first-some-of] -> soft-skills
+hint [conflict-solving] -> finding-compromises, dispute-resolution
+hint [if-you-read-this] -> english
+hint [look-for-like-minded] -> networking
+hint [it-s-also-good] -> computers-science-algorithms
+hint [you-should-study-and] -> adaptability
+hint [experienced-developers-should-develop] -> empathy
+hint [to-configure-automated-code] -> code-guidelines
+hint [naming-conventions-tabs-vs] -> code-guidelines
+hint [do-not-ignore-warnings] -> code-analyzers
+hint [ai-can-generate-plausible] -> ai-tools
+hint [scripting-functional-sql-like] -> usage-of-other-programming
+hint [sometimes-it-s-needed] -> language-interoperability
+hint [memory-safety-requirements-are] -> vulnerabilities-buffer-overflow-use

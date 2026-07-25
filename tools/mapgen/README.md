@@ -64,15 +64,20 @@ A line-based text format. `#` starts a comment. Blank lines ignored.
 ### Nodes (indentation = hierarchy, 2 spaces per level)
 
 ```
-[id] grade=junior
-  [child_id] grade=optional
-    [grandchild_id] grade=middle
+[basic-operations] grade=junior stage=1
+  [arithmetic-operations] grade=optional
+    [loops-for-while] grade=middle
 ```
 
-- `[id]` — stable key; the display text comes from `<lang>.tsv` (`id <TAB> text`).
-  Ids never change, so they don't diverge across languages the way node ids do today.
+- `[id]` — a **word-id** (a short slug of the English name, e.g. `standard-library-stl`),
+  stable and language-neutral; the display text comes from `<lang>.tsv` (`id <TAB> text`).
+  Word-ids are the same key in every language, so translations can't drift apart the way
+  the maps' native numeric draw.io ids did (see "Cross-language id alignment").
 - `grade` — colour class: `junior` `#96BB7C`, `middle` `#FAD586`, `senior` `#BBCCEE`,
   `optional` `#CCEEFF` (matches the map legend). Defaults to `junior`.
+- `stage` — maturity band (1–5), inherited by the subtree (like `side`). Consecutive
+  same-stage subtrees within a section are wrapped by a grow-to-fit stage frame. Only the
+  shallowest node of each band needs the annotation.
 - Depth 0 nodes are roots (columns pack rightward from there).
 
 ### Hints — `hint [id] -> target, target, ...`
@@ -81,16 +86,24 @@ A pink annotation box, text from `<lang>.tsv` (auto-wrapped, CJK-aware). Drawn r
 its targets with a curved arrow to each. Example:
 
 ```
-hint [h_cmdline] -> windbg, gdb, lldb
+hint [choose-one-of-the] -> windbg, gdb, lldb
 ```
 
-### Frames — `frame [id] title=<key> [contains=a,b]`
+### Stage frames — automatic from `stage=`
 
-A stage box drawn behind the nodes, grown to fit. `title` is a translation key.
-Without `contains`, it encloses everything; with it, only those roots' subtrees.
+Nodes carrying a `stage=N` (inherited by the subtree) are wrapped in a grey `#F5F5F5`
+box grown to fit, one per **(section, stage)** group — the same banding the hand-drawn
+map uses. Titles come from the `stage1`..`stage5` tsv keys (`1 step` / `1 этап` / `步骤 1`),
+which `extract.py` reads from the map's frames. A gap is inserted between stage bands so
+the boxes don't touch. No directive is needed — just annotate the subtree roots.
+
+### Explicit frames — `frame [id] title=<key> [contains=a,b]`
+
+A box drawn behind the nodes, grown to fit. `title` is a translation key. Without
+`contains`, it encloses everything; with it, only those roots' subtrees.
 
 ```
-frame [f5] title=stage5
+frame [libs] title=libraries contains=boost,opencv
 ```
 
 ### Spine — `spine [center=<id>] [hubx=<x>] [gate=<x>] [header=<key>]`
@@ -120,20 +133,63 @@ spine hubx=460 gate=420 header=hardskills   # pinned hub-x + gate guide (right s
 ## Extracting a DSL from an existing map
 
 `extract.py` reverses a `roadmap.drawio.svg` into `structure.dsl` + `<lang>.tsv` (BFS tree
-from the centre/left/right anchors, grades from fill, pink boxes → hints; handles
-link-bearing `UserObject` nodes). Run once per language:
+from the centre/left/right anchors, grades from fill, `stage` from the `#F5F5F5` frames,
+pink boxes → hints; handles link-bearing `UserObject` nodes).
+
+The canonical structure is built from the **EN** map with `--slugs`, which assigns the
+word-ids and writes a `words.tsv` bridge (word → EN numeric id). Other languages are then
+keyed to those same word-ids — ZH shares EN's numeric ids so it is relabelled directly;
+RU used independent ids so it goes through `remap.py` (below):
 
 ```bash
-python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap
+# reference: word-id structure.dsl + en.tsv + words.tsv + chrome.tsv (+ stage annotations)
+python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o examples/fullmap --lang en --slugs
+# ZH shares EN's ids -> relabel text (--words) + match chrome by id (--chrome)
+python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o examples/fullmap --lang zh --words examples/fullmap/words.tsv --chrome examples/fullmap/chrome.tsv
+# RU diverged -> align + key by word (--words) + match chrome by position (--chrome)
+python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg --target Russian/Graph/roadmap.drawio.svg -o examples/fullmap --lang ru --words examples/fullmap/words.tsv --chrome examples/fullmap/chrome.tsv
 ```
 
-`examples/fullmap` is the result for the EN map (394 nodes + 28 hints). Not extracted yet:
-stage frames, the legend/title/About blocks, and a handful of isolated nodes.
+`examples/fullmap` holds one canonical word-id `structure.dsl` (394 nodes + 28 hints + 25
+stage annotations), the `chrome.tsv` layout (18 static blocks: title, legend,
+About/How-to/Feedback, repo link, date), `en.tsv`/`zh.tsv`/`ru.tsv` (all keyed by the same
+word-ids and chrome roles) and `words.tsv`. **Chrome text** is matched to the reference
+roles by draw.io id for ZH (shares ids) and by position for RU (ids diverged, layout kept).
+
+**Cross-language id alignment (measured by extracting all three maps).** Word-ids are the
+shared key now; this is *why* they were needed:
+
+- **EN and ZH share the draw.io id scheme** — identical topology and grades for every
+  shared id; ZH only lacks two nodes EN has (`n922`, `n923`). So ZH text maps straight onto
+  the word-ids via `words.tsv`.
+- **RU used independent ids** — the same numeric id mapped to a *different* node than in
+  EN/ZH (e.g. id `354` is "Process" in EN but "Асинхронные" in RU's own map). `remap.py`
+  (below) aligns RU to EN structurally and keys its text by word-id. `ru.remap.tsv` records
+  the RU-numeric → EN-numeric mapping it produced.
 
 ### Translation files `<lang>.tsv`
 
 One `id <TAB> text` per line, UTF-8 (no BOM). A missing id falls back to the id itself.
 Keys include node ids plus any `frame` title / `spine` header keys.
+
+### Re-keying a map onto the canonical ids
+
+When a map was drawn with independent ids (RU), `remap.py` aligns it to a reference map
+and rewrites its `<lang>.tsv` to the reference ids — drop-in for the canonical
+`structure.dsl`:
+
+```bash
+python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg \
+    --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap --lang ru
+```
+
+Both maps reconstruct to the same rooted tree (they describe the same roadmap), so
+children are paired in `(y, x)` order. Correctness is cross-checked three ways: **topology**
+(child counts must match at every node, else it aborts), **grade** (paired nodes must share
+a colour — a signal independent of position; RU came out 395/395), and **semantic** (paired
+texts are translations — eyeball `<lang>.remap.tsv`). Hints are matched by their translated
+target-set (group-paired in `(y, x)` order when several share a target). The RU re-key ran
+clean: 0 topology mismatches, 0 grade mismatches, 28/28 hints, 164 ids re-keyed.
 
 ## Examples
 
@@ -144,19 +200,25 @@ Keys include node ids plus any `frame` title / `spine` header keys.
 | `examples/libraries` | frame grow-to-fit, two parents, 3rd-level sub-branches |
 | `examples/spine` | pinned trunk (hub-x) + left-of-gate header + right-half reflow |
 | `examples/bilateral` | two-sided spine: left mirror + **computed per-language hub-x** |
-| `examples/fullmap` | the whole EN map extracted end-to-end (centre node + 394 nodes + hints) |
+| `examples/fullmap` | whole map end-to-end: word-id structure + stages + `en`/`zh`/`ru` tsv |
 
 ## Known gaps (before this could replace the hand workflow)
 
-1. **Decorative content not extracted.** The full-map extraction covers the skill tree +
-   hints; stage frames, the legend/title/About blocks and ~7 isolated nodes are not yet
-   pulled in. RU/ZH need `extract.py` run on their maps (upper-part ids are shared).
-2. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
+1. **Whole map generates.** Skill tree, hints, stage frames (from `stage=`) and the
+   top-left chrome — title banner, legend, About/How-to/Feedback, repo link, date — all
+   come out of the canonical source. Chrome layout is captured once in `chrome.tsv`
+   (language-neutral geometry+style); text is per-language in `<lang>.tsv`. The one thing
+   still hand-verified is that the tree's own gaps match the original closely enough.
+2. **All three languages are now on one canonical `structure.dsl`.** EN and ZH share
+   draw.io ids natively; RU is re-keyed by `remap.py` (validated clean). Remaining content
+   drift: ZH lacks two nodes EN has (`n922`, `n923`) — those fall back to id text until ZH
+   gains them.
+3. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
    on regeneration. Discipline: structure in `structure.dsl`, text in `<lang>.tsv`, never
    hand-edit the generated `.drawio.svg`.
-3. **Hardening.** Not yet run on all 457 nodes; needs stable output ordering (clean
+4. **Hardening.** Not yet run on all 457 nodes; needs stable output ordering (clean
    diffs), error handling, and integration into the repo build.
-4. **Platform.** Windows-only today (System.Drawing + draw.io CLI). Text metrics use a
+5. **Platform.** Windows-only today (System.Drawing + draw.io CLI). Text metrics use a
    font that covers Latin+Cyrillic+CJK (default `Microsoft YaHei`); the map itself uses
    Helvetica for Latin, so generated widths won't be pixel-identical to hand-drawn ones.
 

@@ -37,7 +37,7 @@ if(-not (Test-Path $structPath)){ throw "structure.dsl not found in $Dir" }
 
 # ---- layout constants (match the map's conventions; see README) ----
 $H=30; $PITCH=60; $GAP=40; $MARGIN=40; $FONTSIZE=20; $PADX=12
-$HINT_W=320; $HINT_GAP=90; $LINEH=24; $PADV=9; $SPINE_STUB=90
+$HINT_W=320; $HINT_GAP=90; $LINEH=24; $PADV=9; $SPINE_STUB=90; $STAGE_GAP=90
 $grades = @{ junior="#96BB7C"; middle="#FAD586"; senior="#BBCCEE"; optional="#CCEEFF" }
 $HINT_FILL = "#FFD5E4"; $FRAME_FILL = "#F5F5F5"
 
@@ -101,13 +101,28 @@ foreach($ln in $lines){
   $grade="junior"; if($ln -match 'grade=(\w+)'){ $grade=$Matches[1] }
   $parent=$null; if($depth -gt 0){ $parent=$stack[$depth-1] }
   $side="right"; if($ln -match 'side=(left|right)'){ $side=$Matches[1] } elseif($parent){ $side=$nodes[$parent].side }
-  $nodes[$id]=[ordered]@{ id=$id; grade=$grade; depth=$depth; parent=$parent; side=$side; children=@() }
+  $stage=$null; if($ln -match 'stage=(\d+)'){ $stage=[int]$Matches[1] } elseif($parent){ $stage=$nodes[$parent].stage }  # inherited like side
+  $nodes[$id]=[ordered]@{ id=$id; grade=$grade; depth=$depth; parent=$parent; side=$side; stage=$stage; children=@() }
   if($parent){ $nodes[$parent].children+=$id }
   $stack[$depth]=$id; $order+=$id
 }
 
 function XmlEsc([string]$s){ $s.Replace('&','&amp;').Replace('<','&lt;').Replace('>','&gt;').Replace('"','&quot;') }
 function Descendants($rootId){ $acc=@($rootId); foreach($c in $nodes[$rootId].children){ $acc += (Descendants $c) }; return $acc }
+function SectionOf($id){ $n=$nodes[$id]; while($n.parent -and $nodes[$n.parent].depth -ge 1){ $n=$nodes[$n.parent] }; return $n.id }  # depth-1 ancestor (the section strip)
+
+# ---- chrome: static top-left blocks (title/legend/About/date), language-neutral
+# layout from chrome.tsv, text per language from <lang>.tsv. Positioned absolutely. ----
+$chrome=@()
+$chromePath = Join-Path $Dir "chrome.tsv"
+if(Test-Path $chromePath){
+  foreach($l in [IO.File]::ReadAllLines($chromePath,[Text.Encoding]::UTF8)){
+    if($l.Trim() -eq "" -or $l.StartsWith("#")){ continue }
+    $p=$l -split "`t"   # role, id, x, y, w, h, link, style
+    $chrome += [ordered]@{ role=$p[0]; x=[double]$p[2]; y=[double]$p[3]; w=[double]$p[4]; h=[double]$p[5]
+      link=$(if($p.Count -gt 6){$p[6]}else{''}); style=$(if($p.Count -gt 7){$p[7]}else{''}) }
+  }
+}
 
 function Build-Lang([string]$lang){
   $trPath = Join-Path $Dir "$lang.tsv"
@@ -122,18 +137,24 @@ function Build-Lang([string]$lang){
     $nodes[$id].text=$x
     $nodes[$id].width=[math]::Ceiling((Measure-Width $x)+2*$PADX)
   }
-  # vertical layout: leaves sequential (row pitch), parent = avg(children)
-  $script:row=0
+  # vertical layout: leaves sequential (row pitch), parent = avg(children). A gap is
+  # inserted whenever consecutive leaves cross into a different stage frame group, so
+  # the '#F5F5F5' stage boxes get whitespace between them instead of overlapping.
   function Assign-Y($id){
     $n=$nodes[$id]
-    if($n.children.Count -eq 0){ $n.cy=$MARGIN+$script:row*$PITCH+$H/2; $script:row++ }
+    if($n.children.Count -eq 0){
+      $k = if($null -ne $n.stage){ "$(SectionOf $id)#$($n.stage)" } else { $null }
+      if($null -ne $k -and $null -ne $script:prevKey -and $k -ne $script:prevKey){ $script:stageOff += $STAGE_GAP }
+      $n.cy=$MARGIN+$script:row*$PITCH+$script:stageOff+$H/2; $script:row++
+      if($null -ne $k){ $script:prevKey=$k }
+    }
     else{ foreach($c in $n.children){ Assign-Y $c }; $n.cy=($nodes[$n.children[0]].cy+$nodes[$n.children[-1]].cy)/2 }
   }
   # left and right sections each stack from the top, so the two halves run in
   # parallel down the trunk instead of one long sequential column.
-  $script:row=0
+  $script:row=0; $script:stageOff=0.0; $script:prevKey=$null
   foreach($id in $order){ if($nodes[$id].depth -eq 0 -and $nodes[$id].side -ne 'left'){ Assign-Y $id } }
-  $script:row=0
+  $script:row=0; $script:stageOff=0.0; $script:prevKey=$null
   foreach($id in $order){ if($nodes[$id].depth -eq 0 -and $nodes[$id].side -eq 'left'){ Assign-Y $id } }
   # a centre node (spine center=<id>) sits on the trunk at the vertical middle;
   # both halves are shifted so their midpoints line up on it.
@@ -149,6 +170,15 @@ function Build-Lang([string]$lang){
     $centerY=$MARGIN+[math]::Max($rH,$lH)/2
     if($rb -gt $rt){ $dy=$centerY-($rt+$rb)/2; foreach($id in $order){ if($nodes[$id].side -ne 'left'){$nodes[$id].cy+=$dy} } }
     if($lb -gt $lt){ $dy=$centerY-($lt+$lb)/2; foreach($id in $order){ if($nodes[$id].side -eq 'left'){$nodes[$id].cy+=$dy} } }
+  }
+  # the full-width title banner sits across the very top; push the whole tree below it
+  # so the hard-skills top doesn't collide with the title.
+  if($chrome.Count -gt 0){
+    $titleBottom=0.0
+    foreach($c in $chrome){ if($c.w -gt 2000 -and ($c.y+$c.h) -gt $titleBottom){ $titleBottom=$c.y+$c.h } }
+    $treeTop=1e18; foreach($id in $order){ if(($nodes[$id].cy-$H/2) -lt $treeTop){ $treeTop=$nodes[$id].cy-$H/2 } }
+    $need=($titleBottom+$MARGIN)-$treeTop
+    if($need -gt 0){ foreach($id in $order){ $nodes[$id].cy+=$need }; if($null -ne $centerY){ $centerY+=$need } }
   }
   # horizontal layout: LOCAL packing — each child sits just right of its own
   # parent (bus in the gap), so the tree stays compact instead of aligning every
@@ -171,8 +201,14 @@ function Build-Lang([string]$lang){
       foreach($id in $leftRoots){ Layout-X $id (-$effStub-$nodes[$id].width) -1 }   # relative to hub=0
       $leftmost=1e18; foreach($id in $order){ if($nodes[$id].side -eq 'left' -and $nodes[$id].x -lt $leftmost){$leftmost=$nodes[$id].x} }
       if(-not $SPINE.hubx){ $hubx=$MARGIN-$leftmost }
-      foreach($id in $order){ if($nodes[$id].side -eq 'left'){ $nodes[$id].x += $hubx } }
     }
+    # keep the right (hard) half clear of the static top-left chrome column: the trunk
+    # must sit far enough right that hard sections start past the chrome's right edge.
+    if($chrome.Count -gt 0 -and -not $SPINE.hubx){
+      $chromeRight=0.0; foreach($c in $chrome){ if(($c.x+$c.w) -gt $chromeRight){ $chromeRight=$c.x+$c.w } }
+      $minHub=$chromeRight+$GAP-$effStub; if($hubx -lt $minHub){ $hubx=$minHub }
+    }
+    if($leftRoots.Count -gt 0){ foreach($id in $order){ if($nodes[$id].side -eq 'left'){ $nodes[$id].x += $hubx } } }
     foreach($id in $rightRoots){ Layout-X $id ($hubx+$effStub) 1 }
   } else {
     foreach($id in $rightRoots){ Layout-X $id $MARGIN 1 }
@@ -187,21 +223,30 @@ function Build-Lang([string]$lang){
     foreach($tid in $hn.targets){ if($nodes[$tid]){ $cys+=$nodes[$tid].cy; $hn.side=$nodes[$tid].side } }
     $hn.cy=(($cys|Measure-Object -Minimum).Minimum + ($cys|Measure-Object -Maximum).Maximum)/2
   }
-  # ... then x = clear EVERY node whose vertical span overlaps the box (2D clearance).
-  # A hint for the left branch goes to the LEFT of its targets (mirror).
-  foreach($hn in $hints){
+  # ... then x = clear EVERY node whose vertical span overlaps the box (2D clearance),
+  # AND clear any hint already placed in the same band so hints don't stack on top of
+  # each other. Placed top-to-bottom; overlapping hints step further out (mirror on left).
+  $placedHints=@()
+  foreach($hn in ($hints | Sort-Object @{Expression={$_.cy}})){
     $hy0=$hn.cy-$hn.height/2; $hy1=$hn.cy+$hn.height/2
     if($hn.side -eq 'left'){
       $lt=1e18
       foreach($id in $order){ $n=$nodes[$id]
         if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and $n.x -lt $lt){ $lt=$n.x } }
-      $hn.x=$lt-$HINT_GAP-$hn.width
+      $x=$lt-$HINT_GAP-$hn.width
+      foreach($p in $placedHints){ if($p.side -eq 'left' -and ($p.cy+$p.height/2) -gt $hy0 -and ($p.cy-$p.height/2) -lt $hy1){
+        $cand=$p.x-$HINT_GAP-$hn.width; if($cand -lt $x){ $x=$cand } } }
+      $hn.x=$x
     } else {
       $rt=0
       foreach($id in $order){ $n=$nodes[$id]
         if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and ($n.x+$n.width) -gt $rt){ $rt=$n.x+$n.width } }
-      $hn.x=$rt+$HINT_GAP
+      $x=$rt+$HINT_GAP
+      foreach($p in $placedHints){ if($p.side -ne 'left' -and ($p.cy+$p.height/2) -gt $hy0 -and ($p.cy-$p.height/2) -lt $hy1){
+        $cand=$p.x+$p.width+$HINT_GAP; if($cand -gt $x){ $x=$cand } } }
+      $hn.x=$x
     }
+    $placedHints+=$hn
   }
 
   # ---- emit mxGraph XML ----
@@ -220,6 +265,29 @@ function Build-Lang([string]$lang){
     $title=""; if($fr.titleKey -and $tr[$fr.titleKey]){ $title=$tr[$fr.titleKey] }
     $st="rounded=0;html=0;fillColor=$FRAME_FILL;strokeColor=#000000;strokeWidth=1;fontSize=28;fontColor=#000000;fontFamily=$Font;verticalAlign=top;align=center;fontStyle=1;container=0;"
     [void]$sb.AppendLine("<mxCell id=""$($fr.id)"" parent=""1"" vertex=""1"" style=""$st"" value=""$(XmlEsc $title)""><mxGeometry x=""$fx"" y=""$fy"" width=""$fw"" height=""$fh"" as=""geometry""/></mxCell>")
+  }
+  # auto stage frames: group staged nodes by (section, stage) — each group is a
+  # contiguous y-band within a section — and grow a '#F5F5F5' box to fit it. Frame
+  # size follows this language's layout automatically (EN 2048 vs RU 2365 wide).
+  $stageGroups=[ordered]@{}
+  foreach($id in $order){
+    $n=$nodes[$id]; if($null -eq $n.stage){ continue }
+    $k="$(SectionOf $id)#$($n.stage)"
+    if(-not $stageGroups.Contains($k)){ $stageGroups[$k]=@() }
+    $stageGroups[$k]+=$id
+  }
+  $sfi=0
+  foreach($k in $stageGroups.Keys){
+    $members=$stageGroups[$k]; $stageNum=($k -split '#')[1]
+    $minX=1e9;$minY=1e9;$maxX=-1e9;$maxY=-1e9
+    foreach($id in $members){ $n=$nodes[$id]
+      if($n.x -lt $minX){$minX=$n.x}; if(($n.x+$n.width) -gt $maxX){$maxX=$n.x+$n.width}
+      if(($n.cy-$H/2) -lt $minY){$minY=$n.cy-$H/2}; if(($n.cy+$H/2) -gt $maxY){$maxY=$n.cy+$H/2} }
+    $fx=$minX-$FPAD; $fy=$minY-$FTITLE; $fw=($maxX-$minX)+2*$FPAD; $fh=($maxY-$minY)+$FTITLE+$FPAD
+    $title=$tr["stage$stageNum"]; if(-not $title){ $title="$stageNum" }
+    $st="rounded=0;html=0;fillColor=$FRAME_FILL;strokeColor=#000000;strokeWidth=1;fontSize=28;fontColor=#000000;fontFamily=$Font;verticalAlign=top;align=center;fontStyle=1;container=0;"
+    [void]$sb.AppendLine("<mxCell id=""_stage_$sfi"" parent=""1"" vertex=""1"" style=""$st"" value=""$(XmlEsc $title)""><mxGeometry x=""$fx"" y=""$fy"" width=""$fw"" height=""$fh"" as=""geometry""/></mxCell>")
+    $sfi++
   }
   # spine: fixed trunk at hub-x + left-of-gate header (drawn before nodes)
   if($SPINE){
@@ -266,6 +334,17 @@ function Build-Lang([string]$lang){
     $val=(@($hn.lines) | ForEach-Object { XmlEsc $_ }) -join '&#xa;'
     $st="rounded=0;html=0;fillColor=$HINT_FILL;strokeColor=#000000;strokeWidth=1;fontSize=$FONTSIZE;fontColor=#000000;fontFamily=$Font;verticalAlign=middle;align=center;"
     [void]$sb.AppendLine("<mxCell id=""$($hn.id)"" parent=""1"" vertex=""1"" style=""$st"" value=""$val""><mxGeometry x=""$($hn.x)"" y=""$y"" width=""$($hn.width)"" height=""$($hn.height)"" as=""geometry""/></mxCell>")
+  }
+  # chrome: static top-left blocks at their own absolute coords, text per language.
+  # whiteSpace=wrap lets draw.io re-wrap the multi-line bodies at their real font size.
+  foreach($c in $chrome){
+    $txt=$tr[$c.role]; if(-not $txt){ $txt=$c.role }
+    $st=$c.style; if($st -notmatch 'whiteSpace='){ $st="$st;whiteSpace=wrap;" }
+    if($c.link){
+      [void]$sb.AppendLine("<UserObject id=""$($c.role)"" label=""$(XmlEsc $txt)"" link=""$(XmlEsc $c.link)""><mxCell parent=""1"" vertex=""1"" style=""$st""><mxGeometry x=""$($c.x)"" y=""$($c.y)"" width=""$($c.w)"" height=""$($c.h)"" as=""geometry""/></mxCell></UserObject>")
+    } else {
+      [void]$sb.AppendLine("<mxCell id=""$($c.role)"" parent=""1"" vertex=""1"" style=""$st"" value=""$(XmlEsc $txt)""><mxGeometry x=""$($c.x)"" y=""$($c.y)"" width=""$($c.w)"" height=""$($c.h)"" as=""geometry""/></mxCell>")
+    }
   }
   # parent -> child edges (orthogonal via the column bus). Left-side parents exit
   # on their left and the bus sits to their left (mirror of the right side).
