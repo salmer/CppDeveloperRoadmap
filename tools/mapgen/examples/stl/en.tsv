@@ -1,0 +1,7 @@
+stdlib	Standard library + STL
+iostream	iostream
+datetime	Date/time
+containers	Containers
+iterators	Iterators
+algorithms	Algorithms
+multithreading	Multithreading

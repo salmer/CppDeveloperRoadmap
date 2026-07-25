@@ -1,0 +1,22 @@
+stage5	5 step
+libraries	Libraries
+boost	boost
+opencv	opencv
+poco	poco
+protobuf	protobuf
+grpc	gRPC
+asio	Asio
+fmt	fmt
+pybind11	pybind11
+njson	nlohmann/json
+spdlog	spdlog
+rangev3	range-v3
+tensorflow	tensorflow
+opencl	opencl
+frameworks	Frameworks
+gtest	gtest/gmock
+qt	Qt
+catch2	catch2
+gbench	google benchmark
+gprofiler	google profiler
+pytorch	pytorch c++

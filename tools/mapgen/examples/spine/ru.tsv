@@ -1,0 +1,14 @@
+hardskills	Hard skills
+langsyntax	Синтаксис языка
+stl	Стандартная библиотека + STL
+iostream	iostream
+datetime	Дата/время
+containers	Контейнеры
+iterators	Итераторы
+algorithms	Алгоритмы
+multithreading	Многопоточность
+templates	Шаблоны
+standards	Стандарты
+langtools	Инструменты языка
+debugger	Отладчик
+buildsystems	Системы сборки
