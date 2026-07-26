@@ -94,9 +94,9 @@ hint [choose-one-of-the] angle=175 dist=419 -> windbg, gdb, lldb
 ```
 
 Placement is **explicit, not auto-laid-out** — the generator just puts the box where the
-coords say. `extract.py` fills `angle`/`dist` from the hand map, so the notes replay in
-their hand-tuned positions; you then nudge the values by hand in `structure.dsl` (the
-source of truth) when a note needs to move. Rows are shared across languages so an offset
+coords say. The initial `angle`/`dist` were seeded from the hand map during bootstrap, so
+the notes replay in their hand-tuned positions; you nudge the values by hand in
+`structure.dsl` (the source of truth) when a note needs to move. Rows are shared across languages so an offset
 transfers; only the target's x shifts with per-language width, carrying the box along.
 Because box heights and node widths differ per language, one `angle`/`dist` has to clear
 all three — nudge the values until `mapcheck` reports no overlaps. If omitted, the box
@@ -106,9 +106,9 @@ defaults to straight right of its target (`angle=0`), with no overlap avoidance.
 
 Nodes carrying a `stage=N` (inherited by the subtree) are wrapped in a grey `#F5F5F5`
 box grown to fit, one per **(section, stage)** group — the same banding the hand-drawn
-map uses. Titles come from the `stage1`..`stage5` tsv keys (`1 step` / `1 этап` / `步骤 1`),
-which `extract.py` reads from the map's frames. A gap is inserted between stage bands so
-the boxes don't touch. No directive is needed — just annotate the subtree roots.
+map uses. Titles come from the `stage1`..`stage5` tsv keys (`1 step` / `1 этап` / `步骤 1`).
+A gap is inserted between stage bands so the boxes don't touch. No directive is needed —
+just annotate the subtree roots.
 
 ### Explicit frames — `frame [id] title=<key> [contains=a,b]`
 
@@ -143,66 +143,23 @@ spine center=cpp-developer     # bilateral, centre node, computed hub-x
 spine hubx=460 gate=420 header=hardskills   # optional: pinned hub-x + dashed gate guide
 ```
 
-## Extracting a DSL from an existing map
-
-`extract.py` reverses a `roadmap.drawio.svg` into `structure.dsl` + `<lang>.tsv` (BFS tree
-from the centre/left/right anchors, grades from fill, `stage` from the `#F5F5F5` frames,
-pink boxes → hints; handles link-bearing `UserObject` nodes).
-
-The canonical structure is built from the **EN** map with `--slugs`, which assigns the
-word-ids and writes a `words.tsv` bridge (word → EN numeric id). Other languages are then
-keyed to those same word-ids — ZH shares EN's numeric ids so it is relabelled directly;
-RU used independent ids so it goes through `remap.py` (below):
-
-```bash
-# reference: word-id structure.dsl + en.tsv + words.tsv + chrome.tsv (+ stage annotations)
-python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o roadmap --lang en --slugs
-# ZH shares EN's ids -> relabel text (--words) + match chrome by id (--chrome)
-python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o roadmap --lang zh --words roadmap/words.tsv --chrome roadmap/chrome.tsv
-# RU diverged -> align + key by word (--words) + match chrome by position (--chrome)
-python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg --target Russian/Graph/roadmap.drawio.svg -o roadmap --lang ru --words roadmap/words.tsv --chrome roadmap/chrome.tsv
-```
-
-`roadmap` holds one canonical word-id `structure.dsl` (394 nodes + 34 hints + 25
-stage annotations), the `chrome.tsv` layout (18 static blocks: title, legend,
-About/How-to/Feedback, repo link, date), `en.tsv`/`zh.tsv`/`ru.tsv` (all keyed by the same
-word-ids and chrome roles) and `words.tsv`. **Chrome text** is matched to the reference
-roles by draw.io id for ZH (shares ids) and by position for RU (ids diverged, layout kept).
-
-**Cross-language id alignment (measured by extracting all three maps).** Word-ids are the
-shared key now; this is *why* they were needed:
-
-- **EN and ZH share the draw.io id scheme** — identical topology and grades for every
-  shared id; ZH only lacks two nodes EN has (`n922`, `n923`). So ZH text maps straight onto
-  the word-ids via `words.tsv`.
-- **RU used independent ids** — the same numeric id mapped to a *different* node than in
-  EN/ZH (e.g. id `354` is "Process" in EN but "Асинхронные" in RU's own map). `remap.py`
-  (below) aligns RU to EN structurally and keys its text by word-id. `ru.remap.tsv` records
-  the RU-numeric → EN-numeric mapping it produced.
-
-### Translation files `<lang>.tsv`
+## Translation files `<lang>.tsv`
 
 One `id <TAB> text` per line, UTF-8 (no BOM). A missing id falls back to the id itself.
-Keys include node ids plus any `frame` title / `spine` header keys.
+Keys include node ids, chrome roles, and any `frame` title / `spine` header keys.
 
-### Re-keying a map onto the canonical ids
+## Bootstrapping the source
 
-When a map was drawn with independent ids (RU), `remap.py` aligns it to a reference map
-and rewrites its `<lang>.tsv` to the reference ids — drop-in for the canonical
-`structure.dsl`:
+`roadmap/` was reverse-engineered from the original hand-drawn maps — the EN map becomes the
+word-id `structure.dsl` + `en.tsv` + `words.tsv` + `chrome.tsv`; ZH and RU are keyed onto the
+same word-ids. That's a one-off; the tools live in [`bootstrap/`](bootstrap/README.md) and
+are also how a new language is onboarded. **Going forward the DSL is the source — edit
+`structure.dsl` / `<lang>.tsv` directly, never re-derive from a generated map.**
 
-```bash
-python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg \
-    --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang ru
-```
-
-Both maps reconstruct to the same rooted tree (they describe the same roadmap), so
-children are paired in `(y, x)` order. Correctness is cross-checked three ways: **topology**
-(child counts must match at every node, else it aborts), **grade** (paired nodes must share
-a colour — a signal independent of position; RU came out 395/395), and **semantic** (paired
-texts are translations — eyeball `<lang>.remap.tsv`). Hints are matched by their translated
-target-set (group-paired in `(y, x)` order when several share a target). The RU re-key ran
-clean: 0 topology mismatches, 0 grade mismatches, 34/34 hints, 164 ids re-keyed.
+For reference, `roadmap/` holds the canonical `structure.dsl` (394 nodes + 34 hints + 25
+stage annotations), `chrome.tsv` (18 static blocks: title, legend, About/How-to/Feedback,
+repo link, date), `en/ru/zh.tsv`, `words.tsv`, and `ru.remap.tsv` (RU-numeric → word-id
+provenance from the re-key).
 
 ## What generates
 

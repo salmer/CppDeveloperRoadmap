@@ -20,7 +20,7 @@ Hints (pink boxes) are matched by their translated target-set, falling back to a
 shared id.
 
 Usage:
-  python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg \
+  python tools/mapgen/bootstrap/remap.py --ref English/Graph/roadmap.drawio.svg \
       --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang ru
 """
 import argparse, os, sys

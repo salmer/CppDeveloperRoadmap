@@ -1,5 +1,5 @@
-# Auto-extracted from en_orig.drawio.svg by tools/mapgen/extract.py.
-# centre / left / right anchors; pink boxes -> hints. See extract.py header.
+# Canonical roadmap source (word-ids). Seeded from the hand-drawn EN map by
+# tools/mapgen/bootstrap/extract.py; now hand-maintained — edit this, not the generated map.
 
 spine center=cpp-developer
 
@@ -399,6 +399,9 @@ spine center=cpp-developer
         [cuda] grade=optional
       [printers] grade=optional
 
+# Hints (pink annotation boxes). Each sits at a polar offset from the mean centre of its
+# target(s): angle in degrees (0 = right, 90 = up, 180 = left, 270 = down), dist in pixels
+# (map coordinate units). Hand-tuned; keep `mapcheck` clean across all languages after edits.
 hint [the-overloading-of-regular] angle=4 dist=471 -> operators
 hint [to-prevent-memory-leakage] angle=19 dist=378 -> references, shared-ptr, unique-ptr
 hint [it-s-preferred-to] angle=0 dist=388 -> diamond-inheritance

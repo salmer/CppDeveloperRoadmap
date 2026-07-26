@@ -21,9 +21,9 @@ and a few isolated nodes whose parent link goes through non-skill connectors.
 
 Usage:
   # canonical (word-ids + stages + words.tsv):
-  python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang en --slugs
+  python tools/mapgen/bootstrap/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang en --slugs
   # a language that shares EN's numeric ids (ZH): relabel onto the word-ids
-  python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang zh --words tools/mapgen/roadmap/words.tsv
+  python tools/mapgen/bootstrap/extract.py Chinese/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang zh --words tools/mapgen/roadmap/words.tsv
 """
 import argparse, html, math, os, re, sys
 import xml.etree.ElementTree as ET
@@ -254,7 +254,7 @@ def main():
         key = word_ids(verts, [CENTER]+order+hint_ids, parent)
     stage = stage_of(verts, parent)
 
-    dsl = ["# Auto-extracted from " + os.path.basename(args.map) + " by tools/mapgen/extract.py.",
+    dsl = ["# Auto-extracted from " + os.path.basename(args.map) + " by tools/mapgen/bootstrap/extract.py.",
            "# centre / left / right anchors; pink boxes -> hints. See extract.py header.",
            "", f"spine center={key[CENTER]}", ""]
     tsv = [f"{key[CENTER]}\t{verts[CENTER]['text']}"]
@@ -271,6 +271,9 @@ def main():
                           key=lambda rs: verts[rs[0]]["y"]):
         emit(r, 0, side); dsl.append("")
 
+    dsl.append("# Hints (pink annotation boxes). Each sits at a polar offset from the mean centre of its")
+    dsl.append("# target(s): angle in degrees (0 = right, 90 = up, 180 = left, 270 = down), dist in pixels")
+    dsl.append("# (map coordinate units). Hand-tuned; keep `mapcheck` clean across all languages after edits.")
     for hid in hint_ids:
         tids = [t for t in (e["t"] for e in edges if e["s"]==hid) if t in key]
         targets = [key[t] for t in tids]
