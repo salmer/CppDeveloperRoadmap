@@ -304,7 +304,6 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
         hcy = tcy - dst * math.sin(rad)
         hn["x"] = hcx - hn["width"] / 2
         hn["cy"] = hcy
-        hn["tcx"], hn["tcy"] = tcx, tcy
 
     # ---- emit mxGraph XML ----
     sb = ['<mxfile host="mapgen"><diagram name="frag" id="frag"><mxGraphModel dx="0" dy="0" '
@@ -431,14 +430,7 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
     # hint arrows: from a box edge (start side) to each target's facing edge
     for hn in hints:
         bcx, bcy = hn["x"] + hn["width"] / 2, hn["cy"]
-        if hn["arrow"]:
-            ex, ey = {"left": (0, 0.5), "right": (1, 0.5), "top": (0.5, 0), "bottom": (0.5, 1)}[hn["arrow"]]
-        else:
-            dx, dy = hn["tcx"] - bcx, hn["tcy"] - bcy
-            if abs(dx) >= abs(dy):
-                ex, ey = (1 if dx >= 0 else 0), 0.5
-            else:
-                ex, ey = 0.5, (1 if dy >= 0 else 0)
+        ex, ey = {"left": (0, 0.5), "right": (1, 0.5), "top": (0.5, 0), "bottom": (0.5, 1)}[hn["arrow"]]
         for tid in hn["targets"]:
             t = nodes.get(tid)
             if not t:
@@ -501,6 +493,9 @@ def main():
     measure = make_measure(font_path)
 
     dsl = parse_dsl(struct)
+    missing = [h["id"] for h in dsl[2] if not h["arrow"]]   # arrow= is required on every hint
+    if missing:
+        sys.exit("hints missing required arrow=left|right|top|bottom: " + ", ".join(missing))
     chrome = load_chrome(os.path.join(args.dir, "chrome.tsv"))
     langs = [x for tok in args.langs.split(",") for x in [tok.strip()] if x]
     print(f"mapgen: {args.dir}")

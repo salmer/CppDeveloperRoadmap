@@ -46,10 +46,12 @@ sides). The generator computes the **physical** layout:
 
 ## Usage
 
-Requires **Python 3 + Pillow** and the **draw.io desktop CLI**
-(`%LOCALAPPDATA%\Programs\draw.io\draw.io.exe`).
+Requires **Python 3 + Pillow** (`pip install -r tools/mapgen/requirements.txt`, or just
+`pip install Pillow` — note the package is `Pillow`, imported as `PIL`) and the **draw.io
+desktop CLI** (`%LOCALAPPDATA%\Programs\draw.io\draw.io.exe`).
 
 ```bash
+pip install -r tools/mapgen/requirements.txt
 python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
 ```
 
@@ -84,20 +86,20 @@ A line-based text format. `#` starts a comment. Blank lines ignored.
   shallowest node of each band needs the annotation.
 - Depth-0 nodes are section roots (placed on the spine — see below).
 
-### Hints — `hint [id] angle=<deg> dist=<px> [arrow=<side>] -> target, target, ...`
+### Hints — `hint [id] angle=<deg> dist=<px> arrow=<side> -> target, target, ...`
 
 A pink annotation box, text from `<lang>.tsv` (auto-wrapped, CJK-aware), with a curved
 arrow to each target. The box is placed at a **polar offset** from the mean target centre:
 `angle` degrees (0 = right, 90 = up) and `dist` pixels. Example:
 
 ```
-hint [choose-one-of-the] angle=175 dist=419 -> windbg, gdb, lldb
+hint [choose-one-of-the] angle=175 dist=419 arrow=right -> windbg, gdb, lldb
 ```
 
-`arrow=left|right|top|bottom` (optional) sets which box edge the arrow **starts** from;
-by default it starts from the box edge facing the targets (so a note placed above its
-target arrows from its bottom, one placed beside it from its side). The arrow always ends
-on the target edge facing the box.
+`arrow=left|right|top|bottom` is **required** — it sets which box edge the arrow **starts**
+from (e.g. a note above its target uses `arrow=bottom`). The arrow always ends on the target
+edge facing the box. `extract.py` seeds it from the box's position (the edge facing the
+target); the build fails if any hint omits it.
 
 Placement is **explicit, not auto-laid-out** — the generator just puts the box where the
 coords say. The initial `angle`/`dist` were seeded from the hand map during bootstrap, so
