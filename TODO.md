@@ -1,7 +1,13 @@
-1. Cleanup README.md everywhere
-2. Update AGENTS.md
-3. Update documentation (hwo to submit PR, remove scripts which are not needed after migration)
-4. Migrate from powershell to python? (Noone knows powershell)
-5. unit tests
-6. automatic checks that all translations are available
+-1. Migrate from powershell to python? (Noone knows powershell)
+-1.1 I'm missing ability to indicate to the hint from which side the arrow should start
+0. Go through files and decide if it is needed (remove or document)
+0.1 Look for stale files
+1. Update AGENTS.md
+1.1. Update documentation (hwo to submit PR and stuff like that)
+2. CI/CD updates?
+2.1 automatic checks that all translations are available?
+2.2 overlaps in the diagrams?
+3. unit tests?
+3.1 Probably also engine refactoring will be required to clean it up and make more maintainable
+
 7. Добавить испанский

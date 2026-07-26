@@ -402,37 +402,37 @@ spine center=cpp-developer
 # Hints (pink annotation boxes). Each sits at a polar offset from the mean centre of its
 # target(s): angle in degrees (0 = right, 90 = up, 180 = left, 270 = down), dist in pixels
 # (map coordinate units). Hand-tuned; keep `mapcheck` clean across all languages after edits.
-hint [the-overloading-of-regular] angle=4 dist=471 -> operators
-hint [to-prevent-memory-leakage] angle=19 dist=378 -> references, shared-ptr, unique-ptr
+hint [the-overloading-of-regular] angle=0 dist=400 -> operators
+hint [to-prevent-memory-leakage] angle=10 dist=400 -> references, shared-ptr, unique-ptr
 hint [it-s-preferred-to] angle=0 dist=388 -> diamond-inheritance
-hint [some-of-language-constructions] angle=0 dist=625 -> undefined-behavior
-hint [ability-to-gather-analyze] angle=182 dist=410 -> process-information
-hint [choose-one-of-the] angle=175 dist=419 -> ide
-hint [choose-one-of-the-2] angle=357 dist=448 -> text-editors
-hint [choose-one-of-the-3] angle=6 dist=590 -> knowledge-of-features-and
+hint [some-of-language-constructions] angle=0 dist=500 -> undefined-behavior
+hint [ability-to-gather-analyze] angle=182 dist=350 -> process-information
+hint [choose-one-of-the] angle=175 dist=300 -> ide
+hint [choose-one-of-the-2] angle=0 dist=450 -> text-editors
+hint [choose-one-of-the-3] angle=5 dist=590 -> knowledge-of-features-and
 hint [learn-about-common-errors] angle=356 dist=700 -> understanding-of-debugger-messages
 hint [reflection] angle=177 dist=332 -> analyze-mistakes, admitting-your-mistakes
-hint [study-how-to-use] angle=184 dist=430 -> debugger
+hint [study-how-to-use] angle=190 dist=290 -> debugger
 hint [the-ability-to-work] angle=3 dist=464 -> windbg, gdb, lldb
 hint [calmly-react-to-what] angle=186 dist=460 -> accept-criticism
 hint [the-compiler-performs-several] angle=356 dist=620 -> working-stages-of-compilers
 hint [take-challenging-tasks-in] angle=152 dist=310 -> initiative
-hint [each-compiler-has-its] angle=184 dist=500 -> features-of-a-particular
+hint [each-compiler-has-its] angle=340 dist=400 -> features-of-a-particular
 hint [you-should-be-responsible] angle=189 dist=589 -> independence
-hint [carefully-read-the-terms] angle=8 dist=395 -> licensing
+hint [carefully-read-the-terms] angle=0 dist=390 -> licensing
 hint [self-organization] angle=270 dist=160 -> manage-resources
 hint [the-ability-to-provide] angle=180 dist=533 -> providing-information-to-people
 hint [at-first-some-of] angle=317 dist=293 -> soft-skills
 hint [conflict-solving] angle=180 dist=312 -> finding-compromises, dispute-resolution
 hint [if-you-read-this] angle=326 dist=310 -> english
 hint [look-for-like-minded] angle=184 dist=635 -> networking
-hint [it-s-also-good] angle=0 dist=507 -> computers-science-algorithms
+hint [it-s-also-good] angle=0 dist=400 -> computers-science-algorithms
 hint [you-should-study-and] angle=164 dist=570 -> adaptability
 hint [experienced-developers-should-develop] angle=180 dist=480 -> empathy
-hint [to-configure-automated-code] angle=7 dist=570 -> code-guidelines
-hint [naming-conventions-tabs-vs] angle=184 dist=482 -> code-guidelines
+hint [to-configure-automated-code] angle=7 dist=500 -> code-guidelines
+hint [naming-conventions-tabs-vs] angle=190 dist=380 -> code-guidelines
 hint [do-not-ignore-warnings] angle=134 dist=130 -> code-analyzers
 hint [ai-can-generate-plausible] angle=288 dist=350 -> ai-tools
-hint [scripting-functional-sql-like] angle=182 dist=452 -> usage-of-other-programming
+hint [scripting-functional-sql-like] angle=182 dist=450 -> usage-of-other-programming
 hint [sometimes-it-s-needed] angle=8 dist=720 -> language-interoperability
 hint [memory-safety-requirements-are] angle=356 dist=571 -> vulnerabilities-buffer-overflow-use
