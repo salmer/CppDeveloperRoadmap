@@ -1,7 +1,7 @@
 # mapgen/bootstrap — reverse-engineer a hand-drawn map into the DSL
 
 One-off helpers, **not part of the build**. The map's source of truth is
-`tools/mapgen/roadmap/structure.dsl` + `<lang>.tsv` — edit those and run `build.ps1`.
+`tools/mapgen/roadmap/structure.dsl` + `<lang>.tsv` — edit those and run `build.py`.
 These tools *derived* that source from the original hand-drawn `.drawio.svg` maps, and are
 kept for two jobs:
 
@@ -66,7 +66,7 @@ target-set. The RU re-key ran clean: 0 topology mismatches, 0 grade mismatches, 
 2. If it shares EN's draw.io ids, run `extract.py … --lang es --words …/words.tsv
    --chrome …/chrome.tsv`; if its ids diverged, run `remap.py …` the same way. Either writes
    `roadmap/es.tsv` keyed to the canonical word-ids.
-3. Add `es` to `build.ps1 -Langs` and rebuild.
+3. Add `es` to `build.py --langs` and rebuild.
 
 Re-running against a corrected hand map **overwrites** the tsv — fold changes back
 deliberately, since `structure.dsl` + `<lang>.tsv` are the source of truth now, not the map.

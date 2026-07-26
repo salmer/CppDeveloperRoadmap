@@ -273,14 +273,15 @@ def main():
 
     dsl.append("# Hints (pink annotation boxes). Each sits at a polar offset from the mean centre of its")
     dsl.append("# target(s): angle in degrees (0 = right, 90 = up, 180 = left, 270 = down), dist in pixels")
-    dsl.append("# (map coordinate units). Hand-tuned; keep `mapcheck` clean across all languages after edits.")
+    dsl.append("# (map coordinate units). Optional `arrow=left|right|top|bottom` sets which box edge the")
+    dsl.append("# arrow starts from (default: the edge facing the target). Hand-tuned; keep `mapcheck` clean.")
     for hid in hint_ids:
         tids = [t for t in (e["t"] for e in edges if e["s"]==hid) if t in key]
         targets = [key[t] for t in tids]
         # polar offset (angle deg, dist px) from the mean target centre to the box centre.
-        # Captures the hand map's exact note placement so build.ps1 replays it verbatim
+        # Captures the hand map's exact note placement so build.py replays it verbatim
         # (draw.io is the output) instead of re-deriving it — auto-placement can't match a
-        # hand-tuned layout. 0deg = right, 90deg = up. build.ps1 auto-places if omitted.
+        # hand-tuned layout. 0deg = right, 90deg = up. build.py auto-places if omitted.
         hcx = verts[hid]["x"] + verts[hid]["w"]/2
         hcy = verts[hid]["y"] + verts[hid]["h"]/2
         tcx = sum(verts[t]["x"]+verts[t]["w"]/2 for t in tids)/len(tids)

@@ -1,5 +1,3 @@
--1. Migrate from powershell to python? (Noone knows powershell)
--1.1 I'm missing ability to indicate to the hint from which side the arrow should start
 0. Go through files and decide if it is needed (remove or document)
 0.1 Look for stale files
 1. Update AGENTS.md

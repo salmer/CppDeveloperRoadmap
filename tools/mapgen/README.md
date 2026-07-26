@@ -4,7 +4,7 @@ The roadmap map is maintained as a rigid text source plus per-language translati
 with draw.io as the output format.
 
 **Layout.** `roadmap/` holds the **real map source** — `structure.dsl` + `en/ru/zh.tsv` +
-`chrome.tsv` + `words.tsv`. `build.ps1` turns it into `roadmap/<lang>.drawio.svg` (a
+`chrome.tsv` + `words.tsv`. `build.py` turns it into `roadmap/<lang>.drawio.svg` (a
 gitignored build artifact), which is then copied over the three live maps at
 `<Lang>/Graph/roadmap.drawio.svg`. The copy-to-live step is still manual (not yet wired
 into CI).
@@ -27,14 +27,14 @@ physical layout (x, width, routing, frame size) is computed per language.
 ## How it works
 
 ```
-structure.dsl  +  <lang>.tsv  ──►  build.ps1  ──►  <lang>.drawio  ──►  draw.io CLI  ──►  <lang>.drawio.svg
-                                   (layout engine)                     (-x -f svg -e)     (+ bg restore)
+structure.dsl  +  <lang>.tsv  ──►  build.py  ──►  <lang>.drawio  ──►  draw.io CLI  ──►  <lang>.drawio.svg
+                                   (layout engine)                    (-x -f svg -e)     (+ bg restore)
 ```
 
 The DSL fixes the **logical** layout (rows, order, grade, stage, hint targets, spine
 sides). The generator computes the **physical** layout:
 
-- **width** = measured text width (System.Drawing) + padding, per language;
+- **width** = measured text width (Pillow, the same library mapcheck uses) + padding, per language;
 - **packing** — local: each child sits just right of its own parent (the left half
   mirrors, packing left), with a vertical bus in the gap carrying the parent→child edges;
   rows share `y` across languages (`PITCH=60`, box `H=30`);
@@ -46,19 +46,20 @@ sides). The generator computes the **physical** layout:
 
 ## Usage
 
-Requires **Windows** (System.Drawing metrics) and the **draw.io desktop CLI**
+Requires **Python 3 + Pillow** and the **draw.io desktop CLI**
 (`%LOCALAPPDATA%\Programs\draw.io\draw.io.exe`).
 
-```powershell
-pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/roadmap -Langs en,ru,zh
+```bash
+python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
 ```
 
-`-Dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output `<lang>.drawio` +
-`<lang>.drawio.svg` land next to them (override with `-OutDir`), then copy the
+`--dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output `<lang>.drawio` +
+`<lang>.drawio.svg` land next to them (override with `--outdir`), then copy the
 `<lang>.drawio.svg` over the live `<Lang>/Graph/roadmap.drawio.svg`. It's a real draw.io
 file — open it in draw.io to inspect, but edits there are lost on regeneration (see Caveats).
 
-Flags: `-Langs en,ru,zh`, `-OutDir <dir>`, `-DrawioCli <path>`, `-Font "<name>"`.
+Flags: `--langs en,ru,zh`, `--outdir <dir>`, `--drawio-cli <path>`, `--font <path>` (metrics
+font, default `msyh.ttc` / Noto CJK), `--font-family "<name>"` (written into the map).
 
 ## DSL grammar
 
@@ -83,7 +84,7 @@ A line-based text format. `#` starts a comment. Blank lines ignored.
   shallowest node of each band needs the annotation.
 - Depth-0 nodes are section roots (placed on the spine — see below).
 
-### Hints — `hint [id] angle=<deg> dist=<px> -> target, target, ...`
+### Hints — `hint [id] angle=<deg> dist=<px> [arrow=<side>] -> target, target, ...`
 
 A pink annotation box, text from `<lang>.tsv` (auto-wrapped, CJK-aware), with a curved
 arrow to each target. The box is placed at a **polar offset** from the mean target centre:
@@ -92,6 +93,11 @@ arrow to each target. The box is placed at a **polar offset** from the mean targ
 ```
 hint [choose-one-of-the] angle=175 dist=419 -> windbg, gdb, lldb
 ```
+
+`arrow=left|right|top|bottom` (optional) sets which box edge the arrow **starts** from;
+by default it starts from the box edge facing the targets (so a note placed above its
+target arrows from its bottom, one placed beside it from its side). The arrow always ends
+on the target edge facing the box.
 
 Placement is **explicit, not auto-laid-out** — the generator just puts the box where the
 coords say. The initial `angle`/`dist` were seeded from the hand map during bootstrap, so
@@ -180,9 +186,10 @@ by `mapcheck` (457 vertices, box-fits-text + overlaps + cross-language drift).
   (see the Hints section).
 - **ZH content drift.** ZH lacks two nodes EN has (`n922`, `n923`); they fall back to id
   text until ZH gains them.
-- **Platform.** Windows-only (System.Drawing + draw.io CLI). Metrics use `Microsoft YaHei`
-  (Latin+Cyrillic+CJK) while the hand maps use Helvetica for Latin, so generated widths
-  aren't pixel-identical to the originals.
+- **Metrics font.** Text is measured with Pillow using `Microsoft YaHei` (Latin+Cyrillic+CJK;
+  falls back to Noto CJK) while draw.io renders Latin in Helvetica, so generated widths aren't
+  pixel-identical to what draw.io lays out — mapcheck's relative margin absorbs the difference.
+  The draw.io CLI path defaults to the Windows install; pass `--drawio-cli` elsewhere.
 
 See [AGENTS.md](../../AGENTS.md) for the map conventions this tool mirrors (row pitch,
 stage-frame title band, gate/hub-x, colour legend).
