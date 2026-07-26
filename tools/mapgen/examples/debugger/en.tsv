@@ -1,9 +1,0 @@
-debugger	Debugger
-dbg_knowledge	Knowledge of features and abilities (shortcuts, tools, plugins)
-dbg_messages	Understanding of debugger messages
-dbg_symbols	Debugging symbols
-windbg	WinDbg
-gdb	GDB
-lldb	LLDB
-h_errors	Learn about common errors (segfault, out of memory, access violation) and undefined behavior concept.
-h_cmdline	The ability to work with a debugger via command line is a not common skill. It's sufficient to work with it via IDE. For example: set conditional breakpoints, etc.

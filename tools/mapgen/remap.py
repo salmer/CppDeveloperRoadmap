@@ -21,7 +21,7 @@ shared id.
 
 Usage:
   python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg \
-      --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap --lang ru
+      --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang ru
 """
 import argparse, os, sys
 from extract import (load, build_tree, GRADE, HINT_FILL, stage_labels,

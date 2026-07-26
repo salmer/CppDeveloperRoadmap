@@ -21,11 +21,11 @@ and a few isolated nodes whose parent link goes through non-skill connectors.
 
 Usage:
   # canonical (word-ids + stages + words.tsv):
-  python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap --lang en --slugs
+  python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang en --slugs
   # a language that shares EN's numeric ids (ZH): relabel onto the word-ids
-  python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap --lang zh --words tools/mapgen/examples/fullmap/words.tsv
+  python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang zh --words tools/mapgen/roadmap/words.tsv
 """
-import argparse, html, os, re, sys
+import argparse, html, math, os, re, sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict, deque
 
@@ -272,8 +272,19 @@ def main():
         emit(r, 0, side); dsl.append("")
 
     for hid in hint_ids:
-        targets = [key[t] for t in (e["t"] for e in edges if e["s"]==hid) if t in key]
-        dsl.append(f"hint [{key[hid]}] -> " + ", ".join(targets))
+        tids = [t for t in (e["t"] for e in edges if e["s"]==hid) if t in key]
+        targets = [key[t] for t in tids]
+        # polar offset (angle deg, dist px) from the mean target centre to the box centre.
+        # Captures the hand map's exact note placement so build.ps1 replays it verbatim
+        # (draw.io is the output) instead of re-deriving it — auto-placement can't match a
+        # hand-tuned layout. 0deg = right, 90deg = up. build.ps1 auto-places if omitted.
+        hcx = verts[hid]["x"] + verts[hid]["w"]/2
+        hcy = verts[hid]["y"] + verts[hid]["h"]/2
+        tcx = sum(verts[t]["x"]+verts[t]["w"]/2 for t in tids)/len(tids)
+        tcy = sum(verts[t]["y"]+verts[t]["h"]/2 for t in tids)/len(tids)
+        ang = round(math.degrees(math.atan2(-(hcy-tcy), hcx-tcx))) % 360
+        dist = round(math.hypot(hcx-tcx, hcy-tcy))
+        dsl.append(f"hint [{key[hid]}] angle={ang} dist={dist} -> " + ", ".join(targets))
         tsv.append(f"{key[hid]}\t{verts[hid]['text']}")
     for n, lab in sorted(stage_labels(verts).items()):     # stage frame titles (translatable)
         tsv.append(f"stage{n}\t{lab}")

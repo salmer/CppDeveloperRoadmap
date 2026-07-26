@@ -1,7 +1,0 @@
-stdlib	Стандартная библиотека + STL
-iostream	iostream
-datetime	Дата/время
-containers	Контейнеры
-iterators	Итераторы
-algorithms	Алгоритмы
-multithreading	Многопоточность

@@ -1,9 +1,0 @@
-debugger	调试器 (Debugger)
-dbg_knowledge	功能与能力知识 (快捷键、工具、插件)
-dbg_messages	理解调试器消息
-dbg_symbols	调试符号
-windbg	WinDbg
-gdb	GDB
-lldb	LLDB
-h_errors	了解常见错误 (段错误、内存不足、访问违规) 和未定义行为概念。
-h_cmdline	通过命令行使用调试器不是常见技能。通过 IDE 使用即可。例如：设置条件断点等。

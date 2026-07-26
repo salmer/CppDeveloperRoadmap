@@ -14,8 +14,8 @@
   size) so the same structure reflows correctly for each language's text.
 
 .EXAMPLE
-  pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/stl
-  pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/spine -Langs en,zh
+  pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/roadmap
+  pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/roadmap -Langs en,zh
 
 .NOTES
   Windows only: uses System.Drawing for text metrics and the draw.io desktop
@@ -29,6 +29,7 @@ param(
   [string]$Font = "Microsoft YaHei"               # covers Latin + Cyrillic + CJK
 )
 Add-Type -AssemblyName System.Drawing
+$Langs = $Langs | ForEach-Object { $_ -split ',' } | Where-Object { $_ }   # accept -Langs en,ru,zh as one token too
 if(-not $OutDir){ $OutDir = $Dir }
 if(-not (Test-Path $OutDir)){ New-Item -ItemType Directory -Force $OutDir | Out-Null }
 if(-not (Test-Path $DrawioCli)){ throw "draw.io CLI not found: $DrawioCli (override with -DrawioCli)" }
@@ -90,9 +91,11 @@ foreach($ln in $lines){
     $frames += [ordered]@{ id=$fid; titleKey=$ftitle; contains=$fcont }
     continue
   }
-  if($t -match '^hint\s+\[([^\]]+)\]\s*->\s*(.+)$'){
-    $hid=$Matches[1]; $tg=($Matches[2] -split ',') | ForEach-Object { $_.Trim() }
-    $hints += [ordered]@{ id=$hid; targets=$tg }
+  if($t -match '^hint\s+\[([^\]]+)\]\s*(.*?)->\s*(.+)$'){
+    $hid=$Matches[1]; $attr=$Matches[2]; $tg=($Matches[3] -split ',') | ForEach-Object { $_.Trim() }
+    $hangle=$null; if($attr -match 'angle=(-?\d+(?:\.\d+)?)'){ $hangle=[double]$Matches[1] }
+    $hdist=$null;  if($attr -match 'dist=(\d+(?:\.\d+)?)'){ $hdist=[double]$Matches[1] }
+    $hints += [ordered]@{ id=$hid; targets=$tg; side=$null; angle=$hangle; dist=$hdist }
     continue
   }
   $indent=($ln.Length-$ln.TrimStart().Length); $depth=[int]($indent/2)
@@ -180,6 +183,12 @@ function Build-Lang([string]$lang){
     $need=($titleBottom+$MARGIN)-$treeTop
     if($need -gt 0){ foreach($id in $order){ $nodes[$id].cy+=$need }; if($null -ne $centerY){ $centerY+=$need } }
   }
+  # the two section roots (Soft/Hard skills) emanate from the centre node, so pin them to
+  # its row — a horizontal C++ developer | Soft | Hard line as in the hand-drawn map,
+  # instead of the root drifting to the midpoint of its (bottom-heavy) subtree.
+  if($SPINE -and $SPINE.center -and $null -ne $centerY){
+    foreach($id in $order){ if($nodes[$id].depth -eq 0){ $nodes[$id].cy=$centerY } }
+  }
   # horizontal layout: LOCAL packing — each child sits just right of its own
   # parent (bus in the gap), so the tree stays compact instead of aligning every
   # depth to one global column (which sprawls on a deep map). With a spine the
@@ -213,40 +222,24 @@ function Build-Lang([string]$lang){
   } else {
     foreach($id in $rightRoots){ Layout-X $id $MARGIN 1 }
   }
-  # hints: wrap text + size box, centre on target span (phase 1) ...
+  # hints: wrap text + size box, then place the box at the DSL's polar offset (angle deg,
+  # dist px) from the mean target centre — the hand map's exact note position, replayed
+  # verbatim (0deg = right, 90deg = up). Rows are shared across languages so the offset
+  # transfers; only the target's x shifts with per-language width, carrying the box along.
   foreach($hn in $hints){
     $txt=$tr[$hn.id]; if(-not $txt){$txt=$hn.id}
     $wl=Wrap $txt ($HINT_W-2*$PADX)
     $hn.lines=$wl; $hn.width=$HINT_W
     $hn.height=[math]::Max($H, $wl.Count*$LINEH+2*$PADV)
-    $cys=@(); $hn.side='right'
-    foreach($tid in $hn.targets){ if($nodes[$tid]){ $cys+=$nodes[$tid].cy; $hn.side=$nodes[$tid].side } }
-    $hn.cy=(($cys|Measure-Object -Minimum).Minimum + ($cys|Measure-Object -Maximum).Maximum)/2
-  }
-  # ... then x = clear EVERY node whose vertical span overlaps the box (2D clearance),
-  # AND clear any hint already placed in the same band so hints don't stack on top of
-  # each other. Placed top-to-bottom; overlapping hints step further out (mirror on left).
-  $placedHints=@()
-  foreach($hn in ($hints | Sort-Object @{Expression={$_.cy}})){
-    $hy0=$hn.cy-$hn.height/2; $hy1=$hn.cy+$hn.height/2
-    if($hn.side -eq 'left'){
-      $lt=1e18
-      foreach($id in $order){ $n=$nodes[$id]
-        if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and $n.x -lt $lt){ $lt=$n.x } }
-      $x=$lt-$HINT_GAP-$hn.width
-      foreach($p in $placedHints){ if($p.side -eq 'left' -and ($p.cy+$p.height/2) -gt $hy0 -and ($p.cy-$p.height/2) -lt $hy1){
-        $cand=$p.x-$HINT_GAP-$hn.width; if($cand -lt $x){ $x=$cand } } }
-      $hn.x=$x
-    } else {
-      $rt=0
-      foreach($id in $order){ $n=$nodes[$id]
-        if(($n.cy+$H/2) -ge $hy0 -and ($n.cy-$H/2) -le $hy1 -and ($n.x+$n.width) -gt $rt){ $rt=$n.x+$n.width } }
-      $x=$rt+$HINT_GAP
-      foreach($p in $placedHints){ if($p.side -ne 'left' -and ($p.cy+$p.height/2) -gt $hy0 -and ($p.cy-$p.height/2) -lt $hy1){
-        $cand=$p.x+$p.width+$HINT_GAP; if($cand -gt $x){ $x=$cand } } }
-      $hn.x=$x
-    }
-    $placedHints+=$hn
+    $cxs=@(); $cys=@()
+    foreach($tid in $hn.targets){ if($nodes[$tid]){ $cxs+=($nodes[$tid].x+$nodes[$tid].width/2); $cys+=$nodes[$tid].cy } }
+    $tcx=(($cxs|Measure-Object -Average).Average); $tcy=(($cys|Measure-Object -Average).Average)
+    $ang = if($null -ne $hn.angle){ $hn.angle } else { 0 }            # default: straight right
+    $dst = if($null -ne $hn.dist){ $hn.dist } else { $HINT_GAP+$hn.width/2 }
+    $rad=$ang*[math]::PI/180
+    $hcx=$tcx+$dst*[math]::Cos($rad); $hcy=$tcy-$dst*[math]::Sin($rad)
+    $hn.x=$hcx-$hn.width/2; $hn.cy=$hcy
+    $hn.side = if($hcx -lt $tcx){'left'}else{'right'}                 # arrow attachment edge
   }
 
   # ---- emit mxGraph XML ----

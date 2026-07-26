@@ -1,13 +1,18 @@
 # mapgen — generate draw.io map fragments from a text DSL + translations
 
-**Status: prototype / proof-of-concept.** This is a feasibility spike, not yet wired
-into the map build. It shows that the roadmap map can be maintained as a rigid text
-source plus per-language translation files, with draw.io as the output format.
+The roadmap map is maintained as a rigid text source plus per-language translation files,
+with draw.io as the output format.
+
+**Layout.** `roadmap/` holds the **real map source** — `structure.dsl` + `en/ru/zh.tsv` +
+`chrome.tsv` + `words.tsv`. `build.ps1` turns it into `roadmap/<lang>.drawio.svg` (a
+gitignored build artifact), which is then copied over the three live maps at
+`<Lang>/Graph/roadmap.drawio.svg`. The copy-to-live step is still manual (not yet wired
+into CI).
 
 ## Why
 
-The map lives as three hand-maintained `.drawio.svg` files (RU/EN/ZH, soon +ES). Two
-recurring pains:
+The map had lived as three hand-maintained `.drawio.svg` files (RU/EN/ZH, soon +ES) — which
+mapgen now generates. Two recurring pains motivated the switch:
 
 - **Sync drift** — structural edits must be ported RU→EN→ZH by hand (see
   [AGENTS.md](../../AGENTS.md), "Porting edits between languages").
@@ -26,18 +31,18 @@ structure.dsl  +  <lang>.tsv  ──►  build.ps1  ──►  <lang>.drawio  �
                                    (layout engine)                     (-x -f svg -e)     (+ bg restore)
 ```
 
-The DSL fixes the **logical** layout (rows, columns, order, grade, hint/frame anchors,
-spine). The generator computes the **physical** layout:
+The DSL fixes the **logical** layout (rows, order, grade, stage, hint targets, spine
+sides). The generator computes the **physical** layout:
 
 - **width** = measured text width (System.Drawing) + padding, per language;
-- **columns** — one per depth; column width = widest node in it; a vertical bus runs in
-  the gap between columns; rows share `y` across languages (`PITCH=60`, box `H=30`);
-- **hints** — wrapped to a fixed width and pushed right until they clear **every** node
-  whose vertical span overlaps the box (2D clearance);
+- **packing** — local: each child sits just right of its own parent (the left half
+  mirrors, packing left), with a vertical bus in the gap carrying the parent→child edges;
+  rows share `y` across languages (`PITCH=60`, box `H=30`);
+- **hints** — wrapped to a fixed width and placed at an explicit polar offset (`angle`,
+  `dist`) from their target; positions are authored in the DSL, not auto-laid-out;
 - **frames** — grow to the bounding box of their members + a title band;
-- **spine** — a fixed trunk at `hub-x`; section roots hang off it; a header sits left of
-  `gate`. With `hub-x`/`gate` held constant, everything left of the gate stays put while
-  the right half reflows per language.
+- **spine** — a central trunk the section roots hang off, both halves centred on the
+  `center` node; hub-x is computed from the left half's width, so it shifts per language.
 
 ## Usage
 
@@ -45,15 +50,13 @@ Requires **Windows** (System.Drawing metrics) and the **draw.io desktop CLI**
 (`%LOCALAPPDATA%\Programs\draw.io\draw.io.exe`).
 
 ```powershell
-pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/stl
-pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/debugger
-pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/libraries
-pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/examples/spine -Langs en,ru,zh
+pwsh tools/mapgen/build.ps1 -Dir tools/mapgen/roadmap -Langs en,ru,zh
 ```
 
-Each `-Dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output
-`<lang>.drawio` + `<lang>.drawio.svg` land next to them (override with `-OutDir`). The
-`.drawio.svg` is a real draw.io file — open and edit it in draw.io.
+`-Dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output `<lang>.drawio` +
+`<lang>.drawio.svg` land next to them (override with `-OutDir`), then copy the
+`<lang>.drawio.svg` over the live `<Lang>/Graph/roadmap.drawio.svg`. It's a real draw.io
+file — open it in draw.io to inspect, but edits there are lost on regeneration (see Caveats).
 
 Flags: `-Langs en,ru,zh`, `-OutDir <dir>`, `-DrawioCli <path>`, `-Font "<name>"`.
 
@@ -78,16 +81,26 @@ A line-based text format. `#` starts a comment. Blank lines ignored.
 - `stage` — maturity band (1–5), inherited by the subtree (like `side`). Consecutive
   same-stage subtrees within a section are wrapped by a grow-to-fit stage frame. Only the
   shallowest node of each band needs the annotation.
-- Depth 0 nodes are roots (columns pack rightward from there).
+- Depth-0 nodes are section roots (placed on the spine — see below).
 
-### Hints — `hint [id] -> target, target, ...`
+### Hints — `hint [id] angle=<deg> dist=<px> -> target, target, ...`
 
-A pink annotation box, text from `<lang>.tsv` (auto-wrapped, CJK-aware). Drawn right of
-its targets with a curved arrow to each. Example:
+A pink annotation box, text from `<lang>.tsv` (auto-wrapped, CJK-aware), with a curved
+arrow to each target. The box is placed at a **polar offset** from the mean target centre:
+`angle` degrees (0 = right, 90 = up) and `dist` pixels. Example:
 
 ```
-hint [choose-one-of-the] -> windbg, gdb, lldb
+hint [choose-one-of-the] angle=175 dist=419 -> windbg, gdb, lldb
 ```
+
+Placement is **explicit, not auto-laid-out** — the generator just puts the box where the
+coords say. `extract.py` fills `angle`/`dist` from the hand map, so the notes replay in
+their hand-tuned positions; you then nudge the values by hand in `structure.dsl` (the
+source of truth) when a note needs to move. Rows are shared across languages so an offset
+transfers; only the target's x shifts with per-language width, carrying the box along.
+Because box heights and node widths differ per language, one `angle`/`dist` has to clear
+all three — nudge the values until `mapcheck` reports no overlaps. If omitted, the box
+defaults to straight right of its target (`angle=0`), with no overlap avoidance.
 
 ### Stage frames — automatic from `stage=`
 
@@ -121,13 +134,13 @@ packing** — each child sits just right of its own parent — so deep trees sta
 - Optional `gate`/`header` draw a dashed gate guide + a left-of-gate header.
 
 ```
-spine center=12             # bilateral, centre node, computed hub-x
-[13] side=left              # Soft skills
-  [21]                      # Communication ...
-[14] side=right             # Hard skills
-  [396]                     # Language syntax ...
+spine center=cpp-developer     # bilateral, centre node, computed hub-x
+[soft-skills] side=left
+  [ability-to-learn]           # subtree inherits side=left
+[hard-skills] side=right
+  [language-syntax]            # subtree inherits side=right
 
-spine hubx=460 gate=420 header=hardskills   # pinned hub-x + gate guide (right side only)
+spine hubx=460 gate=420 header=hardskills   # optional: pinned hub-x + dashed gate guide
 ```
 
 ## Extracting a DSL from an existing map
@@ -143,14 +156,14 @@ RU used independent ids so it goes through `remap.py` (below):
 
 ```bash
 # reference: word-id structure.dsl + en.tsv + words.tsv + chrome.tsv (+ stage annotations)
-python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o examples/fullmap --lang en --slugs
+python tools/mapgen/extract.py English/Graph/roadmap.drawio.svg -o roadmap --lang en --slugs
 # ZH shares EN's ids -> relabel text (--words) + match chrome by id (--chrome)
-python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o examples/fullmap --lang zh --words examples/fullmap/words.tsv --chrome examples/fullmap/chrome.tsv
+python tools/mapgen/extract.py Chinese/Graph/roadmap.drawio.svg -o roadmap --lang zh --words roadmap/words.tsv --chrome roadmap/chrome.tsv
 # RU diverged -> align + key by word (--words) + match chrome by position (--chrome)
-python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg --target Russian/Graph/roadmap.drawio.svg -o examples/fullmap --lang ru --words examples/fullmap/words.tsv --chrome examples/fullmap/chrome.tsv
+python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg --target Russian/Graph/roadmap.drawio.svg -o roadmap --lang ru --words roadmap/words.tsv --chrome roadmap/chrome.tsv
 ```
 
-`examples/fullmap` holds one canonical word-id `structure.dsl` (394 nodes + 28 hints + 25
+`roadmap` holds one canonical word-id `structure.dsl` (394 nodes + 34 hints + 25
 stage annotations), the `chrome.tsv` layout (18 static blocks: title, legend,
 About/How-to/Feedback, repo link, date), `en.tsv`/`zh.tsv`/`ru.tsv` (all keyed by the same
 word-ids and chrome roles) and `words.tsv`. **Chrome text** is matched to the reference
@@ -180,7 +193,7 @@ and rewrites its `<lang>.tsv` to the reference ids — drop-in for the canonical
 
 ```bash
 python tools/mapgen/remap.py --ref English/Graph/roadmap.drawio.svg \
-    --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/examples/fullmap --lang ru
+    --target Russian/Graph/roadmap.drawio.svg -o tools/mapgen/roadmap --lang ru
 ```
 
 Both maps reconstruct to the same rooted tree (they describe the same roadmap), so
@@ -189,38 +202,30 @@ children are paired in `(y, x)` order. Correctness is cross-checked three ways: 
 a colour — a signal independent of position; RU came out 395/395), and **semantic** (paired
 texts are translations — eyeball `<lang>.remap.tsv`). Hints are matched by their translated
 target-set (group-paired in `(y, x)` order when several share a target). The RU re-key ran
-clean: 0 topology mismatches, 0 grade mismatches, 28/28 hints, 164 ids re-keyed.
+clean: 0 topology mismatches, 0 grade mismatches, 34/34 hints, 164 ids re-keyed.
 
-## Examples
+## What generates
 
-| Dir | Demonstrates |
-|-----|--------------|
-| `examples/stl` | multi-child tree + bus; per-language width (EN/RU/ZH) |
-| `examples/debugger` | hint callouts + curved multi-target arrows + 2D clearance |
-| `examples/libraries` | frame grow-to-fit, two parents, 3rd-level sub-branches |
-| `examples/spine` | pinned trunk (hub-x) + left-of-gate header + right-half reflow |
-| `examples/bilateral` | two-sided spine: left mirror + **computed per-language hub-x** |
-| `examples/fullmap` | whole map end-to-end: word-id structure + stages + `en`/`zh`/`ru` tsv |
+The whole map, all three languages, from the canonical source: skill tree, hints, stage
+frames (from `stage=`), and the top-left chrome — title banner, legend,
+About/How-to/Feedback, repo link, date. Chrome layout is captured once in `chrome.tsv`
+(language-neutral geometry + style); text is per-language in `<lang>.tsv`. RU is re-keyed
+onto EN's word-ids by `remap.py` (validated clean); EN and ZH share ids natively. Validated
+by `mapcheck` (457 vertices, box-fits-text + overlaps + cross-language drift).
 
-## Known gaps (before this could replace the hand workflow)
+## Caveats & remaining work
 
-1. **Whole map generates.** Skill tree, hints, stage frames (from `stage=`) and the
-   top-left chrome — title banner, legend, About/How-to/Feedback, repo link, date — all
-   come out of the canonical source. Chrome layout is captured once in `chrome.tsv`
-   (language-neutral geometry+style); text is per-language in `<lang>.tsv`. The one thing
-   still hand-verified is that the tree's own gaps match the original closely enough.
-2. **All three languages are now on one canonical `structure.dsl`.** EN and ZH share
-   draw.io ids natively; RU is re-keyed by `remap.py` (validated clean). Remaining content
-   drift: ZH lacks two nodes EN has (`n922`, `n923`) — those fall back to id text until ZH
-   gains them.
-3. **No round-trip.** draw.io stays the *output*; hand-edits to a generated file are lost
-   on regeneration. Discipline: structure in `structure.dsl`, text in `<lang>.tsv`, never
-   hand-edit the generated `.drawio.svg`.
-4. **Hardening.** Not yet run on all 457 nodes; needs stable output ordering (clean
-   diffs), error handling, and integration into the repo build.
-5. **Platform.** Windows-only today (System.Drawing + draw.io CLI). Text metrics use a
-   font that covers Latin+Cyrillic+CJK (default `Microsoft YaHei`); the map itself uses
-   Helvetica for Latin, so generated widths won't be pixel-identical to hand-drawn ones.
+- **No round-trip.** draw.io stays the *output*; hand-edits to a generated `.drawio.svg`
+  are lost on regeneration. Edit `structure.dsl` / `<lang>.tsv`, never the output.
+- **Not automated.** The copy-to-live step is manual and there's no CI check yet; the
+  AGENTS.md hand-porting workflow hasn't been updated to point here.
+- **Per-language hint tuning.** One `angle`/`dist` per hint must clear all three languages
+  (see the Hints section).
+- **ZH content drift.** ZH lacks two nodes EN has (`n922`, `n923`); they fall back to id
+  text until ZH gains them.
+- **Platform.** Windows-only (System.Drawing + draw.io CLI). Metrics use `Microsoft YaHei`
+  (Latin+Cyrillic+CJK) while the hand maps use Helvetica for Latin, so generated widths
+  aren't pixel-identical to the originals.
 
 See [AGENTS.md](../../AGENTS.md) for the map conventions this tool mirrors (row pitch,
 stage-frame title band, gate/hub-x, colour legend).
