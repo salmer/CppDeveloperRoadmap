@@ -33,7 +33,7 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=zh)
 * :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=zh) — :warning: 已过时，不再同步（最后更新约 2026 年 7 月）
 
-每种语言的路线图都是**从**一个与语言无关的文本源（[`tools/mapgen/`](tools/mapgen/)）**生成的** `roadmap.drawio.svg` 文件——您看到的图像和 [draw.io](https://www.drawio.com) 文件合二为一。有关如何查看和提交更改的说明，请参见[此处](Graph/README.md)。
+每种语言的路线图都是**从**一个与语言无关的文本源（[`tools/mapgen/`](../tools/mapgen/)）**生成的** `roadmap.drawio.svg` 文件——您看到的图像和 [draw.io](https://www.drawio.com) 文件合二为一。有关如何查看和提交更改的说明，请参见[此处](Graph/README.md)。
 
 ## :key: 许可证和条件
 
