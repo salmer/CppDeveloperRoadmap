@@ -403,22 +403,22 @@ spine center=cpp-developer
 # target(s): angle in degrees (0 = right, 90 = up, 180 = left, 270 = down), dist in pixels
 # (map coordinate units). `arrow=left|right|top|bottom` (required) sets which box edge the
 # arrow starts from. Hand-tuned; keep `mapcheck` clean across all languages after edits.
-hint [the-overloading-of-regular] angle=0 dist=400 arrow=left -> operators
+hint [the-overloading-of-regular] angle=0 dist=500 arrow=left -> operators
 hint [to-prevent-memory-leakage] angle=10 dist=400 arrow=left -> references, shared-ptr, unique-ptr
 hint [it-s-preferred-to] angle=0 dist=388 arrow=left -> diamond-inheritance
 hint [some-of-language-constructions] angle=0 dist=500 arrow=left -> undefined-behavior
-hint [ability-to-gather-analyze] angle=180 dist=350 arrow=right -> process-information
-hint [choose-one-of-the] angle=175 dist=300 arrow=right -> ide
+hint [ability-to-gather-analyze] angle=180 dist=500 arrow=right -> process-information
+hint [choose-one-of-the] angle=175 dist=350 arrow=right -> ide
 hint [choose-one-of-the-2] angle=0 dist=450 arrow=left -> text-editors
 hint [choose-one-of-the-3] angle=5 dist=590 arrow=left -> knowledge-of-features-and
-hint [learn-about-common-errors] angle=356 dist=700 arrow=left -> understanding-of-debugger-messages
-hint [reflection] angle=177 dist=332 arrow=right -> analyze-mistakes, admitting-your-mistakes
-hint [study-how-to-use] angle=190 dist=290 arrow=right -> debugger
+hint [learn-about-common-errors] angle=356 dist=800 arrow=left -> understanding-of-debugger-messages
+hint [reflection] angle=177 dist=400 arrow=right -> analyze-mistakes, admitting-your-mistakes
+hint [study-how-to-use] angle=190 dist=330 arrow=right -> debugger
 hint [the-ability-to-work] angle=3 dist=464 arrow=left -> windbg, gdb, lldb
 hint [calmly-react-to-what] angle=190 dist=460 arrow=right -> accept-criticism
-hint [the-compiler-performs-several] angle=356 dist=630 arrow=left -> working-stages-of-compilers
+hint [the-compiler-performs-several] angle=356 dist=700 arrow=left -> working-stages-of-compilers
 hint [take-challenging-tasks-in] angle=165 dist=400 arrow=right -> initiative
-hint [each-compiler-has-its] angle=340 dist=400 arrow=left -> features-of-a-particular
+hint [each-compiler-has-its] angle=340 dist=600 arrow=left -> features-of-a-particular
 hint [you-should-be-responsible] angle=189 dist=750 arrow=right -> independence
 hint [carefully-read-the-terms] angle=0 dist=390 arrow=left -> licensing
 hint [self-organization] angle=5 dist=350 arrow=left -> manage-resources
@@ -426,14 +426,14 @@ hint [the-ability-to-provide] angle=180 dist=533 arrow=right -> providing-inform
 hint [at-first-some-of] angle=305 dist=300 arrow=top -> soft-skills
 hint [conflict-solving] angle=180 dist=312 arrow=right -> finding-compromises, dispute-resolution
 hint [if-you-read-this] angle=335 dist=700 arrow=left -> english
-hint [look-for-like-minded] angle=184 dist=635 arrow=right -> networking
+hint [look-for-like-minded] angle=180 dist=635 arrow=right -> networking
 hint [it-s-also-good] angle=0 dist=400 arrow=left -> computers-science-algorithms
-hint [you-should-study-and] angle=180 dist=620 arrow=right -> adaptability
-hint [experienced-developers-should-develop] angle=185 dist=520 arrow=right -> empathy
+hint [you-should-study-and] angle=180 dist=850 arrow=right -> adaptability
+hint [experienced-developers-should-develop] angle=180 dist=500 arrow=right -> empathy
 hint [to-configure-automated-code] angle=7 dist=500 arrow=left -> code-guidelines
 hint [naming-conventions-tabs-vs] angle=190 dist=380 arrow=right -> code-guidelines
-hint [do-not-ignore-warnings] angle=75 dist=200 arrow=bottom -> code-analyzers
+hint [do-not-ignore-warnings] angle=135 dist=250 arrow=bottom -> code-analyzers
 hint [ai-can-generate-plausible] angle=170 dist=360 arrow=right -> ai-tools
 hint [scripting-functional-sql-like] angle=5 dist=450 arrow=left -> usage-of-other-programming
-hint [sometimes-it-s-needed] angle=355 dist=720 arrow=left -> language-interoperability
-hint [memory-safety-requirements-are] angle=0 dist=500 arrow=left -> vulnerabilities-buffer-overflow-use
+hint [sometimes-it-s-needed] angle=355 dist=850 arrow=left -> language-interoperability
+hint [memory-safety-requirements-are] angle=0 dist=720 arrow=left -> vulnerabilities-buffer-overflow-use
