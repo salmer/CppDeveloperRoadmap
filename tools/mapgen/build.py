@@ -18,7 +18,6 @@ Usage:
   python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,zh
 """
 import argparse, math, os, subprocess, sys, time
-from PIL import ImageFont
 
 # ---- layout constants (match the map's conventions; see README) ----
 H, PITCH, GAP, MARGIN, FONTSIZE, PADX = 30, 60, 40, 40, 20, 12
@@ -43,6 +42,7 @@ def xml_esc(s):
 
 # ---- text measurement (Pillow; same approach as tools/mapcheck) ----
 def make_measure(font_path):
+    from PIL import ImageFont       # imported lazily so check.py can reuse the DSL parser without Pillow
     font = ImageFont.truetype(font_path, FONTSIZE)
 
     def measure(t):

@@ -6,16 +6,16 @@ with draw.io as the output format.
 **Layout.** `roadmap/` holds the **real map source** — `structure.dsl` + `en/ru/zh.tsv` +
 `chrome.tsv` + `words.tsv`. `build.py` turns it into `roadmap/<lang>.drawio.svg` (a
 gitignored build artifact), which is then copied over the three live maps at
-`<Lang>/Graph/roadmap.drawio.svg`. The copy-to-live step is still manual (not yet wired
-into CI).
+`<Lang>/Graph/roadmap.drawio.svg`. The copy-to-live step is manual, but `mapcheck`'s
+map-vs-DSL check (in CI) fails if a committed map has drifted from this source — so a
+forgotten rebuild is caught.
 
 ## Why
 
 The map had lived as three hand-maintained `.drawio.svg` files (RU/EN/ZH, soon +ES) — which
 mapgen now generates. Two recurring pains motivated the switch:
 
-- **Sync drift** — structural edits must be ported RU→EN→ZH by hand (see
-  [AGENTS.md](../../AGENTS.md), "Porting edits between languages").
+- **Sync drift** — structural edits used to be ported RU→EN→ZH by hand, one map at a time.
 - **Language-dependent width** — the same node is a different width per language, so
   positions can't simply be shared; a box that fits EN can clip ZH (the "C++26 box too
   narrow" class of bug).
@@ -176,22 +176,24 @@ frames (from `stage=`), and the top-left chrome — title banner, legend,
 About/How-to/Feedback, repo link, date. Chrome layout is captured once in `chrome.tsv`
 (language-neutral geometry + style); text is per-language in `<lang>.tsv`. RU is re-keyed
 onto EN's word-ids by `remap.py` (validated clean); EN and ZH share ids natively. Validated
-by `mapcheck` (457 vertices, box-fits-text + overlaps + cross-language drift).
+by `mapcheck` — box-fits-text, overlaps, cross-language drift, and a **map-vs-DSL** check
+that fails CI if a committed map no longer matches this source (ids, grades, `<lang>.tsv`
+text) or a translation is missing.
 
 ## Caveats & remaining work
 
 - **No round-trip.** draw.io stays the *output*; hand-edits to a generated `.drawio.svg`
   are lost on regeneration. Edit `structure.dsl` / `<lang>.tsv`, never the output.
-- **Not automated.** The copy-to-live step is manual and there's no CI check yet; the
-  AGENTS.md hand-porting workflow hasn't been updated to point here.
+- **Copy-to-live is manual.** After editing, run `build.py` and copy the three
+  `.drawio.svg` over the live `<Lang>/Graph/roadmap.drawio.svg` by hand. CI can't build (no
+  draw.io there), but `mapcheck`'s map-vs-DSL check fails if the committed maps don't match
+  the DSL/tsv — so a forgotten rebuild is caught.
 - **Per-language hint tuning.** One `angle`/`dist` per hint must clear all three languages
   (see the Hints section).
-- **ZH content drift.** ZH lacks two nodes EN has (`n922`, `n923`); they fall back to id
-  text until ZH gains them.
 - **Metrics font.** Text is measured with Pillow using `Microsoft YaHei` (Latin+Cyrillic+CJK;
   falls back to Noto CJK) while draw.io renders Latin in Helvetica, so generated widths aren't
   pixel-identical to what draw.io lays out — mapcheck's relative margin absorbs the difference.
   The draw.io CLI path defaults to the Windows install; pass `--drawio-cli` elsewhere.
 
-See [AGENTS.md](../../AGENTS.md) for the map conventions this tool mirrors (row pitch,
-stage-frame title band, gate/hub-x, colour legend).
+See [AGENTS.md](../../AGENTS.md) for the agent/contributor workflow and the map conventions
+the generator follows (colour legend, stage frames, the "Last updated" date).

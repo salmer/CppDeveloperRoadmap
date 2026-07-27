@@ -10,7 +10,14 @@ If you are unable to translate the content into all languages, please create an 
 
 ## Editing the Roadmap
 
-The roadmap is one `roadmap.drawio.svg` file per language (`English/Graph/`, `Russian/Graph/`, `Chinese/Graph/`) — an SVG image with the editable draw.io diagram embedded inside it. Edit it only with a draw.io editor (sketch.diagrams.net — the whiteboard-style UI with GitHub integration, the draw.io desktop app, or the VS Code extension) and submit the change as a normal pull request; see the per-language `Graph/README.md` for step-by-step instructions. **Never edit the SVG text by hand** — that can strip the embedded source and make the file uneditable. The language sync rule applies to the roadmap too: structural changes should be mirrored in all three language files.
+The roadmap is **generated** from a single language-neutral source in [`tools/mapgen/roadmap/`](tools/mapgen/roadmap) — `structure.dsl` (topology, grades, stages, layout) plus one `<lang>.tsv` per language (just the text). `build.py` renders it to the three `<Language>/Graph/roadmap.drawio.svg` files.
+
+**Do not hand-edit the `.drawio.svg` maps** — they are build output, and CI (`mapcheck`) fails if a committed map no longer matches the source. To change the map:
+
+1. Edit `structure.dsl` (to add/move/re-grade a node or a hint) and/or the `<lang>.tsv` files (to change text — one row per language).
+2. Rebuild and copy the maps, then open a pull request. See [`tools/mapgen/README.md`](tools/mapgen/README.md) for the DSL grammar and the build/copy steps.
+
+Because there is one structural source, a structural change lands in all three languages at once — you only supply the per-language **text** in each `<lang>.tsv`. If you can't run the build locally (it needs Python + Pillow + the draw.io desktop CLI), edit the source anyway and say so in your PR; a maintainer will regenerate the maps. To just *view* the map, see the per-language [`Graph/README.md`](English/Graph/README.md).
 
 ## Local Jekyll Preview
 

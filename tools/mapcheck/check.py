@@ -6,6 +6,11 @@ Checks (per the conventions in AGENTS.md):
   A1  box-fits-text : a node whose label is wider than its box (the "C++26 box
                       too narrow" class of bug).            [hard error]
       overlaps      : two content nodes whose boxes overlap.  [hard error]
+      map-vs-DSL    : the committed map must match tools/mapgen/roadmap — same
+                      node/hint ids, the DSL grade, and the <lang>.tsv text; also
+                      flags a missing/blank <lang>.tsv entry (box shows the raw
+                      word-id, invisible to box-fits and drift). Catches "edited the
+                      DSL/tsv but forgot to rebuild + copy the map".  [hard error]
       date          : "Last updated" older than the map file's last commit.  [warning]
   A2  drift         : the maps' vertical structure must match across languages
                       (shared y-rows, per AGENTS.md); a row present in one
@@ -13,12 +18,15 @@ Checks (per the conventions in AGENTS.md):
 
 Pure-XML/geometry checks need only Python's stdlib. box-fits-text also needs
 Pillow + a font; without them it is skipped with a note (so CI still runs the
-geometry checks). Exit code is non-zero if any hard error is found.
+geometry checks). The map-vs-DSL check imports tools/mapgen/build.py's DSL parser
+(no Pillow, no draw.io needed) and is skipped if that isn't present. Exit code is
+non-zero if any hard error is found.
 
 Usage:
-  python tools/mapcheck/check.py                # all maps under <Lang>/Graph
+  python tools/mapcheck/check.py                    # all maps under <Lang>/Graph
   python tools/mapcheck/check.py --maps English/Graph/roadmap.drawio.svg
-  python tools/mapcheck/check.py --no-date      # skip the git-based date check
+  python tools/mapcheck/check.py --no-date          # skip the git-based date check
+  python tools/mapcheck/check.py --no-consistency   # skip the map-vs-DSL check
 """
 import argparse, html, re, subprocess, sys
 import xml.etree.ElementTree as ET
@@ -206,10 +214,77 @@ def check_drift(stats):
     return errs
 
 
+LANG_CODE = {"English": "en", "Russian": "ru", "Chinese": "zh", "Spanish": "es"}
+
+
+def _load_build_module(root):
+    """Import tools/mapgen/build.py by path (for its DSL parser + grade table), without
+    needing it on sys.path or Pillow installed. Returns the module or None."""
+    import importlib.util
+    p = root / "tools" / "mapgen" / "build.py"
+    if not p.exists():
+        return None
+    try:
+        spec = importlib.util.spec_from_file_location("mapgen_build", p)
+        m = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(m)
+        return m
+    except Exception:
+        return None
+
+
+def check_consistency(name, verts, bmod, dsl_dir):
+    """The committed map must match the DSL it's generated from: same node/hint ids, the
+    DSL grade, and the <lang>.tsv text. Catches "edited structure.dsl / <lang>.tsv but forgot
+    to rebuild + copy the map". Metric-free and draw.io-free (compares logical content, not
+    geometry), so it runs in CI. Returns a list of errors, or None if it can't run."""
+    lang = LANG_CODE.get(name)
+    dsl_path = dsl_dir / "structure.dsl"
+    tsv_path = dsl_dir / f"{lang}.tsv" if lang else None
+    if not lang or not dsl_path.exists() or not tsv_path.exists():
+        return None
+    nodes, order, hints, frames, spine = bmod.parse_dsl(str(dsl_path))
+    tr = {}
+    for l in tsv_path.read_text(encoding="utf-8").splitlines():
+        if l.strip():
+            p = l.split("\t", 1)
+            tr[p[0]] = p[1] if len(p) > 1 else ""
+    nospace = lambda s: re.sub(r"\s+", "", s or "")      # hints wrap, so ignore whitespace
+    byid = {v["id"]: v for v in verts}
+    grade_hex = set(bmod.GRADES.values())
+    chrome_roles = {c["role"] for c in bmod.load_chrome(str(dsl_dir / "chrome.tsv"))}
+    errs = []
+    for nid in order:                                    # every DSL node -> present, right grade + text
+        if not tr.get(nid, "").strip():                  # missing/blank tsv entry -> box shows the word-id
+            errs.append(f"  [{name}] node {nid}: missing/blank {lang}.tsv entry (box shows the word-id)")
+        v = byid.get(nid)
+        if not v:
+            errs.append(f"  [{name}] node {nid} in structure.dsl but not in the map (stale — rebuild)")
+            continue
+        exp_fill = bmod.GRADES[nodes[nid]["grade"]]
+        if v["fill"] != exp_fill:
+            errs.append(f'  [{name}] node {nid} grade: dsl {nodes[nid]["grade"]}({exp_fill}) vs map {v["fill"]}')
+        if nospace(v["text"]) != nospace(tr.get(nid, nid)):
+            errs.append(f'  [{name}] node {nid} text: map "{v["text"][:28]}" != tsv "{tr.get(nid, nid)[:28]}"')
+    for v in verts:                                      # map node not in DSL (a removed node not rebuilt)
+        if v["fill"] in grade_hex and v["id"] not in nodes and not v["id"].startswith("_") and v["id"] not in chrome_roles:
+            errs.append(f"  [{name}] map node {v['id']} not in structure.dsl (stale — rebuild)")
+    for h in hints:                                      # every DSL hint -> present, right text
+        if not tr.get(h["id"], "").strip():
+            errs.append(f"  [{name}] hint {h['id']}: missing/blank {lang}.tsv entry (box shows the word-id)")
+        v = byid.get(h["id"])
+        if not v:
+            errs.append(f"  [{name}] hint {h['id']} in structure.dsl but not in the map (stale)")
+        elif nospace(v["text"]) != nospace(tr.get(h["id"], h["id"])):
+            errs.append(f'  [{name}] hint {h["id"]} text: map "{v["text"][:28]}" != tsv "{tr.get(h["id"], h["id"])[:28]}"')
+    return errs
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--maps", nargs="*", help="explicit .drawio.svg paths (default: autodiscover)")
     ap.add_argument("--no-date", action="store_true")
+    ap.add_argument("--no-consistency", action="store_true", help="skip the map-vs-DSL consistency check")
     ap.add_argument("--strict", action="store_true", help="also fail on drift/warnings")
     ap.add_argument("--latin-font", default=None)
     ap.add_argument("--cjk-font", default=None)
@@ -232,6 +307,9 @@ def main():
     cjk = args.cjk_font or first_existing(CJK_FONTS)
     can_measure = ImageFont is not None and latin is not None
 
+    bmod = None if args.no_consistency else _load_build_module(root)
+    dsl_dir = root / "tools" / "mapgen" / "roadmap"
+
     hard, warn = [], []
     stats = {}
     for name, path in maps:
@@ -242,6 +320,12 @@ def main():
             h, w = check_box_fits(name, verts, latin, cjk)
             hard += h; warn += w
         hard += check_overlaps(name, verts)
+        if bmod is not None:
+            c = check_consistency(name, verts, bmod, dsl_dir)
+            if c is None:
+                warn.append(f"  [{name}] consistency check skipped (no matching {dsl_dir.name}/<lang>.tsv)")
+            else:
+                hard += c
         if not args.no_date:
             warn += check_date(name, path, verts)
         print(f"scanned {name}: {len(verts)} vertices, {n_edges} edges")
@@ -255,7 +339,7 @@ def main():
 
     if not can_measure:
         print("\n[note] Pillow/font unavailable — box-fits-text check skipped")
-    section("HARD ERRORS (box-fits-text, overlaps)", hard)
+    section("HARD ERRORS (box-fits-text, overlaps, map-vs-DSL)", hard)
     section("cross-language drift (rows differing across maps)", drift)
     section("warnings (date)", warn)
 

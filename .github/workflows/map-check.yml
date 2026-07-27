@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "*/Graph/roadmap.drawio.svg"
+      - "tools/mapgen/**"          # DSL/tsv source — the map-vs-DSL check compares against it
       - "tools/mapcheck/**"
       - ".github/workflows/map-check.yml"
   workflow_dispatch:
