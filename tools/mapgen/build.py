@@ -30,6 +30,11 @@ FONT_CANDIDATES = ["C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/msyh.ttf",
                    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"]
 
 
+def read_text(path):
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
 def num(v):
     """Format a coordinate: integers without a decimal, else trimmed to 3 places."""
     v = float(v)
@@ -38,6 +43,25 @@ def num(v):
 
 def xml_esc(s):
     return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;"))
+
+
+# draw.io exit/entry anchor (x, y in 0..1) for each box edge
+SIDE_ANCHOR = {"left": (0, 0.5), "right": (1, 0.5), "top": (0.5, 0), "bottom": (0.5, 1)}
+
+
+def facing_side(dx, dy):
+    """Which box edge faces a point offset by (dx, dy) — the dominant axis wins.
+    Used for a hint arrow's target entry (and, in extract, the default start side)."""
+    if abs(dx) >= abs(dy):
+        return "right" if dx >= 0 else "left"
+    return "bottom" if dy >= 0 else "top"
+
+
+def hint_xy(tcx, tcy, angle, dist, width):
+    """Top-left x and centre y of a hint box placed at polar (angle deg, dist px) from the
+    mean target centre (tcx, tcy). 0deg = right, 90deg = up (screen y grows downward)."""
+    rad = math.radians(angle)
+    return tcx + dist * math.cos(rad) - width / 2, tcy - dist * math.sin(rad)
 
 
 # ---- text measurement (Pillow; same approach as tools/mapcheck) ----
@@ -89,7 +113,7 @@ def wrap(text, maxw, measure):
 def parse_dsl(path):
     nodes, order, stack, hints, frames, spine = {}, [], {}, [], [], None
     import re
-    for ln in open(path, encoding="utf-8").read().splitlines():
+    for ln in read_text(path).splitlines():
         t = ln.strip()
         if t == "" or t.startswith("#"):
             continue
@@ -144,7 +168,7 @@ def load_chrome(path):
     chrome = []
     if not os.path.exists(path):
         return chrome
-    for l in open(path, encoding="utf-8").read().splitlines():
+    for l in read_text(path).splitlines():
         if l.strip() == "" or l.startswith("#"):
             continue
         p = l.split("\t")   # role, id, x, y, w, h, link, style
@@ -174,7 +198,7 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
     if not os.path.exists(tr_path):
         print(f"  {lang} SKIPPED (no {lang}.tsv)"); return
     tr = {}
-    for l in open(tr_path, encoding="utf-8").read().splitlines():
+    for l in read_text(tr_path).splitlines():
         if l.strip() == "":
             continue
         p = l.split("\t", 1)
@@ -299,11 +323,7 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
         tcy = sum(cys) / len(cys) if cys else 0.0
         ang = hn["angle"] if hn["angle"] is not None else 0.0
         dst = hn["dist"] if hn["dist"] is not None else HINT_GAP + hn["width"] / 2
-        rad = math.radians(ang)
-        hcx = tcx + dst * math.cos(rad)
-        hcy = tcy - dst * math.sin(rad)
-        hn["x"] = hcx - hn["width"] / 2
-        hn["cy"] = hcy
+        hn["x"], hn["cy"] = hint_xy(tcx, tcy, ang, dst, hn["width"])
 
     # ---- emit mxGraph XML ----
     sb = ['<mxfile host="mapgen"><diagram name="frag" id="frag"><mxGraphModel dx="0" dy="0" '
@@ -430,16 +450,12 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
     # hint arrows: from a box edge (start side) to each target's facing edge
     for hn in hints:
         bcx, bcy = hn["x"] + hn["width"] / 2, hn["cy"]
-        ex, ey = {"left": (0, 0.5), "right": (1, 0.5), "top": (0.5, 0), "bottom": (0.5, 1)}[hn["arrow"]]
+        ex, ey = SIDE_ANCHOR[hn["arrow"]]
         for tid in hn["targets"]:
             t = nodes.get(tid)
             if not t:
                 continue
-            bx, by = bcx - (t["x"] + t["width"] / 2), bcy - t["cy"]   # target -> box: entry faces the box
-            if abs(bx) >= abs(by):
-                en, eny = (1 if bx >= 0 else 0), 0.5
-            else:
-                en, eny = 0.5, (1 if by >= 0 else 0)
+            en, eny = SIDE_ANCHOR[facing_side(bcx - (t["x"] + t["width"] / 2), bcy - t["cy"])]  # entry faces the box
             st = (f"edgeStyle=none;html=0;strokeColor=#000000;strokeWidth=1;startArrow=none;endArrow=block;endFill=1;"
                   f"curved=1;exitX={ex};exitY={ey};exitDx=0;exitDy=0;entryX={en};entryY={eny};entryDx=0;entryDy=0;")
             sb.append(f'<mxCell id="a_{hn["id"]}_{tid}" parent="1" edge="1" source="{hn["id"]}" target="{tid}" '
@@ -460,7 +476,7 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
             break
         time.sleep(0.25)
     if os.path.exists(svg):
-        tt = open(svg, encoding="utf-8").read()
+        tt = read_text(svg)
         tt = tt.replace("background: transparent; background-color: transparent;",
                         "background: #ffffff; background-color: light-dark(#ffffff, #121212);")
         with open(svg, "w", encoding="utf-8", newline="") as f:

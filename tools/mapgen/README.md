@@ -63,6 +63,12 @@ file — open it in draw.io to inspect, but edits there are lost on regeneration
 Flags: `--langs en,ru,zh`, `--outdir <dir>`, `--drawio-cli <path>`, `--font <path>` (metrics
 font, default `msyh.ttc` / Noto CJK), `--font-family "<name>"` (written into the map).
 
+**Tests:** `python tools/mapgen/test_build.py` covers the deterministic pieces — the DSL
+parser (attributes + side/stage inheritance), text wrapping, coordinate formatting, and the
+hint geometry/arrow math — with no draw.io or Pillow needed (metrics are injected). It runs
+in CI. The layout functions (`assign_y`/`layout_x`/centering) live inside `build_lang` and
+aren't unit-tested yet; the map-level guard for those is `mapcheck` (overlaps + map-vs-DSL).
+
 ## DSL grammar
 
 A line-based text format. `#` starts a comment. Blank lines ignored.
