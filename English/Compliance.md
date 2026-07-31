@@ -1,4 +1,4 @@
-# :scales: Coding standards and regulatory requirements
+# :balance_scale: Coding standards and regulatory requirements
 
 C++ has traditionally occupied the areas where the cost of a mistake is measured not in lost money but in human lives: automotive electronics, medical devices, avionics, industrial automation, rail transport. In such projects the freedom of the language becomes a problem, so it is constrained — with a body of coding rules, mandatory checks, and a documented development process.
 

@@ -22,7 +22,7 @@ C++ 仍然是 [2025 年](https://survey.stackoverflow.co/2025/technology#most-po
 10. :telescope: [宠物项目](PetProjects.md)
 11. :triangular_ruler: [工具](Tooling.md)
 12. :package: [流行的库与框架](Libraries.md)
-13. :scales: [编码标准与合规要求](Compliance.md)
+13. :balance_scale: [编码标准与合规要求](Compliance.md)
 14. :gem:  [更多的 C++ 资源/社区等](CommunitySources.md)
 
 ## :milky_way: 路线图

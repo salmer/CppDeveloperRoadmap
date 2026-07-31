@@ -23,7 +23,7 @@
 1. :telescope: [Идеи для пет-проектов](PetProjects.md)
 1. :triangular_ruler: [Инструментарий для С++](Tooling.md)
 1. :package: [Популярные библиотеки и фреймворки](Libraries.md)
-1. :scales: [Стандарты кодирования и регуляторные требования](Compliance.md)
+1. :balance_scale: [Стандарты кодирования и регуляторные требования](Compliance.md)
 1. :gem: [Ресурсы по C++: документация, каналы конференций и т.д.](CommunitySources.md)
 
 
