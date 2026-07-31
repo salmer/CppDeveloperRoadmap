@@ -26,6 +26,10 @@ https://misra\.org\.uk/.*
 # 415 to GitHub-hosted runner IPs — a WAF quirk on their end, same class of
 # datacenter-IP false positive as the entries above.
 https://www\.ko2\.co\.uk/.*
+# iso.org's standards catalogue answers 200 from browsers but 403 to
+# non-browser clients from CI. Referenced from Compliance.md in all three
+# languages (ISO/IEC 14882 and friends).
+https://www\.iso\.org/.*
 # Our own /goto/ redirect pages: a PR that adds a new one always 404s until
 # it is merged and GitHub Pages redeploys, so checking them pre-merge is a
 # guaranteed false positive (chicken-and-egg).
