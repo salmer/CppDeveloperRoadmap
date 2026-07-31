@@ -23,7 +23,7 @@ It is recommended that you read the articles listed below before starting to exp
 1. :telescope: [Pet-project ideas](English/PetProjects.md)
 1. :triangular_ruler: [Language toolkit](English/Tooling.md)
 1. :package: [Popular libraries and frameworks](English/Libraries.md)
-1. :scales: [Coding standards and regulatory requirements](English/Compliance.md)
+1. :balance_scale: [Coding standards and regulatory requirements](English/Compliance.md)
 1. :gem: [More resources about C++: documentation, community links, etc.](English/CommunitySources.md)
 
 
