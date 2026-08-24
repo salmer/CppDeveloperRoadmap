@@ -22,16 +22,21 @@ that has drifted from it.
    - a node, its grade/stage, or a hint → `tools/mapgen/roadmap/structure.dsl`
    - wording (a label, a hint, the date) → the matching row in `en.tsv` / `ru.tsv` / `zh.tsv`
      (a new node needs a row in **all three**).
-2. Rebuild and copy over the maps (needs Python + Pillow + the draw.io desktop CLI):
+2. **First time only** — get your machine ready:
    ```bash
-   pip install -r tools/mapgen/requirements.txt
-   python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
-   cp tools/mapgen/roadmap/en.drawio.svg English/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/ru.drawio.svg Russian/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/zh.drawio.svg Chinese/Graph/roadmap.drawio.svg
+   python tools/mapgen/setup.py --venv
    ```
-3. Check it: `python tools/mapcheck/check.py --no-date` (0 hard errors), then open a pull
-   request with the source **and** the regenerated maps.
+   It creates a virtualenv, installs Pillow, and checks for the two things it can't
+   install for you (a CJK font and the draw.io desktop app), printing the exact command
+   for your OS if either is missing.
+3. Rebuild, update all three maps and validate — one command from the repo root:
+   ```bash
+   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+   ```
+   `--deploy` copies each built map over its `<Language>/Graph/roadmap.drawio.svg`;
+   `--check` runs `mapcheck` afterwards. Dependencies are re-verified before anything is
+   built, so a missing one — or a virtualenv you forgot to activate — is reported up front.
+4. Open a pull request with the source **and** the regenerated maps.
 
 See [`tools/mapgen/README.md`](../../tools/mapgen/README.md) for the DSL grammar and details.
 Can't run the build? Edit the source anyway and note it in your PR — a maintainer will

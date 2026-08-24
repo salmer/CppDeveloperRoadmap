@@ -17,7 +17,11 @@ Usage:
   python tools/mapgen/build.py --dir tools/mapgen/roadmap
   python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,zh
 """
-import argparse, math, os, subprocess, sys, time
+import argparse, math, os, shutil, subprocess, sys, time
+
+# where --deploy copies each built map: <lang> -> <Lang>/Graph/roadmap.drawio.svg
+LANG_DIR = {"en": "English", "ru": "Russian", "zh": "Chinese", "es": "Spanish"}
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # ---- layout constants (match the map's conventions; see README) ----
 H, PITCH, GAP, MARGIN, FONTSIZE, PADX = 30, 60, 40, 40, 20, 12
@@ -25,9 +29,24 @@ HINT_W, HINT_GAP, LINEH, PADV, SPINE_STUB, STAGE_GAP = 320, 90, 24, 9, 90, 90
 FPAD, FTITLE = 24, 50
 GRADES = {"junior": "#96BB7C", "middle": "#FAD586", "senior": "#BBCCEE", "optional": "#CCEEFF"}
 HINT_FILL, FRAME_FILL = "#FFD5E4", "#F5F5F5"
-# YaHei covers Latin + Cyrillic + CJK (what the PowerShell build measured via System.Drawing)
+# YaHei covers Latin + Cyrillic + CJK (what the PowerShell build measured via System.Drawing).
+# Order matters: it decides the metrics, so the committed maps are the YaHei ones. The
+# non-Windows entries are fallbacks — they let the build RUN elsewhere, but widths shift
+# slightly, so a map rebuilt on another OS may differ from the committed one (see README).
 FONT_CANDIDATES = ["C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/msyh.ttf",
-                   "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"]
+                   "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+                   "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+                   "/System/Library/Fonts/PingFang.ttc",
+                   "/Library/Fonts/Microsoft/Microsoft YaHei.ttf"]
+
+# draw.io desktop CLI, per platform; also probed on PATH (`drawio`, `draw.io`)
+DRAWIO_CANDIDATES = [
+    os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "draw.io", "draw.io.exe"),
+    os.path.join(os.environ.get("PROGRAMFILES", ""), "draw.io", "draw.io.exe"),
+    "/Applications/draw.io.app/Contents/MacOS/draw.io",
+    "/opt/drawio/drawio",
+    "/usr/bin/drawio",
+]
 
 
 def read_text(path):
@@ -486,37 +505,139 @@ def build_lang(lang, dsl, chrome, args, measure, drawio_dir):
         print(f"  {lang} EXPORT FAILED")
 
 
+def find_drawio_cli():
+    """First draw.io desktop CLI that exists — platform paths, then PATH."""
+    for p in DRAWIO_CANDIDATES:
+        if p and os.path.exists(p):
+            return p
+    return shutil.which("drawio") or shutil.which("draw.io")
+
+
+def mapcheck_path(repo_root):
+    return os.path.join(repo_root, "tools", "mapcheck", "check.py")
+
+
+def preflight(args, langs):
+    """Check every dependency and input up front, reporting ALL problems at once rather
+    than failing one at a time. Returns (font_path, drawio_cli)."""
+    problems, found = [], []
+
+    if args.check and not os.path.exists(mapcheck_path(args.repo_root)):
+        problems.append(f"--check: mapcheck not found: {mapcheck_path(args.repo_root)}\n"
+                        "    (pass --repo-root if you are running from outside the repo)")
+
+    if sys.version_info < (3, 8):
+        problems.append(f"Python 3.8+ required (running {sys.version.split()[0]})")
+
+    try:                                     # Pillow supplies the text metrics
+        from PIL import Image                # noqa: F401
+        import PIL
+        found.append(f"Pillow {getattr(PIL, '__version__', '?')}")
+    except ImportError:
+        problems.append("Pillow is not installed. Install it with:\n"
+                        "      pip install -r tools/mapgen/requirements.txt\n"
+                        "    (the distribution is 'Pillow'; it imports as 'PIL')")
+
+    if args.font and not os.path.exists(args.font):
+        font_path = None
+        problems.append(f"--font path does not exist: {args.font}")
+    else:
+        font_path = args.font or next((p for p in FONT_CANDIDATES if os.path.exists(p)), None)
+        if font_path:
+            found.append(f"metrics font {os.path.basename(font_path)}")
+        else:
+            problems.append("No metrics font found. Install Microsoft YaHei or Noto CJK, or pass\n"
+                            "    --font <path to a .ttf/.ttc>. Tried:\n      "
+                            + "\n      ".join(FONT_CANDIDATES))
+
+    cli = args.drawio_cli or find_drawio_cli()
+    if cli and os.path.exists(cli):
+        found.append(f"draw.io CLI {cli}")
+    else:
+        problems.append("draw.io desktop CLI not found (it renders the .drawio.svg).\n"
+                        "    Install it from https://www.drawio.com/ or pass --drawio-cli <path>.\n"
+                        "    Can't install it? Edit the source, say so in your PR, and a\n"
+                        "    maintainer will regenerate the maps.")
+
+    if not os.path.exists(os.path.join(args.dir, "structure.dsl")):
+        problems.append(f"structure.dsl not found in {args.dir}")
+    for lang in langs:                       # every requested language needs its text file
+        if not os.path.exists(os.path.join(args.dir, f"{lang}.tsv")):
+            problems.append(f"{lang}.tsv not found in {args.dir}")
+        if args.deploy and lang not in LANG_DIR:
+            problems.append(f"--deploy: no target folder known for language '{lang}' "
+                            f"(known: {', '.join(sorted(LANG_DIR))})")
+    if args.deploy:
+        for lang in langs:
+            d = os.path.join(args.repo_root, LANG_DIR.get(lang, ""), "Graph")
+            if lang in LANG_DIR and not os.path.isdir(d):
+                problems.append(f"--deploy: target folder missing: {d}")
+
+    for f in found:
+        print(f"  ok   {f}")
+    if problems:
+        sys.exit("\nmapgen: cannot build.\n\n  - " + "\n\n  - ".join(problems) + "\n")
+    return font_path, cli
+
+
+def deploy(langs, outdir, repo_root):
+    """Copy each freshly built <lang>.drawio.svg over its live <Lang>/Graph/roadmap.drawio.svg."""
+    print("deploying:")
+    for lang in langs:
+        src = os.path.join(outdir, f"{lang}.drawio.svg")
+        dst = os.path.join(repo_root, LANG_DIR[lang], "Graph", "roadmap.drawio.svg")
+        if not os.path.exists(src):
+            print(f"  {lang} SKIPPED (build produced no {os.path.basename(src)})")
+            continue
+        unchanged = os.path.exists(dst) and read_text(dst) == read_text(src)
+        shutil.copyfile(src, dst)
+        rel = os.path.relpath(dst, repo_root).replace(os.sep, "/")
+        print(f"  {lang} -> {rel}{'  (unchanged)' if unchanged else ''}")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Generate the roadmap draw.io maps from the DSL.")
     ap.add_argument("--dir", required=True, help="folder with structure.dsl + <lang>.tsv")
     ap.add_argument("--langs", default="en,ru,zh", help="comma-separated languages")
     ap.add_argument("--outdir", default=None, help="output dir (defaults to --dir)")
-    ap.add_argument("--drawio-cli", default=os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "draw.io", "draw.io.exe"))
+    ap.add_argument("--drawio-cli", default=None, help="path to the draw.io desktop CLI (autodetected)")
     ap.add_argument("--font", default=None, help="path to the metrics font (default: YaHei / Noto CJK)")
     ap.add_argument("--font-family", default="Microsoft YaHei", help="fontFamily written into the map")
+    ap.add_argument("--deploy", action="store_true",
+                    help="copy each built map over the live <Lang>/Graph/roadmap.drawio.svg")
+    ap.add_argument("--repo-root", default=REPO_ROOT, help="repo root for --deploy (autodetected)")
+    ap.add_argument("--check", action="store_true",
+                    help="run tools/mapcheck/check.py on the live maps afterwards")
     args = ap.parse_args()
 
     args.outdir = args.outdir or args.dir
     os.makedirs(args.outdir, exist_ok=True)
-    if not os.path.exists(args.drawio_cli):
-        sys.exit(f"draw.io CLI not found: {args.drawio_cli} (override with --drawio-cli)")
-    struct = os.path.join(args.dir, "structure.dsl")
-    if not os.path.exists(struct):
-        sys.exit(f"structure.dsl not found in {args.dir}")
-    font_path = args.font or next((p for p in FONT_CANDIDATES if os.path.exists(p)), None)
-    if not font_path:
-        sys.exit("no metrics font found (pass --font <path to a .ttf/.ttc>)")
+    langs = [x for tok in args.langs.split(",") for x in [tok.strip()] if x]
+
+    print(f"mapgen: {args.dir}")
+    font_path, args.drawio_cli = preflight(args, langs)
     measure = make_measure(font_path)
 
-    dsl = parse_dsl(struct)
+    dsl = parse_dsl(os.path.join(args.dir, "structure.dsl"))
     missing = [h["id"] for h in dsl[2] if not h["arrow"]]   # arrow= is required on every hint
     if missing:
         sys.exit("hints missing required arrow=left|right|top|bottom: " + ", ".join(missing))
     chrome = load_chrome(os.path.join(args.dir, "chrome.tsv"))
-    langs = [x for tok in args.langs.split(",") for x in [tok.strip()] if x]
-    print(f"mapgen: {args.dir}")
+    print("building:")
     for lang in langs:
         build_lang(lang, dsl, chrome, args, measure, args.outdir)
+
+    if args.deploy:
+        deploy(langs, args.outdir, args.repo_root)
+
+    if args.check:
+        # mapcheck validates the LIVE maps -- so without --deploy it reports on the committed
+        # maps, not what was just built.
+        print("checking:" if args.deploy else "checking (live maps; this build was not deployed):")
+        sys.stdout.flush()      # so mapcheck's output lands after ours, not interleaved
+        rc = subprocess.run([sys.executable, mapcheck_path(args.repo_root)]).returncode
+        if rc != 0:
+            sys.exit(rc)
     print("done")
 
 

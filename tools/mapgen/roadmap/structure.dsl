@@ -1,5 +1,22 @@
-# Canonical roadmap source (word-ids). Seeded from the hand-drawn EN map by
-# tools/mapgen/bootstrap/extract.py; now hand-maintained — edit this, not the generated map.
+# Canonical roadmap source. This file is the STRUCTURE of the map for every language;
+# the words live in en.tsv / ru.tsv / zh.tsv, keyed by the same [word-id].
+# Edit this file -- never the generated <Lang>/Graph/roadmap.drawio.svg.
+#
+# Quick reference (full grammar: tools/mapgen/README.md):
+#   [id] grade=... stage=N side=left|right   a node; 2 spaces of indent = one level deeper
+#     grade  junior | middle | senior | optional   -> the box colour
+#     stage  1..5, inherited by the subtree        -> wraps it in a grey "N step" frame
+#     side   left | right, inherited               -> which half of the spine it hangs off
+#   hint [id] angle=<deg> dist=<px> arrow=<side> -> target, target
+#     a pink note; angle 0=right 90=up 180=left 270=down, dist in map units,
+#     arrow = which edge of the note the arrow leaves from (required)
+#   spine center=<id>                        the central trunk both halves centre on
+#
+# Adding a node = one line here + one row in EACH of en/ru/zh.tsv, then rebuild:
+#   python tools/mapgen/setup.py --venv        # first time only
+#   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+#
+# Seeded from the hand-drawn EN map by tools/mapgen/bootstrap/extract.py; hand-maintained since.
 
 spine center=cpp-developer
 

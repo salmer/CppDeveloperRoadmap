@@ -10,6 +10,49 @@ kept for two jobs:
 
 Requires Python 3. `remap.py` imports `extract.py`, so keep them in the same folder.
 
+## The one-off derivation, in one picture
+
+How the canonical source was produced — a job already done. Solid arrows are the data
+flow; dashed ones show the EN result feeding the other two languages. Word-ids are minted
+from the **EN** map and every other language is keyed onto those same ids, which is what
+stops the three translations drifting apart:
+
+```mermaid
+flowchart TD
+    ENMAP["<b>English/Graph/roadmap.drawio.svg</b><br/><i>original hand-drawn map</i>"]
+    ZHMAP["<b>Chinese/</b>...drawio.svg<br/><i>shares EN's draw.io ids</i>"]
+    RUMAP["<b>Russian/</b>...drawio.svg<br/><i>independent ids - diverged</i>"]
+
+    EX["<b>extract.py --slugs</b><br/>BFS the tree, grades from fill,<br/>stages from frames, hints from<br/>the pink boxes; mints word-ids"]
+    EX2["<b>extract.py --words</b><br/>relabel onto existing word-ids"]
+    RM["<b>remap.py --ref EN</b><br/>pair the two trees structurally,<br/>then key text by word-id"]
+
+    DSL["<b>structure.dsl</b><br/>+ en.tsv, words.tsv, chrome.tsv"]
+    ZHT["zh.tsv"]
+    RUT["ru.tsv"]
+    BUILD["<b>the DSL is now the source</b><br/>build.py regenerates all three maps"]
+
+    ENMAP --> EX --> DSL
+    ZHMAP --> EX2 --> ZHT
+    RUMAP --> RM --> RUT
+    DSL -. "supplies the word-ids" .-> EX2
+    DSL -. "reference tree" .-> RM
+    DSL --> BUILD
+    ZHT --> BUILD
+    RUT --> BUILD
+
+    classDef map fill:#FFE5B9,stroke:#c8a878,color:#000
+    classDef tool fill:#BBCCEE,stroke:#8296bb,color:#000
+    classDef out fill:#96BB7C,stroke:#5f7d4b,color:#000
+    class ENMAP,ZHMAP,RUMAP map
+    class EX,EX2,RM tool
+    class DSL,ZHT,RUT,BUILD out
+```
+
+**The arrows only ever point this way once.** After bootstrap the direction reverses: the
+DSL generates the maps, and re-running these tools against a generated map would be
+circular. That is why they live here and not in the build.
+
 ## extract.py — map → `structure.dsl` + `<lang>.tsv`
 
 Reverses a `roadmap.drawio.svg`: BFS tree from the centre/left/right anchors, grades from
@@ -39,8 +82,9 @@ maps:
   word-ids via `words.tsv`.
 - **RU used independent ids** — the same numeric id meant a *different* node (e.g. `354` is
   "Process" in EN but "Асинхронные" in RU's own map). `remap.py` aligns RU to EN
-  structurally and keys its text by word-id; `ru.remap.tsv` records the RU-numeric →
-  EN-numeric mapping it produced.
+  structurally and keys its text by word-id. It also writes a `<lang>.remap.tsv`
+  recording the RU-numeric → EN-numeric pairing, as an audit trail for eyeballing the
+  result — that file is regenerable output and is not committed.
 
 ## remap.py — re-key a divergent map onto the canonical ids
 

@@ -3,12 +3,15 @@
 The roadmap map is maintained as a rigid text source plus per-language translation files,
 with draw.io as the output format.
 
-**Layout.** `roadmap/` holds the **real map source** — `structure.dsl` + `en/ru/zh.tsv` +
-`chrome.tsv` + `words.tsv`. `build.py` turns it into `roadmap/<lang>.drawio.svg` (a
-gitignored build artifact), which is then copied over the three live maps at
-`<Lang>/Graph/roadmap.drawio.svg`. The copy-to-live step is manual, but `mapcheck`'s
-map-vs-DSL check (in CI) fails if a committed map has drifted from this source — so a
-forgotten rebuild is caught.
+**Layout.** `roadmap/` holds the **real map source**: `structure.dsl` (the structure),
+`en/ru/zh.tsv` (the words), and `chrome.tsv` (the title/legend/date blocks). `build.py`
+turns those into `roadmap/<lang>.drawio.svg` — a gitignored build artifact — and
+`--deploy` copies each one over its live map at `<Lang>/Graph/roadmap.drawio.svg`. The
+rebuild is local (CI has no draw.io), but `mapcheck`'s map-vs-DSL check fails the PR if a
+committed map has drifted from this source, so a forgotten rebuild is caught in review.
+
+`roadmap/words.tsv` sits alongside them but is **not** build input — it is a bootstrap
+bridge (word-id → the original EN draw.io id), used only by [`bootstrap/`](bootstrap/README.md).
 
 ## Why
 
@@ -26,10 +29,31 @@ physical layout (x, width, routing, frame size) is computed per language.
 
 ## How it works
 
+```mermaid
+flowchart LR
+    subgraph SRC["source (hand-edited, language-neutral)"]
+        DSL["<b>structure.dsl</b><br/>tree, grades, stages,<br/>hints, spine"]
+        TSV["<b>en.tsv / ru.tsv / zh.tsv</b><br/>one 'id TAB text' per line"]
+        CHR["<b>chrome.tsv</b><br/>title, legend, date geometry"]
+    end
+    BUILD["<b>build.py</b><br/>computes the physical layout:<br/>text widths, packing,<br/>routing, frame growth"]
+    XML["lang.drawio<br/><i>mxGraph XML</i>"]
+    SVG["lang.drawio.svg"]
+    LIVE["<b>English/Graph/roadmap.drawio.svg</b><br/>Russian/Graph/... Chinese/Graph/..."]
+    CHECK["<b>mapcheck</b><br/>runs in CI"]
+
+    DSL --> BUILD
+    TSV --> BUILD
+    CHR --> BUILD
+    BUILD --> XML
+    XML -- "draw.io CLI" --> SVG
+    SVG -- "--deploy" --> LIVE
+    LIVE --> CHECK
+    CHECK -. "fails the PR if a committed<br/>map no longer matches the source" .-> DSL
 ```
-structure.dsl  +  <lang>.tsv  ──►  build.py  ──►  <lang>.drawio  ──►  draw.io CLI  ──►  <lang>.drawio.svg
-                                   (layout engine)                    (-x -f svg -e)     (+ bg restore)
-```
+
+One source, three maps: the same `structure.dsl` is rendered once per language, so a
+structural change lands everywhere at once and only the **text** is per-language.
 
 The DSL fixes the **logical** layout (rows, order, grade, stage, hint targets, spine
 sides). The generator computes the **physical** layout:
@@ -46,22 +70,46 @@ sides). The generator computes the **physical** layout:
 
 ## Usage
 
-Requires **Python 3 + Pillow** (`pip install -r tools/mapgen/requirements.txt`, or just
-`pip install Pillow` — note the package is `Pillow`, imported as `PIL`) and the **draw.io
-desktop CLI** (`%LOCALAPPDATA%\Programs\draw.io\draw.io.exe`).
+### Setup (once)
 
 ```bash
-pip install -r tools/mapgen/requirements.txt
-python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
+python tools/mapgen/setup.py --venv
 ```
 
-`--dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output `<lang>.drawio` +
-`<lang>.drawio.svg` land next to them (override with `--outdir`), then copy the
-`<lang>.drawio.svg` over the live `<Lang>/Graph/roadmap.drawio.svg`. It's a real draw.io
-file — open it in draw.io to inspect, but edits there are lost on regeneration (see Caveats).
+Creates `tools/mapgen/.venv`, installs Pillow into it, and verifies the two dependencies it
+**cannot** install for you — a CJK-capable metrics font and the **draw.io desktop app** —
+printing the right command for your OS (`winget` / `brew` / `snap`) when one is missing.
+Drop `--venv` to install into the interpreter you ran it with; it warns if that isn't a
+virtualenv. Exits non-zero while anything is still missing, so it is safe in a script.
 
-Flags: `--langs en,ru,zh`, `--outdir <dir>`, `--drawio-cli <path>`, `--font <path>` (metrics
-font, default `msyh.ttc` / Noto CJK), `--font-family "<name>"` (written into the map).
+Only the *rendering* needs draw.io: you can edit `structure.dsl` / the tsvs with nothing
+installed, open a PR, and a maintainer regenerates the maps.
+
+### Build
+
+```bash
+python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+```
+
+That one command is the whole edit loop: build all three languages, copy each map over its
+live `<Lang>/Graph/roadmap.drawio.svg` (`--deploy`), then run `mapcheck` (`--check`, exits
+non-zero on a hard error). `--check` validates the *live* maps, so without `--deploy` it
+reports on the committed ones rather than what was just built — it says which.
+
+**Dependency checks are not optional** and run before anything is built: Pillow, a metrics
+font, the draw.io CLI, `structure.dsl` and every `<lang>.tsv`. All problems are reported at
+once with install hints, so a missing dependency — or a virtualenv you forgot to activate —
+surfaces immediately instead of after a slow build. Drop `--deploy` to leave the output next
+to the source and inspect it first.
+
+`--dir` holds `structure.dsl` and one `<lang>.tsv` per language. Output `<lang>.drawio` +
+`<lang>.drawio.svg` land next to them (override with `--outdir`). The `.drawio` is a real
+draw.io file — open it to inspect, but edits there are lost on regeneration (see Caveats).
+
+Flags: `--langs en,ru,zh`, `--deploy`, `--check`, `--outdir <dir>`, `--repo-root <dir>`,
+`--drawio-cli <path>`, `--font <path>` (metrics font, default `msyh.ttc` / Noto CJK),
+`--font-family "<name>"` (written into the map). The draw.io CLI and the font are
+autodetected per platform (Windows/macOS/Linux) and via `PATH`.
 
 **Tests:** `python tools/mapgen/test_build.py` covers the deterministic pieces — the DSL
 parser (attributes + side/stage inheritance), text wrapping, coordinate formatting, and the
@@ -72,6 +120,105 @@ aren't unit-tested yet; the map-level guard for those is `mapcheck` (overlaps + 
 ## DSL grammar
 
 A line-based text format. `#` starts a comment. Blank lines ignored.
+
+### A complete, minimal map
+
+Everything below is optional detail; this is a whole working source. Two files — the
+structure, and the words for one language:
+
+```
+# structure.dsl
+spine center=me
+
+[fundamentals] side=right grade=junior stage=1
+  [syntax] grade=junior
+  [pointers] grade=middle
+[tooling] side=left grade=junior stage=1
+  [debugger] grade=junior
+  [profiler] grade=optional
+
+hint [start-here] angle=90 dist=140 arrow=bottom -> syntax
+```
+
+```
+# en.tsv   (id, then a TAB, then the text)
+me	Me
+fundamentals	Fundamentals
+syntax	Syntax
+pointers	Pointers
+tooling	Tooling
+debugger	Debugger
+profiler	Profiler
+start-here	Start here, then work outwards.
+stage1	1 step
+```
+
+```bash
+python tools/mapgen/build.py --dir path/to/that/folder --langs en
+```
+
+Note `stage1` in the tsv: stage frames take their title from the `stage1`..`stage5` keys.
+Add `ru.tsv` / `zh.tsv` with the same ids and `--langs en,ru,zh` renders all three.
+
+### What the DSL renders as
+
+A worked example — this is the real `Debugger` branch. Six source lines plus a hint:
+
+```
+      [debugger] grade=junior
+        [understanding-of-debugger-messages] grade=junior
+        [debugging-symbols] grade=junior
+        [windbg] grade=optional
+        [gdb] grade=optional
+        [lldb] grade=optional
+
+hint [the-ability-to-work] angle=3 dist=464 arrow=left -> windbg, gdb, lldb
+```
+
+...become this (colours are the real grade palette; the dashed arrows are the hint):
+
+```mermaid
+flowchart LR
+    DBG["<b>Debugger</b>"]
+    U["Understanding of<br/>debugger messages"]
+    S["Debugging symbols"]
+    W["WinDbg"]
+    G["GDB"]
+    L["LLDB"]
+    HINT["<i>The ability to work with a debugger<br/>via command line is a not common<br/>skill. It's sufficient to work with it<br/>via IDE...</i>"]
+
+    DBG --> U
+    DBG --> S
+    DBG --> W
+    DBG --> G
+    DBG --> L
+    HINT -. "arrow=left" .-> W
+    HINT -.-> G
+    HINT -.-> L
+
+    classDef junior fill:#96BB7C,stroke:#5f7d4b,color:#000
+    classDef optional fill:#CCEEFF,stroke:#7fa6ba,color:#000
+    classDef hint fill:#FFD5E4,stroke:#c79aab,color:#000
+    class DBG,U,S junior
+    class W,G,L optional
+    class HINT hint
+```
+
+Reading it back:
+
+| in the DSL | in the map |
+|---|---|
+| indentation | parent → child; children stack downward next to their parent |
+| `[debugger]` | the **id**, never the label — the text comes from the tsvs: `Debugger` (en), `Отладчик` (ru), `调试器（Debugger）` (zh) |
+| `grade=optional` | the box's fill colour (light blue here) |
+| `stage=3` on an ancestor | the whole subtree lands in the grey "3 step" frame |
+| `hint [...] -> a, b, c` | one pink box with a curved arrow to each target |
+| `angle` / `dist` | where that pink box sits relative to its targets |
+
+**To add a leaf** you touch two files: one indented `[my-new-node] grade=middle` line in
+`structure.dsl`, and one `my-new-node<TAB>My New Node` row in **each** of `en.tsv`,
+`ru.tsv`, `zh.tsv`. Everything else — x position, box width per language, the parent edge,
+frame growth — is computed. Rebuild, and it appears in all three maps.
 
 ### Nodes (indentation = hierarchy, 2 spaces per level)
 
@@ -90,6 +237,8 @@ A line-based text format. `#` starts a comment. Blank lines ignored.
 - `stage` — maturity band (1–5), inherited by the subtree (like `side`). Consecutive
   same-stage subtrees within a section are wrapped by a grow-to-fit stage frame. Only the
   shallowest node of each band needs the annotation.
+- `side` — `left` or `right`: which half of the spine the node hangs off, **inherited by
+  the whole subtree** (default `right`). Normally set once on a depth-0 root; see Spine below.
 - Depth-0 nodes are section roots (placed on the spine — see below).
 
 ### Hints — `hint [id] angle=<deg> dist=<px> arrow=<side> -> target, target, ...`
@@ -99,7 +248,7 @@ arrow to each target. The box is placed at a **polar offset** from the mean targ
 `angle` degrees (0 = right, 90 = up) and `dist` pixels. Example:
 
 ```
-hint [choose-one-of-the] angle=175 dist=419 arrow=right -> windbg, gdb, lldb
+hint [the-ability-to-work] angle=3 dist=464 arrow=left -> windbg, gdb, lldb
 ```
 
 `arrow=left|right|top|bottom` is **required** — it sets which box edge the arrow **starts**
@@ -172,8 +321,7 @@ are also how a new language is onboarded. **Going forward the DSL is the source 
 
 For reference, `roadmap/` holds the canonical `structure.dsl` (394 nodes + 34 hints + 25
 stage annotations), `chrome.tsv` (18 static blocks: title, legend, About/How-to/Feedback,
-repo link, date), `en/ru/zh.tsv`, `words.tsv`, and `ru.remap.tsv` (RU-numeric → word-id
-provenance from the re-key).
+repo link, date), `en/ru/zh.tsv`, and `words.tsv`.
 
 ## What generates
 
@@ -190,10 +338,10 @@ text) or a translation is missing.
 
 - **No round-trip.** draw.io stays the *output*; hand-edits to a generated `.drawio.svg`
   are lost on regeneration. Edit `structure.dsl` / `<lang>.tsv`, never the output.
-- **Copy-to-live is manual.** After editing, run `build.py` and copy the three
-  `.drawio.svg` over the live `<Lang>/Graph/roadmap.drawio.svg` by hand. CI can't build (no
-  draw.io there), but `mapcheck`'s map-vs-DSL check fails if the committed maps don't match
-  the DSL/tsv — so a forgotten rebuild is caught.
+- **The rebuild is local, not CI.** CI can't build (no draw.io there), so run
+  `build.py --deploy` yourself and commit the regenerated maps. `mapcheck`'s map-vs-DSL
+  check fails if the committed maps don't match the DSL/tsv — so a forgotten rebuild is
+  caught in review rather than shipping silently.
 - **Per-language hint tuning.** One `angle`/`dist` per hint must clear all three languages
   (see the Hints section).
 - **Metrics font.** Text is measured with Pillow using `Microsoft YaHei` (Latin+Cyrillic+CJK;

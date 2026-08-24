@@ -1,3 +1,18 @@
+# Validates the roadmap maps on every PR that touches them or the generator.
+#
+# The three <Language>/Graph/roadmap.drawio.svg maps are build output of tools/mapgen —
+# generated from one language-neutral source (structure.dsl + <lang>.tsv). CI cannot
+# rebuild them (that needs the draw.io desktop CLI), so instead it verifies that what was
+# committed is valid and still matches the source:
+#
+#   1. Unit-test the generator  — DSL parser + hint geometry (no Pillow/draw.io needed).
+#   2. Validate the maps        — tools/mapcheck: text fits its box, nothing overlaps, and
+#                                 the committed maps match structure.dsl / <lang>.tsv
+#                                 (so a forgotten rebuild fails here rather than shipping).
+#
+# Hard errors fail the build; cross-language drift and a stale "Last updated" date are
+# reported as warnings. See tools/mapcheck/README.md.
+
 name: Check maps
 
 on:

@@ -49,16 +49,18 @@ tools/mapgen/roadmap/structure.dsl  +  <lang>.tsv   ──►  build.py  ──�
    - **structure / grade / stage / hint placement** → `structure.dsl`
    - **text** (a label, a hint's wording, the date, a legend caption) → the relevant
      `<lang>.tsv` row(s). A structural add needs a new row in **all three** tsvs.
-2. Rebuild and copy over the live maps:
+2. First time on a machine: `python tools/mapgen/setup.py --venv` (creates a virtualenv,
+   installs Pillow, and reports how to install the draw.io desktop app if it is missing).
+3. Rebuild, update all three live maps, and validate — one command from the repo root:
    ```bash
-   pip install -r tools/mapgen/requirements.txt      # first time (Pillow)
-   python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
-   cp tools/mapgen/roadmap/en.drawio.svg English/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/ru.drawio.svg Russian/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/zh.drawio.svg Chinese/Graph/roadmap.drawio.svg
+   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
    ```
-   (needs the draw.io desktop CLI at `%LOCALAPPDATA%\Programs\draw.io\`; `--drawio-cli` to override.)
-3. Validate: `python tools/mapcheck/check.py --no-date` must report **0 hard errors**.
+   `--deploy` copies each built map over its `<Language>/Graph/roadmap.drawio.svg`;
+   `--check` runs `mapcheck` afterwards (a hard error exits non-zero). **Dependencies are
+   always verified first** — Pillow, a metrics font, the draw.io CLI, the source files —
+   and every problem is reported together with install hints, so a missing one, or a
+   virtualenv you forgot to activate, fails immediately rather than half-way through.
+   `--drawio-cli` / `--font` override autodetection.
 4. Commit the changed source **and** the regenerated maps together.
 
 Reverse-engineering an existing map back into the DSL, and onboarding a new language, are

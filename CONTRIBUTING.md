@@ -8,6 +8,8 @@ This project maintains parity across three languages: English (`English/`), Russ
 **Any content change (e.g., adding a book, updating a tool, fixing a description) MUST be mirrored across all three languages.** 
 If you are unable to translate the content into all languages, please create an issue or note it in your Pull Request so someone can help translate it.
 
+This rule is about the **articles** (the `.md` files). **The map is different** — it has one shared source, so a structural change is made once and regenerated into all three languages; only its *text* is per-language. See below.
+
 ## Editing the Roadmap
 
 The roadmap is **generated** from a single language-neutral source in [`tools/mapgen/roadmap/`](tools/mapgen/roadmap) — `structure.dsl` (topology, grades, stages, layout) plus one `<lang>.tsv` per language (just the text). `build.py` renders it to the three `<Language>/Graph/roadmap.drawio.svg` files.
@@ -15,9 +17,14 @@ The roadmap is **generated** from a single language-neutral source in [`tools/ma
 **Do not hand-edit the `.drawio.svg` maps** — they are build output, and CI (`mapcheck`) fails if a committed map no longer matches the source. To change the map:
 
 1. Edit `structure.dsl` (to add/move/re-grade a node or a hint) and/or the `<lang>.tsv` files (to change text — one row per language).
-2. Rebuild and copy the maps, then open a pull request. See [`tools/mapgen/README.md`](tools/mapgen/README.md) for the DSL grammar and the build/copy steps.
+2. Set your machine up once — `python tools/mapgen/setup.py --venv` creates a virtualenv, installs Pillow, and tells you how to install the draw.io desktop app if you don't have it.
+3. Rebuild and update all three maps with one command from the repo root, then open a pull request:
+   ```bash
+   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+   ```
+   See [`tools/mapgen/README.md`](tools/mapgen/README.md) for the DSL grammar and all flags.
 
-Because there is one structural source, a structural change lands in all three languages at once — you only supply the per-language **text** in each `<lang>.tsv`. If you can't run the build locally (it needs Python + Pillow + the draw.io desktop CLI), edit the source anyway and say so in your PR; a maintainer will regenerate the maps. To just *view* the map, see the per-language [`Graph/README.md`](English/Graph/README.md).
+Because there is one structural source, a structural change lands in all three languages at once — you only supply the per-language **text** in each `<lang>.tsv`. If you can't run the build locally (`setup.py` will tell you what's missing — the draw.io desktop app is the usual blocker), edit the source anyway and say so in your PR; a maintainer will regenerate the maps. To just *view* the map, see the per-language [`Graph/README.md`](English/Graph/README.md).
 
 ## Local Jekyll Preview
 

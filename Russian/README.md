@@ -35,7 +35,7 @@
 * :arrow_forward: [SVG](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=ru)
 * :arrow_forward: [Miro](https://salmer.github.io/CppDeveloperRoadmap/goto/miro/?l=ru) — :warning: устарело, больше не синхронизируется (последнее обновление ~июль 2026)
 
-Дорожная карта **генерируется** из одного языконезависимого текстового исходника ([`tools/mapgen/`](../tools/mapgen/)) в файл `roadmap.drawio.svg` на каждый язык — изображение и файл [draw.io](https://www.drawio.com) в одном. Как её просматривать и предлагать изменения, описано [здесь](./Graph/README.md).
+Дорожная карта **генерируется** из единого текстового исходника, общего для всех языков ([`tools/mapgen/`](../tools/mapgen/)) в файл `roadmap.drawio.svg` на каждый язык — изображение и файл [draw.io](https://www.drawio.com) в одном. Как её просматривать и предлагать изменения, описано [здесь](./Graph/README.md).
 
 # :key: Лицензия 
 Карта распространяется по лицензии **CC BY-NC-SA 4.0**: [RUS](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) || [ENG](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). Если вкратце:

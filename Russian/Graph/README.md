@@ -23,16 +23,23 @@
    - узел, его грейд/этап или подсказка → `tools/mapgen/roadmap/structure.dsl`
    - текст (подпись, подсказка, дата) → соответствующая строка в `en.tsv` / `ru.tsv` / `zh.tsv`
      (новому узлу нужна строка **во всех трёх**).
-2. Пересоберите и скопируйте карты (нужны Python + Pillow + десктопный CLI draw.io):
+2. **Только в первый раз** — подготовьте окружение:
    ```bash
-   pip install -r tools/mapgen/requirements.txt
-   python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,ru,zh
-   cp tools/mapgen/roadmap/en.drawio.svg English/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/ru.drawio.svg Russian/Graph/roadmap.drawio.svg
-   cp tools/mapgen/roadmap/zh.drawio.svg Chinese/Graph/roadmap.drawio.svg
+   python tools/mapgen/setup.py --venv
    ```
-3. Проверьте: `python tools/mapcheck/check.py --no-date` (0 жёстких ошибок), затем создайте
-   pull request с исходником **и** пересобранными картами.
+   Скрипт создаёт виртуальное окружение, ставит Pillow и проверяет то, что он установить
+   не может (CJK-шрифт и десктопное приложение draw.io), подсказывая точную команду для
+   вашей ОС.
+3. Пересоберите, обновите все три карты и проверьте их — одной командой из корня
+   репозитория:
+   ```bash
+   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+   ```
+   `--deploy` копирует каждую собранную карту в соответствующий
+   `<Language>/Graph/roadmap.drawio.svg`, `--check` затем запускает `mapcheck`. Зависимости
+   проверяются перед сборкой: если чего-то не хватает (или вы забыли активировать
+   виртуальное окружение), команда сообщит об этом сразу.
+4. Создайте pull request с исходником **и** пересобранными картами.
 
 Грамматика DSL и подробности — в [`tools/mapgen/README.md`](../../tools/mapgen/README.md). Не
 можете запустить сборку? Всё равно поправьте исходник и укажите это в PR — мейнтейнер
