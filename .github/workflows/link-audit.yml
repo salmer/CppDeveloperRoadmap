@@ -1,0 +1,75 @@
+# Monthly sweep of every EXTERNAL link in the repo.
+#
+# Split out of check-links.yml so that third-party outages never block a pull request.
+# This workflow does not gate anything: it runs on the 1st of each month, and when it
+# finds dead links it files (or updates) a single "Link Checker Report" issue to work
+# through when convenient. Run it on demand any time from the Actions tab.
+#
+# Fixing what it reports: replace the dead link, or -- if the site is alive in a browser
+# but blocks CI (403/415/redirect loop from datacenter IPs) -- add it to .lycheeignore
+# with a comment saying why. See CONTRIBUTING.md.
+
+name: Link audit
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"     # 06:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Restore lychee cache
+        uses: actions/cache@v6
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Check all links
+        uses: lycheeverse/lychee-action@v2
+        id: lychee
+        with:
+          args: >-
+            --no-progress
+            --accept 200..=204,429
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 45
+            --cache
+            --max-cache-age 1d
+            "**/*.md"
+          fail: false                 # never fail the run; the issue is the output
+          output: ./lychee/out.md
+
+      # Reuse one issue instead of opening a new one every month.
+      - name: Find existing report issue
+        if: steps.lychee.outputs.exit_code != 0
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          num=$(gh issue list --state open --label "automated issue" \
+                  --search "Link Checker Report in:title" \
+                  --json number --jq '.[0].number // empty')
+          echo "number=$num" >> "$GITHUB_OUTPUT"
+          echo "Existing report issue: ${num:-none}"
+
+      - name: File or update the report
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
+          issue-number: ${{ steps.existing.outputs.number }}

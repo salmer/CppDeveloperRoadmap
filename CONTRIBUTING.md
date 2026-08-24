@@ -42,11 +42,27 @@ We use `lychee` to ensure all links are valid.
 * **Dead Links**: If you find a dead link, please replace it with a Wayback Machine snapshot. Note it as an "(archived copy)" in the file's respective language.
 * **Manual Sweep**: Since Amazon links and other bot-blocking domains are in `.lycheeignore`, they are invisible to CI. A periodic manual sweep is required to ensure these links remain active.
 
+### How links are checked in CI
+
+Two separate workflows, so a third-party outage can never block your PR:
+
+| | when | scope | on failure |
+|---|---|---|---|
+| **Check links** | every PR | **internal** links only (relative paths between files) | fails the PR — these are real breakages you introduced |
+| **Link audit** | 1st of each month, or on demand | **all external** URLs | files/updates a "Link Checker Report" issue; blocks nothing |
+
 ### Local Link Checking
 
-Before opening a PR, please run `lychee` locally to verify links. Run the following command (requires `lychee` to be installed):
+Before opening a PR, run the same internal check CI runs — it takes milliseconds and needs no network:
+
+```bash
+lychee --offline --no-progress "**/*.md"
+```
+
+If you added or changed an **external** link, check that too (this one hits the network, so an occasional failure may just be the far end being slow):
 
 ```bash
 lychee --no-progress --accept "200..=204,429" --max-retries 2 --timeout 45 "**/*.md"
 ```
-This command must exit with code 0. Run this after ANY link change.
+
+Both must exit 0. If an external site is alive in your browser but fails from CI (403/415, or a redirect loop — common for sites that block datacenter IPs), add it to `.lycheeignore` with a comment explaining why.
