@@ -1,0 +1,452 @@
+cpp-developer	C++ developer
+soft-skills	Soft skills
+ability-to-learn	Умение учиться
+ask-the-right-questions	Умение задавать правильные вопросы
+process-information	Работа с информацией
+experimenting	Экспериментирование
+manage-knowledge	Управление знаниями
+manage-mistakes	Работа с ошибками
+analyze-mistakes	Анализ ошибок
+admitting-your-mistakes	Признание своих ошибок
+notify-about-mistakes-in	Своевременное сигнализирование об ошибках
+accept-criticism	Восприятие критики
+thinking	Мышление
+logical	Логическое
+systems	Системное
+critical	Критическое
+creative	Креативное
+strategic	Стратегическое
+responsibility	Ответственность
+discipline	Дисциплина
+persistence	Упорство
+initiative	Инициативность
+independence	Самостоятельность
+problem-solving	Решение проблем
+manage-resources	Управление ресурсами
+time-management	Тайм-менеджмент
+prioritization	Приоритизация
+taking-decisions	Принятие решений
+blind-typing	Слепая печать
+multitasking	Многозадачность
+communication	Коммуникация
+negotiation	Переговорные навыки
+ability-to-listen	Умение слушать
+persuasion	Убеждение
+ability-to-communicate-ideas	Умение доносить мысль/идеи внутри команды
+providing-information-to-people	Подача информации людям вне команды
+finding-compromises	Поиск компромиссов
+dispute-resolution	Регулирование споров
+english	Английский язык
+presentation	Презентация
+written-communication-skill	Навык переписки
+networking	Нетворкинг
+team-work	Командная работа
+understanding-the-distribution-of	Понимание распределения ролей в команде
+support-team-members	Помощь
+work-in-a-distributed	Работа в распределённой команде
+providing-feedback	Предоставление обратной связи
+leadership	Лидерство
+assigning-and-clarifying-tasks	Постановка задач сотрудникам
+planning-and-goal-setting	Планирование и целеполагание
+mentoring	Наставничество
+delegation	Делегирование
+emotional-intelligence	Эмоциональный интеллект
+stress-resistance	Стрессоустойчивость
+working-in-uncertainty	Работа в неопределённости
+adaptability	Адаптируемость
+open-mindedness	Открытость новому
+concentration	Концентрация
+empathy	Эмпатия
+understanding-the-development-context	Понимание контекста разработки
+customer-focus	Клиентоориентированность
+technology	Технологии
+trends	Тренды
+hard-skills	Hard skills
+language-syntax	Синтаксис языка
+basic-operations	Базовые операции
+arithmetic-operations	Арифметические операции
+logical-operations	Логические операции
+loops-for-while	Циклы for/while
+bitwise-operations	Битовые операции
+functions	Функции
+operators	Операторы
+lambda	lambda
+data-types	Типы данных
+static-typing	Статическая типизация
+dynamic-typing	Динамическая типизация
+rtti	RTTI
+pointers-and-references	Указатели и ссылки
+references	Ссылки
+smart-pointer	Умные указатели
+unique-ptr	unique_ptr
+shared-ptr	shared_ptr
+weak-ptr	weak_ptr
+memory-model	Модель памяти
+lifetime-of-objects	Время жизни
+raw-pointers	Сырые Указатели
+new-delete-operators	Операторы new/delete
+memory-leakage	Утечки памяти
+codebase-structuring	Организация кодовой базы
+code-splitting-into-headers	Разделение кода на headers/cpp юниты
+forward-declaration	Forward declaration
+scope	Область видимости
+namespaces	Пространство имён
+structures-and-classes	Структуры и классы
+object-oriented-programming	ООП
+static-polymorphism	Статический полиморфизм
+overloading-of-functions	Перегрузка методов
+dynamic-polymorphism	Динамический полиморфизм
+virtual-methods	Виртуальные методы
+virtual-table	Таблица виртуальных методов
+the-rule-of-zero	Правило нуля/трех/пяти
+multiple-inheritance	Множественное наследование
+diamond-inheritance	Ромбовидное наследование
+exception-handling	Обработка ошибок
+std-optional-std-expected	std::optional / std::expected
+exceptions	Исключения
+access-violation	Access violation
+noexcept	noexcept
+error-codes	Коды возврата
+std-error-code	std::error_code
+language-concepts	Концепции языка
+auto	auto (автоматическое выведение типов)
+type-casting	type casting
+static-cast	static_cast
+const-cast	const_cast
+dynamic-cast	dynamic_cast
+reinterpret-cast	reinterpret_cast
+undefined-behavior	Неопределённое поведение (Undefined Behavior)
+argument-dependent-lookup	Поиск, зависящий от аргумента (ADL)
+constexpr-consteval	constexpr / consteval
+macros	Макросы
+name-mangling	Name mangling
+move-semantics	Move-семантика
+value-categories	Категории значений (lvalue/rvalue)
+std-move-std-forward	std::move / std::forward
+perfect-forwarding	Perfect forwarding
+coroutines	Coroutines (C++20)
+modules	Modules (C++20)
+standard-library-stl	Стандартная библиотека + STL
+iostream	Поток ввода/вывода
+std-format-std-print	std::format / std::print
+date-time	Дата/время
+containers	Контейнеры
+std-span-std-string	std::span / std::string_view
+iterators	Итераторы
+algorithms	Алгоритмы стандартной библиотеки
+std-ranges	std::ranges
+multithreading	Многопоточность
+templates	Шаблоны
+variadic-templates	Variadic templates
+the-template-specialization	Специализация шаблона
+the-full-template-specialization	Полная специализация
+the-partial-template-specialization	Частичная специализация
+type-traits	type traits
+sfinae	SFINAE
+concepts	Concepts (C++20)
+idioms	Идиомы
+raii	RAII
+pimpl	pimpl
+non-copyable-non-moveable	Non-Copyable/Non-Moveable
+erase-remove	Erase-Remove
+copy-and-swap	Copy and swap
+copy-on-write	Copy on write
+crtp	CRTP
+standards	Стандарты
+cpp11-14	C++11/14
+cpp17	C++17
+cpp20	C++20
+cpp23	C++23
+cpp26	C++26 (newest)
+language-tools	Языковые инструменты
+working-with-source-code	Работа с исходным кодом
+text-editors	Текстовый редактор
+ide	IDE
+code-editors	Редакторы исходного кода
+knowledge-of-features-and	Знание о базовых возможностях (shortcuts, tools, plugins)
+debugger	Отладчик
+understanding-of-debugger-messages	Умение читать сообщения отладчика
+debugging-symbols	Отладочные символы
+windbg	WinDbg
+gdb	GDB
+lldb	LLDB
+linters	Линтеры
+compiler-explorer	Compiler Explorer (godbolt.org)
+compilers	Компиляторы
+basic-understanding-of-compilers	Базовые знания работы компиляторов
+compilation-of-sources-to	Компиляция кода в объектные файлы
+the-object-files-linkage	Компоновка объектных файлов в приложение (линковка)
+working-stages-of-compilers	Этапы работы компилятора
+features-of-a-particular	Особенности работы конкретного компилятора
+build-systems	Системы сборки
+cmake	CMake
+makefile	Makefile
+ninja	ninja
+package-managers	Пакетные менеджеры
+conan	Conan
+nuget	nuget
+vcpkg	vcpkg
+spack	spack
+working-with-libraries	Взаимодействие с библиотеками
+libraries-inclusion	Подключение библиотек
+licensing	Лицензирование
+libraries	Популярные библиотеки
+boost	boost
+opencv	opencv
+poco	poco
+protobuf	protobuf
+asio	Asio
+grpc	gRPC
+fmt	fmt
+nlohmann-json	nlohmann/json
+pybind11	pybind11
+spdlog	spdlog
+range-v3	range-v3
+tensorflow	tensorflow
+opencl	opencl
+frameworks	Фреймворки
+gtest-gmock	gtest/gmock
+qt	Qt
+catch2	catch2
+google-benchmark	google benchmark
+google-profiler	google profiler
+pytorch-cpp	pytorch c++
+common-skills	Общие навыки
+computers-science	Информатика
+data-structures	Структуры данных
+boolean-algebra	Булева алгебра
+computers-science-algorithms	Алгоритмы
+finite-state-machines	Конечные автоматы
+version-control-software	Системы контроля версий
+distributed	Распределенные
+git	git
+mercurial	Mercurial
+centralized	Централизованные
+svn	SVN
+best-practices	Практики разработки
+code-quality	Качество кода
+code-guidelines	Правила оформления кода
+principles-of-development	Принципы разработки
+kiss	KISS (Keep It Simple, Stupid)
+dry	DRY (Don't Repeat Yourself)
+yagni	YAGNI (You Aren't Gonna Need It)
+apo	APO (Avoid Premature Optimization)
+bduf	BDUF (Big Design Up Front)
+composition-is-preferably-than	Композиция предпочтительнее наследования
+occam-s-razor	Бритва Оккама
+divide-and-conquer	Разделяй и властвуй
+logging-and-telemetry	Логирование и телеметрия
+code-review	Ревью кода
+skill-to-read-existing	Умение читать чужой код
+skill-to-review-code	Ревью чужого кода
+lifecycle-stages-of-a	Понимание жизненного цикла производства ПО
+implementation	Реализация
+testing	Тестирование
+unit-tests	Юнит тесты
+integration-tests	Интеграционное
+functional-tests	Функциональное
+performance-tests	Производительность
+maintanance	Поддержка
+versioning	Версионирование ПО
+backward-compatibility	Обратная совместимость
+software-architecture-and-components	Формирование архитектуры и дизайн компонентов
+components-integration	Интеграция компонентов
+deployment	Выпуск
+collecting-requirements	Сбор требований
+end-of-a-software	Окончание жизненного цикла
+code-analyzers	Анализаторы кода
+static-analyzers	Статические
+dynamic-analyzers	Динамические
+profilers	Профайлеры
+valgrind	Valgrind
+perf-vtune	perf / VTune
+cpp-core-guidelines	C++ core guidelines
+microsoft-gsl	Microsoft GSL
+industrial-standards	Промышленные стандарты
+misra-cpp-2023	MISRA C++:2023
+autosar	Autosar
+eu-cyber-resilience-act	EU Cyber Resilience Act (CRA)
+sbom	SBOM
+iec-62304	IEC 62304 (медицина)
+iso-26262	ISO 26262 (автомобили)
+do-178c	DO-178C (авиация)
+command-line	Работа с командной строкой
+powershell	Powershell
+batch	batch
+bash	bash
+ci-cd	CI/CD
+creation-of-a-software	Создание пакета поставки ПО
+documentation	Документация
+installer-package	Инсталлятор
+trunk-based-development	Trunk Based Development
+zero-downtime-deployment	Zero downtime deployment
+ai-tools	AI-инструменты
+ai-assistants	AI-ассистенты (Copilot, Claude Code, Cursor)
+verifying-generated-code	Верификация сгенерированного кода
+company-policy-and-confidentiality	Политика компании и конфиденциальность
+licensing-risks-of-generated	Лицензионные риски генерируемого кода
+local-models	Локальные модели
+usage-of-other-programming	Использование других языков программирования
+language-interoperability	Межязыковое взаимодействие
+software-design	Проектирование ПО
+design-patters	Паттерны проектирования (GoF)
+structural	Структурные
+behavioral	Поведенческие
+creational	Порождающие
+oop	ООП
+solid	SOLID
+uml	UML
+architecture-styles	Архитектурные стили
+component-based	Component-based
+monolithic-application	Monolithic application
+layered	Layered
+client-server	Client-server
+microservices-architecture	Microservices architecture
+event-driven	Event-driven
+plug-ins	Plug-ins
+rest	REST
+service-oriented-architecture	Service-oriented architecture
+architecture-patterns	Архитектурные паттерны
+mvc	MVC
+mvvm	MVVM
+three-tier	Three-tier
+onion	Onion
+hexagon	Hexagon
+methodologies-of-development	Методологии
+test-driven-development	Test Driven Development
+behavior-driven-development	Behavior Driven Development
+domain-driven-design	Domain Driven Design
+operating-systems	Операционные системы
+binary-units	Бинарные единицы
+executable-file	Исполняемый файл
+static-library	Статическая библиотека
+dynamic-library	Динамическая библиотека
+memory	Память
+memory-abstractions	Абстракции памяти
+stack	Стек
+heap	Куча
+global-memory	Глобальная память
+application-memory	Память приложения
+memory-alignment	Выравнивание памяти
+memory-management	Управление памятью
+virtual-memory	Виртуальная память
+threads	Потоки
+threads-multithreading	Многопоточность
+errors	Ошибки
+dead-lock	Dead lock
+race-condition	Race condition
+live-lock	Live lock
+starvation	Starvation
+std-atomic-cpp-memory	std::atomic, модель памяти C++
+concurrency	Конкуренция
+mutexes	Мьютексы
+semaphores	Семафоры
+lock-free	Алгоритмы без блокировок (lock-free)
+condition-variable	condition_variable
+future-promise-async	future / promise / async
+jthread	jthread (C++20)
+event-handling	Обработка событий
+sync	Синхронные
+async	Асинхронные
+openmp-tbb	OpenMP / TBB
+process	Процессы
+interprocess-communication	Межпроцессное взаимодействие
+shared-memory	Shared memory
+pipes	Pipes
+serialization	Сериализация
+json	json
+xml	XML
+network	Сетевой стек
+tcp-ip	TCP/IP
+sockets	Сокеты
+tcp	TCP
+udp	UDP
+http	HTTP
+osi	OSI
+file-system	Файловая система
+task-scheduler	Планировщик
+virtualization	Виртуализация
+virtualbox	VirtualBox
+vmware-workstation	VMware Workstation
+hyper-v	Hyper-V
+virtualization-containers	Контейнеризация
+docker	Docker
+kubernetes	Kubernetes
+cloud-services	Облачные сервисы
+security	Безопасность
+vulnerabilities-buffer-overflow-use	Уязвимости: buffer overflow, use-after-free
+sanitizers	Санитайзеры (ASan / TSan / UBSan)
+encryption	Шифрование
+fuzzing	Fuzzing
+cert-cpp-cwe	CERT C++ / CWE
+multicpu-systems	Многопроцессорные системы
+multicore-cpu	Multicore CPU
+numa	NUMA
+input-output	Ввод и вывод информации
+drivers	Драйверы
+audio	Аудио
+directsound	DirectSound
+openal	OpenAL
+graphics	Графическое вычисление/отображение
+directx	DirectX
+opengl	OpenGL
+vulkan	Vulkan
+cuda	CUDA
+printers	Печать
+the-overloading-of-regular	Перегрузка стандартных операторов для различных типов/структур/классов.
+to-prevent-memory-leakage	Чтобы избежать проблем с управлением памятью, старайтесь писать код используя ссылки и умные указатели.
+it-s-preferred-to	Не используйте множественное наследование
+some-of-language-constructions	Языковые конструкции для которых отсутствуют прописанные требования в стандартах. В случае ошибки дальнейшее поведение будет предсказать невозможно, и всецело будет зависеть от контекста выполнения или платформы, где запущено приложение.
+ability-to-gather-analyze	Умение собирать информацию, анализировать её и выдавать взвешенное решение.
+choose-one-of-the	Выберите один из понравившихся популярных IDE и хорошо освойте его: MS Visual Studio, VS Code, Qt Creator, JetBrains CLion, XCode и т.д.
+choose-one-of-the-2	Выберите один из популярных редакторов и хорошо освойте его. К примеру: Notepad++, Sublime Text и т.д.
+choose-one-of-the-3	Выберите один из популярных редакторов и хорошо освойте его: VS Code, Sublime Text, Zed и т.д.
+learn-about-common-errors	Ознакомьтесь с самыми распространёнными ошибками (segfault, out of memory, access violation) и концепцией неопределённого поведения (undefined behavior)
+reflection	Рефлексия
+study-how-to-use	Научитесь пользоваться отладчиком. Изучите его возможности.
+the-ability-to-work	Навык работы с отладчиком через командную строку - узконаправленный навык. В регулярной работе достаточно уметь работать с отладчиком в рамках IDE.
+calmly-react-to-what	Спокойно реагировать на то, что люди говорят. Скорее всего, они учитывают только собственный контекст, когда что-то пытаются доказать. Это нормально. Оценивайте полезность их точки зрения.
+the-compiler-performs-several	Есть несколько этапов работы компилятора, о которых следует знать. Это помогает решать проблемы при сборке приложения. Достаточно иметь базовое понимание, чтобы решать большую часть проблем. Детали работы важны разработчикам компиляторов.
+take-challenging-tasks-in	Брать сложные задачи, чтобы развивать свои навыки и компетенции, даже когда недостаточно знаний/опыта (через такие задачи гораздо быстрее развиваются навыки). Главное отличить реально полезную сложную задачу, которая прокачает, от задачи, на которую ищут крайнего.
+each-compiler-has-its	У компиляторов есть свои особенности, о которых хорошо бы знать: Clang++/LLVM, Intel C++, MSVS C++, GCC, MinGW
+you-should-be-responsible	Быть ответственным за профессиональное развитие. Не ждать пока тимлид решит, что изучать. Не стоит забывать, что слепое следование чужому плану заточит под задачи конкретной компании. Стоит обсуждать и встраивать свои интересы в план. Если этого не сделать - высокий риск получить "непереносимые" компетенции, что ударит по карьерным возможностям. Но и не стоит ударяться в крайности: изучать абсолютно всё подряд или пассивно ждать, пока выдадут план развития.
+carefully-read-the-terms	Внимательно читайте условия лицензионного соглашения. Ваш проект должен их соблюдать.
+self-organization	Самоорганизация
+the-ability-to-provide	Способность предоставлять тот объем информации, который необходим для общения с людьми разного бекграунда.
+at-first-some-of	Сначала может показаться, что некоторые из навыков развивать невозможно. Однако мы считаем иначе. Над каждым из пунктов возможно работать. Всё упирается в желание и внутренние блоки. Всё индивидуально, и зависит от вас. :)
+conflict-solving	Решение конфликтов
+if-you-read-this	Достаточно уверенного чтения документации и статей, но для более перспективных вакансий разговорный/письменный навык становится обязательным.
+look-for-like-minded	Искать единомышленников и присоединяться/создавать комьюнити для общения и передачи опыта.
+it-s-also-good	Также необходимо понимать, как вычислить сложность и потребление памяти у алгоритмов.
+you-should-study-and	Чтобы быть конкурентоспособным, стоит изучать и наблюдать за новыми веяниями, а также уметь адаптироваться под них.
+experienced-developers-should-develop	Опытному разработчику стоит развивать навыки управления и общения с бизнесом для эффективного выполнения задач. Это легче делать, если развит эмоциональный интеллект. Для джуниора навык также полезен, чтобы лучше взаимодействовать с коллегами.
+to-configure-automated-code	Настроить форматирование и автоматически проверять в одной из утилит: clang-format, Resharper - стиль кода, MSVS - стиль кода.
+naming-conventions-tabs-vs	Правила именования переменных, пробелы vs табы, положение фигурных скобок и т.д.
+do-not-ignore-warnings	Не игнорируйте предупреждения компилятора и статического анализатора. Они вам друзья, а не враги
+ai-can-generate-plausible	AI может генерировать правдоподобный, но неверный код — проверяйте и тестируйте всё. Знание C++ необходимо.
+scripting-functional-sql-like	- Скриптовые - Функциональные - SQL like - NoSQL
+sometimes-it-s-needed	Иногда требуется предоставить обертку к библиотеке, написанной на C++ для другого ЯП, например Python или C#. Для этого применяют специальные библиотеки/фреймворки.
+memory-safety-requirements-are	Требования к memory safety растут (регуляторы США и ЕС). Изучайте безопасные практики и инструменты анализа.
+stage1	1 этап
+stage2	2 этап
+stage3	3 этап
+stage4	4 этап
+stage5	5 этап
+cpp-developer-roadmap	C++ Developer Roadmap
+last-updated	Последнее обновление: 21.07.2026
+about	О карте:
+c-is-still-one	С++ всё ещё является одним из самых популярных языков разработки. Есть немало желающих начать его изучать и стать C++ разработчиками. Перед такими людьми встают вопросы: "С чего мне начать? Что и в каком порядке мне изучать? Какие книги стоит почитать?" Мы попытались ответить на эти вопросы в представленной дорожной карте. Карта акцентируется на общих компетенциях и навыках, которые встречаются в большинстве проектов. Она призвана помочь тем, кто только начинает свое обучение или имеет небольшой опыт. Изучив набор перечисленных материалов, вы сможете составить более продуктивный план обучения, не отвлекаясь на побочную информацию. Это поможет вам освоить C++ на том уровне, который встречается во многих коммерческих проектах.
+repository	Репозиторий:
+repository-link	https://github.com/salmer/CppDeveloperRoadmap
+how-to-use	Как ориентироваться:
+feedback	Предложения и замечания:
+legend-the-juniors-should-be	От джуниора ожидается осведомленность про категории, которые относятся к Middle/Senior. Будет достаточным поверхностное понимание темы.
+legend-the-middle-developer-has	Мидл способен создать дизайн и решения для функционала внутри компонента/приложения даже в случае неполноты требований.
+legend-optional	Optional
+if-you-have-any	Если у вас есть замечания, вопросы или предложения, будем рады получить любую помощь и поддержку. Мы открыты для общения :) Для этого используйте следующие механизмы Github: - Предложения/правки по репозиторию - создавайте и присылайте новый PR в Pull Requests
+legend-senior	Senior
+legend-middle	Middle
+legend-junior	Junior
+legend-the-junior-must-acquire	Джуниору важно научиться писать структурированный код и не усложнять его без надобности. Код должен быть легко читаемым и поддерживаемым.
+legend-the-steps-are-presented	На карте представлены компетенции, которые выделены в "этапы". Мы считаем, что джуниору стоит начинать изучение в данном порядке, чтобы выстроить прочный фундамент.
+legend-the-senior-developer-has	Синиор способен создать дизайн и решение для компонента/приложения с учётом бизнес-контекста.

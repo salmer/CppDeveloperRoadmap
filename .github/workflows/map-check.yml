@@ -1,0 +1,56 @@
+# Validates the roadmap maps on every PR that touches them or the generator.
+#
+# The three <Language>/Graph/roadmap.drawio.svg maps are build output of tools/mapgen —
+# generated from one language-neutral source (structure.dsl + <lang>.tsv). CI cannot
+# rebuild them (that needs the draw.io desktop CLI), so instead it verifies that what was
+# committed is valid and still matches the source:
+#
+#   1. Unit-test the generator  — DSL parser + hint geometry (no Pillow/draw.io needed).
+#   2. Validate the maps        — tools/mapcheck: text fits its box, nothing overlaps, and
+#                                 the committed maps match structure.dsl / <lang>.tsv
+#                                 (so a forgotten rebuild fails here rather than shipping).
+#
+# Hard errors fail the build; cross-language drift and a stale "Last updated" date are
+# reported as warnings. See tools/mapcheck/README.md.
+
+name: Check maps
+
+on:
+  pull_request:
+    paths:
+      - "*/Graph/roadmap.drawio.svg"
+      - "tools/mapgen/**"          # DSL/tsv source — the map-vs-DSL check compares against it
+      - "tools/mapcheck/**"
+      - ".github/workflows/map-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mapcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0            # date check reads each map's last-commit date
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit-test the generator
+        run: python tools/mapgen/test_build.py       # parser + geometry math; no Pillow/draw.io needed
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --quiet Pillow
+          sudo apt-get update -qq
+          # Liberation Sans is metric-compatible with Arial (what draw.io uses);
+          # Noto CJK covers the Chinese map.
+          sudo apt-get install -y -qq fonts-liberation fonts-noto-cjk
+
+      - name: Validate maps
+        run: python tools/mapcheck/check.py

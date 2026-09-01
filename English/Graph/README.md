@@ -1,19 +1,43 @@
 # How to view and edit the roadmap
 
-The roadmap is stored as [roadmap.drawio.svg](roadmap.drawio.svg) — a regular SVG image with the editable [draw.io](https://www.drawio.com) diagram embedded inside it. The same file is both the picture you see and the source you edit, so there is nothing to export or keep in sync: every accepted pull request updates the published roadmap immediately.
+[roadmap.drawio.svg](roadmap.drawio.svg) is a regular SVG image with a [draw.io](https://www.drawio.com)
+diagram embedded inside it — open it anywhere to see the map. It is **generated**: the real
+source is a language-neutral text description in [`tools/mapgen/roadmap/`](../../tools/mapgen/roadmap),
+so this `.drawio.svg` is build output, not the thing you edit.
 
 ## Viewing
 
 - On the site: [salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=en](https://salmer.github.io/CppDeveloperRoadmap/goto/svg/?l=en)
 - On GitHub: open [roadmap.drawio.svg](roadmap.drawio.svg) — it renders as an image.
+- Interactively: the [draw.io viewer](https://salmer.github.io/CppDeveloperRoadmap/goto/drawio/?l=en) (view only — changes there are not saved back).
 
 ## Editing
 
-1. Fork the repository.
-2. Open the diagram in one of the draw.io editors:
-   - **Web:** go to [sketch.diagrams.net](https://sketch.diagrams.net) (the whiteboard-style UI of draw.io), open the file from *GitHub*, authorize, and select `English/Graph/roadmap.drawio.svg` in your fork. Saving commits directly to your fork.
-   - **VS Code:** install the [Draw.io Integration extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) and open the file (this also works in the browser via github.dev — press `.` on your fork).
-   - **Desktop:** the [draw.io desktop app](https://www.drawio.com).
-3. Open a pull request with your change.
+The map is built from `tools/mapgen/roadmap/` — `structure.dsl` (the node tree, grades,
+stages, hint boxes) and one `<lang>.tsv` per language (just the text). **Do not edit this
+`.drawio.svg` by hand** — it is regenerated from the source, and CI (`mapcheck`) rejects a map
+that has drifted from it.
 
-> :warning: Do not edit the SVG text by hand outside draw.io — that can strip the embedded diagram source and make the file uneditable. The file starts with a comment saying the same.
+1. Fork the repository and edit the source:
+   - a node, its grade/stage, or a hint → `tools/mapgen/roadmap/structure.dsl`
+   - wording (a label, a hint, the date) → the matching row in `en.tsv` / `ru.tsv` / `zh.tsv`
+     (a new node needs a row in **all three**).
+2. **First time only** — get your machine ready:
+   ```bash
+   python tools/mapgen/setup.py --venv
+   ```
+   It creates a virtualenv, installs Pillow, and checks for the two things it can't
+   install for you (a CJK font and the draw.io desktop app), printing the exact command
+   for your OS if either is missing.
+3. Rebuild, update all three maps and validate — one command from the repo root:
+   ```bash
+   python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
+   ```
+   `--deploy` copies each built map over its `<Language>/Graph/roadmap.drawio.svg`;
+   `--check` runs `mapcheck` afterwards. Dependencies are re-verified before anything is
+   built, so a missing one — or a virtualenv you forgot to activate — is reported up front.
+4. Open a pull request with the source **and** the regenerated maps.
+
+See [`tools/mapgen/README.md`](../../tools/mapgen/README.md) for the DSL grammar and details.
+Can't run the build? Edit the source anyway and note it in your PR — a maintainer will
+regenerate the maps.

@@ -45,3 +45,6 @@ https://www\.sfml-dev\.org.*
 # reports an untrusted certificate. Server-side misconfiguration on their end,
 # nothing we can fix; drop this line once they fix their chain.
 https://www\.autosar\.org.*
+# stackoverflow.com redirects the bare root to /questions and then answers 403 to
+# non-browser clients -- the same bot-detection false positive as reddit/amazon above.
+https://stackoverflow\.com/?$

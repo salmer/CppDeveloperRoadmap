@@ -1,51 +1,40 @@
+# Fast, deterministic link check that runs on every PR.
+#
+# This checks ONLY internal links -- relative paths between files in the repo. Those are
+# the ones a PR can actually break (a moved file, a wrong ../ prefix), and they never fail
+# for reasons outside the repo, so this check is safe to require for merge. It takes
+# milliseconds because nothing goes over the network.
+#
+# External URLs are NOT checked here on purpose. There are ~370 of them; any one being
+# down, rate-limited, or blocking datacenter IPs would fail an unrelated PR. They are swept
+# monthly instead by link-audit.yml, which opens an issue rather than blocking anyone.
+
 name: Check links
 
 on:
   pull_request:
-  schedule:
-    # Every Monday at 06:00 UTC
-    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
+  # NOTE: job id `lychee` is deliberate -- the required status check is named
+  # "Check links / lychee". Renaming this job would break branch protection.
   lychee:
+    name: lychee
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Restore lychee cache
-        uses: actions/cache@v6
-        with:
-          path: .lycheecache
-          key: cache-lychee-${{ github.sha }}
-          restore-keys: cache-lychee-
-
-      - name: Check links in markdown files
+      - name: Check internal links
         uses: lycheeverse/lychee-action@v2
-        id: lychee
         with:
           args: >-
+            --offline
             --no-progress
-            --accept 200..=204,429
-            --max-retries 2
-            --timeout 45
-            --cache
-            --max-cache-age 1d
             "**/*.md"
           fail: true
-          output: ./lychee/out.md
-
-      - name: Create Issue From File
-        if: failure() && github.event_name == 'schedule'
-        uses: peter-evans/create-issue-from-file@v6
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: report, automated issue

@@ -1,0 +1,10 @@
+# Generated maps are written by tools/mapgen/build.py with LF endings. Pin them to LF so a
+# checkout doesn't rewrite them to CRLF on Windows: otherwise `build.py --deploy` reports
+# three modified files whose only change is line endings. Keeps the working tree
+# byte-identical to what the generator produces.
+*.drawio.svg text eol=lf
+*.drawio     text eol=lf
+
+# The map source is likewise generator-written / hand-edited in lockstep with it.
+tools/mapgen/roadmap/*.dsl text eol=lf
+tools/mapgen/roadmap/*.tsv text eol=lf

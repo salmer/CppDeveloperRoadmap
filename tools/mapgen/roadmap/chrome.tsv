@@ -1,0 +1,19 @@
+# role	id	x	y	w	h	link	style
+cpp-developer-roadmap	397	616	20	4118	329		rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=100;fontColor=#000000;fontStyle=1;verticalAlign=middle;align=center;
+last-updated	n1100	523	400	560	60		rounded=1;html=0;fillColor=#FFF5EB;strokeColor=#000000;strokeWidth=1;fontSize=28;fontColor=#000000;verticalAlign=middle;align=center;
+about	398	605	700	706	109		rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=50;fontColor=#000000;fontStyle=1;verticalAlign=middle;align=center;
+c-is-still-one	399	605	860	1343	329		rounded=1;html=0;fillColor=#FFF5EB;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+repository	412	605	1262	706	109		rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=50;fontColor=#000000;fontStyle=1;verticalAlign=middle;align=center;
+repository-link	413	690	1401	546	69	https://github.com/salmer/CppDeveloperRoadmap	rounded=1;html=0;fillColor=#FFF5EB;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+how-to-use	400	605	1781	718	109		rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=50;fontColor=#000000;fontStyle=1;verticalAlign=middle;align=center;
+feedback	402	1371	1781	707	109		rounded=1;html=0;fillColor=#FFE5B9;strokeColor=#000000;strokeWidth=1;fontSize=50;fontColor=#000000;fontStyle=1;verticalAlign=middle;align=center;
+legend-the-juniors-should-be	410	605	1919	219	192		rounded=0;html=0;fillColor=#96BB7C;strokeColor=#000000;strokeWidth=1;fontSize=16;fontColor=#000000;verticalAlign=middle;align=center;
+legend-the-middle-developer-has	407	1093	1919	229	192		rounded=0;html=0;fillColor=#FAD586;strokeColor=#000000;strokeWidth=1;fontSize=16;fontColor=#000000;verticalAlign=middle;align=center;
+legend-optional	403	913	1920	103	41		rounded=0;html=0;fillColor=#CCEEFF;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+if-you-have-any	401	1371	1941	707	329		rounded=1;html=0;fillColor=#FFF5EB;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+legend-senior	406	923	1971	83	41		rounded=0;html=0;fillColor=#BBCCEE;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+legend-middle	405	922	2020	85	41		rounded=0;html=0;fillColor=#FAD586;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+legend-junior	404	925	2070	79	41		rounded=0;html=0;fillColor=#96BB7C;strokeColor=#000000;strokeWidth=1;fontSize=24;fontColor=#000000;verticalAlign=middle;align=center;
+legend-the-junior-must-acquire	409	608	2133	212	192		rounded=0;html=0;fillColor=#96BB7C;strokeColor=#000000;strokeWidth=1;fontSize=16;fontColor=#000000;verticalAlign=middle;align=center;
+legend-the-steps-are-presented	411	843	2133	236	192		rounded=0;html=0;fillColor=#96BB7C;strokeColor=#000000;strokeWidth=1;fontSize=16;fontColor=#000000;verticalAlign=middle;align=center;
+legend-the-senior-developer-has	408	1095	2133	226	192		rounded=0;html=0;fillColor=#BBCCEE;strokeColor=#000000;strokeWidth=1;fontSize=16;fontColor=#000000;verticalAlign=middle;align=center;

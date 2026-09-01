@@ -1,0 +1,452 @@
+cpp-developer	C++ developer
+soft-skills	Soft skills
+ability-to-learn	Ability to learn
+ask-the-right-questions	Ask the right questions
+process-information	Process information
+experimenting	Experimenting
+manage-knowledge	Manage knowledge
+manage-mistakes	Manage mistakes
+analyze-mistakes	Analyze mistakes
+admitting-your-mistakes	Admitting your mistakes
+notify-about-mistakes-in	Notify about mistakes in time
+accept-criticism	Accept criticism
+thinking	Thinking
+logical	Logical
+systems	Systems
+critical	Critical
+creative	Creative
+strategic	Strategic
+responsibility	Responsibility
+discipline	Discipline
+persistence	Persistence
+initiative	Initiative
+independence	Independence
+problem-solving	Problem solving
+manage-resources	Manage resources
+time-management	Time management
+prioritization	Prioritization
+taking-decisions	Taking decisions
+blind-typing	Blind typing
+multitasking	Multitasking
+communication	Communication
+negotiation	Negotiation
+ability-to-listen	Ability to listen
+persuasion	Persuasion
+ability-to-communicate-ideas	Ability to communicate ideas and thoughts within the team
+providing-information-to-people	Providing information to people outside the team
+finding-compromises	Finding compromises
+dispute-resolution	Dispute resolution
+english	English
+presentation	Presentation
+written-communication-skill	Written communication skill
+networking	Networking
+team-work	Team work
+understanding-the-distribution-of	Understanding the distribution of roles in a team
+support-team-members	Support team members
+work-in-a-distributed	Work in a distributed team
+providing-feedback	Providing feedback
+leadership	Leadership
+assigning-and-clarifying-tasks	Assigning and clarifying tasks to employees
+planning-and-goal-setting	Planning and goal setting
+mentoring	Mentoring
+delegation	Delegation
+emotional-intelligence	Emotional intelligence
+stress-resistance	Stress resistance
+working-in-uncertainty	Working in uncertainty
+adaptability	Adaptability
+open-mindedness	Open-mindedness
+concentration	Concentration
+empathy	Empathy
+understanding-the-development-context	Understanding the development context
+customer-focus	Customer focus
+technology	Technology
+trends	Trends
+hard-skills	Hard skills
+language-syntax	Language syntax
+basic-operations	Basic operations
+arithmetic-operations	Arithmetic operations
+logical-operations	Logical operations
+loops-for-while	Loops: for/while
+bitwise-operations	Bitwise operations
+functions	Functions
+operators	Operators
+lambda	lambda
+data-types	Data types
+static-typing	Static typing
+dynamic-typing	Dynamic typing
+rtti	RTTI
+pointers-and-references	Pointers & References
+references	References
+smart-pointer	Smart pointer
+unique-ptr	unique_ptr
+shared-ptr	shared_ptr
+weak-ptr	weak_ptr
+memory-model	Memory model
+lifetime-of-objects	Lifetime of objects
+raw-pointers	Raw pointers
+new-delete-operators	new/delete operators
+memory-leakage	Memory leakage
+codebase-structuring	Codebase structuring
+code-splitting-into-headers	Code splitting into headers/cpp files
+forward-declaration	Forward declaration
+scope	Scope
+namespaces	Namespaces
+structures-and-classes	Structures and classes
+object-oriented-programming	Object Oriented programming (OOP)
+static-polymorphism	Static polymorphism
+overloading-of-functions	Overloading of functions
+dynamic-polymorphism	Dynamic polymorphism
+virtual-methods	Virtual methods
+virtual-table	Virtual table (vtbl)
+the-rule-of-zero	The rule of zero/three/five
+multiple-inheritance	Multiple inheritance
+diamond-inheritance	Diamond inheritance
+exception-handling	Exception handling
+std-optional-std-expected	std::optional / std::expected
+exceptions	Exceptions
+access-violation	Access violation
+noexcept	noexcept
+error-codes	Error codes
+std-error-code	std::error_code
+language-concepts	Language concepts
+auto	auto (automatic type deduction)
+type-casting	type casting
+static-cast	static_cast
+const-cast	const_cast
+dynamic-cast	dynamic_cast
+reinterpret-cast	reinterpret_cast
+undefined-behavior	Undefined Behavior (UB)
+argument-dependent-lookup	Argument-dependent lookup (ADL)
+constexpr-consteval	constexpr / consteval
+macros	Macros
+name-mangling	Name mangling
+move-semantics	Move semantics
+value-categories	Value categories (lvalue/rvalue)
+std-move-std-forward	std::move / std::forward
+perfect-forwarding	Perfect forwarding
+coroutines	Coroutines (C++20)
+modules	Modules (C++20)
+standard-library-stl	Standard library + STL
+iostream	iostream
+std-format-std-print	std::format / std::print
+date-time	Date/time
+containers	Containers
+std-span-std-string	std::span / std::string_view
+iterators	Iterators
+algorithms	Algorithms
+std-ranges	std::ranges
+multithreading	Multithreading
+templates	Templates
+variadic-templates	Variadic templates
+the-template-specialization	The template specialization
+the-full-template-specialization	The full template specialization
+the-partial-template-specialization	The partial template specialization
+type-traits	type traits
+sfinae	SFINAE
+concepts	Concepts (C++20)
+idioms	Idioms
+raii	RAII
+pimpl	pimpl
+non-copyable-non-moveable	Non-Copyable/Non-Moveable
+erase-remove	Erase-Remove
+copy-and-swap	Copy and swap
+copy-on-write	Copy on write
+crtp	CRTP
+standards	Standards
+cpp11-14	C++11/14
+cpp17	C++17
+cpp20	C++20
+cpp23	C++23
+cpp26	C++26 (newest)
+language-tools	Language tools
+working-with-source-code	Working with source code
+text-editors	Text editors
+ide	IDE
+code-editors	Code editors
+knowledge-of-features-and	Knowledge of features and abilities (shortcuts, tools, plugins)
+debugger	Debugger
+understanding-of-debugger-messages	Understanding of debugger messages
+debugging-symbols	Debugging symbols
+windbg	WinDbg
+gdb	GDB
+lldb	LLDB
+linters	Linters
+compiler-explorer	Compiler Explorer (godbolt.org)
+compilers	Compilers
+basic-understanding-of-compilers	Basic understanding of compilers stages
+compilation-of-sources-to	Compilation of sources to object files (compilation)
+the-object-files-linkage	The object files linkage (linking)
+working-stages-of-compilers	Working stages of compilers
+features-of-a-particular	Features of a particular compiler
+build-systems	Build systems
+cmake	CMake
+makefile	Makefile
+ninja	ninja
+package-managers	Package managers
+conan	Conan
+nuget	nuget
+vcpkg	vcpkg
+spack	spack
+working-with-libraries	Working with libraries
+libraries-inclusion	Libraries inclusion
+licensing	Licensing
+libraries	Libraries
+boost	boost
+opencv	opencv
+poco	poco
+protobuf	protobuf
+asio	Asio
+grpc	gRPC
+fmt	fmt
+nlohmann-json	nlohmann/json
+pybind11	pybind11
+spdlog	spdlog
+range-v3	range-v3
+tensorflow	tensorflow
+opencl	opencl
+frameworks	Frameworks
+gtest-gmock	gtest/gmock
+qt	Qt
+catch2	catch2
+google-benchmark	google benchmark
+google-profiler	google profiler
+pytorch-cpp	pytorch c++
+common-skills	Common skills
+computers-science	Computers Science
+data-structures	Data structures
+boolean-algebra	Boolean algebra
+computers-science-algorithms	Algorithms
+finite-state-machines	Finite-state machines
+version-control-software	Version control software
+distributed	Distributed
+git	git
+mercurial	Mercurial
+centralized	Centralized
+svn	SVN
+best-practices	Best practices
+code-quality	Code quality
+code-guidelines	Code guidelines
+principles-of-development	Principles of development
+kiss	KISS (Keep It Simple, Stupid)
+dry	DRY (Don't Repeat Yourself)
+yagni	YAGNI (You Aren't Gonna Need It)
+apo	APO (Avoid Premature Optimization)
+bduf	BDUF (Big Design Up Front)
+composition-is-preferably-than	Composition is preferably than the inheritance
+occam-s-razor	Occam's razor
+divide-and-conquer	Divide and Conquer
+logging-and-telemetry	Logging and telemetry
+code-review	Code review
+skill-to-read-existing	Skill to read existing code sources
+skill-to-review-code	Skill to review code
+lifecycle-stages-of-a	Lifecycle stages of a software
+implementation	Implementation
+testing	Testing
+unit-tests	Unit tests
+integration-tests	Integration tests
+functional-tests	Functional tests
+performance-tests	Performance tests
+maintanance	Maintanance
+versioning	Versioning
+backward-compatibility	Backward compatibility
+software-architecture-and-components	Software architecture and components design
+components-integration	Components integration
+deployment	Deployment
+collecting-requirements	Collecting requirements
+end-of-a-software	End of a software lifecycle
+code-analyzers	Code analyzers
+static-analyzers	Static analyzers
+dynamic-analyzers	Dynamic analyzers
+profilers	Profilers
+valgrind	Valgrind
+perf-vtune	perf / VTune
+cpp-core-guidelines	C++ core guidelines
+microsoft-gsl	Microsoft GSL
+industrial-standards	Industrial standards
+misra-cpp-2023	MISRA C++:2023
+autosar	Autosar
+eu-cyber-resilience-act	EU Cyber Resilience Act (CRA)
+sbom	SBOM
+iec-62304	IEC 62304 (medical)
+iso-26262	ISO 26262 (automotive)
+do-178c	DO-178C (avionics)
+command-line	Command line
+powershell	Powershell
+batch	batch
+bash	bash
+ci-cd	CI/CD
+creation-of-a-software	Creation of a software deployment package
+documentation	Documentation
+installer-package	Installer package
+trunk-based-development	Trunk Based Development
+zero-downtime-deployment	Zero downtime deployment
+ai-tools	AI tools
+ai-assistants	AI assistants (Copilot, Claude Code, Cursor)
+verifying-generated-code	Verifying generated code
+company-policy-and-confidentiality	Company policy and confidentiality
+licensing-risks-of-generated	Licensing risks of generated code
+local-models	Local models
+usage-of-other-programming	Usage of other programming languages
+language-interoperability	Language interoperability
+software-design	Software design
+design-patters	Design Patters (GoF)
+structural	Structural
+behavioral	Behavioral
+creational	Creational
+oop	OOP
+solid	SOLID
+uml	UML
+architecture-styles	Architecture styles
+component-based	Component-based
+monolithic-application	Monolithic application
+layered	Layered
+client-server	Client-server
+microservices-architecture	Microservices architecture
+event-driven	Event-driven
+plug-ins	Plug-ins
+rest	REST
+service-oriented-architecture	Service-oriented architecture
+architecture-patterns	Architecture patterns
+mvc	MVC
+mvvm	MVVM
+three-tier	Three-tier
+onion	Onion
+hexagon	Hexagon
+methodologies-of-development	Methodologies of development
+test-driven-development	Test Driven Development
+behavior-driven-development	Behavior Driven Development
+domain-driven-design	Domain Driven Design
+operating-systems	Operating systems
+binary-units	Binary units
+executable-file	Executable file
+static-library	Static library
+dynamic-library	Dynamic library
+memory	Memory
+memory-abstractions	Memory abstractions
+stack	Stack
+heap	Heap
+global-memory	Global memory
+application-memory	Application memory
+memory-alignment	Memory alignment
+memory-management	Memory management
+virtual-memory	Virtual memory
+threads	Threads
+threads-multithreading	Multithreading
+errors	Errors
+dead-lock	Dead lock
+race-condition	Race condition
+live-lock	Live lock
+starvation	Starvation
+std-atomic-cpp-memory	std::atomic, C++ memory model
+concurrency	Concurrency
+mutexes	Mutexes
+semaphores	Semaphores
+lock-free	lock-free
+condition-variable	condition_variable
+future-promise-async	future / promise / async
+jthread	jthread (C++20)
+event-handling	Event handling
+sync	Sync
+async	Async
+openmp-tbb	OpenMP / TBB
+process	Process
+interprocess-communication	Interprocess communication
+shared-memory	Shared memory
+pipes	Pipes
+serialization	Serialization
+json	json
+xml	XML
+network	Network
+tcp-ip	TCP/IP
+sockets	Sockets
+tcp	TCP
+udp	UDP
+http	HTTP
+osi	OSI
+file-system	File system
+task-scheduler	Task scheduler
+virtualization	Virtualization
+virtualbox	VirtualBox
+vmware-workstation	VMware Workstation
+hyper-v	Hyper-V
+virtualization-containers	Containers
+docker	Docker
+kubernetes	Kubernetes
+cloud-services	Cloud Services
+security	Security
+vulnerabilities-buffer-overflow-use	Vulnerabilities: buffer overflow, use-after-free
+sanitizers	Sanitizers (ASan / TSan / UBSan)
+encryption	Encryption
+fuzzing	Fuzzing
+cert-cpp-cwe	CERT C++ / CWE
+multicpu-systems	MultiCPU systems
+multicore-cpu	Multicore CPU
+numa	NUMA
+input-output	Input/output
+drivers	Drivers
+audio	Audio
+directsound	DirectSound
+openal	OpenAL
+graphics	Graphics
+directx	DirectX
+opengl	OpenGL
+vulkan	Vulkan
+cuda	CUDA
+printers	Printers (printing)
+the-overloading-of-regular	The overloading of regular set of operators for regular or custom types (structures/classes).
+to-prevent-memory-leakage	To prevent memory leakage problems it is better to use smart pointers rather than raw pointers.
+it-s-preferred-to	It's preferred to avoid multiple inheritance (excepting abstract classes) to prevent runtime issues
+some-of-language-constructions	Some of language constructions have non-declared behavior according to the ISO standard. In case of any error, it's not possible to predict further behavior. It depends on a platform environment, runtime context, etc.
+ability-to-gather-analyze	Ability to gather, analyze, evaluate information and make decisions based on it.
+choose-one-of-the	Choose one of the popular IDEs and study it well: MS Visual Studio, VS Code, Qt Creator, JetBrains CLion, XCode, etc.
+choose-one-of-the-2	Choose one of the popular editors and study it well. For example: Notepad++, Sublime Text, etc.
+choose-one-of-the-3	Choose one of the popular editors and study it well. For example: VS Code, Sublime Text, Zed, etc.
+learn-about-common-errors	Learn about common errors (segfault, out of memory, access violation) and undefined behavior concept.
+reflection	Reflection
+study-how-to-use	Study how to use a debugger and all its features
+the-ability-to-work	The ability to work with a debugger via command line is a not common skill. It's sufficient to work with it via IDE. For example: set conditional breakpoints, etc.
+calmly-react-to-what	Calmly react to what people say. Most likely that they only consider their own context when they try to prove something. This is fine. Evaluate the usefulness of their point of view.
+the-compiler-performs-several	The compiler performs several stages of code compilation. It's good to know about all of them to better understand compilation issues. Deep knowledge is needed for compiler creators only.
+take-challenging-tasks-in	Take challenging tasks in order to develop your skills and competencies, even when there is not enough knowledge/experience (skills will develop much faster through such tasks). The main thing is to distinguish a really useful complex task that will help you to boost your skills from a dumb task that requires a scapegoat.
+each-compiler-has-its	Each compiler has its nuances. It's good to know about them to prevent getting any trap:Â Clang++/LLVM, Intel C++, MSVS C++, GCC, MinGW
+you-should-be-responsible	You should be responsible for your professional development. Don't wait for the team lead to decide for you what to study. Do not forget that blind adherence to someone else's plan will sharpen your skills according to requirements of a particular company. It is better toÂ discuss and build in your interests into the plan. If this is not done, there is a high risk of getting irrelevant skills, which will hit career opportunities. But don't overdo it: don't study absolutely everything or don't passively wait until a development plan will be created for you.
+carefully-read-the-terms	Carefully read the terms of the license agreement. Your project must comply with them.
+self-organization	Self-organization
+the-ability-to-provide	The ability to provide the amount of information that is necessary to communicate to people with different backgrounds.
+at-first-some-of	At first, some of the skills may seem impossible to develop. However, we think differently. It is possible to work on each of the skills. Everything depends on your desire and internal blocks. Everything is individual, and it's up to you to decide. :)
+conflict-solving	Conflict solving
+if-you-read-this	If you read this it means you already understand why it is so important :) Usually, it is required at least to read because you would need to understand technical documentation. But as you move up the career ladder, you will need to speak and write more confidently in English.
+look-for-like-minded	Look for like-minded people and join/create a community for experience exchange.
+it-s-also-good	It's also good to know how to calculate algorithm complexity and memory consumption.
+you-should-study-and	You should study and observe contemporary trends to be competitive, as well as being able to adapt to them.
+experienced-developers-should-develop	Experienced developers should develop management skills and business communication skills to complete tasks efficiently. It is easier to do if you have developed emotional intelligence. For a junior developer, the skill is also useful to better interact with colleagues.
+to-configure-automated-code	To configure automated code formatting verification with one of the suitable utilities: clang-format, Resharper - code style, MSVS - code style.
+naming-conventions-tabs-vs	Naming conventions, tabs vs spaces, etc.
+do-not-ignore-warnings	Do not ignore warnings from compiler and static analyzer. They are your friends, not enemies
+ai-can-generate-plausible	AI can generate plausible but incorrect code — verify and test everything. Knowledge of C++ is required.
+scripting-functional-sql-like	- Scripting - Functional - SQL like - NoSQL
+sometimes-it-s-needed	Sometimes it's needed to provide an ability to reuse a library written in a different language from another one. For example: to call C++ libraries in C#.
+memory-safety-requirements-are	Memory-safety requirements are rising (US and EU regulators). Learn safe practices and analysis tools.
+stage1	1 step
+stage2	2 step
+stage3	3 step
+stage4	4 step
+stage5	5 step
+cpp-developer-roadmap	C++ Developer Roadmap
+last-updated	Last updated: 2026-07-25
+about	About:
+c-is-still-one	C ++ is still one of the most popular development languages. There is quite a number of people that want to start learning it and become a C++ developer. They face questions like: "Where should I start? What and in what order should I study? What books should I read?" We tried to answer these questions in the presented roadmap. The map focuses on general competencies and skills that could be found in most projects. It is designed to help those who are just starting their education or have little experience. You can create a more productive learning plan without being distracted by side information if you study the set of listed materials. It will help you to master C++ at the level that is used in many commercial projects.
+repository	Repository:
+repository-link	https://github.com/salmer/CppDeveloperRoadmap
+how-to-use	How to use:
+feedback	Feedback:
+legend-the-juniors-should-be	The juniors should be aware of middle/senior skills. It's enough to have a basic understanding of them.
+legend-the-middle-developer-has	The middle developer has the skills to create a design for new functionality as a part of a component/application if even there're not enough requirements or information presented.
+legend-optional	Optional
+if-you-have-any	If you have any feedback or remarks don't hesitate to contact us. We really appreciate it. :) To contact us choose one of the following Github approaches: - For any remarks related to repository content - go to Pull Requests and submit a new one
+legend-senior	Senior
+legend-middle	Middle
+legend-junior	Junior
+legend-the-junior-must-acquire	The junior must acquire the following skill as soon as possible: to write easy-readable and well-structured code.
+legend-the-steps-are-presented	The "steps" are presented on this map. They're intended to show an easy for newbies to be able to get confident base knowledge about the language at the beginning.
+legend-the-senior-developer-has	The senior developer has the skills to create a design and make decisions for a solution/component taking into account business area context.

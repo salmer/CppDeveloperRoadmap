@@ -1,0 +1,452 @@
+cpp-developer	C++ 开发者
+soft-skills	软性技能
+ability-to-learn	学习能力
+ask-the-right-questions	提出正确的问题
+process-information	信息处理
+experimenting	实验实操
+manage-knowledge	知识管理
+manage-mistakes	管理错误
+analyze-mistakes	分析错误
+admitting-your-mistakes	承认您的错误
+notify-about-mistakes-in	出现错误及时通知
+accept-criticism	接受批评
+thinking	思考
+logical	逻辑性
+systems	系统性
+critical	批判性
+creative	创意性
+strategic	策略
+responsibility	责任
+discipline	纪律
+persistence	坚持
+initiative	主动性
+independence	独立
+problem-solving	解决问题
+manage-resources	资源管理
+time-management	时间管理
+prioritization	管理优先级
+taking-decisions	作决定
+blind-typing	盲打
+multitasking	多重任务同时进行
+communication	交流沟通
+negotiation	协商
+ability-to-listen	倾听
+persuasion	说服
+ability-to-communicate-ideas	团队内部交流创意和想法的能力
+providing-information-to-people	向团队以外的人员提供信息的能力
+finding-compromises	寻求妥协
+dispute-resolution	解决争议
+english	英文能力
+presentation	演讲演示
+written-communication-skill	书面沟通技巧
+networking	社交
+team-work	团队协作
+understanding-the-distribution-of	理解团队内的角色分工
+support-team-members	支持帮助团队成员
+work-in-a-distributed	在分布式团队中工作
+providing-feedback	提供意见反馈
+leadership	领导力
+assigning-and-clarifying-tasks	向员工分配和明确任务
+planning-and-goal-setting	计划并制订目标
+mentoring	启导、指导他人
+delegation	委派工作
+emotional-intelligence	情绪智力（情商）
+stress-resistance	抗压能力
+working-in-uncertainty	在不确定性中工作
+adaptability	适应性
+open-mindedness	思想开明
+concentration	专注
+empathy	共情
+understanding-the-development-context	理解开发背景
+customer-focus	以客户为中心
+technology	技术
+trends	发展趋势
+hard-skills	硬性技能
+language-syntax	C++语法
+basic-operations	基本运算
+arithmetic-operations	算术运算
+logical-operations	逻辑运算
+loops-for-while	循环: for/while
+bitwise-operations	位运算
+functions	函数
+operators	运算符
+lambda	Lambda表达式
+data-types	数据类型
+static-typing	静态类型
+dynamic-typing	动态类型
+rtti	RTTI（运行时类型识别）
+pointers-and-references	指针&引用
+references	引用
+smart-pointer	智能指针（smart pointer）
+unique-ptr	unique_ptr
+shared-ptr	shared_ptr
+weak-ptr	weak_ptr
+memory-model	内存模型
+lifetime-of-objects	对象生命周期
+raw-pointers	原始指针
+new-delete-operators	new/delete 运算符
+memory-leakage	内存泄漏
+codebase-structuring	代码库结构化
+code-splitting-into-headers	代码拆分为 headers/cpp 文件
+forward-declaration	前向声明
+scope	作用域（Scope）
+namespaces	命名空间（Namespace）
+structures-and-classes	结构体（Struct）和类（class）
+object-oriented-programming	面向对象编程 (OOP)
+static-polymorphism	静态多态（Static polymorphism）
+overloading-of-functions	函数重载
+dynamic-polymorphism	动态多态（Dynamic polymorphism）
+virtual-methods	虚函数（Virtual methods）
+virtual-table	虚函数表（Virtual table, vtbl)
+the-rule-of-zero	三/五/零法则
+multiple-inheritance	多重继承（Multiple inheritance）
+diamond-inheritance	钻石继承（Diamond inheritance）
+exception-handling	异常处理
+std-optional-std-expected	std::optional / std::expected
+exceptions	异常（Exceptions）
+access-violation	非法访问（Access violation）
+noexcept	noexcept
+error-codes	错误码（Error codes）
+std-error-code	std::error_code
+language-concepts	语言概念（Language concepts）
+auto	自动类型推导 auto (automatic type deduction)
+type-casting	类型转换（type casting）
+static-cast	静态类型转换（static_cast）
+const-cast	const_cast
+dynamic-cast	动态类型转换（dynamic_cast）
+reinterpret-cast	reinterpret_cast
+undefined-behavior	未定义行为 （Undefined Behavior，UB)
+argument-dependent-lookup	参数依赖查找（Argument-dependent lookup，ADL)
+constexpr-consteval	constexpr / consteval
+macros	宏（Macros）
+name-mangling	名字改写（Name mangling）
+move-semantics	移动语义
+value-categories	值类别（lvalue/rvalue）
+std-move-std-forward	std::move / std::forward
+perfect-forwarding	完美转发（Perfect forwarding）
+coroutines	Coroutines (C++20)
+modules	Modules (C++20)
+standard-library-stl	标准程序库+标准模板库（Standard library + STL）
+iostream	输入输出流（iostream）
+std-format-std-print	std::format / std::print
+date-time	Date/time
+containers	容器（Containers）
+std-span-std-string	std::span / std::string_view
+iterators	迭代器（Iterators）
+algorithms	算法（Algorithms）
+std-ranges	std::ranges
+multithreading	多线程（Multithreading）
+templates	模板（Template）
+variadic-templates	可变参数模板 (Variadic templates)
+the-template-specialization	模板特化（Template specialization）
+the-full-template-specialization	模板全特化（Full template specialization）
+the-partial-template-specialization	模板偏特化（Partial template specialization）
+type-traits	类型特征（type traits）
+sfinae	SFINAE
+concepts	Concepts (C++20)
+idioms	惯常用法/设计习语（Idioms）
+raii	RAII（资源获取即初始化）
+pimpl	pimpl（指向实现的指针）
+non-copyable-non-moveable	Non-Copyable （不可复制）/Non-Moveable（不可移动）
+erase-remove	Erase-Remove（删除）
+copy-and-swap	Copy and swap（复制并交换）
+copy-on-write	Copy on write（写时复制）
+crtp	CRTP（奇异递归模板）
+standards	标准（Standards）
+cpp11-14	C++11/14
+cpp17	C++17
+cpp20	C++20
+cpp23	C++23
+cpp26	C++26 (newest)
+language-tools	C++语言工具
+working-with-source-code	使用源代码
+text-editors	文本编辑器
+ide	集成开发环境（IDE）
+code-editors	代码编辑器
+knowledge-of-features-and	熟悉编辑器的特性和功能范畴（快捷键、工具、插件）
+debugger	调试器（Debugger）
+understanding-of-debugger-messages	理解调试器所反馈出的信息
+debugging-symbols	调试符号（Debugging symbols）
+windbg	WinDbg
+gdb	GDB
+lldb	LLDB
+linters	Linters
+compiler-explorer	Compiler Explorer (godbolt.org)
+compilers	编译器（Compilers）
+basic-understanding-of-compilers	对编译过程的基本了解
+compilation-of-sources-to	将源代码编译为目标文件（compilation）
+the-object-files-linkage	目标文件链接过程 (linking)
+working-stages-of-compilers	编译器的编译过程
+features-of-a-particular	特定编译器的特性
+build-systems	构建系统（Build systems）
+cmake	CMake
+makefile	Makefile
+ninja	ninja
+package-managers	包管理器（Package managers）
+conan	Conan
+nuget	nuget
+vcpkg	vcpkg
+spack	spack
+working-with-libraries	使用程序库
+libraries-inclusion	引用库（Libraries inclusion）
+licensing	软件授权许可（Licensing）
+libraries	库（Library)
+boost	boost
+opencv	opencv
+poco	poco
+protobuf	protobuf
+asio	Asio
+grpc	gRPC
+fmt	fmt
+nlohmann-json	nlohmann/json
+pybind11	pybind11
+spdlog	spdlog
+range-v3	range-v3
+tensorflow	tensorflow
+opencl	opencl
+frameworks	框架（Frameworks）
+gtest-gmock	gtest/gmock
+qt	Qt
+catch2	catch2
+google-benchmark	google benchmark
+google-profiler	google profiler
+pytorch-cpp	pytorch c++
+common-skills	通用技能
+computers-science	计算机科学
+data-structures	数据结构
+boolean-algebra	布尔代数（Boolean algebra）
+computers-science-algorithms	算法
+finite-state-machines	有限状态机（Finite-state machines）
+version-control-software	版本控制软件（Version Control）
+distributed	分布式
+git	git
+mercurial	Mercurial
+centralized	集中式
+svn	SVN
+best-practices	最佳实践
+code-quality	代码质量
+code-guidelines	代码指南
+principles-of-development	开发原则
+kiss	KISS (Keep It Simple, Stupid) 保持简约、简单
+dry	DRY (Don't Repeat Yourself) 不要重复你自己（不写重复代码）
+yagni	YAGNI (You Aren't Gonna Need It) 你不需要它
+apo	APO (Avoid Premature Optimization) 避免过早优化
+bduf	BDUF (Big Design Up Front) 前期大型设计
+composition-is-preferably-than	Composition is preferably than the inheritance 组合优于继承
+occam-s-razor	Occam's razor 奥卡姆剃刀原理（简约法则）
+divide-and-conquer	Divide and Conquer 分治法
+logging-and-telemetry	记录和遥测（Logging and telemetry）
+code-review	代码评审（Code review）
+skill-to-read-existing	阅读理解现有代码的能力
+skill-to-review-code	评审代码的能力
+lifecycle-stages-of-a	软件生命周期
+implementation	实现（Implementation）
+testing	测试
+unit-tests	单元测试（Unit tests）
+integration-tests	集成测试（Integration tests）
+functional-tests	功能测试（Functional tests）
+performance-tests	性能测试（Performance tests）
+maintanance	维护
+versioning	版本管理（Versioning）
+backward-compatibility	向后兼容（Backward compatibility）
+software-architecture-and-components	软件架构和组件设计
+components-integration	组件集成
+deployment	软件部署（Deployment）
+collecting-requirements	征集要求
+end-of-a-software	软件生命周期结束
+code-analyzers	代码分析器（Code analyzers）
+static-analyzers	静态分析器（Static analyzers）
+dynamic-analyzers	动态分析器（Dynamic analyzers）
+profilers	Profilers
+valgrind	Valgrind
+perf-vtune	perf / VTune
+cpp-core-guidelines	C++ 核心指南
+microsoft-gsl	Microsoft GSL
+industrial-standards	行业标准
+misra-cpp-2023	MISRA C++:2023
+autosar	Autosar
+eu-cyber-resilience-act	EU Cyber Resilience Act (CRA)
+sbom	SBOM
+iec-62304	IEC 62304（医疗）
+iso-26262	ISO 26262（汽车）
+do-178c	DO-178C（航空）
+command-line	命令行
+powershell	Powershell
+batch	batch
+bash	bash
+ci-cd	CI/CD（持续集成、持续部署）
+creation-of-a-software	创建软件部署包
+documentation	文档
+installer-package	安装包
+trunk-based-development	主干开发（Trunk Based Development）
+zero-downtime-deployment	零停机时间部署（Zero downtime deployment）
+ai-tools	AI 工具
+ai-assistants	AI 助手（Copilot, Claude Code, Cursor）
+verifying-generated-code	验证生成的代码
+company-policy-and-confidentiality	公司政策与保密
+licensing-risks-of-generated	生成代码的许可风险
+local-models	本地模型
+usage-of-other-programming	其他编程语言的使用
+language-interoperability	语言互操作性（Language interoperability）
+software-design	软件设计
+design-patters	设计模式 Design Patters (GoF)
+structural	结构模式（Structural）
+behavioral	行为模式（Behavioral）
+creational	创建模式（Creational）
+oop	面向对象编程 (OOP)
+solid	SOLID
+uml	UML
+architecture-styles	软件架构风格
+component-based	基于组件 Component-based
+monolithic-application	单体式应用程序 Monolithic application
+layered	分层模式 Layered
+client-server	客户/服务器模式 Client-server
+microservices-architecture	微服务架构 Microservices architecture
+event-driven	事件驱动架构 Event-driven
+plug-ins	插件Plug-ins
+rest	REST
+service-oriented-architecture	面向服务的架构 Service-oriented architecture
+architecture-patterns	架构模式
+mvc	MVC 模型-视图-控制器模式
+mvvm	MVVM
+three-tier	Three-tier 三层架构
+onion	Onion
+hexagon	Hexagon
+methodologies-of-development	开发方法论
+test-driven-development	测试驱动开发（Test Driven Development）
+behavior-driven-development	行为驱动开发（Behavior Driven Development）
+domain-driven-design	领域驱动设计（Domain Driven Design）
+operating-systems	操作系统
+binary-units	二进制单位
+executable-file	可执行文件（Executable file）
+static-library	静态库（Static library)
+dynamic-library	动态库（Dynamic library）
+memory	内存
+memory-abstractions	内存抽象（Memory abstractions）
+stack	栈（Stack）
+heap	堆（Heap）
+global-memory	全局内存（Global memory）
+application-memory	应用内存（Application memory）
+memory-alignment	内存对齐（Memory alignment）
+memory-management	内存管理（Memory management）
+virtual-memory	虚拟内存（Virtual memory）
+threads	线程（Threads）
+threads-multithreading	多线程
+errors	错误
+dead-lock	死锁（Dead lock）
+race-condition	竞态条件（Race condition）
+live-lock	活锁（Live lock）
+starvation	饥饿（Starvation）
+std-atomic-cpp-memory	std::atomic，C++ 内存模型
+concurrency	并发（Concurrency）
+mutexes	互斥锁 （Mutexes）
+semaphores	信号量（Semaphores）
+lock-free	无锁（lock-free）
+condition-variable	condition_variable
+future-promise-async	future / promise / async
+jthread	jthread (C++20)
+event-handling	事件处理（Event handling）
+sync	同步（Sync）
+async	异步（Async）
+openmp-tbb	OpenMP / TBB
+process	过程（Process）
+interprocess-communication	进程间通信（Interprocess communication）
+shared-memory	共享内存（Shared memory）
+pipes	管道（Pipes）
+serialization	序列化（Serialization）
+json	json
+xml	XML
+network	网络（Network）
+tcp-ip	TCP/IP
+sockets	Sockets
+tcp	TCP
+udp	UDP
+http	HTTP
+osi	OSI
+file-system	文件系统（File system）
+task-scheduler	任务调度（Task scheduler）
+virtualization	虚拟化（Virtualization）
+virtualbox	VirtualBox
+vmware-workstation	VMware Workstation
+hyper-v	Hyper-V
+virtualization-containers	容器（Containers）
+docker	Docker
+kubernetes	Kubernetes
+cloud-services	云服务（Cloud Services）
+security	程序安全
+vulnerabilities-buffer-overflow-use	漏洞：buffer overflow、use-after-free
+sanitizers	Sanitizers (ASan / TSan / UBSan)
+encryption	加密
+fuzzing	Fuzzing
+cert-cpp-cwe	CERT C++ / CWE
+multicpu-systems	MultiCPU systems
+multicore-cpu	Multicore CPU
+numa	NUMA
+input-output	输入/输出（Input/output）
+drivers	驱动程序（Drivers）
+audio	音频（Audio）
+directsound	DirectSound
+openal	OpenAL
+graphics	显卡（Graphics）
+directx	DirectX
+opengl	OpenGL
+vulkan	Vulkan
+cuda	CUDA
+printers	打印机/打印 Printers (printing)
+the-overloading-of-regular	常规或自定义类型 (结构/类)的常规运 算符的重载。
+to-prevent-memory-leakage	为防止内存泄漏 问题，最好使用 智能指针而不是 原始指针。
+it-s-preferred-to	代码中最好避免 出现多重继承 (抽象类除外)， 以防止运行时出 现问题
+some-of-language-constructions	根据 ISO 标准，某些语言结构具有未定义行为。 如果出现任何错误，则无法预测程序进 一步的行为，因为程序此后的行为取决 于平台环境、运行时的上下文具体内容等。
+ability-to-gather-analyze	收集、分析、评估信息，并据此做出决 策的能力。
+choose-one-of-the	选择一款你喜欢的流行 IDE 并好好掌握它： MS Visual Studio、VS Code、Qt Creator JetBrains CLion、Xcode 等。
+choose-one-of-the-2	选择一款流行的编辑器并好好掌握它。 例如：Notepad++、Sublime Text 等。
+choose-one-of-the-3	选择一款流行的编辑器并好好掌握它。 例如：VS Code、Sublime Text、Zed 等。
+learn-about-common-errors	了解常见错误（段错误 segfault, 内存溢出 out of memory, 非法访问 access violation) 以及未定义行为（undefined behavior）的概念。
+reflection	反思
+study-how-to-use	学习如何使用调试器，并深入了解 调试器所具有的所有功能。
+the-ability-to-work	通过命令行来使用调试器并非 一项常规技能。掌握通过IDE来 使用调试器的能力就足够了， 例如通过IDE设置断点，等等。
+calmly-react-to-what	冷静地回应他人的评论。很有 可能他人所说的话、试图证明 的事情，仅仅基于他们自己的 角度，这是可以理解的。请客 观地评估他人观点的有用性。
+the-compiler-performs-several	编译器执行代码编译过程的数个阶段。 对所有这些阶段进行基本的了解将有助 于更好地理解编译中可能出现的问题。 不过，只有编译器创建者才需要深入了 解编译器知识。
+take-challenging-tasks-in	主动承担具有挑战性的任务，以发展您的技 能和能力，即便此刻您还不具备完全足够的 知识或经验（您的技能将会通过此类任务得 到快速发展）。关键是要能够区分出：哪些 是真正有助于您提升技能的复杂任务，而哪 些又是仅仅需要替罪羊的愚蠢的任务。
+each-compiler-has-its	每个编译器之间有细微的差别。 最好对这些差别有所了解，以避免 陷入一些陷阱： Clang++/LLVM，Intel C++， MSVS C++，GCC，MinGW
+you-should-be-responsible	您应该对自己的职业发展负责。 不要等待团队领导来决定您要学习什么。请不要忘记，盲 目遵循他人安排的计划，只会让您提高某些适用于某特定 公司的技能。 最好商讨如何将您的个人利益和兴趣也纳入计划之中， 否则的话，就很有可能将时间花在不相关的技能上，从而 影响职业机会。不过切记不要太极端：别不加选择地什么 都学，也不要什么都拒绝直到有一个完美的量身定制的学 习计划出现。
+carefully-read-the-terms	仔细阅读许可协议的条款。 您的项目必须遵守这些条款， 才能使用这些库。
+self-organization	自组织（Self- organization）
+the-ability-to-provide	有能力根据各方人员不 同的背景，而提供适量 、适当的信息，以促进 有效的沟通交流。
+at-first-some-of	一开始，有些技能看似没有 办法习得或提升。然而，在 我们看来，这里所列的每一 项技能，都是可以通过练习 得以提升的。每个人的学习 目的不同，最终成效取决于 您个人的愿望和努力 :)
+conflict-solving	解决冲突
+if-you-read-this	如果您阅读本路线图，您大概率已经注 意到英文能力有多重要:) 通常，您至少需要具备英文阅读能力， 因为您要能够读懂技术文档。不过，随 着您在职业阶梯上的步步晋升，您将同 时需要更加自信地用英文说和写。
+look-for-like-minded	寻找志同道合的人，并 加入或创建相关社区， 以进行经验交流。
+it-s-also-good	了解如何计算算法复 杂度，和如何计算内 存消耗也很有好处。
+you-should-study-and	您应当研究和观察当代发展趋势，以保 持自己的竞争力， 并适应变化。
+experienced-developers-should-develop	经验丰富的开发人员应该培养管理技能 和业务沟通技能，以高效地完成任务。 如果您有较好的情商，那这就相对更容 易做到。 对于初级开发人员来说，共情能力在与 同事互动中也是非常有用的。
+to-configure-automated-code	用于结合以下任意一种工具来配置自动代码格式验证：clang- format 代码格式,Resharper - 代码风格，MSVS - 代码风格。
+naming-conventions-tabs-vs	命名规则（naming conventin）， tab键 vs 空格键 space，等等。
+do-not-ignore-warnings	不要忽略来自编译器或任何代码 分析器的警告。 他们是你的朋友，而不是敌人。
+ai-can-generate-plausible	AI 可能生成看似合理但错误的代码—— 请验证并测试一切。 必须掌握 C++。
+scripting-functional-sql-like	- Scripting - Functional - SQL like - NoSQL
+sometimes-it-s-needed	有时需要具备能够重用由另 一种语言编写成的库的能力 。 例如：在C#中调用C++库。
+memory-safety-requirements-are	memory safety 要求日益提高（美国和 欧盟监管机构）。请学习安全实践 与分析工具。
+stage1	步骤 1
+stage2	步骤 2
+stage3	步骤 3
+stage4	步骤 4
+stage5	步骤 5
+cpp-developer-roadmap	С++ 开发者路线图
+last-updated	最后更新：2026-07-25
+about	简介
+c-is-still-one	C++至今仍旧是最受欢迎的开发语言之一，有很多人想要开始学习C++并成为开发者。初学者通常会面临这样 的问题：“我应当从何开始？我需要学些什么？应当以什么样的顺序去学？我需要参考哪些书籍？ 我们希望通过这份路线图来回答这些问题。本图旨在帮助初学者或经验有限的人士，所涵盖的内容侧重于可 用在大多数开发项目中的通用能力和技能。如果您参考本路线图所罗列的相关材料，您将可以为自己创建一 个高效的学习计划，而不被次要信息分心。本路线图将帮助您达到一个许多商业项目普遍要求的C++水平。 详细信息: https://github.com/salmer/CppDeveloperRoadmap
+repository	创作者
+repository-link	https://github.com/salmer/CppDeveloperRoadmap
+how-to-use	如何使用
+feedback	反馈与沟通
+legend-the-juniors-should-be	初学者需注意，对于中级和高 级的技能，只需掌握基本概念 即可。
+legend-the-middle-developer-has	中级开发者具备以下能力： 可以为一款应用程序设计出 新的功能，即便是缺乏对于 该项新功能的完善的具体要 求或相关信息。
+legend-optional	选修
+if-you-have-any	如您有任何意见或建议，请随时与我们联系。我们将感激不尽 :) 您可通过以下任一Github链接联系我们
+legend-senior	高级
+legend-middle	中级
+legend-junior	初级
+legend-the-junior-must-acquire	初学者必须尽快掌握以下技能 : 编写易读且结构良好的代码。
+legend-the-steps-are-presented	本路线图标示出了学习“步骤”。 这些“步骤”旨在规划出一套 易于操作的学习计划，以帮助 初学者在获取足够的C++基础 知识的同时，逐步提升深入学 习的信心。
+legend-the-senior-developer-has	高级开发者具备以下能力： 结合业务领域的相关背景， 设计出解决方案/组件，并作 出相关决策。
