@@ -106,7 +106,7 @@ to the source and inspect it first.
 `<lang>.drawio.svg` land next to them (override with `--outdir`). The `.drawio` is a real
 draw.io file — open it to inspect, but edits there are lost on regeneration (see Caveats).
 
-Flags: `--langs en,ru,zh`, `--deploy`, `--check`, `--outdir <dir>`, `--repo-root <dir>`,
+Flags: `--langs en,ru,zh,es`, `--deploy`, `--check`, `--outdir <dir>`, `--repo-root <dir>`,
 `--drawio-cli <path>`, `--font <path>` (metrics font, default `msyh.ttc` / Noto CJK),
 `--font-family "<name>"` (written into the map). The draw.io CLI and the font are
 autodetected per platform (Windows/macOS/Linux) and via `PATH`.
@@ -158,7 +158,7 @@ python tools/mapgen/build.py --dir path/to/that/folder --langs en
 ```
 
 Note `stage1` in the tsv: stage frames take their title from the `stage1`..`stage5` keys.
-Add `ru.tsv` / `zh.tsv` with the same ids and `--langs en,ru,zh` renders all three.
+Add `ru.tsv` / `zh.tsv` with the same ids and `--langs en,ru,zh,es` renders all four.
 
 ### What the DSL renders as
 

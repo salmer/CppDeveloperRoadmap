@@ -1,0 +1,452 @@
+cpp-developer	Desarrollador C++
+soft-skills	Habilidades blandas
+ability-to-learn	Capacidad de aprendizaje
+ask-the-right-questions	Hacer las preguntas correctas
+process-information	Procesar información
+experimenting	Experimentación
+manage-knowledge	Gestionar el conocimiento
+manage-mistakes	Gestionar errores
+analyze-mistakes	Analizar errores
+admitting-your-mistakes	Admitir los errores
+notify-about-mistakes-in	Notificar los errores a tiempo
+accept-criticism	Aceptar críticas
+thinking	Pensamiento
+logical	Lógico
+systems	Sistémico
+critical	Crítico
+creative	Creativo
+strategic	Estratégico
+responsibility	Responsabilidad
+discipline	Disciplina
+persistence	Persistencia
+initiative	Iniciativa
+independence	Independencia
+problem-solving	Resolución de problemas
+manage-resources	Gestión de recursos
+time-management	Gestión del tiempo
+prioritization	Priorización
+taking-decisions	Toma de decisiones
+blind-typing	Mecanografía al tacto
+multitasking	Multitarea
+communication	Comunicación
+negotiation	Negociación
+ability-to-listen	Capacidad de escucha
+persuasion	Persuasión
+ability-to-communicate-ideas	Capacidad para comunicar ideas y pensamientos dentro del equipo
+providing-information-to-people	Proporcionar información a personas fuera del equipo
+finding-compromises	Encontrar compromisos
+dispute-resolution	Resolución de conflictos
+english	Inglés
+presentation	Presentación
+written-communication-skill	Habilidad de comunicación escrita
+networking	Networking
+team-work	Trabajo en equipo
+understanding-the-distribution-of	Entender la distribución de roles en un equipo
+support-team-members	Apoyar a los miembros del equipo
+work-in-a-distributed	Trabajar en un equipo distribuido
+providing-feedback	Proporcionar retroalimentación
+leadership	Liderazgo
+assigning-and-clarifying-tasks	Asignar y aclarar tareas a los empleados
+planning-and-goal-setting	Planificación y establecimiento de objetivos
+mentoring	Mentoría
+delegation	Delegación
+emotional-intelligence	Inteligencia emocional
+stress-resistance	Resistencia al estrés
+working-in-uncertainty	Trabajar en la incertidumbre
+adaptability	Adaptabilidad
+open-mindedness	Mente abierta
+concentration	Concentración
+empathy	Empatía
+understanding-the-development-context	Entender el contexto de desarrollo
+customer-focus	Enfoque en el cliente
+technology	Tecnología
+trends	Tendencias
+hard-skills	Habilidades duras
+language-syntax	Sintaxis del lenguaje
+basic-operations	Operaciones básicas
+arithmetic-operations	Operaciones aritméticas
+logical-operations	Operaciones lógicas
+loops-for-while	Bucles: for/while
+bitwise-operations	Operaciones a nivel de bits
+functions	Funciones
+operators	Operadores
+lambda	lambda
+data-types	Tipos de datos
+static-typing	Tipado estático
+dynamic-typing	Tipado dinámico
+rtti	RTTI
+pointers-and-references	Punteros y Referencias
+references	Referencias
+smart-pointer	Punteros inteligentes
+unique-ptr	unique_ptr
+shared-ptr	shared_ptr
+weak-ptr	weak_ptr
+memory-model	Modelo de memoria
+lifetime-of-objects	Tiempo de vida de los objetos
+raw-pointers	Punteros crudos
+new-delete-operators	Operadores new/delete
+memory-leakage	Fugas de memoria
+codebase-structuring	Estructuración del código
+code-splitting-into-headers	División de código en archivos headers/cpp
+forward-declaration	Declaración anticipada
+scope	Ámbito (Scope)
+namespaces	Espacios de nombres (Namespaces)
+structures-and-classes	Estructuras y clases
+object-oriented-programming	Programación Orientada a Objetos (POO)
+static-polymorphism	Polimorfismo estático
+overloading-of-functions	Sobrecarga de funciones
+dynamic-polymorphism	Polimorfismo dinámico
+virtual-methods	Métodos virtuales
+virtual-table	Tabla virtual (vtbl)
+the-rule-of-zero	La regla de cero/tres/cinco
+multiple-inheritance	Herencia múltiple
+diamond-inheritance	Herencia en diamante
+exception-handling	Manejo de excepciones
+std-optional-std-expected	std::optional / std::expected
+exceptions	Excepciones
+access-violation	Violación de acceso
+noexcept	noexcept
+error-codes	Códigos de error
+std-error-code	std::error_code
+language-concepts	Conceptos del lenguaje
+auto	auto (deducción automática de tipos)
+type-casting	Conversión de tipos (type casting)
+static-cast	static_cast
+const-cast	const_cast
+dynamic-cast	dynamic_cast
+reinterpret-cast	reinterpret_cast
+undefined-behavior	Comportamiento indefinido (UB)
+argument-dependent-lookup	Búsqueda dependiente de argumentos (ADL)
+constexpr-consteval	constexpr / consteval
+macros	Macros
+name-mangling	Name mangling
+move-semantics	Semántica de movimiento
+value-categories	Categorías de valores (lvalue/rvalue)
+std-move-std-forward	std::move / std::forward
+perfect-forwarding	Reenvío perfecto (perfect forwarding)
+coroutines	Corrutinas (C++20)
+modules	Módulos (C++20)
+standard-library-stl	Biblioteca estándar + STL
+iostream	iostream
+std-format-std-print	std::format / std::print
+date-time	Fecha/hora
+containers	Contenedores
+std-span-std-string	std::span / std::string_view
+iterators	Iteradores
+algorithms	Algoritmos
+std-ranges	std::ranges
+multithreading	Multihilo
+templates	Plantillas (Templates)
+variadic-templates	Plantillas variádicas
+the-template-specialization	Especialización de plantillas
+the-full-template-specialization	Especialización completa de plantillas
+the-partial-template-specialization	Especialización parcial de plantillas
+type-traits	type traits
+sfinae	SFINAE
+concepts	Conceptos (C++20)
+idioms	Idiomatismos (Idioms)
+raii	RAII
+pimpl	pimpl
+non-copyable-non-moveable	No copiable/No movible
+erase-remove	Erase-Remove
+copy-and-swap	Copy and swap
+copy-on-write	Copy on write
+crtp	CRTP
+standards	Estándares
+cpp11-14	C++11/14
+cpp17	C++17
+cpp20	C++20
+cpp23	C++23
+cpp26	C++26 (más reciente)
+language-tools	Herramientas del lenguaje
+working-with-source-code	Trabajar con código fuente
+text-editors	Editores de texto
+ide	IDE
+code-editors	Editores de código
+knowledge-of-features-and	Conocimiento de características y habilidades (atajos, herramientas, plugins)
+debugger	Depurador (Debugger)
+understanding-of-debugger-messages	Comprensión de los mensajes del depurador
+debugging-symbols	Símbolos de depuración
+windbg	WinDbg
+gdb	GDB
+lldb	LLDB
+linters	Linters
+compiler-explorer	Compiler Explorer (godbolt.org)
+compilers	Compiladores
+basic-understanding-of-compilers	Comprensión básica de las etapas de compilación
+compilation-of-sources-to	Compilación de código fuente a archivos objeto (compilación)
+the-object-files-linkage	Enlazado de archivos objeto (linking)
+working-stages-of-compilers	Etapas de trabajo de los compiladores
+features-of-a-particular	Características de un compilador en particular
+build-systems	Sistemas de compilación (Build systems)
+cmake	CMake
+makefile	Makefile
+ninja	ninja
+package-managers	Gestores de paquetes
+conan	Conan
+nuget	nuget
+vcpkg	vcpkg
+spack	spack
+working-with-libraries	Trabajar con bibliotecas
+libraries-inclusion	Inclusión de bibliotecas
+licensing	Licenciamiento
+libraries	Bibliotecas
+boost	boost
+opencv	opencv
+poco	poco
+protobuf	protobuf
+asio	Asio
+grpc	gRPC
+fmt	fmt
+nlohmann-json	nlohmann/json
+pybind11	pybind11
+spdlog	spdlog
+range-v3	range-v3
+tensorflow	tensorflow
+opencl	opencl
+frameworks	Frameworks
+gtest-gmock	gtest/gmock
+qt	Qt
+catch2	catch2
+google-benchmark	google benchmark
+google-profiler	google profiler
+pytorch-cpp	pytorch c++
+common-skills	Habilidades comunes
+computers-science	Ciencias de la Computación
+data-structures	Estructuras de datos
+boolean-algebra	Álgebra booleana
+computers-science-algorithms	Algoritmos
+finite-state-machines	Máquinas de estados finitos
+version-control-software	Software de control de versiones
+distributed	Distribuido
+git	git
+mercurial	Mercurial
+centralized	Centralizado
+svn	SVN
+best-practices	Mejores prácticas
+code-quality	Calidad del código
+code-guidelines	Guías de código
+principles-of-development	Principios de desarrollo
+kiss	KISS (Keep It Simple, Stupid)
+dry	DRY (Don't Repeat Yourself)
+yagni	YAGNI (You Aren't Gonna Need It)
+apo	APO (Avoid Premature Optimization)
+bduf	BDUF (Big Design Up Front)
+composition-is-preferably-than	La composición es preferible a la herencia
+occam-s-razor	Navaja de Ockham
+divide-and-conquer	Divide y vencerás
+logging-and-telemetry	Registro (Logging) y telemetría
+code-review	Revisión de código
+skill-to-read-existing	Habilidad para leer código fuente existente
+skill-to-review-code	Habilidad para revisar código
+lifecycle-stages-of-a	Etapas del ciclo de vida del software
+implementation	Implementación
+testing	Pruebas (Testing)
+unit-tests	Pruebas unitarias
+integration-tests	Pruebas de integración
+functional-tests	Pruebas funcionales
+performance-tests	Pruebas de rendimiento
+maintanance	Mantenimiento
+versioning	Control de versiones
+backward-compatibility	Compatibilidad hacia atrás
+software-architecture-and-components	Diseño de arquitectura de software y componentes
+components-integration	Integración de componentes
+deployment	Despliegue (Deployment)
+collecting-requirements	Recopilación de requisitos
+end-of-a-software	Fin del ciclo de vida del software
+code-analyzers	Analizadores de código
+static-analyzers	Analizadores estáticos
+dynamic-analyzers	Analizadores dinámicos
+profilers	Perfiladores (Profilers)
+valgrind	Valgrind
+perf-vtune	perf / VTune
+cpp-core-guidelines	C++ core guidelines
+microsoft-gsl	Microsoft GSL
+industrial-standards	Estándares industriales
+misra-cpp-2023	MISRA C++:2023
+autosar	Autosar
+eu-cyber-resilience-act	EU Cyber Resilience Act (CRA)
+sbom	SBOM
+iec-62304	IEC 62304 (medical)
+iso-26262	ISO 26262 (automotive)
+do-178c	DO-178C (avionics)
+command-line	Línea de comandos
+powershell	Powershell
+batch	batch
+bash	bash
+ci-cd	CI/CD
+creation-of-a-software	Creación de un paquete de despliegue de software
+documentation	Documentación
+installer-package	Paquete instalador
+trunk-based-development	Trunk Based Development
+zero-downtime-deployment	Despliegue sin tiempo de inactividad
+ai-tools	Herramientas de IA
+ai-assistants	Asistentes de IA (Copilot, Claude Code, Cursor)
+verifying-generated-code	Verificación de código generado
+company-policy-and-confidentiality	Política de la empresa y confidencialidad
+licensing-risks-of-generated	Riesgos de licencias del código generado
+local-models	Modelos locales
+usage-of-other-programming	Uso de otros lenguajes de programación
+language-interoperability	Interoperabilidad de lenguajes
+software-design	Diseño de software
+design-patters	Patrones de diseño (GoF)
+structural	Estructurales
+behavioral	De comportamiento
+creational	Creacionales
+oop	POO
+solid	SOLID
+uml	UML
+architecture-styles	Estilos de arquitectura
+component-based	Basado en componentes
+monolithic-application	Aplicación monolítica
+layered	Por capas
+client-server	Cliente-servidor
+microservices-architecture	Arquitectura de microservicios
+event-driven	Basado en eventos
+plug-ins	Plugins
+rest	REST
+service-oriented-architecture	Arquitectura orientada a servicios (SOA)
+architecture-patterns	Patrones de arquitectura
+mvc	MVC
+mvvm	MVVM
+three-tier	Tres niveles (Three-tier)
+onion	Cebolla (Onion)
+hexagon	Hexagonal (Hexagon)
+methodologies-of-development	Metodologías de desarrollo
+test-driven-development	Test Driven Development (TDD)
+behavior-driven-development	Behavior Driven Development (BDD)
+domain-driven-design	Domain Driven Design (DDD)
+operating-systems	Sistemas operativos
+binary-units	Unidades binarias
+executable-file	Archivo ejecutable
+static-library	Biblioteca estática
+dynamic-library	Biblioteca dinámica
+memory	Memoria
+memory-abstractions	Abstracciones de memoria
+stack	Pila (Stack)
+heap	Montículo (Heap)
+global-memory	Memoria global
+application-memory	Memoria de la aplicación
+memory-alignment	Alineación de memoria
+memory-management	Gestión de memoria
+virtual-memory	Memoria virtual
+threads	Hilos (Threads)
+threads-multithreading	Multihilo
+errors	Errores
+dead-lock	Interbloqueo (Dead lock)
+race-condition	Condición de carrera (Race condition)
+live-lock	Live lock
+starvation	Inanición (Starvation)
+std-atomic-cpp-memory	std::atomic, modelo de memoria de C++
+concurrency	Concurrencia
+mutexes	Mutexes
+semaphores	Semáforos
+lock-free	lock-free
+condition-variable	condition_variable
+future-promise-async	future / promise / async
+jthread	jthread (C++20)
+event-handling	Manejo de eventos
+sync	Síncrono (Sync)
+async	Asíncrono (Async)
+openmp-tbb	OpenMP / TBB
+process	Proceso
+interprocess-communication	Comunicación entre procesos (IPC)
+shared-memory	Memoria compartida
+pipes	Tuberías (Pipes)
+serialization	Serialización
+json	json
+xml	XML
+network	Redes
+tcp-ip	TCP/IP
+sockets	Sockets
+tcp	TCP
+udp	UDP
+http	HTTP
+osi	OSI
+file-system	Sistema de archivos
+task-scheduler	Programador de tareas
+virtualization	Virtualización
+virtualbox	VirtualBox
+vmware-workstation	VMware Workstation
+hyper-v	Hyper-V
+virtualization-containers	Contenedores
+docker	Docker
+kubernetes	Kubernetes
+cloud-services	Servicios en la nube
+security	Seguridad
+vulnerabilities-buffer-overflow-use	Vulnerabilidades: desbordamiento de búfer, use-after-free
+sanitizers	Sanitizers (ASan / TSan / UBSan)
+encryption	Cifrado
+fuzzing	Fuzzing
+cert-cpp-cwe	CERT C++ / CWE
+multicpu-systems	Sistemas MultiCPU
+multicore-cpu	CPU multinúcleo
+numa	NUMA
+input-output	Entrada/salida (I/O)
+drivers	Controladores (Drivers)
+audio	Audio
+directsound	DirectSound
+openal	OpenAL
+graphics	Gráficos
+directx	DirectX
+opengl	OpenGL
+vulkan	Vulkan
+cuda	CUDA
+printers	Impresoras (impresión)
+the-overloading-of-regular	La sobrecarga de un conjunto regular de operadores para tipos regulares o personalizados (estructuras/clases).
+to-prevent-memory-leakage	Para prevenir problemas de fugas de memoria, es mejor usar punteros inteligentes en lugar de punteros crudos.
+it-s-preferred-to	Se prefiere evitar la herencia múltiple (exceptuando las clases abstractas) para prevenir problemas en tiempo de ejecución.
+some-of-language-constructions	Algunas construcciones del lenguaje tienen un comportamiento no declarado según el estándar ISO. En caso de cualquier error, no es posible predecir el comportamiento futuro. Depende del entorno de la plataforma, el contexto de ejecución, etc.
+ability-to-gather-analyze	Capacidad para reunir, analizar, evaluar información y tomar decisiones basadas en ella.
+choose-one-of-the	Elige uno de los IDEs populares y estúdialo bien: MS Visual Studio, VS Code, Qt Creator, JetBrains CLion, XCode, etc.
+choose-one-of-the-2	Elige uno de los editores populares y estúdialo bien. Por ejemplo: Notepad++, Sublime Text, etc.
+choose-one-of-the-3	Elige uno de los editores populares y estúdialo bien. Por ejemplo: VS Code, Sublime Text, Zed, etc.
+learn-about-common-errors	Aprende sobre errores comunes (segfault, memoria agotada, violación de acceso) y el concepto de comportamiento indefinido.
+reflection	Reflexión (Reflection)
+study-how-to-use	Estudia cómo usar un depurador y todas sus características
+the-ability-to-work	La capacidad de trabajar con un depurador a través de la línea de comandos no es una habilidad común. Es suficiente trabajar con él a través del IDE. Por ejemplo: establecer puntos de interrupción condicionales, etc.
+calmly-react-to-what	Reacciona con calma a lo que dice la gente. Lo más probable es que solo consideren su propio contexto cuando intentan probar algo. Esto está bien. Evalúa la utilidad de su punto de vista.
+the-compiler-performs-several	El compilador realiza varias etapas de compilación de código. Es bueno conocerlas todas para entender mejor los problemas de compilación. El conocimiento profundo es necesario solo para los creadores de compiladores.
+take-challenging-tasks-in	Toma tareas desafiantes para desarrollar tus habilidades y competencias, incluso cuando no haya suficiente conocimiento/experiencia (las habilidades se desarrollarán mucho más rápido a través de tales tareas). Lo principal es distinguir una tarea compleja realmente útil que te ayudará a impulsar tus habilidades de una tarea inútil que requiere un chivo expiatorio.
+each-compiler-has-its	Cada compilador tiene sus matices. Es bueno conocerlos para evitar caer en cualquier trampa: Clang++/LLVM, Intel C++, MSVS C++, GCC, MinGW
+you-should-be-responsible	Debes ser responsable de tu desarrollo profesional. No esperes a que el líder del equipo decida por ti qué estudiar. No olvides que la adhesión ciega al plan de otra persona afilará tus habilidades según los requisitos de una empresa en particular. Es mejor discutir e incorporar tus intereses en el plan. Si esto no se hace, existe un alto riesgo de obtener habilidades irrelevantes, lo que afectará las oportunidades profesionales. Pero no exageres: no estudies absolutamente todo o no esperes pasivamente hasta que se cree un plan de desarrollo para ti.
+carefully-read-the-terms	Lee cuidadosamente los términos del acuerdo de licencia. Tu proyecto debe cumplirlos.
+self-organization	Auto-organización
+the-ability-to-provide	La capacidad de proporcionar la cantidad de información necesaria para comunicarse con personas de diferentes trasfondos.
+at-first-some-of	Al principio, algunas de las habilidades pueden parecer imposibles de desarrollar. Sin embargo, pensamos diferente. Es posible trabajar en cada una de las habilidades. Todo depende de tu deseo y bloqueos internos. Todo es individual, y depende de ti decidir. :)
+conflict-solving	Resolución de conflictos
+if-you-read-this	Si lees esto significa que ya entiendes por qué es tan importante :) Usualmente, se requiere al menos para leer porque necesitarías entender la documentación técnica. Pero a medida que avanzas en la escala profesional, necesitarás hablar y escribir con más confianza en inglés.
+look-for-like-minded	Busca personas con ideas afines y únete o crea una comunidad para el intercambio de experiencias.
+it-s-also-good	También es bueno saber cómo calcular la complejidad de los algoritmos y el consumo de memoria.
+you-should-study-and	Debes estudiar y observar las tendencias contemporáneas para ser competitivo, así como poder adaptarte a ellas.
+experienced-developers-should-develop	Los desarrolladores experimentados deben desarrollar habilidades de gestión y habilidades de comunicación comercial para completar las tareas de manera eficiente. Es más fácil de hacer si has desarrollado la inteligencia emocional. Para un desarrollador junior, la habilidad también es útil para interactuar mejor con los colegas.
+to-configure-automated-code	Para configurar la verificación automatizada del formato del código con una de las utilidades adecuadas: clang-format, Resharper - code style, MSVS - code style.
+naming-conventions-tabs-vs	Convenciones de nomenclatura, pestañas vs espacios, etc.
+do-not-ignore-warnings	No ignores las advertencias del compilador y del analizador estático. Son tus amigos, no tus enemigos
+ai-can-generate-plausible	La IA puede generar código plausible pero incorrecto — verifica y prueba todo. Se requiere conocimiento de C++.
+scripting-functional-sql-like	- Scripting - Funcional - Tipo SQL - NoSQL
+sometimes-it-s-needed	A veces es necesario proporcionar una habilidad para reutilizar una biblioteca escrita en un lenguaje diferente desde otro. Por ejemplo: para llamar a bibliotecas C++ en C#.
+memory-safety-requirements-are	Los requisitos de seguridad de la memoria están aumentando (reguladores de EE. UU. y la UE). Aprende prácticas seguras y herramientas de análisis.
+stage1	Paso 1
+stage2	Paso 2
+stage3	Paso 3
+stage4	Paso 4
+stage5	Paso 5
+cpp-developer-roadmap	Hoja de ruta del desarrollador C++
+last-updated	Última actualización: 2026-09-02
+about	Acerca de:
+c-is-still-one	C++ sigue siendo uno de los lenguajes de desarrollo más populares. Hay bastantes personas que quieren empezar a aprenderlo y convertirse en un desarrollador C++. Se enfrentan a preguntas como: "¿Por dónde debería empezar? ¿Qué y en qué orden debería estudiar? ¿Qué libros debería leer?". Intentamos responder a estas preguntas en la hoja de ruta presentada. El mapa se centra en las competencias y habilidades generales que se podrían encontrar en la mayoría de los proyectos. Está diseñado para ayudar a aquellos que recién comienzan su educación o tienen poca experiencia. Puedes crear un plan de aprendizaje más productivo sin distraerte con información paralela si estudias el conjunto de materiales enumerados. Te ayudará a dominar C++ al nivel que se usa en muchos proyectos comerciales.
+repository	Repositorio:
+repository-link	https://github.com/salmer/CppDeveloperRoadmap
+how-to-use	Cómo usar:
+feedback	Comentarios:
+legend-the-juniors-should-be	Los juniors deben conocer las habilidades de los middle/senior. Es suficiente tener una comprensión básica de ellas.
+legend-the-middle-developer-has	El desarrollador middle tiene las habilidades para crear un diseño para nuevas funcionalidades como parte de un componente/aplicación incluso si no hay suficientes requisitos o información presentada.
+legend-optional	Opcional
+if-you-have-any	Si tienes algún comentario u observación, no dudes en contactarnos. Realmente lo apreciamos. :) Para contactarnos, elige uno de los siguientes enfoques de Github: - Para cualquier observación relacionada con el contenido del repositorio - ve a Pull Requests y envía uno nuevo
+legend-senior	Senior
+legend-middle	Middle
+legend-junior	Junior
+legend-the-junior-must-acquire	El junior debe adquirir la siguiente habilidad lo antes posible: escribir código fácil de leer y bien estructurado.
+legend-the-steps-are-presented	Los "pasos" se presentan en este mapa. Su intención es mostrar una base fácil para que los novatos puedan obtener conocimientos básicos de confianza sobre el lenguaje al principio.
+legend-the-senior-developer-has	El desarrollador senior tiene las habilidades para crear un diseño y tomar decisiones para una solución/componente teniendo en cuenta el contexto del área de negocio.

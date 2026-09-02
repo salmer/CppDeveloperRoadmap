@@ -4,11 +4,11 @@ Thank you for your interest in contributing! To maintain consistency and quality
 
 ## Language Sync Rule
 
-This project maintains parity across three languages: English (`English/`), Russian (`Russian/`), and Chinese (`Chinese/`).
-**Any content change (e.g., adding a book, updating a tool, fixing a description) MUST be mirrored across all three languages.** 
-If you are unable to translate the content into all languages, please create an issue or note it in your Pull Request so someone can help translate it.
+This project maintains parity across four languages: English (`English/`), Russian (`Russian/`), Chinese (`Chinese/`), and Spanish (`Spanish/`).
+**Any content change (e.g., adding a book, updating a tool, fixing a description) MUST be mirrored across all four languages.** 
+You do not need to be fluent in all four to contribute — use a translation tool (like Google Translate or DeepL) for the languages you don't speak, and reviewers will polish it. The important part is that the files stay structurally identical (same headings, same order).
 
-This rule is about the **articles** (the `.md` files). **The map is different** — it has one shared source, so a structural change is made once and regenerated into all three languages; only its *text* is per-language. See below.
+This rule is about the **articles** (the `.md` files). **The map is different** — it has one shared source, so a structural change is made once and regenerated into all four languages; only its *text* is per-language. See below.
 
 ## Editing the Roadmap
 
@@ -24,7 +24,7 @@ The roadmap is **generated** from a single language-neutral source in [`tools/ma
    ```
    See [`tools/mapgen/README.md`](tools/mapgen/README.md) for the DSL grammar and all flags.
 
-Because there is one structural source, a structural change lands in all three languages at once — you only supply the per-language **text** in each `<lang>.tsv`. If you can't run the build locally (`setup.py` will tell you what's missing — the draw.io desktop app is the usual blocker), edit the source anyway and say so in your PR; a maintainer will regenerate the maps. To just *view* the map, see the per-language [`Graph/README.md`](English/Graph/README.md).
+Because there is one structural source, a structural change lands in all four languages at once — you only supply the per-language **text** in each `<lang>.tsv`. If you can't run the build locally (`setup.py` will tell you what's missing — the draw.io desktop app is the usual blocker), edit the source anyway and say so in your PR; a maintainer will regenerate the maps. To just *view* the map, see the per-language [`Graph/README.md`](English/Graph/README.md).
 
 ## Local Jekyll Preview
 

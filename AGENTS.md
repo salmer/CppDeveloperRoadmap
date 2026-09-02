@@ -3,8 +3,7 @@
 This file helps an AI agent (or a human) get up to speed on the repository quickly: how the
 map is produced, how to change it safely, and the conventions to keep.
 
-This is **not a changelog** — for what changed and when, see the git history; the owner's
-current tasks live in [TODO.md](TODO.md).
+This is **not a changelog** — for what changed and when, see the git history.
 
 > **IMPORTANT: the maps are GENERATED, not hand-edited.**
 > Each `<Language>/Graph/roadmap.drawio.svg` is **build output** of the mapgen pipeline.
@@ -19,8 +18,7 @@ current tasks live in [TODO.md](TODO.md).
 - `main` is the primary branch; work through separate branches and pull requests.
 - Article file names and URLs must not change — they are linked from outside.
 - **Articles** (the per-language `.md` content) are still maintained by hand, one copy per
-  language; any content change must be mirrored across `English/` `Russian/` `Chinese/`
-  (there is no `Spanish/` yet). **The map is different** — it has a single source (below),
+  language; any content change must be mirrored across `English/` `Russian/` `Chinese/` `Spanish/`. **The map is different** — it has a single source (below),
   so a structural change is made once and regenerated into every language.
 
 ## How the map is produced
@@ -97,4 +95,3 @@ cross-language drift and a stale date. See [`tools/mapcheck/README.md`](tools/ma
   behind; they are marked obsolete in every language's README. Optional plan: check
   GoatCounter traffic for `/goto/miro-*` vs `/goto/svg-*`; if low, put a "the map has moved"
   banner on the boards and redirect `goto/miro` to the SVG viewer (without breaking links).
-- **The owner's current tasks are in [TODO.md](TODO.md)**; check it directly.

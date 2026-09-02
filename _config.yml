@@ -4,7 +4,7 @@ baseurl: /CppDeveloperRoadmap
 description: >-
   A roadmap for learning C++: what to study and in what order, book
   recommendations per level, developer grading, pet-project ideas, and tooling.
-  Available in English, Russian, and Chinese.
+  Available in English, Russian, Chinese, and Spanish.
 
 # Used theme: https://github.com/pages-themes/cayman
 remote_theme: pages-themes/cayman@v0.2.0
