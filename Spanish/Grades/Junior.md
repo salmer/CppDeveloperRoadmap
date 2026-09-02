@@ -30,4 +30,4 @@ Es un desarrollador júnior que tiene conocimientos teóricos del desarrollo de 
 
 ---
 
-[**Volver**](Overview.md) | [**Ir a la página principal**](../../README.md)
+[**Volver**](Overview.md) | [**Ir a la página principal**](../README.md)

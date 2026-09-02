@@ -9,4 +9,4 @@ Esta guía presenta una colección de libros para aprender C++, divididos en niv
 
 ---
 
-[**Ir a la página principal**](../../README.md)
+[**Ir a la página principal**](../README.md)

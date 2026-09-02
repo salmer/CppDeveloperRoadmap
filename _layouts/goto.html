@@ -15,7 +15,9 @@
     <li><a href="{{ page.targets.en }}">English</a></li>
     <li><a href="{{ page.targets.ru }}">Русский</a></li>
     <li><a href="{{ page.targets.zh }}">中文</a></li>
+    {%- if page.targets.es %}
     <li><a href="{{ page.targets.es }}">Español</a></li>
+    {%- endif %}
   </ul>
   <script>
     (function () {

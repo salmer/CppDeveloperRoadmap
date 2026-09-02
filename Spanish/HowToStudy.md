@@ -4,7 +4,7 @@ El consejo principal que se puede dar es que debes comprender que eres el único
 
 ## :question: ¿Cómo estudiar los nuevos estándares C++ 11/14/17/20?
 
-Los principiantes no deberían centrarse demasiado en los estándares al comienzo de su viaje. Se recomienda elegir libros de la [Lista para Principiantes](../English/Books/PreJunior.md) y aprender los fundamentos. Los libros modernos para principiantes suelen contener información limitada sobre las capacidades de C++11 y los estándares más nuevos. Al principio, es mejor no centrarse en los nuevos estándares del lenguaje.
+Los principiantes no deberían centrarse demasiado en los estándares al comienzo de su viaje. Se recomienda elegir libros de la [Lista para Principiantes](Books/PreJunior.md) y aprender los fundamentos. Los libros modernos para principiantes suelen contener información limitada sobre las capacidades de C++11 y los estándares más nuevos. Al principio, es mejor no centrarse en los nuevos estándares del lenguaje.
 
 Es importante comprender por qué los estándares modernos se centran principalmente en solucionar problemas, proporcionar "azúcar sintáctico" y presentar nuevas funcionalidades. Solucionar problemas y proporcionar azúcar sintáctico es sencillo; se introducen nuevas construcciones para corregir problemas en estándares anteriores, y nuevas abstracciones para simplificar el código repetitivo. Sin embargo, con la nueva funcionalidad, es un poco más complicado.
 

@@ -30,7 +30,7 @@ flowchart TD
     DSL["<b>structure.dsl</b><br/>+ en.tsv, words.tsv, chrome.tsv"]
     ZHT["zh.tsv"]
     RUT["ru.tsv"]
-    BUILD["<b>the DSL is now the source</b><br/>build.py regenerates all three maps"]
+    BUILD["<b>the DSL is now the source</b><br/>build.py regenerates every map"]
 
     ENMAP --> EX --> DSL
     ZHMAP --> EX2 --> ZHT
