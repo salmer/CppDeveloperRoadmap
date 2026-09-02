@@ -423,7 +423,7 @@ spine center=cpp-developer
 hint [the-overloading-of-regular] angle=0 dist=500 arrow=left -> operators
 hint [to-prevent-memory-leakage] angle=10 dist=400 arrow=left -> references, shared-ptr, unique-ptr
 hint [it-s-preferred-to] angle=0 dist=388 arrow=left -> diamond-inheritance
-hint [some-of-language-constructions] angle=0 dist=500 arrow=left -> undefined-behavior
+hint [some-of-language-constructions] angle=0 dist=620 arrow=left -> undefined-behavior
 hint [ability-to-gather-analyze] angle=180 dist=500 arrow=right -> process-information
 hint [choose-one-of-the] angle=175 dist=350 arrow=right -> ide
 hint [choose-one-of-the-2] angle=0 dist=450 arrow=left -> text-editors

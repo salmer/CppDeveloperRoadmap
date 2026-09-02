@@ -15,7 +15,7 @@ measures with), so the generator and the checker agree on widths.
 
 Usage:
   python tools/mapgen/build.py --dir tools/mapgen/roadmap
-  python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,zh
+  python tools/mapgen/build.py --dir tools/mapgen/roadmap --langs en,zh,es
 """
 import argparse, math, os, shutil, subprocess, sys, time
 
@@ -598,7 +598,7 @@ def deploy(langs, outdir, repo_root):
 def main():
     ap = argparse.ArgumentParser(description="Generate the roadmap draw.io maps from the DSL.")
     ap.add_argument("--dir", required=True, help="folder with structure.dsl + <lang>.tsv")
-    ap.add_argument("--langs", default="en,ru,zh", help="comma-separated languages")
+    ap.add_argument("--langs", default="en,ru,zh,es", help="comma-separated languages")
     ap.add_argument("--outdir", default=None, help="output dir (defaults to --dir)")
     ap.add_argument("--drawio-cli", default=None, help="path to the draw.io desktop CLI (autodetected)")
     ap.add_argument("--font", default=None, help="path to the metrics font (default: YaHei / Noto CJK)")
