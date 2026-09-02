@@ -23,4 +23,4 @@ Dependiendo de las particularidades de la empresa y de tus propios objetivos, el
 
 ---
 
-[**Volver**](Overview.md) | [**Ir a la página principal**](../../README.md)
+[**Volver**](Overview.md) | [**Ir a la página principal**](../README.md)

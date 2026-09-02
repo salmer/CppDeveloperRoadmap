@@ -22,7 +22,7 @@ En los lenguajes con memoria administrada, el código incorrecto generalmente fa
 - **El tiempo de vida de un objeto es el punto más complicado.** Aquí es exactamente donde los modelos se equivocan más a menudo: devuelven una referencia a un objeto local, capturan una variable en una lambda por referencia y no se detienen a pensar quién es el propietario del objeto.
 - **Concurrencia.** El código que parece correcto puede contener una condición de carrera que se reproduce una vez a la semana bajo carga.
 
-La conclusión es simple: **solo puedes aceptar código que seas capaz de verificar**. Y para verificar el código en C++, necesitas saber C++ no menos que cuando lo escribes a mano. Las herramientas que ayudan (sanitizers, static analyzers, fuzzing) se describen en [Conjunto de herramientas del lenguaje](../English/Tooling.md).
+La conclusión es simple: **solo puedes aceptar código que seas capaz de verificar**. Y para verificar el código en C++, necesitas saber C++ no menos que cuando lo escribes a mano. Las herramientas que ayudan (sanitizers, static analyzers, fuzzing) se describen en [Conjunto de herramientas del lenguaje](Tooling.md).
 
 ## :bulb: El cuello de botella del desarrollo no es la velocidad de escritura
 
@@ -67,7 +67,7 @@ Qué hacer al respecto:
 - **Como navegador a través de una base de código desconocida:** comprender rápidamente dónde están las cosas y cómo se conectan.
 - **Como revisor:** pídele que encuentre problemas en tu código. No como la última palabra, sino como un par de ojos más.
 
-Y tres reglas que vale la pena tener en cuenta en todo momento: verifica lo que se genera, sigue la política de tu empresa sobre el envío de código a servicios externos y recuerda los riesgos de las licencias. Más sobre esto en la sección de [herramientas de IA](../English/Tooling.md).
+Y tres reglas que vale la pena tener en cuenta en todo momento: verifica lo que se genera, sigue la política de tu empresa sobre el envío de código a servicios externos y recuerda los riesgos de las licencias. Más sobre esto en la sección de [herramientas de IA](Tooling.md).
 
 ## :telescope: Lo que nadie sabe
 

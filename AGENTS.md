@@ -46,10 +46,10 @@ tools/mapgen/roadmap/structure.dsl  +  <lang>.tsv   ──►  build.py  ──�
 1. Edit the source in `tools/mapgen/roadmap/`:
    - **structure / grade / stage / hint placement** → `structure.dsl`
    - **text** (a label, a hint's wording, the date, a legend caption) → the relevant
-     `<lang>.tsv` row(s). A structural add needs a new row in **all three** tsvs.
+     `<lang>.tsv` row(s). A structural add needs a new row in **all four** tsvs.
 2. First time on a machine: `python tools/mapgen/setup.py --venv` (creates a virtualenv,
    installs Pillow, and reports how to install the draw.io desktop app if it is missing).
-3. Rebuild, update all three live maps, and validate — one command from the repo root:
+3. Rebuild, update all four live maps, and validate — one command from the repo root:
    ```bash
    python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
    ```
@@ -77,7 +77,7 @@ normal edit loop.
 - **Stage frames** grow to fit their `(section, stage)` group automatically; the "N step"
   titles come from the `stage1`..`stage5` tsv keys. Just annotate a subtree root with `stage=N`.
 - **Hints** are placed by explicit polar `angle`/`dist` from their target and a required
-  `arrow=` side; one value serves all three languages, so re-check `mapcheck` after moving one.
+  `arrow=` side; one value serves all four languages, so re-check `mapcheck` after moving one.
 - Rows share `y` across languages (`PITCH=60`, box `H=30`); only x/width differ per language.
   The generator handles this — you don't port vertical positions by hand any more.
 

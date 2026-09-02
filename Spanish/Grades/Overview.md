@@ -30,4 +30,4 @@ Puedes leer estos artículos para comprender mejor cada nivel y sus expectativas
 
 ---
 
-[**Ir a la página principal**](../../README.md)
+[**Ir a la página principal**](../README.md)

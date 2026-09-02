@@ -47,4 +47,4 @@ En general, el desarrollador de nivel medio (middle) resuelve tareas técnicas, 
 
 ---
 
-[**Volver**](Overview.md) | [**Ir a la página principal**](../../README.md)
+[**Volver**](Overview.md) | [**Ir a la página principal**](../README.md)

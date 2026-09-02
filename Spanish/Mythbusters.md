@@ -8,7 +8,7 @@ De hecho, se ha mantenido consistentemente entre los lenguajes de programación 
 
 ## :question: Los programadores de verdad aprenden C++ usando Linux/Vim/gcc
 
-Si no estás familiarizado con la combinación mencionada, se recomienda centrarse en aprender los fundamentos de C++ primero. Se sugiere comenzar a desarrollar tus primeras aplicaciones utilizando el IDE Microsoft Visual Studio. Para más información, consulta los [Libros PreJunior](../English/Books/PreJunior.md).
+Si no estás familiarizado con la combinación mencionada, se recomienda centrarse en aprender los fundamentos de C++ primero. Se sugiere comenzar a desarrollar tus primeras aplicaciones utilizando el IDE Microsoft Visual Studio. Para más información, consulta los [Libros PreJunior](Books/PreJunior.md).
 
 Tomar el camino desafiante puede parecer genial, pero hay una alta probabilidad de que la cantidad de información necesaria para crear un programa "Hello World" usando Linux, Vim y GCC sea abrumadora. Esto podría llevar a una frustración temprana y a la desilusión con la programación en general. Intenta seguir un camino que comience con cosas simples y aumente gradualmente en complejidad. Al igual que un novato no debería intentar levantar los pesos más pesados durante su primer entrenamiento, la misma regla se aplica al aprendizaje. Una vez que te sientas cómodo con el lenguaje, puedes intentar desarrollar usando Linux. Pero esa es otra historia completamente distinta...
 
@@ -22,13 +22,13 @@ Esta afirmación persiste debido a dos escenarios generalizados: es cómo se ens
 
 Una afirmación muy perjudicial que proviene de la "Vieja Guardia" o de aquellos que nacieron con un teclado en la mano.
 
-Este consejo probablemente lo den aquellos que tienen amplia experiencia en el desarrollo de otros lenguajes (como C, Fortran, Delphi, etc.) y luego hicieron la transición a C++. Stroustrup escribió el libro [The C++ Programming Language](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840) como una referencia, por lo que debe usarse de manera adecuada, lo cual requiere cierto conocimiento del lenguaje. En cambio, es mejor consultar la sección de [Libros](../English/Books/Overview.md), donde encontrarás libros para todos los niveles de dominio del lenguaje.
+Este consejo probablemente lo den aquellos que tienen amplia experiencia en el desarrollo de otros lenguajes (como C, Fortran, Delphi, etc.) y luego hicieron la transición a C++. Stroustrup escribió el libro [The C++ Programming Language](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840) como una referencia, por lo que debe usarse de manera adecuada, lo cual requiere cierto conocimiento del lenguaje. En cambio, es mejor consultar la sección de [Libros](Books/Overview.md), donde encontrarás libros para todos los niveles de dominio del lenguaje.
 
 ## :question: Aprende C++ usando solo el Estándar
 
 Otra afirmación esnob.
 
-El estándar moderno de C++, que supera las 2000 páginas, requiere pago para acceder a la versión actualizada y no está compuesto de manera fácil de usar. Si bien es elogiable para aquellos que aprendieron el lenguaje usando su estándar, no se recomienda como una forma de aprender para la mayoría de las personas. En cambio, es mejor revisar la sección de [Libros](../English/Books/Overview.md), donde encontrarás libros adecuados para varios niveles de dominio del lenguaje.
+El estándar moderno de C++, que supera las 2000 páginas, requiere pago para acceder a la versión actualizada y no está compuesto de manera fácil de usar. Si bien es elogiable para aquellos que aprendieron el lenguaje usando su estándar, no se recomienda como una forma de aprender para la mayoría de las personas. En cambio, es mejor revisar la sección de [Libros](Books/Overview.md), donde encontrarás libros adecuados para varios niveles de dominio del lenguaje.
 
 ## :question: El Comportamiento Indefinido (Undefined Behavior) acecha al desarrollador en todas partes
 

@@ -44,4 +44,4 @@ Es alguien que está familiarizado con la sintaxis del lenguaje y puede escribir
 
 ---
 
-[**Volver**](Overview.md) | [**Ir a la página principal**](../../README.md)
+[**Volver**](Overview.md) | [**Ir a la página principal**](../README.md)

@@ -4,7 +4,7 @@ The roadmap map is maintained as a rigid text source plus per-language translati
 with draw.io as the output format.
 
 **Layout.** `roadmap/` holds the **real map source**: `structure.dsl` (the structure),
-`en/ru/zh.tsv` (the words), and `chrome.tsv` (the title/legend/date blocks). `build.py`
+`en/ru/zh/es.tsv` (the words), and `chrome.tsv` (the title/legend/date blocks). `build.py`
 turns those into `roadmap/<lang>.drawio.svg` — a gitignored build artifact — and
 `--deploy` copies each one over its live map at `<Lang>/Graph/roadmap.drawio.svg`. The
 rebuild is local (CI has no draw.io), but `mapcheck`'s map-vs-DSL check fails the PR if a
@@ -33,7 +33,7 @@ physical layout (x, width, routing, frame size) is computed per language.
 flowchart LR
     subgraph SRC["source (hand-edited, language-neutral)"]
         DSL["<b>structure.dsl</b><br/>tree, grades, stages,<br/>hints, spine"]
-        TSV["<b>en.tsv / ru.tsv / zh.tsv</b><br/>one 'id TAB text' per line"]
+        TSV["<b>en.tsv / ru.tsv / zh.tsv / es.tsv</b><br/>one 'id TAB text' per line"]
         CHR["<b>chrome.tsv</b><br/>title, legend, date geometry"]
     end
     BUILD["<b>build.py</b><br/>computes the physical layout:<br/>text widths, packing,<br/>routing, frame growth"]
@@ -52,7 +52,7 @@ flowchart LR
     CHECK -. "fails the PR if a committed<br/>map no longer matches the source" .-> DSL
 ```
 
-One source, three maps: the same `structure.dsl` is rendered once per language, so a
+One source, four maps: the same `structure.dsl` is rendered once per language, so a
 structural change lands everywhere at once and only the **text** is per-language.
 
 The DSL fixes the **logical** layout (rows, order, grade, stage, hint targets, spine
@@ -91,7 +91,7 @@ installed, open a PR, and a maintainer regenerates the maps.
 python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
 ```
 
-That one command is the whole edit loop: build all three languages, copy each map over its
+That one command is the whole edit loop: build all four languages, copy each map over its
 live `<Lang>/Graph/roadmap.drawio.svg` (`--deploy`), then run `mapcheck` (`--check`, exits
 non-zero on a hard error). `--check` validates the *live* maps, so without `--deploy` it
 reports on the committed ones rather than what was just built — it says which.
@@ -158,7 +158,7 @@ python tools/mapgen/build.py --dir path/to/that/folder --langs en
 ```
 
 Note `stage1` in the tsv: stage frames take their title from the `stage1`..`stage5` keys.
-Add `ru.tsv` / `zh.tsv` with the same ids and `--langs en,ru,zh,es` renders all four.
+Add `ru.tsv` / `zh.tsv` / `es.tsv` with the same ids and `--langs en,ru,zh,es` renders all four.
 
 ### What the DSL renders as
 
@@ -217,8 +217,8 @@ Reading it back:
 
 **To add a leaf** you touch two files: one indented `[my-new-node] grade=middle` line in
 `structure.dsl`, and one `my-new-node<TAB>My New Node` row in **each** of `en.tsv`,
-`ru.tsv`, `zh.tsv`. Everything else — x position, box width per language, the parent edge,
-frame growth — is computed. Rebuild, and it appears in all three maps.
+`ru.tsv`, `zh.tsv`, `es.tsv`. Everything else — x position, box width per language, the parent edge,
+frame growth — is computed. Rebuild, and it appears in all four maps.
 
 ### Nodes (indentation = hierarchy, 2 spaces per level)
 
@@ -262,7 +262,7 @@ the notes replay in their hand-tuned positions; you nudge the values by hand in
 `structure.dsl` (the source of truth) when a note needs to move. Rows are shared across languages so an offset
 transfers; only the target's x shifts with per-language width, carrying the box along.
 Because box heights and node widths differ per language, one `angle`/`dist` has to clear
-all three — nudge the values until `mapcheck` reports no overlaps. If omitted, the box
+all four — nudge the values until `mapcheck` reports no overlaps. If omitted, the box
 defaults to straight right of its target (`angle=0`), with no overlap avoidance.
 
 ### Stage frames — automatic from `stage=`
@@ -321,11 +321,11 @@ are also how a new language is onboarded. **Going forward the DSL is the source 
 
 For reference, `roadmap/` holds the canonical `structure.dsl` (394 nodes + 34 hints + 25
 stage annotations), `chrome.tsv` (18 static blocks: title, legend, About/How-to/Feedback,
-repo link, date), `en/ru/zh.tsv`, and `words.tsv`.
+repo link, date), `en/ru/zh/es.tsv`, and `words.tsv`.
 
 ## What generates
 
-The whole map, all three languages, from the canonical source: skill tree, hints, stage
+The whole map, all four languages, from the canonical source: skill tree, hints, stage
 frames (from `stage=`), and the top-left chrome — title banner, legend,
 About/How-to/Feedback, repo link, date. Chrome layout is captured once in `chrome.tsv`
 (language-neutral geometry + style); text is per-language in `<lang>.tsv`. RU is re-keyed
@@ -342,7 +342,7 @@ text) or a translation is missing.
   `build.py --deploy` yourself and commit the regenerated maps. `mapcheck`'s map-vs-DSL
   check fails if the committed maps don't match the DSL/tsv — so a forgotten rebuild is
   caught in review rather than shipping silently.
-- **Per-language hint tuning.** One `angle`/`dist` per hint must clear all three languages
+- **Per-language hint tuning.** One `angle`/`dist` per hint must clear all four languages
   (see the Hints section).
 - **Metrics font.** Text is measured with Pillow using `Microsoft YaHei` (Latin+Cyrillic+CJK;
   falls back to Noto CJK) while draw.io renders Latin in Helvetica, so generated widths aren't

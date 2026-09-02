@@ -2,11 +2,11 @@
 
 C++ no tiene un ecosistema único "estándar" como npm en JavaScript o crates.io en Rust, por lo que el conjunto de bibliotecas en uso depende en gran medida del dominio. Aun así, hay algunos nombres que aparecen en las ofertas de trabajo y en los proyectos con más frecuencia que el resto, y esos son los que se recopilan a continuación.
 
-No intentes aprender todo a la vez. Es mucho más útil sentirse realmente cómodo con una o dos bibliotecas de tu propio campo que conocer una docena superficialmente. La forma más sencilla de incorporarlas es a través de los gestores de paquetes Conan o vcpkg: consulta el [Conjunto de herramientas del lenguaje](../English/Tooling.md).
+No intentes aprender todo a la vez. Es mucho más útil sentirse realmente cómodo con una o dos bibliotecas de tu propio campo que conocer una docena superficialmente. La forma más sencilla de incorporarlas es a través de los gestores de paquetes Conan o vcpkg: consulta el [Conjunto de herramientas del lenguaje](Tooling.md).
 
 > :compass: Este es un artículo de descripción general y un punto de partida para la navegación, no un catálogo completo. La cantidad de bibliotecas que existen realmente es de órdenes de magnitud mayor, y para cualquier tarea específica casi siempre hay algo más por ahí: busca dentro de tu propio dominio de problemas, mira qué usan proyectos similares y verifica las listas actualizadas (por ejemplo, [awesome-cpp](https://github.com/fffaraz/awesome-cpp)). El objetivo de esta lista es dar un punto de apoyo a aquellos que recién están comenzando.
 
-> :bulb: Las herramientas de desarrollo (compiladores, depuradores, analizadores, frameworks de pruebas) están cubiertas en un artículo separado: [Conjunto de herramientas del lenguaje](../English/Tooling.md).
+> :bulb: Las herramientas de desarrollo (compiladores, depuradores, analizadores, frameworks de pruebas) están cubiertas en un artículo separado: [Conjunto de herramientas del lenguaje](Tooling.md).
 
 ## :hammer_and_wrench: Propósito general
 

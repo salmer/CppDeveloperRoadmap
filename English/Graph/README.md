@@ -20,8 +20,8 @@ that has drifted from it.
 
 1. Fork the repository and edit the source:
    - a node, its grade/stage, or a hint → `tools/mapgen/roadmap/structure.dsl`
-   - wording (a label, a hint, the date) → the matching row in `en.tsv` / `ru.tsv` / `zh.tsv`
-     (a new node needs a row in **all three**).
+   - wording (a label, a hint, the date) → the matching row in `en.tsv` / `ru.tsv` / `zh.tsv` / `es.tsv`
+     (a new node needs a row in **all four**).
 2. **First time only** — get your machine ready:
    ```bash
    python tools/mapgen/setup.py --venv
@@ -29,7 +29,7 @@ that has drifted from it.
    It creates a virtualenv, installs Pillow, and checks for the two things it can't
    install for you (a CJK font and the draw.io desktop app), printing the exact command
    for your OS if either is missing.
-3. Rebuild, update all three maps and validate — one command from the repo root:
+3. Rebuild, update all four maps and validate — one command from the repo root:
    ```bash
    python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
    ```

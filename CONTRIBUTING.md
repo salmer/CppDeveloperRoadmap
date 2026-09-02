@@ -18,7 +18,7 @@ The roadmap is **generated** from a single language-neutral source in [`tools/ma
 
 1. Edit `structure.dsl` (to add/move/re-grade a node or a hint) and/or the `<lang>.tsv` files (to change text — one row per language).
 2. Set your machine up once — `python tools/mapgen/setup.py --venv` creates a virtualenv, installs Pillow, and tells you how to install the draw.io desktop app if you don't have it.
-3. Rebuild and update all three maps with one command from the repo root, then open a pull request:
+3. Rebuild and update all four maps with one command from the repo root, then open a pull request:
    ```bash
    python tools/mapgen/build.py --dir tools/mapgen/roadmap --deploy --check
    ```
